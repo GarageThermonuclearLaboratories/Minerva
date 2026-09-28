@@ -21,4 +21,4 @@ The v0.1 construction is clean-room: no Garage-internal ontology class, hierarch
 
 Run `python3 scripts/validate.py` from this directory. The static site reads `dist/data.json`, which is copied from `data/ontology.json`; run `cp data/ontology.json dist/data.json` after an ontology edit, then validate again. A future pipeline should generate exports and site data rather than relying on this explicit copy step.
 
-The source repository for the ChatGPT Site is versioned through the Site publishing workflow. A separate dedicated GitHub repository remains a required project milestone; this initial checkpoint must not be represented as having satisfied it until a GitHub remote and commit are verified.
+GitHub is the canonical engineering record: [GarageThermonuclearLaboratories/Minerva](https://github.com/GarageThermonuclearLaboratories/Minerva). ChatGPT Site source commits and GitHub commits are separate Git histories; each deployment records both identifiers where available.
