@@ -33,3 +33,16 @@
 **Review:** Agent review of search excerpts only; human review pending. No new inference or rejected semantic hypothesis.
 **Next:** Acquire and hash full documents, review Grade 7 subparts, and begin independent acquisition across other families.
 **Traceability:** The release receipt in `dist/release.json` identifies the GitHub research commit. A deployment record is appended after publication succeeds.
+
+
+### Deployment receipt · source review checkpoint
+
+Site version 6 deployed successfully at 2026-09-28T21:26:00Z (17:26 New York).
+- Public URL: https://wildcats-minerva.jaredwillis.chatgpt.site
+- Site source commit: `0d5327dea8d4de4b24bcbf29106f910f56d3b0ac`
+- GitHub published source: `4a456c07d559897af880a22c92e19b58cf9c8d44`
+- GitHub research state: `ae68ee013e85d84a752fa56f5dc27a2dfafbe9b9`
+- Deployment: `appgdep_6abadb61dcb881919ff59a3282be8895`
+- Validation: 7 nodes, 6 edges, 7 sources; public/source JSON equality, reference integrity, temporal precision, and JavaScript syntax passed.
+
+This post-deployment receipt is added to GitHub after publication; it was not contained in the deployed source commit.
