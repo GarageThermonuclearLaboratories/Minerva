@@ -15,7 +15,9 @@
 ## 2026-09-28 · GitHub archive and receipt links
 
 **What changed:** Created the dedicated [Minerva GitHub repository](https://github.com/GarageThermonuclearLaboratories/Minerva), seeded the source tree, and linked the public receipts and Lab Log to the initial GitHub archive commit.  
-**GitHub state:** The initial imported research state is commit [`6474947`](https://github.com/GarageThermonuclearLaboratories/Minerva/commit/647494729893aae73fd764bae9ff2742b260dbd2). The current GitHub `main` also includes follow-up commits for the README, Lab Log, and interface receipt links; current head at this checkpoint: [`572d6fb`](https://github.com/GarageThermonuclearLaboratories/Minerva/commit/572d6fb008fdb0893a1ad5530dac27ba771c5571).  
+**GitHub state:** The initial imported research state is commit [`6474947`](https://github.com/GarageThermonuclearLaboratories/Minerva/commit/647494729893aae73fd764bae9ff2742b260dbd2). Before this log update, GitHub `main` was at [`572d6fb`](https://github.com/GarageThermonuclearLaboratories/Minerva/commit/572d6fb008fdb0893a1ad5530dac27ba771c5571); this expanded Lab Log is recorded in [`f31351e`](https://github.com/GarageThermonuclearLaboratories/Minerva/commit/f31351e321d533c6a577807bc3d77dc3df284ccc).  
 **Public deployment:** Site version 3 was built from Site source commit `8db6ef9dc8d6391c65247694228092e96892f48d` and deployed successfully. It links the initial GitHub archive commit so a visitor can inspect the matching ontology state.  
 **Validation:** 7 nodes, 6 edges, 4 source records; structural validation and JavaScript syntax checks passed.  
 **Remaining:** Source PDF retrieval, page and effective-date verification, complete source universe, and broader K–12 ingestion.
+
+**Public deployment:** Site version 4, source commit `386a19dbefbab624ee785f861aa2c6938cf249c8`, deployed successfully with the Lab Log and receipt links. The temporary Site packaging archive was removed from the working repository after the deployment.
