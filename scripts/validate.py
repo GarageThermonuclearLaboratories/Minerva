@@ -20,3 +20,14 @@ for student in data['students']:
     assert all(s in node_ids for s in student['grade7_standard_ids'])
 assert data['students'][0]['grade7_standard_ids'] == data['students'][1]['grade7_standard_ids']
 print(f"Valid: {len(node_ids)} nodes, {len(edge_ids)} edges, {len(source_ids)} source records")
+
+for name in ['sources','corpus-plan','source-review']:
+    assert json.loads((root / f'data/{name}.json').read_text()) == json.loads((root / f'dist/{name}.json').read_text()), name
+plan = json.loads((root / 'data/corpus-plan.json').read_text())
+review = json.loads((root / 'data/source-review.json').read_text())
+assert len({f['id'] for f in plan['families']}) == len(plan['families'])
+assert all(f['source_id'] in source_ids for f in plan['families'])
+assert all(c['source_id'] in source_ids for c in review['claims'])
+assert all(s['acquisition_status'] != 'full-document-acquired' for s in sources['sources'])
+assert all(s['effective_date'] is None for s in sources['sources']), 'Do not invent exact effective days from month/season evidence'
+print('Valid: source review and corpus inventory match public data; temporal precision preserved')

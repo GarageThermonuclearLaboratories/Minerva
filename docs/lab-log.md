@@ -21,3 +21,15 @@
 **Remaining:** Source PDF retrieval, page and effective-date verification, complete source universe, and broader K–12 ingestion.
 
 **Public deployment:** Site version 4, source commit `386a19dbefbab624ee785f861aa2c6938cf249c8`, deployed successfully with the Lab Log and receipt links. The temporary Site packaging archive was removed from the working repository after the deployment.
+
+
+## 2026-09-28 · Source review and corpus inventory · 0.0.2
+
+**Input:** Grade 7 mathematics sources and the NYSED content-area index.
+**Changed:** Added an implementation timeline with month/season precision, explicit acquisition/review states, and a twelve-family corpus queue. Corrected the claim that the full standard had been verified.
+**Counts:** Source records 4 → 7; content-area queue 0 → 12; graph remains 7 nodes / 6 edges / 0 findings.
+**Learned:** Guidance supports September 2022 full mathematics implementation and spring 2023 aligned Grades 3–8 assessments. These do not identify a PDF revision or exact legal effective day.
+**Failed:** PDF acquisition returned HTTP 502; source bytes and page anchors remain unavailable.
+**Review:** Agent review of search excerpts only; human review pending. No new inference or rejected semantic hypothesis.
+**Next:** Acquire and hash full documents, review Grade 7 subparts, and begin independent acquisition across other families.
+**Traceability:** The release receipt in `dist/release.json` identifies the GitHub research commit. A deployment record is appended after publication succeeds.

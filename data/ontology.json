@@ -1,26 +1,154 @@
 {
-  "release":"wildcats-0.0.1-monday-slice",
-  "policy_snapshot":"2026-09-28",
-  "git_revision":null,
-  "scope":"One verified Grade 7 mathematics standard; not a complete K–12 trajectory",
-  "nodes":[
-    {"id":"wc:grade:7","type":"Grade","label":"Grade 7","status":"SOURCE","source_id":"src:nysed:math-2017"},
-    {"id":"wc:subject:mathematics","type":"Subject","label":"Mathematics","status":"SOURCE","source_id":"src:nysed:math-2017"},
-    {"id":"wc:domain:7-rp","type":"Domain","label":"Ratios and Proportional Relationships","status":"SOURCE","source_id":"src:nysed:math-2017"},
-    {"id":"wc:standard:ny-7-rp-2","type":"Standard","label":"NY-7.RP.2","status":"SOURCE","source_id":"src:nysed:math-2017","original_text":"Recognize and represent proportional relationships between quantities.","source_locator":"NY-7.RP.2; PDF page unverified"},
-    {"id":"wc:expectation:recognize-proportional","type":"Expectation","label":"Recognize proportional relationships","status":"PARSED","source_id":"src:nysed:math-2017","derived_from":"wc:standard:ny-7-rp-2"},
-    {"id":"wc:expectation:represent-proportional","type":"Expectation","label":"Represent proportional relationships","status":"PARSED","source_id":"src:nysed:math-2017","derived_from":"wc:standard:ny-7-rp-2"},
-    {"id":"wc:concept:proportional-relationship","type":"Concept","label":"Proportional relationship between quantities","status":"PARSED","source_id":"src:nysed:math-2017","derived_from":"wc:standard:ny-7-rp-2"}
+  "release": "wildcats-0.0.2-source-review",
+  "policy_snapshot": "2026-09-28",
+  "git_revision": null,
+  "scope": "One Grade 7 mathematics standard heading corroborated via search excerpts; full document review pending",
+  "nodes": [
+    {
+      "id": "wc:grade:7",
+      "type": "Grade",
+      "label": "Grade 7",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-2017",
+      "review_status": "full-document-review-pending"
+    },
+    {
+      "id": "wc:subject:mathematics",
+      "type": "Subject",
+      "label": "Mathematics",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-2017",
+      "review_status": "full-document-review-pending"
+    },
+    {
+      "id": "wc:domain:7-rp",
+      "type": "Domain",
+      "label": "Ratios and Proportional Relationships",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-2017",
+      "review_status": "full-document-review-pending"
+    },
+    {
+      "id": "wc:standard:ny-7-rp-2",
+      "type": "Standard",
+      "label": "NY-7.RP.2",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-2017",
+      "original_text": "Recognize and represent proportional relationships between quantities.",
+      "source_locator": "NY-7.RP.2; PDF page unverified",
+      "review_status": "full-document-review-pending"
+    },
+    {
+      "id": "wc:expectation:recognize-proportional",
+      "type": "Expectation",
+      "label": "Recognize proportional relationships",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-2017",
+      "derived_from": "wc:standard:ny-7-rp-2",
+      "review_status": "agent-decomposition; human-review-pending"
+    },
+    {
+      "id": "wc:expectation:represent-proportional",
+      "type": "Expectation",
+      "label": "Represent proportional relationships",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-2017",
+      "derived_from": "wc:standard:ny-7-rp-2",
+      "review_status": "agent-decomposition; human-review-pending"
+    },
+    {
+      "id": "wc:concept:proportional-relationship",
+      "type": "Concept",
+      "label": "Proportional relationship between quantities",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-2017",
+      "derived_from": "wc:standard:ny-7-rp-2",
+      "review_status": "agent-decomposition; human-review-pending"
+    }
   ],
-  "edges":[
-    {"id":"wc:edge:001","from":"wc:standard:ny-7-rp-2","to":"wc:domain:7-rp","relation":"PART_OF","status":"SOURCE","source_id":"src:nysed:math-2017"},
-    {"id":"wc:edge:002","from":"wc:standard:ny-7-rp-2","to":"wc:grade:7","relation":"EXPECTED_BY","status":"SOURCE","source_id":"src:nysed:math-2017"},
-    {"id":"wc:edge:003","from":"wc:expectation:recognize-proportional","to":"wc:standard:ny-7-rp-2","relation":"DERIVED_FROM","status":"PARSED","source_id":"src:nysed:math-2017"},
-    {"id":"wc:edge:004","from":"wc:expectation:represent-proportional","to":"wc:standard:ny-7-rp-2","relation":"DERIVED_FROM","status":"PARSED","source_id":"src:nysed:math-2017"},
-    {"id":"wc:edge:005","from":"wc:expectation:recognize-proportional","to":"wc:concept:proportional-relationship","relation":"USES_CONCEPT","status":"PARSED","source_id":"src:nysed:math-2017"},
-    {"id":"wc:edge:006","from":"wc:expectation:represent-proportional","to":"wc:concept:proportional-relationship","relation":"USES_CONCEPT","status":"PARSED","source_id":"src:nysed:math-2017"}
+  "edges": [
+    {
+      "id": "wc:edge:001",
+      "from": "wc:standard:ny-7-rp-2",
+      "to": "wc:domain:7-rp",
+      "relation": "PART_OF",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-2017"
+    },
+    {
+      "id": "wc:edge:002",
+      "from": "wc:standard:ny-7-rp-2",
+      "to": "wc:grade:7",
+      "relation": "EXPECTED_BY",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-2017"
+    },
+    {
+      "id": "wc:edge:003",
+      "from": "wc:expectation:recognize-proportional",
+      "to": "wc:standard:ny-7-rp-2",
+      "relation": "DERIVED_FROM",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-2017"
+    },
+    {
+      "id": "wc:edge:004",
+      "from": "wc:expectation:represent-proportional",
+      "to": "wc:standard:ny-7-rp-2",
+      "relation": "DERIVED_FROM",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-2017"
+    },
+    {
+      "id": "wc:edge:005",
+      "from": "wc:expectation:recognize-proportional",
+      "to": "wc:concept:proportional-relationship",
+      "relation": "USES_CONCEPT",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-2017"
+    },
+    {
+      "id": "wc:edge:006",
+      "from": "wc:expectation:represent-proportional",
+      "to": "wc:concept:proportional-relationship",
+      "relation": "USES_CONCEPT",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-2017"
+    }
   ],
-  "students":[{"id":"wc:avatar:matthew","name":"Matthew","state":"EXPECTED","grade7_standard_ids":["wc:standard:ny-7-rp-2"]},{"id":"wc:avatar:eva","name":"Eva","state":"EXPECTED","grade7_standard_ids":["wc:standard:ny-7-rp-2"]}],
-  "canonical_assumptions":[],"hypotheses":[],"findings":[],
-  "unresolved":[{"id":"wc:question:001","text":"Acquire and archive the full Grade 7 crosswalk PDF; verify page, revision, adoption, and current applicability."},{"id":"wc:question:002","text":"Establish the full authoritative source universe and effective dates for each family."},{"id":"wc:question:003","text":"Determine when a local district choice is required; no Johnson City assumption has yet been made."}]
+  "students": [
+    {
+      "id": "wc:avatar:matthew",
+      "name": "Matthew",
+      "state": "EXPECTED",
+      "grade7_standard_ids": [
+        "wc:standard:ny-7-rp-2"
+      ]
+    },
+    {
+      "id": "wc:avatar:eva",
+      "name": "Eva",
+      "state": "EXPECTED",
+      "grade7_standard_ids": [
+        "wc:standard:ny-7-rp-2"
+      ]
+    }
+  ],
+  "canonical_assumptions": [],
+  "hypotheses": [],
+  "findings": [],
+  "unresolved": [
+    {
+      "id": "wc:question:001",
+      "text": "Acquire and archive the Grade 7 PDF; verify page, revision, and all NY-7.RP.2 subparts. Family implementation timeline is recorded separately from document verification."
+    },
+    {
+      "id": "wc:question:002",
+      "text": "Acquire documents and verify effective dates across the twelve NYSED content areas now listed in the corpus plan. The document denominator remains unknown."
+    },
+    {
+      "id": "wc:question:003",
+      "text": "Determine when a local district choice is required; no Johnson City assumption has yet been made."
+    }
+  ]
 }

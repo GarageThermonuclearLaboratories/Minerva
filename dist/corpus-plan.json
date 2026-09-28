@@ -1,0 +1,144 @@
+{
+  "policy_snapshot": "2026-09-28",
+  "inventory_source_id": "src:nysed:p12-index",
+  "inventory_scope": "Twelve content areas listed by NYSED; not a count of documents or standards.",
+  "families": [
+    {
+      "id": "wc:corpus-family:01",
+      "label": "Arts",
+      "source_id": "src:nysed:p12-index",
+      "acquisition": "pending-full-document",
+      "parsing": "not-started",
+      "normalization": "not-started",
+      "relationships": "not-started",
+      "validation": "not-started",
+      "human_review": "pending"
+    },
+    {
+      "id": "wc:corpus-family:02",
+      "label": "Career Development and Occupational Studies",
+      "source_id": "src:nysed:p12-index",
+      "acquisition": "pending-full-document",
+      "parsing": "not-started",
+      "normalization": "not-started",
+      "relationships": "not-started",
+      "validation": "not-started",
+      "human_review": "pending"
+    },
+    {
+      "id": "wc:corpus-family:03",
+      "label": "Computer Science and Digital Fluency",
+      "source_id": "src:nysed:p12-index",
+      "acquisition": "pending-full-document",
+      "parsing": "not-started",
+      "normalization": "not-started",
+      "relationships": "not-started",
+      "validation": "not-started",
+      "human_review": "pending"
+    },
+    {
+      "id": "wc:corpus-family:04",
+      "label": "English Language Arts",
+      "source_id": "src:nysed:p12-index",
+      "acquisition": "pending-full-document",
+      "parsing": "not-started",
+      "normalization": "not-started",
+      "relationships": "not-started",
+      "validation": "not-started",
+      "human_review": "pending"
+    },
+    {
+      "id": "wc:corpus-family:05",
+      "label": "Family and Consumer Sciences",
+      "source_id": "src:nysed:p12-index",
+      "acquisition": "pending-full-document",
+      "parsing": "not-started",
+      "normalization": "not-started",
+      "relationships": "not-started",
+      "validation": "not-started",
+      "human_review": "pending"
+    },
+    {
+      "id": "wc:corpus-family:06",
+      "label": "Health",
+      "source_id": "src:nysed:p12-index",
+      "acquisition": "pending-full-document",
+      "parsing": "not-started",
+      "normalization": "not-started",
+      "relationships": "not-started",
+      "validation": "not-started",
+      "human_review": "pending"
+    },
+    {
+      "id": "wc:corpus-family:07",
+      "label": "Mathematics",
+      "source_id": "src:nysed:p12-index",
+      "acquisition": "pending-full-document",
+      "parsing": "one-standard-heading",
+      "normalization": "not-started",
+      "relationships": "source-and-parse-links-only",
+      "validation": "structural-slice-only",
+      "human_review": "pending"
+    },
+    {
+      "id": "wc:corpus-family:08",
+      "label": "Physical Education",
+      "source_id": "src:nysed:p12-index",
+      "acquisition": "pending-full-document",
+      "parsing": "not-started",
+      "normalization": "not-started",
+      "relationships": "not-started",
+      "validation": "not-started",
+      "human_review": "pending"
+    },
+    {
+      "id": "wc:corpus-family:09",
+      "label": "Science",
+      "source_id": "src:nysed:p12-index",
+      "acquisition": "pending-full-document",
+      "parsing": "not-started",
+      "normalization": "not-started",
+      "relationships": "not-started",
+      "validation": "not-started",
+      "human_review": "pending"
+    },
+    {
+      "id": "wc:corpus-family:10",
+      "label": "Social Studies",
+      "source_id": "src:nysed:p12-index",
+      "acquisition": "pending-full-document",
+      "parsing": "not-started",
+      "normalization": "not-started",
+      "relationships": "not-started",
+      "validation": "not-started",
+      "human_review": "pending"
+    },
+    {
+      "id": "wc:corpus-family:11",
+      "label": "Technology Education",
+      "source_id": "src:nysed:p12-index",
+      "acquisition": "pending-full-document",
+      "parsing": "not-started",
+      "normalization": "not-started",
+      "relationships": "not-started",
+      "validation": "not-started",
+      "human_review": "pending"
+    },
+    {
+      "id": "wc:corpus-family:12",
+      "label": "World Languages",
+      "source_id": "src:nysed:p12-index",
+      "acquisition": "pending-full-document",
+      "parsing": "not-started",
+      "normalization": "not-started",
+      "relationships": "not-started",
+      "validation": "not-started",
+      "human_review": "pending"
+    }
+  ],
+  "additional_policy_layers": [
+    "Current diploma and assessment requirements",
+    "Future transitions with cohort and effective-date evidence",
+    "Johnson City local implementation only where needed"
+  ]
+}

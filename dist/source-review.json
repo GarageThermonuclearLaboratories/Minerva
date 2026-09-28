@@ -1,0 +1,57 @@
+{
+  "id": "wc:evidence:2026-09-28-source-review",
+  "retrieved_date": "2026-09-28",
+  "method": "NYSED search-index extracts; source PDFs were not acquired",
+  "review_status": "agent-reviewed; human review pending",
+  "claims": [
+    {
+      "id": "wc:policy-evidence:math-adoption",
+      "source_id": "src:nysed:math-guidance",
+      "status": "SOURCE",
+      "event": "Mathematics standards adoption",
+      "date": "2017-09",
+      "date_precision": "month"
+    },
+    {
+      "id": "wc:policy-evidence:math-implementation",
+      "source_id": "src:nysed:math-guidance",
+      "status": "SOURCE",
+      "event": "Full mathematics implementation",
+      "date": "2022-09",
+      "date_precision": "month"
+    },
+    {
+      "id": "wc:policy-evidence:math-assessment",
+      "source_id": "src:nysed:math-guidance",
+      "status": "SOURCE",
+      "event": "Aligned Grades 3–8 mathematics assessments begin",
+      "date": "2023-spring",
+      "date_precision": "season"
+    }
+  ],
+  "interpretation": "This supports the family implementation timeline. It does not establish a PDF revision, an exact legal effective day, or complete applicability for every standard.",
+  "failed_acquisitions": [
+    {
+      "url": "https://www.nysed.gov/sites/default/files/programs/curriculum-instruction/nys-math-standards-grade-7-crosswalk.pdf",
+      "result": "HTTP 502",
+      "channels": [
+        "web fetch",
+        "direct HTTPS download"
+      ]
+    },
+    {
+      "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/nys-next-generation-mathematics-p-12-standards.pdf",
+      "result": "HTTP 502",
+      "channels": [
+        "web fetch",
+        "direct HTTPS download"
+      ]
+    }
+  ],
+  "next": [
+    "Acquire and hash authoritative PDF bytes",
+    "Visually confirm NY-7.RP.2 page and subparts",
+    "Verify revision and applicability against snapshot",
+    "Expand parsing after source review"
+  ]
+}
