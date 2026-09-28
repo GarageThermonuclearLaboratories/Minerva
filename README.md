@@ -17,9 +17,9 @@ The v0.1 construction is clean-room: no Garage-internal ontology class, hierarch
 - `dist/`: static Minerva interface, built directly from the versioned slice
 - `docs/`: decisions, coverage, and lab log
 
-## Source review checkpoint
+## Primary PDF checkpoint
 
-Release 0.0.2 adds `data/source-review.json` and a twelve-content-area `data/corpus-plan.json`. All seven source records remain search-excerpt-only; full PDF acquisition is blocked by HTTP 502. See `docs/source-review.md`.
+Release 0.0.3 preserves both uploaded PDFs under `sources/originals`, hashes and acquisition provenance in `data/sources.json`, and page text under `sources/extracted`. Printed/PDF page 90 verifies NY-7.RP.2 and a–d. The crosswalk is draft-marked and supporting only. See `docs/primary-pdf-review.md`. Acquired/extracted does not mean semantically parsed.
 
 ## Rebuild / inspect
 

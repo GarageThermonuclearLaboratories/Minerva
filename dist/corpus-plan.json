@@ -73,11 +73,11 @@
       "id": "wc:corpus-family:07",
       "label": "Mathematics",
       "source_id": "src:nysed:p12-index",
-      "acquisition": "pending-full-document",
-      "parsing": "one-standard-heading",
+      "acquisition": "two-full-documents-acquired",
+      "parsing": "one-parent-standard-and-four-subparts",
       "normalization": "not-started",
       "relationships": "source-and-parse-links-only",
-      "validation": "structural-slice-only",
+      "validation": "references-hashes-and-reviewed-wording",
       "human_review": "pending"
     },
     {

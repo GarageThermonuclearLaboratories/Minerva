@@ -46,3 +46,14 @@ Site version 6 deployed successfully at 2026-09-28T21:26:00Z (17:26 New York).
 - Validation: 7 nodes, 6 edges, 7 sources; public/source JSON equality, reference integrity, temporal precision, and JavaScript syntax passed.
 
 This post-deployment receipt is added to GitHub after publication; it was not contained in the deployed source commit.
+
+
+## 2026-09-28 · Uploaded primary PDFs · 0.0.3
+
+**Completed:** Preserved two original PDFs with SHA-256 digests; extracted text from all 184 pages; visually reviewed the full-document cover/page 90 and crosswalk pages 1–2. Added NY-7.RP.2a–d with source receipts and grade/parent links.
+**Correction:** Crosswalk footer says Draft. Primary support now comes from the full standards document, whose cover says Updated June 2019. Embedded metadata dates are not policy dates.
+**Counts:** Acquired documents 0 → 2; nodes 7 → 11; edges 6 → 14; parent standards 1; subparts 0 → 4; parsed heading expectations 2; findings 0.
+**Learned:** Page 90 explicitly supplies six Coherence arrows involving this family. They are preserved as observations pending relationship modeling, not asserted prerequisites.
+**Review:** Agent visual review of selected pages; human review pending. Exact edition applicability remains open.
+**Next:** Review source coherence semantics, expand the mathematics corpus, and acquire the other eleven content-area families.
+**Traceability:** Public release receipt points to this research commit; successful deployment is recorded after publication.

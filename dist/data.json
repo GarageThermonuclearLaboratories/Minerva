@@ -1,69 +1,130 @@
 {
-  "release": "wildcats-0.0.2-source-review",
+  "release": "wildcats-0.0.3-primary-pdfs",
   "policy_snapshot": "2026-09-28",
   "git_revision": null,
-  "scope": "One Grade 7 mathematics standard heading corroborated via search excerpts; full document review pending",
+  "scope": "NY-7.RP.2 and subparts a–d, verified against uploaded primary standards page 90; remainder of P–12 corpus extracted but not semantically parsed",
   "nodes": [
     {
       "id": "wc:grade:7",
       "type": "Grade",
       "label": "Grade 7",
       "status": "SOURCE",
-      "source_id": "src:nysed:math-2017",
-      "review_status": "full-document-review-pending"
+      "source_id": "src:nysed:math-full",
+      "review_status": "agent-visual-review; human-review-pending",
+      "source_locator": "PDF page 90; NY-7.RP grade identifier",
+      "pdf_page": 90
     },
     {
       "id": "wc:subject:mathematics",
       "type": "Subject",
       "label": "Mathematics",
       "status": "SOURCE",
-      "source_id": "src:nysed:math-2017",
-      "review_status": "full-document-review-pending"
+      "source_id": "src:nysed:math-full",
+      "review_status": "agent-visual-review; human-review-pending",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP",
+      "pdf_page": 90
     },
     {
       "id": "wc:domain:7-rp",
       "type": "Domain",
       "label": "Ratios and Proportional Relationships",
       "status": "SOURCE",
-      "source_id": "src:nysed:math-2017",
-      "review_status": "full-document-review-pending"
+      "source_id": "src:nysed:math-full",
+      "review_status": "agent-visual-review; human-review-pending",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP",
+      "pdf_page": 90
     },
     {
       "id": "wc:standard:ny-7-rp-2",
       "type": "Standard",
       "label": "NY-7.RP.2",
       "status": "SOURCE",
-      "source_id": "src:nysed:math-2017",
+      "source_id": "src:nysed:math-full",
       "original_text": "Recognize and represent proportional relationships between quantities.",
-      "source_locator": "NY-7.RP.2; PDF page unverified",
-      "review_status": "full-document-review-pending"
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP",
+      "review_status": "agent-visual-review; human-review-pending",
+      "pdf_page": 90
     },
     {
       "id": "wc:expectation:recognize-proportional",
       "type": "Expectation",
       "label": "Recognize proportional relationships",
       "status": "PARSED",
-      "source_id": "src:nysed:math-2017",
+      "source_id": "src:nysed:math-full",
       "derived_from": "wc:standard:ny-7-rp-2",
-      "review_status": "agent-decomposition; human-review-pending"
+      "review_status": "agent-visual-review; human-review-pending",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP",
+      "pdf_page": 90
     },
     {
       "id": "wc:expectation:represent-proportional",
       "type": "Expectation",
       "label": "Represent proportional relationships",
       "status": "PARSED",
-      "source_id": "src:nysed:math-2017",
+      "source_id": "src:nysed:math-full",
       "derived_from": "wc:standard:ny-7-rp-2",
-      "review_status": "agent-decomposition; human-review-pending"
+      "review_status": "agent-visual-review; human-review-pending",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP",
+      "pdf_page": 90
     },
     {
       "id": "wc:concept:proportional-relationship",
       "type": "Concept",
       "label": "Proportional relationship between quantities",
       "status": "PARSED",
-      "source_id": "src:nysed:math-2017",
+      "source_id": "src:nysed:math-full",
       "derived_from": "wc:standard:ny-7-rp-2",
-      "review_status": "agent-decomposition; human-review-pending"
+      "review_status": "agent-visual-review; human-review-pending",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP",
+      "pdf_page": 90
+    },
+    {
+      "id": "wc:standard:ny-7-rp-2a",
+      "type": "Standard",
+      "label": "NY-7.RP.2a",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-full",
+      "original_text": "Decide whether two quantities are in a proportional relationship.",
+      "parent_standard_id": "wc:standard:ny-7-rp-2",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2a",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
+    },
+    {
+      "id": "wc:standard:ny-7-rp-2b",
+      "type": "Standard",
+      "label": "NY-7.RP.2b",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-full",
+      "original_text": "Identify the constant of proportionality (unit rate) in tables, graphs, equations, diagrams, and verbal descriptions of proportional relationships.",
+      "parent_standard_id": "wc:standard:ny-7-rp-2",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2b",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
+    },
+    {
+      "id": "wc:standard:ny-7-rp-2c",
+      "type": "Standard",
+      "label": "NY-7.RP.2c",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-full",
+      "original_text": "Represent a proportional relationship using an equation.",
+      "parent_standard_id": "wc:standard:ny-7-rp-2",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2c",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
+    },
+    {
+      "id": "wc:standard:ny-7-rp-2d",
+      "type": "Standard",
+      "label": "NY-7.RP.2d",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-full",
+      "original_text": "Explain what a point (x, y) on the graph of a proportional relationship means in terms of the situation, with special attention to the points (0, 0) and (1, r) where r is the unit rate.",
+      "parent_standard_id": "wc:standard:ny-7-rp-2",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2d",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
     }
   ],
   "edges": [
@@ -73,7 +134,10 @@
       "to": "wc:domain:7-rp",
       "relation": "PART_OF",
       "status": "SOURCE",
-      "source_id": "src:nysed:math-2017"
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
     },
     {
       "id": "wc:edge:002",
@@ -81,7 +145,10 @@
       "to": "wc:grade:7",
       "relation": "EXPECTED_BY",
       "status": "SOURCE",
-      "source_id": "src:nysed:math-2017"
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
     },
     {
       "id": "wc:edge:003",
@@ -89,7 +156,10 @@
       "to": "wc:standard:ny-7-rp-2",
       "relation": "DERIVED_FROM",
       "status": "PARSED",
-      "source_id": "src:nysed:math-2017"
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
     },
     {
       "id": "wc:edge:004",
@@ -97,7 +167,10 @@
       "to": "wc:standard:ny-7-rp-2",
       "relation": "DERIVED_FROM",
       "status": "PARSED",
-      "source_id": "src:nysed:math-2017"
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
     },
     {
       "id": "wc:edge:005",
@@ -105,7 +178,10 @@
       "to": "wc:concept:proportional-relationship",
       "relation": "USES_CONCEPT",
       "status": "PARSED",
-      "source_id": "src:nysed:math-2017"
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
     },
     {
       "id": "wc:edge:006",
@@ -113,7 +189,98 @@
       "to": "wc:concept:proportional-relationship",
       "relation": "USES_CONCEPT",
       "status": "PARSED",
-      "source_id": "src:nysed:math-2017"
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
+    },
+    {
+      "id": "wc:edge:subpart-2a",
+      "from": "wc:standard:ny-7-rp-2a",
+      "to": "wc:standard:ny-7-rp-2",
+      "relation": "PART_OF",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; NY-7.RP.2a",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
+    },
+    {
+      "id": "wc:edge:grade-2a",
+      "from": "wc:standard:ny-7-rp-2a",
+      "to": "wc:grade:7",
+      "relation": "EXPECTED_BY",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; NY-7.RP",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
+    },
+    {
+      "id": "wc:edge:subpart-2b",
+      "from": "wc:standard:ny-7-rp-2b",
+      "to": "wc:standard:ny-7-rp-2",
+      "relation": "PART_OF",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; NY-7.RP.2b",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
+    },
+    {
+      "id": "wc:edge:grade-2b",
+      "from": "wc:standard:ny-7-rp-2b",
+      "to": "wc:grade:7",
+      "relation": "EXPECTED_BY",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; NY-7.RP",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
+    },
+    {
+      "id": "wc:edge:subpart-2c",
+      "from": "wc:standard:ny-7-rp-2c",
+      "to": "wc:standard:ny-7-rp-2",
+      "relation": "PART_OF",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; NY-7.RP.2c",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
+    },
+    {
+      "id": "wc:edge:grade-2c",
+      "from": "wc:standard:ny-7-rp-2c",
+      "to": "wc:grade:7",
+      "relation": "EXPECTED_BY",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; NY-7.RP",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
+    },
+    {
+      "id": "wc:edge:subpart-2d",
+      "from": "wc:standard:ny-7-rp-2d",
+      "to": "wc:standard:ny-7-rp-2",
+      "relation": "PART_OF",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; NY-7.RP.2d",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
+    },
+    {
+      "id": "wc:edge:grade-2d",
+      "from": "wc:standard:ny-7-rp-2d",
+      "to": "wc:grade:7",
+      "relation": "EXPECTED_BY",
+      "status": "SOURCE",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; NY-7.RP",
+      "pdf_page": 90,
+      "review_status": "agent-visual-review; human-review-pending"
     }
   ],
   "students": [
@@ -122,7 +289,11 @@
       "name": "Matthew",
       "state": "EXPECTED",
       "grade7_standard_ids": [
-        "wc:standard:ny-7-rp-2"
+        "wc:standard:ny-7-rp-2",
+        "wc:standard:ny-7-rp-2a",
+        "wc:standard:ny-7-rp-2b",
+        "wc:standard:ny-7-rp-2c",
+        "wc:standard:ny-7-rp-2d"
       ]
     },
     {
@@ -130,7 +301,11 @@
       "name": "Eva",
       "state": "EXPECTED",
       "grade7_standard_ids": [
-        "wc:standard:ny-7-rp-2"
+        "wc:standard:ny-7-rp-2",
+        "wc:standard:ny-7-rp-2a",
+        "wc:standard:ny-7-rp-2b",
+        "wc:standard:ny-7-rp-2c",
+        "wc:standard:ny-7-rp-2d"
       ]
     }
   ],
@@ -140,11 +315,11 @@
   "unresolved": [
     {
       "id": "wc:question:001",
-      "text": "Acquire and archive the Grade 7 PDF; verify page, revision, and all NY-7.RP.2 subparts. Family implementation timeline is recorded separately from document verification."
+      "text": "PDF acquisition and NY-7.RP.2 page/subpart verification are complete. Independently verify snapshot applicability of the uploaded edition; human semantic review remains pending."
     },
     {
       "id": "wc:question:002",
-      "text": "Acquire documents and verify effective dates across the twelve NYSED content areas now listed in the corpus plan. The document denominator remains unknown."
+      "text": "Mathematics PDFs are acquired and text extracted. Parse the wider mathematics corpus and acquire documents across the other eleven content areas; full document denominator remains unknown."
     },
     {
       "id": "wc:question:003",

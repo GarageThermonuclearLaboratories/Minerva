@@ -28,6 +28,20 @@ review = json.loads((root / 'data/source-review.json').read_text())
 assert len({f['id'] for f in plan['families']}) == len(plan['families'])
 assert all(f['source_id'] in source_ids for f in plan['families'])
 assert all(c['source_id'] in source_ids for c in review['claims'])
-assert all(s['acquisition_status'] != 'full-document-acquired' for s in sources['sources'])
+import hashlib
+for source in sources['sources']:
+    if source['acquisition_status'] == 'full-document-acquired':
+        content = (root / source['archive_path']).read_bytes()
+        assert hashlib.sha256(content).hexdigest() == source['sha256']
+        assert len(content) == source['bytes']
+        extracted = json.loads((root / 'sources/extracted' / (Path(source['archive_path']).stem + '.pages.json')).read_text())
+        assert len(extracted['pages']) == source['page_count']
+        assert extracted['sha256'] == source['sha256']
+full_text = json.loads((root / 'sources/extracted/nys-next-generation-mathematics-p-12-standards.pages.json').read_text())
+page90 = ' '.join(full_text['pages'][89]['text'].split())
+for item in data['nodes']:
+    if item.get('original_text'):
+        assert ' '.join(item['original_text'].split()) in page90, item['id']
+assert len([n for n in data['nodes'] if n.get('parent_standard_id') == 'wc:standard:ny-7-rp-2']) == 4
 assert all(s['effective_date'] is None for s in sources['sources']), 'Do not invent exact effective days from month/season evidence'
 print('Valid: source review and corpus inventory match public data; temporal precision preserved')

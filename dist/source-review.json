@@ -1,8 +1,8 @@
 {
-  "id": "wc:evidence:2026-09-28-source-review",
+  "id": "wc:evidence:2026-09-28-primary-pdfs",
   "retrieved_date": "2026-09-28",
-  "method": "NYSED search-index extracts; source PDFs were not acquired",
-  "review_status": "agent-reviewed; human review pending",
+  "method": "Uploaded PDF bytes, page text extraction, and agent visual review of full-document cover/page 90 and crosswalk pages 1–2",
+  "review_status": "selected-pages-agent-reviewed; human-review-pending",
   "claims": [
     {
       "id": "wc:policy-evidence:math-adoption",
@@ -29,7 +29,7 @@
       "date_precision": "season"
     }
   ],
-  "interpretation": "This supports the family implementation timeline. It does not establish a PDF revision, an exact legal effective day, or complete applicability for every standard.",
+  "interpretation": "Previously recorded guidance dates remain search-excerpt evidence. The uploaded full standards cover identifies a June 2019 update; PDF metadata timestamps are stored separately. Page 90 wording and subparts are visually verified.",
   "failed_acquisitions": [
     {
       "url": "https://www.nysed.gov/sites/default/files/programs/curriculum-instruction/nys-math-standards-grade-7-crosswalk.pdf",
@@ -49,9 +49,65 @@
     }
   ],
   "next": [
-    "Acquire and hash authoritative PDF bytes",
-    "Visually confirm NY-7.RP.2 page and subparts",
-    "Verify revision and applicability against snapshot",
-    "Expand parsing after source review"
+    "Verify applicability of uploaded edition against policy snapshot",
+    "Review definitions of source coherence links before importing them as graph relations",
+    "Expand mathematics parsing beyond NY-7.RP.2",
+    "Acquire other content-area standards"
+  ],
+  "resolved": [
+    "Both PDFs acquired from user and SHA-256 hashed",
+    "Full standards cover revision label inspected",
+    "NY-7.RP.2 and a–d verified on printed/PDF page 90",
+    "Crosswalk pages 1–2 corroborated; Draft footer recorded"
+  ],
+  "coherence_observations": [
+    {
+      "source_standard": "NY-6.RP.3a",
+      "target_standard": "NY-7.RP.2b",
+      "source_id": "src:nysed:math-full",
+      "pdf_page": 90,
+      "source_label": "Coherence",
+      "review_status": "arrow visually reviewed; target text and relationship semantics not yet modeled"
+    },
+    {
+      "source_standard": "NY-7.RP.2b",
+      "target_standard": "NY-8.EE.6",
+      "source_id": "src:nysed:math-full",
+      "pdf_page": 90,
+      "source_label": "Coherence",
+      "review_status": "arrow visually reviewed; target text and relationship semantics not yet modeled"
+    },
+    {
+      "source_standard": "NY-7.RP.2b",
+      "target_standard": "NY-8.F.2",
+      "source_id": "src:nysed:math-full",
+      "pdf_page": 90,
+      "source_label": "Coherence",
+      "review_status": "arrow visually reviewed; target text and relationship semantics not yet modeled"
+    },
+    {
+      "source_standard": "NY-7.RP.2b",
+      "target_standard": "NY-8.F.4",
+      "source_id": "src:nysed:math-full",
+      "pdf_page": 90,
+      "source_label": "Coherence",
+      "review_status": "arrow visually reviewed; target text and relationship semantics not yet modeled"
+    },
+    {
+      "source_standard": "NY-7.RP.2c",
+      "target_standard": "NY-8.EE.5",
+      "source_id": "src:nysed:math-full",
+      "pdf_page": 90,
+      "source_label": "Coherence",
+      "review_status": "arrow visually reviewed; target text and relationship semantics not yet modeled"
+    },
+    {
+      "source_standard": "NY-7.RP.2d",
+      "target_standard": "NY-8.F.5",
+      "source_id": "src:nysed:math-full",
+      "pdf_page": 90,
+      "source_label": "Coherence",
+      "review_status": "arrow visually reviewed; target text and relationship semantics not yet modeled"
+    }
   ]
 }
