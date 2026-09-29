@@ -1,0 +1,32 @@
+{
+  "release": "wildcats-0.0.4-monday-candidate",
+  "interface_revision": "0.0.4",
+  "checkpoint": "Monday foundation plus September 29 public interface revision",
+  "research_commit": "0b28c06f51c3d9ce3916ac0c754f7461414b5e4b",
+  "research_tree": "60dc565d93431f8f53a1b2f88206652b1f817a67",
+  "site_source_commit": "0330ad62646237358200f9e5ac2098324ee093ba",
+  "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+  "saved_version_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_0cda27cb1c28819193218afc4654cbe5",
+  "site_version_number": 8,
+  "deployment_id": "appgdep_6abb721c54548191b6ad39ba7e979ad1",
+  "deployment_status": "succeeded",
+  "published_at": "2026-09-29T08:09:06.659437+00:00",
+  "url": "https://wildcats-minerva.jaredwillis.chatgpt.site",
+  "audience": "public",
+  "archive_sha256": "sha256:ec381a710bdda26265cbfa3d103440101f7da6899425df939b0093b59adb5cb2",
+  "record_kind": "post-deployment-receipt; not part of the already-published bundle",
+  "verification": {
+    "source_integrity": "passed",
+    "ingestion_tests": 7,
+    "dom_interaction_checks": "passed; eight views, fifteen Receipts, bounded graph, student lens, thirteen grades for both avatars, matrix and keyboard controls",
+    "independent_audit": "M7 bounded foundation pass; subsequent interface pass builder-reviewed",
+    "rendered_browser_qa": "not completed; unavailable in current environment"
+  },
+  "remaining": [
+    "Human semantic review",
+    "Exact edition and cohort applicability",
+    "Broader curriculum acquisition and modeling",
+    "Generalized enforcement",
+    "Rendered browser visual/accessibility QA"
+  ]
+}

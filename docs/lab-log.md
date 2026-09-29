@@ -1,5 +1,13 @@
 # Lab Log
 
+## 2026-09-29 · Successful public checkpoint · Monday M8
+
+**Published:** Site version 8 at https://wildcats-minerva.jaredwillis.chatgpt.site; public audience preserved. Native deployment succeeded at `2026-09-29T08:09:06.659437+00:00` (04:09 America/New_York).
+**Research state:** GitHub `0b28c06f51c3d9ce3916ac0c754f7461414b5e4b`, tree `60dc565d93431f8f53a1b2f88206652b1f817a67`. This tree exactly matches local research snapshot `9576095`. The packaged Site adds the matching GitHub pointer in its release receipt.
+**Site state:** source `0330ad62646237358200f9e5ac2098324ee093ba`; saved version `appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_0cda27cb1c28819193218afc4654cbe5`; deployment `appgdep_6abb721c54548191b6ad39ba7e979ad1`.
+**Receipt:** [Machine-readable publication record](../data/publications/monday-0.0.4.json). This log entry and checklist closure are post-deployment records, not part of the already-published archive. The bundle's `prepared-for-publication` value describes its packaging-time state; this record confirms the subsequent outcome.
+**Closure:** M1–M8 complete for the defined Monday foundation scope. No broad K–12 coverage, human semantic audit, exact cohort applicability, or rendered-browser QA pass is implied. Tuesday priorities are primary ELA/Science acquisition, durable policy evidence, and reviewed semantic expansion; see the checklist.
+
 ## 2026-09-29 · Public interface revision · v0.0.4
 
 **Changed:** Applied Willis's consolidated brief to the audited Monday candidate. Added an interactive front-door trace and bounded graph, contextual fictional-student lens, collapsed/expandable Receipts, explicit unmapped grades, a twelve-area matrix, a status legend and district methodology, actual since-v0.0.3 counts, and dated/versioned public corrections. Preserved the existing visual system.

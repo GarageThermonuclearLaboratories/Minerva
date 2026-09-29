@@ -1,5 +1,7 @@
 {
   "release": "wildcats-0.0.4-monday-candidate",
-  "research_commit": null,
-  "publication_status": "pending-M8"
+  "research_commit": "0b28c06f51c3d9ce3916ac0c754f7461414b5e4b",
+  "publication_status": "prepared-for-publication",
+  "interface_revision": "0.0.4",
+  "audit_record": "data/reviews/monday-m7.json"
 }
