@@ -1,5 +1,12 @@
 # Lab Log
 
+## 2026-09-29 · Tuesday public deployment confirmed
+
+**Published:** Site version 9, release `wildcats-0.0.5-tuesday-acceptance`, at https://wildcats-minerva.jaredwillis.chatgpt.site. Public audience preserved. Native deployment succeeded at `2026-09-29T23:57:34.438601+00:00` (19:57 New York).
+**Source:** Site `d99ba6a628a2f9cc9f072d9a0a53060dedd42e4a`; GitHub research `c5940546fc167f27d2cbec3c39abf2aefd483779`; matching research tree `e83f52b1cceaa3f65e548ffcf7119df06cc5b335`. The Site source additionally pins that GitHub research commit in its release receipt.
+**Deployment:** `appgdep_6abc5064df608191ac282517df159ff4`; exact saved-version ID, provider archive metadata, and local gzip digest are in [the publication record](../data/publications/tuesday-0.0.5.json).
+**Result:** Acceptance package published; Tuesday remains open. Tests and known limitations appear in the next entry and [acceptance report](tuesday-acceptance.md). This confirmation is recorded after deployment and is not part of the already-published archive.
+
 ## 2026-09-29 · Tuesday acceptance safeguards · v0.0.5
 
 **Completed:** Tuesday package 1: bounded relationship/provenance acceptance, eligible expected-learning projection, source-reviewed structured qualifier/annotation regression contract, explicit heading action fields and Concept parsing rationale. Coverage unchanged: one family, six expectations, 15 nodes, 22 edges, zero findings.

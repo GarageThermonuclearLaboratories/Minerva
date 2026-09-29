@@ -1,6 +1,6 @@
 {
   "release": "wildcats-0.0.5-tuesday-acceptance",
-  "research_commit": null,
+  "research_commit": "c5940546fc167f27d2cbec3c39abf2aefd483779",
   "publication_status": "prepared-for-publication",
   "interface_revision": "0.0.5",
   "audit_record": "data/reviews/monday-m7.json",

@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-29",
+  "release": "wildcats-0.0.5-tuesday-acceptance",
+  "scope": "Tuesday package 1 only; day remains open",
+  "research_commit": "c5940546fc167f27d2cbec3c39abf2aefd483779",
+  "research_tree": "e83f52b1cceaa3f65e548ffcf7119df06cc5b335",
+  "site_source_commit": "d99ba6a628a2f9cc9f072d9a0a53060dedd42e4a",
+  "saved_version": {
+    "id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_a0ea986bd52c8191aebaabeef4ccad25",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "version_number": 9,
+    "source": {
+      "commit_sha": "d99ba6a628a2f9cc9f072d9a0a53060dedd42e4a"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000e2f48230b813b08695540e5f",
+      "content_hash": "sha256:4995d3ea2f609d3f3c93f8f42dc065b9b5b262693c17105e585f893f10e2963e",
+      "size_bytes": 727040,
+      "file_count": 16
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6abc5064df608191ac282517df159ff4",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "title": "Wildcats / Minerva",
+    "version_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_a0ea986bd52c8191aebaabeef4ccad25",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://wildcats-minerva.jaredwillis.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6abac050d4cc8191b9d7081e9d8cb8dd",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-29T23:57:34.438601+00:00"
+  },
+  "local_archive_sha256": "b3dc90a105b224dd39e92ace9f33fa3933fe99d3850546f46b5cc6c1b27a6698",
+  "local_archive_hash_representation": "gzip archive bytes; provider hash is separately reported for its stored tar representation",
+  "validation": {
+    "acceptance_tests": 19,
+    "ingestion_tests": 7,
+    "repository_validator": "passed",
+    "receipt_and_projection_tests": "passed",
+    "dom_regression": "passed",
+    "syntax_and_whitespace": "passed",
+    "source_page_visual_review": "archived NYSED full mathematics page 90"
+  },
+  "review": "Builder only; no new independent or human audit",
+  "coverage": {
+    "registered_pdfs": 2,
+    "standard_families": 1,
+    "parsed_expectations": 6,
+    "nodes": 15,
+    "edges": 22,
+    "ontology_findings": 0
+  },
+  "failure": "Initial obsolete release-label assertion corrected; subsequent tests passed.",
+  "next": [
+    "Reconcile current review/publication metadata without rewriting history",
+    "Repair remaining loading, contextual-lens, and Receipt interface defects; perform rendered QA",
+    "Register the already-uploaded source batch, preserve policy evidence, then review one new semantic family"
+  ],
+  "record_timing": "Post-deployment record; not claimed to be inside the deployed archive"
+}
