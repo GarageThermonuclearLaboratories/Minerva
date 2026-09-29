@@ -31,9 +31,19 @@ $('#receipt').scrollIntoView({behavior:'smooth',block:'nearest'});
 function esc(x){return String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 const row=(id,detail)=>`<button class="row clickable" data-node="${id}"><span><strong>${esc(node(id).label)}</strong><small>${esc(detail)}</small></span><span class="tag ${node(id).status.toLowerCase()}">${node(id).status}</span></button>`;
 const gradeLabel=g=>g===0?'Kindergarten':'Grade '+g;
+function claimEligible(item){return !!item&&['SOURCE','PARSED'].includes(item.status);}
+function activeStandard(n,seen=new Set()){
+if(!claimEligible(n)||seen.has(n.id))return false;
+if(!n.parent_standard_id)return true;
+const link=model.edges.some(e=>e.relation==='PART_OF'&&e.from===n.id&&e.to===n.parent_standard_id&&claimEligible(e));
+return link&&activeStandard(node(n.parent_standard_id),new Set([...seen,n.id]));
+}
 function standardsForGrade(g){
-const ids=new Set(model.edges.filter(e=>e.relation==='ASSIGNED_TO_GRADE'&&e.to==='wc:grade:'+g).map(e=>e.from));
-return model.nodes.filter(n=>n.type==='Standard'&&ids.has(n.id));
+const ids=new Set(model.edges.filter(e=>e.relation==='ASSIGNED_TO_GRADE'&&e.to==='wc:grade:'+g&&claimEligible(e)&&claimEligible(node(e.to))).map(e=>e.from));
+return model.nodes.filter(n=>n.type==='Standard'&&ids.has(n.id)&&activeStandard(n));
+}
+function expectationsForStandard(id){
+return model.nodes.filter(n=>n.type==='Expectation'&&n.derived_from===id&&claimEligible(n)&&activeStandard(node(id))&&model.edges.some(e=>e.relation==='DERIVED_FROM'&&e.from===n.id&&e.to===id&&claimEligible(e)));
 }
 function selectStage(id){
 const stage=journey.stages.find(s=>s.id===id);if(!stage)return;
@@ -57,7 +67,7 @@ ${transition?`<h3>Policy evidence still needs review</h3><p>There is no diploma 
 `<label for="journey-grade">Choose a grade in this stage</label><select id="journey-grade">${stage.grades.map(g=>`<option value="${g}" ${g===grade?'selected':''}>${gradeLabel(g)}</option>`).join('')}</select>
 <h3>${standards.length?'Partially mapped: one mathematics family':'Not yet mapped'}</h3>
 <p>${standards.length?'The current trace contains one parent standard and four subparts assigned to Grade 7 in the source. Exact edition applicability to the policy snapshot remains unresolved.':esc(journey.missing_data_message)}</p>
-${standards.map(n=>row(n.id,n.original_text)+model.nodes.filter(x=>x.type==='Expectation'&&x.derived_from===n.id).map(x=>row(x.id,'Parsed expectation · source receipt')).join('')).join('')}`}
+${standards.map(n=>row(n.id,n.original_text)+expectationsForStandard(n.id).map(x=>row(x.id,'Parsed expectation · source receipt')).join('')).join('')}`}
 </div><p class="journey-context">Policy snapshot: ${journey.policy_snapshot}. This is a reference pathway, not a personal school history. Moving between stages does not establish mastery, cumulative retention, or graduation eligibility.</p>`;
 }
 if(view==='workbench')html=`<div class="section-head"><h2>Source review checkpoint</h2><span>${esc(model.release)}</span></div><div class="metric-grid">${[[manifest.sources.length,'source records identified'],[manifest.sources.filter(x=>x.acquisition_status==='full-document-acquired').length,'full source documents acquired'],[corpus.families.length,'content areas queued'],['5','source standard records (parent + subparts)'],[model.nodes.filter(n=>n.type==='Expectation').length,'expectations parsed'],['0','reviewed findings']].map(([n,l])=>`<div class="metric"><b>${n}</b><span>${l}</span></div>`).join('')}</div><div class="panel" style="margin-top:18px"><h3>Evidence and coverage</h3><p>Two uploaded mathematics PDFs are archived with hashes. All 184 pages have text extracts; the cover and relevant Grade 7 pages received visual review. Five source standard records and six parsed expectations represent the bounded family. Other source records still rely on search extracts. Human semantic review and full-corpus parsing remain pending.</p><h3>Mathematics policy timeline</h3><p>Prior search excerpts suggested adoption in September 2017, full implementation in September 2022, and aligned Grades 3–8 assessments in spring 2023. These date observations are provisional: their exact supporting excerpts were not preserved, and full-page verification is pending. The uploaded full document says Updated June 2019; exact edition applicability remains under review.</p><a href="https://www.nysed.gov/standards-instruction/mathematics-guidance-resources" target="_blank" rel="noopener">Inspect NYSED guidance ↗</a></div><div class="section-head"><h2>Content-area acquisition queue</h2><span>12 identified; document review pending</span></div>${corpus.families.map(f=>`<div class="panel" style="margin-bottom:10px"><h3>${esc(f.label)}</h3><p>Acquisition: ${esc(f.acquisition)} · Parsing: ${esc(f.parsing)}<br>Normalization: ${esc(f.normalization)} · Relationships: ${esc(f.relationships)}<br>Validation: ${esc(f.validation)} · Human review: ${esc(f.human_review)}</p></div>`).join('')}<p><a href="https://www.nysed.gov/standards-instruction/nys-p-12-learning-standards-content-area" target="_blank" rel="noopener">NYSED content-area inventory ↗</a></p>`;

@@ -215,3 +215,8 @@ A reader should now be able to answer:
 - Is Monday or v0.1 complete because this document exists? No; the [closure checklist](monday-closure-checklist.md) and release gates determine completion.
 
 Prepared through builder review of the repository and established project requirements. No independent or human audit is claimed by this document.
+
+
+## September 29 implementation amendment · Tuesday package 1
+
+`validate.py` now invokes `acceptance.py` for bounded relation/endpoint, provenance, derivation, parsed-field, and avatar-export checks. Expected-learning projection excludes rejected/unresolved records and requires eligible assignment, parent, and derivation links. The original implementation-gap table above is a historical baseline. General inference validation, separate derivation/disposition fields, and applicability resolution remain open. The JSON Schema is still descriptive and skeletal, not the enforcement mechanism. See [Tuesday acceptance checkpoint](tuesday-acceptance.md) for tested scope and remaining limits.

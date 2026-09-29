@@ -1,5 +1,14 @@
 # Lab Log
 
+## 2026-09-29 · Tuesday acceptance safeguards · v0.0.5
+
+**Completed:** Tuesday package 1: bounded relationship/provenance acceptance, eligible expected-learning projection, source-reviewed structured qualifier/annotation regression contract, explicit heading action fields and Concept parsing rationale. Coverage unchanged: one family, six expectations, 15 nodes, 22 edges, zero findings.
+**Evidence:** Reinspected archived NYSED full mathematics page 90. No new policy date, equivalence, prerequisite, mastery claim, or Garage-internal ontology input.
+**Validation:** 19 acceptance tests, seven ingestion tests, main validator, structured Receipt/projection checks, existing DOM suite, syntax and diff checks passed. An initial stale release-label assertion failed, then passed after updating the Tuesday label.
+**Limits:** Builder review only. M7 remains a historical Monday audit. Review reconciliation, interface defects, rendered/mobile/accessibility QA, uploaded-source registration, and semantic expansion remain open. The reported 22 uploaded PDFs are not yet incorporated into the two-document repository intake. Tuesday is not closed.
+**Publication:** Prepared for public publication; actual version, source commit, GitHub history, and deployment outcome will be recorded below after success.
+**Details and next:** [Acceptance report](tuesday-acceptance.md). Next package is current review/publication-state reconciliation.
+
 ## 2026-09-29 · Successful public checkpoint · Monday M8
 
 **Published:** Site version 8 at https://wildcats-minerva.jaredwillis.chatgpt.site; public audience preserved. Native deployment succeeded at `2026-09-29T08:09:06.659437+00:00` (04:09 America/New_York).

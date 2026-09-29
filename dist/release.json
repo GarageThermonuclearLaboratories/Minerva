@@ -1,7 +1,8 @@
 {
-  "release": "wildcats-0.0.4-monday-candidate",
-  "research_commit": "0b28c06f51c3d9ce3916ac0c754f7461414b5e4b",
+  "release": "wildcats-0.0.5-tuesday-acceptance",
+  "research_commit": null,
   "publication_status": "prepared-for-publication",
-  "interface_revision": "0.0.4",
-  "audit_record": "data/reviews/monday-m7.json"
+  "interface_revision": "0.0.5",
+  "audit_record": "data/reviews/monday-m7.json",
+  "review_scope": "Tuesday builder acceptance review only; M7 record applies to the Monday baseline."
 }

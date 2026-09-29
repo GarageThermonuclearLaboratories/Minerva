@@ -1,0 +1,81 @@
+{
+  "scope": "Reviewed regression contract for NY-7.RP.2 only, sourced from archived NYSED full mathematics PDF page 90. Changing this contract requires source review; it is not a general semantic oracle.",
+  "source_id": "src:nysed:math-full",
+  "pdf_page": 90,
+  "expectations": {
+    "wc:expectation:recognize-proportional": {
+      "derived_from": "wc:standard:ny-7-rp-2",
+      "action": "Recognize",
+      "object": "proportional relationships between quantities",
+      "qualifiers": []
+    },
+    "wc:expectation:represent-proportional": {
+      "derived_from": "wc:standard:ny-7-rp-2",
+      "action": "Represent",
+      "object": "proportional relationships between quantities",
+      "qualifiers": []
+    },
+    "wc:expectation:decide-proportional": {
+      "derived_from": "wc:standard:ny-7-rp-2a",
+      "action": "Decide",
+      "object": "whether two quantities are in a proportional relationship",
+      "qualifiers": []
+    },
+    "wc:expectation:identify-unit-rate": {
+      "derived_from": "wc:standard:ny-7-rp-2b",
+      "action": "Identify",
+      "object": "constant of proportionality (unit rate)",
+      "qualifiers": [
+        "in tables",
+        "in graphs",
+        "in equations",
+        "in diagrams",
+        "in verbal descriptions of proportional relationships"
+      ]
+    },
+    "wc:expectation:represent-proportional-equation": {
+      "derived_from": "wc:standard:ny-7-rp-2c",
+      "action": "Represent",
+      "object": "a proportional relationship",
+      "qualifiers": [
+        "using an equation"
+      ]
+    },
+    "wc:expectation:explain-proportional-point": {
+      "derived_from": "wc:standard:ny-7-rp-2d",
+      "action": "Explain",
+      "object": "what a point (x, y) on the graph of a proportional relationship means",
+      "qualifiers": [
+        "in terms of the situation",
+        "special attention to (0, 0) and (1, r)",
+        "r is the unit rate"
+      ]
+    }
+  },
+  "annotations": {
+    "wc:annotation:7-rp-2-modeling": {
+      "kind": "shared-practice-note",
+      "original_text": "Proportional relationships (NY-7.RP.2 & 3) present opportunities for modeling (MP.4).",
+      "interpretation": "A shared opportunity note for standards 2 and 3; no separate MP.4 or prerequisite edge is asserted.",
+      "source_id": "src:nysed:math-full",
+      "pdf_page": 90,
+      "source_locator": "PDF/printed page 90; Connecting the Standards for Mathematical Practice to Mathematical Content"
+    },
+    "wc:annotation:7-rp-2a-strategies": {
+      "kind": "note",
+      "original_text": "Strategies include but are not limited to the following: testing for equivalent ratios in a table and/or graphing on a coordinate plane and observing whether the graph is a straight line through the origin.",
+      "interpretation": "Non-exhaustive strategies; does not require both strategies on every task.",
+      "source_id": "src:nysed:math-full",
+      "pdf_page": 90,
+      "source_locator": "PDF/printed page 90; note beside NY-7.RP.2a"
+    },
+    "wc:annotation:7-rp-2c-example": {
+      "kind": "example",
+      "original_text": "If total cost t is proportional to the number n of items purchased at a constant price p, the relationship between the total cost and the number of items can be expressed as t = pn.",
+      "interpretation": "Illustrative cost equation; t, p, and n are example variables, not mandated names for every task.",
+      "source_id": "src:nysed:math-full",
+      "pdf_page": 90,
+      "source_locator": "PDF/printed page 90; example beside NY-7.RP.2c"
+    }
+  }
+}

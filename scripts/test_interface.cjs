@@ -19,7 +19,7 @@ async function setup(lateInterface=false){
   const {dom,w,d,errors}=await setup();
   const model=JSON.parse(read('data/ontology.json'));
   assert.ok(d.querySelector('#receipt').hidden,'Receipt starts collapsed');
-  assert.equal(d.querySelector('#release-label').textContent,'v0.0.4 · Monday checkpoint');
+  assert.equal(d.querySelector('#release-label').textContent,'v0.0.5 · Tuesday safeguards');
   assert.ok(d.querySelector('.trace-preview [data-node]'));
   d.querySelector('.trace-parsed [data-node]').click();
   assert.ok(!d.querySelector('#receipt').hidden);
@@ -59,7 +59,7 @@ async function setup(lateInterface=false){
   const toggle=d.querySelector('[data-family]'),detail=d.getElementById(toggle.getAttribute('aria-controls'));
   assert.ok(detail.hidden);toggle.click();assert.ok(!detail.hidden);toggle.click();assert.ok(detail.hidden);
   assert.ok(!d.querySelector('#epistemic-notice').open);
-  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,4);
+  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,5);
   assert.ok(d.querySelector('#view').textContent.includes('PROVISIONAL'));
   assert.deepEqual(errors,[]);dom.window.close();
   const late=await setup(true);assert.ok(late.d.querySelector('.trace-preview'));assert.deepEqual(late.errors,[]);late.dom.window.close();

@@ -4,6 +4,8 @@ from pathlib import Path
 root = Path(__file__).resolve().parents[1]
 data = json.loads((root / 'data/ontology.json').read_text())
 sources = json.loads((root / 'data/sources.json').read_text())
+from acceptance import validate_claims
+validate_claims(data, sources)
 site_data = json.loads((root / 'dist/data.json').read_text())
 assert data == site_data, 'Published data differs from ontology source'
 assert data['policy_snapshot'] == sources['snapshot_date'] == '2026-09-28'

@@ -52,3 +52,32 @@ for(const stage of context.input.journey.stages){
 assert.ok(element('#view').innerHTML.includes('no diploma decision'));
 assert.ok(!element('#view').innerHTML.includes('data-node='));
 console.log('Verified all 13 grades for both avatars, five stage selections, and transition abstention');
+// A retained source quote must not mask missing parsed fields.
+const contract=read('data/acceptance/ny-7-rp-2.json');
+for(const [id, fields] of Object.entries(contract.expectations)){
+  const n=context.input.model.nodes.find(n=>n.id===id);
+  for(const field of ['derived_from','action','object','qualifiers']) assert.deepEqual(n[field],fields[field],id+': '+field);
+  vm.runInContext(`showReceipt(${JSON.stringify(id)})`,context);
+  const parsed=element('#receipt-body').innerHTML.match(/<dl><dt>Action<\/dt>([\s\S]*?)<\/dl>/)?.[1];
+  assert.ok(parsed,id+': structured parsed fields absent');
+  for(const value of [fields.action,fields.object,...fields.qualifiers]){
+    context.value=value;assert.ok(parsed.includes(vm.runInContext('esc(value)',context)),id+': parsed field absent');
+  }
+}
+const baseline=JSON.stringify(context.input.model);
+function reset(){Object.assign(context.input.model,JSON.parse(baseline));}
+for(const status of ['REJECTED','CONTESTED','PROVISIONAL','NORMALIZED','INFERRED']){
+  reset();context.input.model.nodes.find(n=>n.id==='wc:standard:ny-7-rp-2').status=status;
+  assert.equal(vm.runInContext('standardsForGrade(7).length',context),0,status+' parent excludes subparts');
+  vm.runInContext("view='wildcats';grade=7;transition=false;render()",context);
+  assert.ok(!element('#view').innerHTML.includes('data-node='));
+}
+reset();context.input.model.edges.find(e=>e.id==='wc:edge:grade-2b').status='REJECTED';
+assert.ok(!vm.runInContext('standardsForGrade(7).map(n=>n.id)',context).includes('wc:standard:ny-7-rp-2b'));
+reset();context.input.model.nodes.find(n=>n.id==='wc:expectation:identify-unit-rate').status='CONTESTED';
+vm.runInContext("view='wildcats';render()",context);
+assert.ok(!element('#view').innerHTML.includes('data-node="wc:expectation:identify-unit-rate"'));
+reset();context.input.model.edges.find(e=>e.id==='wc:edge:parse-2b').status='REJECTED';
+assert.equal(vm.runInContext("expectationsForStandard('wc:standard:ny-7-rp-2b').length",context),0);
+reset();
+console.log('Acceptance UI checks passed: structured fields independent of quotes; unsupported nodes, assignments, derivations, and rejected parent subparts excluded.');
