@@ -1,0 +1,89 @@
+{
+  "pipeline_version": "1",
+  "policy_snapshot": "2026-09-28",
+  "documents": [
+    {
+      "source_id": "src:nysed:math-2017",
+      "sha256": "cd342d1f15e9c3abdaad47ee12fd85adecb6b3bc3298115810f4c363af046021",
+      "archive_path": "sources/originals/nys-math-standards-grade-7-crosswalk.pdf",
+      "page_count": 13,
+      "selected_pages": [
+        1,
+        2
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1,
+          2
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/cd342d1f15e9c3abdaad47ee12fd85adecb6b3bc3298115810f4c363af046021/5d67ba45146ba24c/pages.json",
+          "sha256": "ecd95c36ac2883ce78bc7d16013e3f42e1e5cf8b27e6100da6ee70b5affa7bb9"
+        },
+        {
+          "path": "sources/processed/cd342d1f15e9c3abdaad47ee12fd85adecb6b3bc3298115810f4c363af046021/5d67ba45146ba24c/metadata.json",
+          "sha256": "ceface9720621fa6a9c2a9776435c5c621211cf46a01b10a7208dcd6b7e5bbfc"
+        },
+        {
+          "path": "sources/processed/cd342d1f15e9c3abdaad47ee12fd85adecb6b3bc3298115810f4c363af046021/5d67ba45146ba24c/review-queue.json",
+          "sha256": "0af5665d33d38422c9e1439dcc531cb760f524230493131dc9ea8944b6bd7031"
+        },
+        {
+          "path": "sources/processed/cd342d1f15e9c3abdaad47ee12fd85adecb6b3bc3298115810f4c363af046021/5d67ba45146ba24c/page-1.png",
+          "sha256": "2fd3ed015dbb0be38b10aabcb73676f0af8483733a83b3174fe8483014de29d7"
+        },
+        {
+          "path": "sources/processed/cd342d1f15e9c3abdaad47ee12fd85adecb6b3bc3298115810f4c363af046021/5d67ba45146ba24c/page-2.png",
+          "sha256": "4246ef1fec285a25d8989d53cc3db429569f7a452505acf4d283e56e81e24aeb"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:math-full",
+      "sha256": "1bc23fd7e8793c22ba2d398be43411f570b043e4a4da930662c22b81cd5def95",
+      "archive_path": "sources/originals/nys-next-generation-mathematics-p-12-standards.pdf",
+      "page_count": 171,
+      "selected_pages": [
+        1,
+        90
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1,
+          90
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/1bc23fd7e8793c22ba2d398be43411f570b043e4a4da930662c22b81cd5def95/a6b8b53b6f73816f/pages.json",
+          "sha256": "d4484d882715da7caea6ca52ca4b2f20f0c79a5cb7c7db2998fc4294d9e79aa9"
+        },
+        {
+          "path": "sources/processed/1bc23fd7e8793c22ba2d398be43411f570b043e4a4da930662c22b81cd5def95/a6b8b53b6f73816f/metadata.json",
+          "sha256": "b4173a5140d4f0801dd76416190f10e5c9a6f7fc17cd3ba67617ef72d7ebded0"
+        },
+        {
+          "path": "sources/processed/1bc23fd7e8793c22ba2d398be43411f570b043e4a4da930662c22b81cd5def95/a6b8b53b6f73816f/review-queue.json",
+          "sha256": "fa067ad1ee48cfd0d93b6a280ae3b7a6529f091e5e36d1375968ac7325d6da33"
+        },
+        {
+          "path": "sources/processed/1bc23fd7e8793c22ba2d398be43411f570b043e4a4da930662c22b81cd5def95/a6b8b53b6f73816f/page-1.png",
+          "sha256": "63ed705dcb53a319245cc420251af17441bc310081db2f82086c1b3c086d6372"
+        },
+        {
+          "path": "sources/processed/1bc23fd7e8793c22ba2d398be43411f570b043e4a4da930662c22b81cd5def95/a6b8b53b6f73816f/page-90.png",
+          "sha256": "c01c7dbfbb1d0e99b4a650468a8b00e7652d6a64c79e95325d4f38256a65e59e"
+        }
+      ]
+    }
+  ],
+  "semantic_promotion": false
+}

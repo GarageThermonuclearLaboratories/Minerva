@@ -29,19 +29,60 @@ assert len({f['id'] for f in plan['families']}) == len(plan['families'])
 assert all(f['source_id'] in source_ids for f in plan['families'])
 assert all(c['source_id'] in source_ids for c in review['claims'])
 import hashlib
+ingestion = None
+if (root / 'data/ingestion-manifest.json').exists():
+    from ingest_sources import check
+    ingestion = check(root)
 for source in sources['sources']:
     if source['acquisition_status'] == 'full-document-acquired':
         content = (root / source['archive_path']).read_bytes()
         assert hashlib.sha256(content).hexdigest() == source['sha256']
         assert len(content) == source['bytes']
-        extracted = json.loads((root / 'sources/extracted' / (Path(source['archive_path']).stem + '.pages.json')).read_text())
-        assert len(extracted['pages']) == source['page_count']
-        assert extracted['sha256'] == source['sha256']
-full_text = json.loads((root / 'sources/extracted/nys-next-generation-mathematics-p-12-standards.pages.json').read_text())
+        if not (root / 'data/ingestion-manifest.json').exists():
+            extracted = json.loads((root / 'sources/extracted' / (Path(source['archive_path']).stem + '.pages.json')).read_text())
+            assert len(extracted['pages']) == source['page_count']
+            assert extracted['sha256'] == source['sha256']
+if ingestion:
+    full_record = next(d for d in ingestion['documents'] if d['source_id'] == 'src:nysed:math-full')
+    page_artifact = next(a for a in full_record['artifacts'] if a['path'].endswith('/pages.json'))
+    full_text = json.loads((root / page_artifact['path']).read_text())
+    # Public receipt images must be the same bytes as the hashed extraction bundles.
+    public_evidence = {'src:nysed:math-full': 'math-full', 'src:nysed:math-2017': 'math-crosswalk'}
+    for record in ingestion['documents']:
+        if record['source_id'] not in public_evidence:
+            continue
+        for artifact in record['artifacts']:
+            if artifact['path'].endswith('.png'):
+                public_path = root / 'dist/evidence' / public_evidence[record['source_id']] / Path(artifact['path']).name
+                assert hashlib.sha256(public_path.read_bytes()).hexdigest() == artifact['sha256'], public_path
+else:
+    full_text = json.loads((root / 'sources/extracted/nys-next-generation-mathematics-p-12-standards.pages.json').read_text())
 page90 = ' '.join(full_text['pages'][89]['text'].split())
 for item in data['nodes']:
     if item.get('original_text'):
         assert ' '.join(item['original_text'].split()) in page90, item['id']
 assert len([n for n in data['nodes'] if n.get('parent_standard_id') == 'wc:standard:ny-7-rp-2']) == 4
+for n in data['nodes']:
+    for annotation in n.get('source_annotations', []):
+        assert annotation['source_id'] in source_ids and annotation['pdf_page'] == 90
+        assert ' '.join(annotation['original_text'].split()) in page90, annotation['id']
+    if n['type'] == 'Expectation':
+        assert n['derived_from'] in node_ids and n.get('parsing_rationale'), n['id']
+        assert any(e['from'] == n['id'] and e['to'] == n['derived_from'] and e['relation'] == 'DERIVED_FROM' for e in data['edges'])
+for suffix in 'abcd':
+    assert len([n for n in data['nodes'] if n['type'] == 'Expectation' and n.get('derived_from') == 'wc:standard:ny-7-rp-2' + suffix]) == 1
+assert not any(e['relation'] in {'EXPECTED_BY', 'PREREQUISITE'} for e in data['edges'])
 assert all(s['effective_date'] is None for s in sources['sources']), 'Do not invent exact effective days from month/season evidence'
 print('Valid: source review and corpus inventory match public data; temporal precision preserved')
+
+journey = json.loads((root / 'data/journey.json').read_text())
+assert journey == json.loads((root / 'dist/journey.json').read_text())
+assert journey['policy_snapshot'] == data['policy_snapshot']
+assert journey['state'] == 'EXPECTED'
+assert all(s['pathway_id'] == journey['id'] and s['state'] == 'EXPECTED' for s in data['students'])
+assert [g for stage in journey['stages'] for g in stage['grades']] == list(range(13))
+assert len({s['id'] for s in journey['stages']}) == 5
+for stage in journey['stages']:
+    assert stage['default_grade'] in stage['grades'] if stage['grades'] else stage['default_grade'] is None
+    assert all(s in source_ids for s in stage.get('source_ids', []))
+print('Valid: shared K–12 journey, 13 grades and transition scaffold; no mastery data')

@@ -1,8 +1,8 @@
 {
-  "release": "wildcats-0.0.3-primary-pdfs",
+  "release": "wildcats-0.0.4-monday-candidate",
   "policy_snapshot": "2026-09-28",
   "git_revision": null,
-  "scope": "NY-7.RP.2 and subparts a–d, verified against uploaded primary standards page 90; remainder of P–12 corpus extracted but not semantically parsed",
+  "scope": "Bounded semantic trace of NY-7.RP.2 heading and subparts a–d, with source notes/examples preserved; edition applicability and independent/human review pending.",
   "nodes": [
     {
       "id": "wc:grade:7",
@@ -43,7 +43,21 @@
       "original_text": "Recognize and represent proportional relationships between quantities.",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
       "review_status": "agent-visual-review; human-review-pending",
-      "pdf_page": 90
+      "pdf_page": 90,
+      "source_annotations": [
+        {
+          "id": "wc:annotation:7-rp-2-modeling",
+          "kind": "shared-practice-note",
+          "status": "SOURCE",
+          "original_text": "Proportional relationships (NY-7.RP.2 & 3) present opportunities for modeling (MP.4).",
+          "source_id": "src:nysed:math-full",
+          "pdf_page": 90,
+          "source_locator": "PDF/printed page 90; Connecting the Standards for Mathematical Practice to Mathematical Content",
+          "interpretation": "A shared opportunity note for standards 2 and 3; no separate MP.4 or prerequisite edge is asserted.",
+          "example_summary": "The source illustrates modeling by treating apartment-building population as proportional to story count. This is a modeling assumption in the example, not an empirical law.",
+          "source_footnote": "14; citation target not reviewed"
+        }
+      ]
     },
     {
       "id": "wc:expectation:recognize-proportional",
@@ -54,7 +68,9 @@
       "derived_from": "wc:standard:ny-7-rp-2",
       "review_status": "agent-visual-review; human-review-pending",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
-      "pdf_page": 90
+      "pdf_page": 90,
+      "parsing_rationale": "Separates one action in the parent heading; the four subparts provide additional detail.",
+      "scope": "heading decomposition; not an exhaustive account of subparts"
     },
     {
       "id": "wc:expectation:represent-proportional",
@@ -65,7 +81,9 @@
       "derived_from": "wc:standard:ny-7-rp-2",
       "review_status": "agent-visual-review; human-review-pending",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
-      "pdf_page": 90
+      "pdf_page": 90,
+      "parsing_rationale": "Separates one action in the parent heading; the four subparts provide additional detail.",
+      "scope": "heading decomposition; not an exhaustive account of subparts"
     },
     {
       "id": "wc:concept:proportional-relationship",
@@ -88,7 +106,19 @@
       "parent_standard_id": "wc:standard:ny-7-rp-2",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2a",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "source_annotations": [
+        {
+          "id": "wc:annotation:7-rp-2a-strategies",
+          "kind": "note",
+          "status": "SOURCE",
+          "original_text": "Strategies include but are not limited to the following: testing for equivalent ratios in a table and/or graphing on a coordinate plane and observing whether the graph is a straight line through the origin.",
+          "source_id": "src:nysed:math-full",
+          "pdf_page": 90,
+          "source_locator": "PDF/printed page 90; note beside NY-7.RP.2a",
+          "interpretation": "Non-exhaustive strategies; does not require both strategies on every task."
+        }
+      ]
     },
     {
       "id": "wc:standard:ny-7-rp-2b",
@@ -100,7 +130,7 @@
       "parent_standard_id": "wc:standard:ny-7-rp-2",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2b",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "agent-semantic-review; independent-and-human-review-pending"
     },
     {
       "id": "wc:standard:ny-7-rp-2c",
@@ -112,7 +142,19 @@
       "parent_standard_id": "wc:standard:ny-7-rp-2",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2c",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "source_annotations": [
+        {
+          "id": "wc:annotation:7-rp-2c-example",
+          "kind": "example",
+          "status": "SOURCE",
+          "original_text": "If total cost t is proportional to the number n of items purchased at a constant price p, the relationship between the total cost and the number of items can be expressed as t = pn.",
+          "source_id": "src:nysed:math-full",
+          "pdf_page": 90,
+          "source_locator": "PDF/printed page 90; example beside NY-7.RP.2c",
+          "interpretation": "Illustrative cost equation; t, p, and n are example variables, not mandated names for every task."
+        }
+      ]
     },
     {
       "id": "wc:standard:ny-7-rp-2d",
@@ -124,7 +166,83 @@
       "parent_standard_id": "wc:standard:ny-7-rp-2",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2d",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "agent-semantic-review; independent-and-human-review-pending"
+    },
+    {
+      "id": "wc:expectation:decide-proportional",
+      "type": "Expectation",
+      "label": "Decide whether two quantities are proportional",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-full",
+      "derived_from": "wc:standard:ny-7-rp-2a",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2a",
+      "pdf_page": 90,
+      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "action": "Decide",
+      "object": "whether two quantities are in a proportional relationship",
+      "qualifiers": [],
+      "parsing_rationale": "Retains the yes/no classification task; the source's strategy note is non-exhaustive.",
+      "scope": "one source subpart; not a mastery assertion"
+    },
+    {
+      "id": "wc:expectation:identify-unit-rate",
+      "type": "Expectation",
+      "label": "Identify the constant of proportionality",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-full",
+      "derived_from": "wc:standard:ny-7-rp-2b",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2b",
+      "pdf_page": 90,
+      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "action": "Identify",
+      "object": "constant of proportionality (unit rate)",
+      "qualifiers": [
+        "in tables",
+        "in graphs",
+        "in equations",
+        "in diagrams",
+        "in verbal descriptions of proportional relationships"
+      ],
+      "parsing_rationale": "Retains every listed representation; no claim of equivalence to other standards is introduced.",
+      "scope": "one source subpart; not a mastery assertion"
+    },
+    {
+      "id": "wc:expectation:represent-proportional-equation",
+      "type": "Expectation",
+      "label": "Represent a proportional relationship using an equation",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-full",
+      "derived_from": "wc:standard:ny-7-rp-2c",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2c",
+      "pdf_page": 90,
+      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "action": "Represent",
+      "object": "a proportional relationship",
+      "qualifiers": [
+        "using an equation"
+      ],
+      "parsing_rationale": "Retains the required representation form; the cost example illustrates this action and is not an additional universal task.",
+      "scope": "one source subpart; not a mastery assertion"
+    },
+    {
+      "id": "wc:expectation:explain-proportional-point",
+      "type": "Expectation",
+      "label": "Explain a point on a proportional graph in context",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-full",
+      "derived_from": "wc:standard:ny-7-rp-2d",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2d",
+      "pdf_page": 90,
+      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "action": "Explain",
+      "object": "what a point (x, y) on the graph of a proportional relationship means",
+      "qualifiers": [
+        "in terms of the situation",
+        "special attention to (0, 0) and (1, r)",
+        "r is the unit rate"
+      ],
+      "parsing_rationale": "Preserves the contextual explanation, both distinguished points, and the meaning of r.",
+      "scope": "one source subpart; not a mastery assertion"
     }
   ],
   "edges": [
@@ -143,12 +261,13 @@
       "id": "wc:edge:002",
       "from": "wc:standard:ny-7-rp-2",
       "to": "wc:grade:7",
-      "relation": "EXPECTED_BY",
+      "relation": "ASSIGNED_TO_GRADE",
       "status": "SOURCE",
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "agent-visual-review; human-review-pending",
+      "interpretation": "Records source grade placement only; does not establish an exact attainment date or cohort applicability."
     },
     {
       "id": "wc:edge:003",
@@ -209,12 +328,13 @@
       "id": "wc:edge:grade-2a",
       "from": "wc:standard:ny-7-rp-2a",
       "to": "wc:grade:7",
-      "relation": "EXPECTED_BY",
+      "relation": "ASSIGNED_TO_GRADE",
       "status": "SOURCE",
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; NY-7.RP",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "agent-visual-review; human-review-pending",
+      "interpretation": "Records source grade placement only; does not establish an exact attainment date or cohort applicability."
     },
     {
       "id": "wc:edge:subpart-2b",
@@ -231,12 +351,13 @@
       "id": "wc:edge:grade-2b",
       "from": "wc:standard:ny-7-rp-2b",
       "to": "wc:grade:7",
-      "relation": "EXPECTED_BY",
+      "relation": "ASSIGNED_TO_GRADE",
       "status": "SOURCE",
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; NY-7.RP",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "agent-visual-review; human-review-pending",
+      "interpretation": "Records source grade placement only; does not establish an exact attainment date or cohort applicability."
     },
     {
       "id": "wc:edge:subpart-2c",
@@ -253,12 +374,13 @@
       "id": "wc:edge:grade-2c",
       "from": "wc:standard:ny-7-rp-2c",
       "to": "wc:grade:7",
-      "relation": "EXPECTED_BY",
+      "relation": "ASSIGNED_TO_GRADE",
       "status": "SOURCE",
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; NY-7.RP",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "agent-visual-review; human-review-pending",
+      "interpretation": "Records source grade placement only; does not establish an exact attainment date or cohort applicability."
     },
     {
       "id": "wc:edge:subpart-2d",
@@ -275,12 +397,105 @@
       "id": "wc:edge:grade-2d",
       "from": "wc:standard:ny-7-rp-2d",
       "to": "wc:grade:7",
-      "relation": "EXPECTED_BY",
+      "relation": "ASSIGNED_TO_GRADE",
       "status": "SOURCE",
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; NY-7.RP",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "agent-visual-review; human-review-pending",
+      "interpretation": "Records source grade placement only; does not establish an exact attainment date or cohort applicability."
+    },
+    {
+      "id": "wc:edge:parse-2a",
+      "from": "wc:expectation:decide-proportional",
+      "to": "wc:standard:ny-7-rp-2a",
+      "relation": "DERIVED_FROM",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2a",
+      "pdf_page": 90,
+      "review_status": "agent-semantic-review; independent-and-human-review-pending"
+    },
+    {
+      "id": "wc:edge:concept-2a",
+      "from": "wc:expectation:decide-proportional",
+      "to": "wc:concept:proportional-relationship",
+      "relation": "USES_CONCEPT",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2a",
+      "pdf_page": 90,
+      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "rationale": "The subpart explicitly concerns a proportional relationship; no prerequisite or mastery inference."
+    },
+    {
+      "id": "wc:edge:parse-2b",
+      "from": "wc:expectation:identify-unit-rate",
+      "to": "wc:standard:ny-7-rp-2b",
+      "relation": "DERIVED_FROM",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2b",
+      "pdf_page": 90,
+      "review_status": "agent-semantic-review; independent-and-human-review-pending"
+    },
+    {
+      "id": "wc:edge:concept-2b",
+      "from": "wc:expectation:identify-unit-rate",
+      "to": "wc:concept:proportional-relationship",
+      "relation": "USES_CONCEPT",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2b",
+      "pdf_page": 90,
+      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "rationale": "The subpart explicitly concerns a proportional relationship; no prerequisite or mastery inference."
+    },
+    {
+      "id": "wc:edge:parse-2c",
+      "from": "wc:expectation:represent-proportional-equation",
+      "to": "wc:standard:ny-7-rp-2c",
+      "relation": "DERIVED_FROM",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2c",
+      "pdf_page": 90,
+      "review_status": "agent-semantic-review; independent-and-human-review-pending"
+    },
+    {
+      "id": "wc:edge:concept-2c",
+      "from": "wc:expectation:represent-proportional-equation",
+      "to": "wc:concept:proportional-relationship",
+      "relation": "USES_CONCEPT",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2c",
+      "pdf_page": 90,
+      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "rationale": "The subpart explicitly concerns a proportional relationship; no prerequisite or mastery inference."
+    },
+    {
+      "id": "wc:edge:parse-2d",
+      "from": "wc:expectation:explain-proportional-point",
+      "to": "wc:standard:ny-7-rp-2d",
+      "relation": "DERIVED_FROM",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2d",
+      "pdf_page": 90,
+      "review_status": "agent-semantic-review; independent-and-human-review-pending"
+    },
+    {
+      "id": "wc:edge:concept-2d",
+      "from": "wc:expectation:explain-proportional-point",
+      "to": "wc:concept:proportional-relationship",
+      "relation": "USES_CONCEPT",
+      "status": "PARSED",
+      "source_id": "src:nysed:math-full",
+      "source_locator": "PDF page 90; printed page 90; NY-7.RP.2d",
+      "pdf_page": 90,
+      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "rationale": "The subpart explicitly concerns a proportional relationship; no prerequisite or mastery inference."
     }
   ],
   "students": [
@@ -294,7 +509,8 @@
         "wc:standard:ny-7-rp-2b",
         "wc:standard:ny-7-rp-2c",
         "wc:standard:ny-7-rp-2d"
-      ]
+      ],
+      "pathway_id": "wc:pathway:canonical-nys-general-education"
     },
     {
       "id": "wc:avatar:eva",
@@ -306,7 +522,8 @@
         "wc:standard:ny-7-rp-2b",
         "wc:standard:ny-7-rp-2c",
         "wc:standard:ny-7-rp-2d"
-      ]
+      ],
+      "pathway_id": "wc:pathway:canonical-nys-general-education"
     }
   ],
   "canonical_assumptions": [],
@@ -324,6 +541,10 @@
     {
       "id": "wc:question:003",
       "text": "Determine when a local district choice is required; no Johnson City assumption has yet been made."
+    },
+    {
+      "id": "wc:question:004",
+      "text": "The bounded family has six parsed expectations and preserved source annotations. Independently review parsing and source Coherence semantics; no prerequisite or MP.4 edge is asserted."
     }
   ]
 }

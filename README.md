@@ -10,6 +10,14 @@ The v0.1 construction is clean-room: no Garage-internal ontology class, hierarch
 
 ## Contents
 
+- [Public interface revision](docs/site-revision-0.0.4.md): sixteen-part UX brief, bounded graph, Receipt behavior, and verification limits
+- [Monday independent audit](docs/monday-audit.md): M7 pass, reviewed repair commit, verification, and remaining limitations
+- [K–12 journey scaffold](docs/k12-journey.md): shared avatar pathway, five stages, grade coverage, and transition boundary
+- [NY-7.RP.2 semantic trace](docs/semantic-trace-ny-7-rp-2.md): all four subparts, source annotations, grade-relation migration, and receipt checks
+- [Ingestion workflow](docs/ingestion-workflow.md): repeatable PDF registration, extraction, rendering, and semantic review queues
+- [Source inventory](docs/source-inventory.md): twelve-area document candidates, evidence states, date gaps, and acquisition queue
+- [Foundation specification](docs/foundation-specification.md): scope, architecture, evidence rules, valid claims, and implementation gaps
+- [Monday closure checklist](docs/monday-closure-checklist.md): frozen scope, completion gates, and Tuesday–Thursday deferrals
 - `data/sources.json`: source manifest and policy applicability
 - `data/ontology.json`: stable IDs, assertions, student-state projection, and unresolved questions
 - `schema/ontology.schema.json`: machine-checkable shape for the first slice
@@ -24,5 +32,7 @@ Release 0.0.3 preserves both uploaded PDFs under `sources/originals`, hashes and
 ## Rebuild / inspect
 
 Run `python3 scripts/validate.py` from this directory. The static site reads `dist/data.json`, which is copied from `data/ontology.json`; run `cp data/ontology.json dist/data.json` after an ontology edit, then validate again. A future pipeline should generate exports and site data rather than relying on this explicit copy step.
+
+For acquired PDFs, install `requirements.txt`, then run `python3 scripts/ingest_sources.py build` and `python3 scripts/ingest_sources.py check`. See the ingestion workflow for new-document registration and review boundaries.
 
 GitHub is the canonical engineering record: [GarageThermonuclearLaboratories/Minerva](https://github.com/GarageThermonuclearLaboratories/Minerva). ChatGPT Site source commits and GitHub commits are separate Git histories; each deployment records both identifiers where available.

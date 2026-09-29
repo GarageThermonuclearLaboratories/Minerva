@@ -1,5 +1,54 @@
 # Lab Log
 
+## 2026-09-29 · Public interface revision · v0.0.4
+
+**Changed:** Applied Willis's consolidated brief to the audited Monday candidate. Added an interactive front-door trace and bounded graph, contextual fictional-student lens, collapsed/expandable Receipts, explicit unmapped grades, a twelve-area matrix, a status legend and district methodology, actual since-v0.0.3 counts, and dated/versioned public corrections. Preserved the existing visual system.
+**Evidence:** No ontology node, edge, source wording, student state, or policy date changed. Graph lines come only from recorded edges; zero findings and unresolved applicability remain explicit.
+**Verification:** Data/ingestion and existing receipt checks passed. Additional jsdom checks exercise all eight views, fifteen Receipts, graph expansion, contextual navigation, thirteen grades for both avatars, matrix controls, keyboard close, and script/data loading order. This is builder DOM review after M7, not a new independent or rendered-browser audit.
+**Publication:** Prepared for the M8 public checkpoint. Deployment success and both repository histories will be appended after publication succeeds. See [the revision record](site-revision-0.0.4.md).
+
+## 2026-09-28 · Independent audit and repairs · Monday M7
+
+**Decision:** Independent Astra High agent `/root/monday_audit` passed the bounded foundation checkpoint after rechecking repairs. The first run hit a usage limit after delivering findings; one resumed recheck supplied the final decision. This is independent agent review, not human review.
+**Repairs:** Qualified timeline dates as provisional observations lacking durable excerpts/locators, corrected candidate labels and six-expectation counts, and strengthened artifact/recipe and public-image integrity checks. Repair commit: `5775438c5061719ebaa2b7c7dd351dd54a15c95a`; exact baseline/diff identity is recorded in [the audit](monday-audit.md).
+**Verification:** Seven ingestion tests, repository validation, six receipt traces, seven render functions, both avatars across thirteen grades, five stage selections, JavaScript syntax, and diff checks passed. Real-browser visual/accessibility QA could not run because Chromium was unavailable.
+**Boundaries:** Source wording passed independent page-90 comparison; exact edition/cohort applicability, wider corpus modeling, human review, and generalized enforcement remain open. Prior log statements about supported timeline dates are historical; the current disposition is PROVISIONAL.
+**Next:** M8 synchronization and public publication with exact research and Site commit/deployment identifiers. M1–M7 are complete locally; Monday remains open until M8 succeeds.
+
+## 2026-09-28 · Shared K–12 journey scaffold · Monday M6
+
+**Completed:** Five navigable stages (K–2, 3–5, 6–8, 9–12, graduation/transition), native grade selection, explicit coverage gaps, and a common pathway ID for Matthew and Eva. Expectations are projected from grade-assignment edges using the same rule for both avatars. Grade 7 exposes the bounded math trace; other grades remain explicitly unmapped.
+**Boundaries:** Stage bands are presentation conventions, not universal source bands. Transition does not make a diploma decision or predict a destination. No curriculum, cohort history, cumulative mastery, or educational graph nodes were invented.
+**Verification:** Thirteen grades for each avatar produce equal displayed node references; all five stage selections render. Source/public JSON, reference, receipt and existing ontology checks pass. Programmatic checks only; no browser visual audit claimed.
+**Next:** M7 independent audit and repairs, then M8 publication. M1–M6 are locally prepared; public Site remains at the earlier checkpoint.
+
+## 2026-09-28 · NY-7.RP.2 semantic trace · Monday M5
+
+**Completed:** Parsed all four subparts, retaining action/object/qualifiers, exact source derivations, strategy/example notes and shared modeling context. Six expectations now exist: two heading decompositions and four subpart expectations. Candidate graph: 15 nodes / 22 edges. Receipt rendering resolves each parsed expectation to its own source subpart.
+**Correction:** Narrowed five grade relations from `EXPECTED_BY` to `ASSIGNED_TO_GRADE`; source placement alone is insufficient to establish an attainment deadline. Migration is documented with affected IDs. Coherence arrows remain observations, with no prerequisite or MP.4 edge.
+**Verification:** Source wording/annotation, derivation, export and integrity validation passed. Six expectation receipts and seven view render functions checked programmatically; no browser visual audit claimed. Builder review is recorded separately from generated page queues.
+**Remaining:** Independent/human review, edition applicability, and public publication. Public Site remains on 0.0.3; the local candidate is 0.0.4. Next is M6, the canonical K–12 journey scaffold.
+
+## 2026-09-28 · Reusable PDF intake · Monday M4
+
+**Completed:** Added registration/build/check commands, pinned PyMuPDF dependency, configurable evidence pages, immutable hash/recipe-addressed bundles, and per-page semantic review queues. The main validator checks generated evidence integrity. Both existing PDFs processed through one command: 184 pages, four selected PNGs, no ontology promotion.
+**Verification:** Five regression tests passed, including corruption and idempotence cases. Full repository validation passed. Newly generated full-standards page 90 and crosswalk page 2 received visual rendering QA. Review decisions are separate from generated queues and survive rebuilds.
+**Limits:** Local PDF bytes are required; automated download and OCR are not implemented. Text extraction does not parse standards or resolve applicability. Pipeline writes are single-writer with atomic manifest replacement, not a multi-file transaction. No independent audit or deployment claimed.
+**Next:** M5 bounded NY-7.RP.2 semantic trace. See `docs/ingestion-workflow.md` for reproduction and registration commands.
+
+## 2026-09-28 · Twelve-area source inventory · Monday M3
+
+**Completed:** Added `data/source-inventory.json` and a readable `docs/source-inventory.md`, linked from the README and corpus plan. Every queued content area now has official landing-page evidence, document candidates or explicit unresolved targets, acquisition/review state, date evidence or unknowns, and a next action.
+**Evidence limits:** Official NYSED search excerpts supplied new candidate links. Direct opens of the content-area index, Arts, CS/Digital Fluency, Science and World Languages failed with HTTP 502. No new PDFs acquired; two mathematics PDFs remain the acquired corpus. Exact snapshot applicability remains unresolved. Date evidence describes named events, not legal effectiveness.
+**Handling decisions:** Deduplicate the shared Health/FACS PDF upon acquisition; compare legacy PE content against the separately identified 2020 document. Preserve World Languages checkpoints and CS grade bands. Keep optional credentials and specialized course choices distinct from canonical expectations.
+**Next:** M4 reusable ingestion workflow. M3 completion means an accountable inventory, not complete document acquisition or semantic coverage. These changes are local pending the final public checkpoint.
+
+## 2026-09-28 · Foundation specification · Monday M2
+
+**Completed:** Added `docs/foundation-specification.md` version 0.1.0 and linked it from the README and Monday checklist. Defines project responsibilities, canonical scope, expected learning, avatar equality, evidence/status rules, provenance, temporal/cohort semantics, clean-room construction, admissible claims, prohibited inferences, and release/freeze governance.
+**Review:** Builder review against the current data, schema, validator, extraction script, and interface. The specification explicitly records gaps: mixed derivation/disposition labels, incomplete provenance enforcement, no cohort resolver, page-90-specific receipt logic, and a skeletal schema not loaded by the validator. No independent audit is claimed.
+**Scope:** Documentation gate M2 only. Ontology data and public deployment remain at 0.0.3. Specification version 0.1.0 is not the ontology v0.1 freeze. M3–M8 remain open.
+
 ## 2026-09-28 · Initial source-to-interface slice
 
 **Release:** `wildcats-0.0.1-monday-slice`  

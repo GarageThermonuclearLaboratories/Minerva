@@ -1,0 +1,80 @@
+{
+  "id": "wc:pathway:canonical-nys-general-education",
+  "version": "0.1.0",
+  "policy_snapshot": "2026-09-28",
+  "scope": "Ordinary nonaccelerated, nonspecialized NYS K–12 reference pathway",
+  "state": "EXPECTED",
+  "grouping_basis": "Project navigation convention; these stage bands are not asserted to be universal NYSED subject bands or district school configurations.",
+  "temporal_basis": "Reference pathway under one policy snapshot; not a reconstructed historical cohort.",
+  "stages": [
+    {
+      "id": "k-2",
+      "label": "K–2",
+      "title": "Kindergarten through Grade 2",
+      "grades": [
+        0,
+        1,
+        2
+      ],
+      "default_grade": 0,
+      "coverage": "not-yet-mapped",
+      "description": "Explore the opening grades of the reference pathway. Learning expectations for these grades have not yet been modeled."
+    },
+    {
+      "id": "3-5",
+      "label": "3–5",
+      "title": "Grades 3 through 5",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "default_grade": 3,
+      "coverage": "not-yet-mapped",
+      "description": "Learning expectations for these grades have not yet been modeled. An empty stage does not mean students have no learning requirements."
+    },
+    {
+      "id": "6-8",
+      "label": "6–8",
+      "title": "Grades 6 through 8",
+      "grades": [
+        6,
+        7,
+        8
+      ],
+      "default_grade": 7,
+      "coverage": "one-grade-partial",
+      "description": "One Grade 7 mathematics family is traced. Grades 6 and 8 and the rest of Grade 7 remain unmapped."
+    },
+    {
+      "id": "9-12",
+      "label": "9–12",
+      "title": "Grades 9 through 12",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "default_grade": 9,
+      "coverage": "not-yet-mapped",
+      "description": "High-school learning expectations and course arrangements have not yet been modeled. Grade selection does not imply a particular course sequence."
+    },
+    {
+      "id": "transition",
+      "label": "Graduation / transition",
+      "title": "Graduation and what follows",
+      "grades": [],
+      "default_grade": null,
+      "coverage": "policy-review-pending",
+      "description": "Learning expectations, diploma eligibility, and post-school destinations are separate questions. This model does not yet determine diploma eligibility or assign a destination.",
+      "source_ids": [
+        "src:nysed:graduation",
+        "src:nysed:grad-faq"
+      ]
+    }
+  ],
+  "projection_rule": "Select Standard nodes linked to the selected grade by ASSIGNED_TO_GRADE. Both avatars use this same rule. Show exact edition applicability as unresolved; never infer mastery, cumulative retention, promotion, or graduation.",
+  "missing_data_message": "This grade is not yet mapped. No claim about the absence of NYS expectations follows from this gap.",
+  "review_status": "builder-reviewed scaffold; independent review pending"
+}

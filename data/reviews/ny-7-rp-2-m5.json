@@ -1,0 +1,39 @@
+{
+  "id": "wc:review:ny-7-rp-2-m5",
+  "review_date": "2026-09-28",
+  "timezone": "America/New_York",
+  "reviewer": "builder-agent",
+  "model": null,
+  "reasoning_effort": null,
+  "review_kind": "bounded-semantic-review",
+  "source_id": "src:nysed:math-full",
+  "sha256": "1bc23fd7e8793c22ba2d398be43411f570b043e4a4da930662c22b81cd5def95",
+  "pdf_page": 90,
+  "queue_task_id": "review:1bc23fd7e8793c22ba2d398be43411f570b043e4a4da930662c22b81cd5def95:page:90",
+  "page_scope": "NY-7.RP.2 heading and a–d plus associated notes; other standards on page unreviewed",
+  "candidate_release": "wildcats-0.0.4-monday-candidate",
+  "result": "bounded-trace-prepared",
+  "independent_review": "pending",
+  "human_review": "pending",
+  "snapshot_applicability": "unresolved",
+  "decisions": [
+    "Four subpart expectations added, with action/object/qualifiers and exact derivation links.",
+    "Non-exhaustive strategy note, equation example and shared modeling opportunity preserved as annotations.",
+    "Five EXPECTED_BY edges narrowed to ASSIGNED_TO_GRADE; no attainment deadline inferred.",
+    "Six Coherence arrows retained as observations; no prerequisite or MP.4 graph edge added."
+  ],
+  "validation": [
+    "15 nodes, 22 edges; source/public JSON agreement and source integrity checks passed.",
+    "Source-standard and annotation wording matched against page 90 text.",
+    "Six receipt traces and seven render functions exercised; not browser UI QA."
+  ],
+  "remaining": [
+    "Full-page semantic review outside NY-7.RP.2",
+    "Independent/human review",
+    "Footnote 14 citation target",
+    "Coherence target semantics",
+    "Policy edition applicability",
+    "M8 public publication"
+  ],
+  "documentation": "docs/semantic-trace-ny-7-rp-2.md"
+}

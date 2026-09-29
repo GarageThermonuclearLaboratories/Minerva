@@ -1,5 +1,6 @@
 {
   "policy_snapshot": "2026-09-28",
+  "source_inventory_path": "data/source-inventory.json",
   "inventory_source_id": "src:nysed:p12-index",
   "inventory_scope": "Twelve content areas listed by NYSED; not a count of documents or standards.",
   "families": [
@@ -74,7 +75,7 @@
       "label": "Mathematics",
       "source_id": "src:nysed:p12-index",
       "acquisition": "two-full-documents-acquired",
-      "parsing": "one-parent-standard-and-four-subparts",
+      "parsing": "one-parent-four-subparts-six-expectations; bounded-agent-review",
       "normalization": "not-started",
       "relationships": "source-and-parse-links-only",
       "validation": "references-hashes-and-reviewed-wording",

@@ -1,0 +1,36 @@
+{
+  "id": "wc:review:monday-m7",
+  "review_date": "2026-09-28",
+  "timezone": "America/New_York",
+  "recorded_at": "2026-09-29T03:51:36Z",
+  "reviewer": "/root/monday_audit",
+  "reviewer_type": "independent-agent",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "configuration_evidence": "parent spawn configuration; reviewer acknowledged configuration",
+  "baseline_commit": "e31814cebb5eeff1918beaf8648be4b3e892407e",
+  "reviewed_binary_diff_sha256": "2fb6dbe780d3c6268ee3a61519cf8f5c3980862ec5d116f54da5c391c4501209",
+  "repair_commit": "5775438c5061719ebaa2b7c7dd351dd54a15c95a",
+  "candidate_release": "wildcats-0.0.4-monday-candidate",
+  "result": "pass-after-repairs",
+  "scope": "bounded Monday foundation checkpoint, including NY-7.RP.2 and shared K–12 journey scaffold",
+  "release_blocking_findings_remaining": 0,
+  "human_review": "pending",
+  "browser_visual_accessibility_qa": "not-completed; Chromium-unavailable",
+  "publication": "pending-M8",
+  "resolved_findings": [
+    "Timeline observations qualified as provisional with missing durable evidence explicit",
+    "Candidate release labels and six-expectation counts corrected",
+    "Complete artifact inventory, recipe identity, and public evidence integrity enforced"
+  ],
+  "remaining_limits": [
+    "Exact edition and cohort applicability",
+    "Durable web evidence acquisition",
+    "Wider curriculum modeling",
+    "Footnote target and Coherence semantics",
+    "Human review",
+    "Generalized schema, relation, provenance and acceptance enforcement",
+    "Browser visual and accessibility QA"
+  ],
+  "documentation": "docs/monday-audit.md"
+}

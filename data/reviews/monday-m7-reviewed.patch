@@ -1,0 +1,327 @@
+diff --git a/data/corpus-plan.json b/data/corpus-plan.json
+index b28de2c..de5f499 100644
+--- a/data/corpus-plan.json
++++ b/data/corpus-plan.json
+@@ -75,7 +75,7 @@
+       "label": "Mathematics",
+       "source_id": "src:nysed:p12-index",
+       "acquisition": "two-full-documents-acquired",
+-      "parsing": "one-parent-standard-and-four-subparts",
++      "parsing": "one-parent-four-subparts-six-expectations; bounded-agent-review",
+       "normalization": "not-started",
+       "relationships": "source-and-parse-links-only",
+       "validation": "references-hashes-and-reviewed-wording",
+diff --git a/data/source-inventory.json b/data/source-inventory.json
+index 32f75c0..422b000 100644
+--- a/data/source-inventory.json
++++ b/data/source-inventory.json
+@@ -335,7 +335,7 @@
+       "effective_date": null,
+       "snapshot_applicability": "unresolved",
+       "date_gap": "Exact publication/effective dates and edition applicability not established.",
+-      "semantic_review": "parent and four subparts source-reviewed; two heading expectations parsed",
++      "semantic_review": "bounded NY-7.RP.2 family agent-reviewed; six expectations parsed; independent/human review pending",
+       "human_review": "pending",
+       "next_action": "Verify edition applicability and complete bounded NY-7.RP.2 semantic trace before broad parsing."
+     },
+diff --git a/data/source-review.json b/data/source-review.json
+index 1cf1c3a..4c28278 100644
+--- a/data/source-review.json
++++ b/data/source-review.json
+@@ -7,29 +7,41 @@
+     {
+       "id": "wc:policy-evidence:math-adoption",
+       "source_id": "src:nysed:math-guidance",
+-      "status": "SOURCE",
++      "status": "PROVISIONAL",
+       "event": "Mathematics standards adoption",
+       "date": "2017-09",
+-      "date_precision": "month"
++      "date_precision": "month",
++      "derivation": "SOURCE",
++      "evidence_status": "prior-search-excerpt-observation; durable-capture-missing",
++      "source_locator": null,
++      "review_status": "full-page-and-date-verification-pending"
+     },
+     {
+       "id": "wc:policy-evidence:math-implementation",
+       "source_id": "src:nysed:math-guidance",
+-      "status": "SOURCE",
++      "status": "PROVISIONAL",
+       "event": "Full mathematics implementation",
+       "date": "2022-09",
+-      "date_precision": "month"
++      "date_precision": "month",
++      "derivation": "SOURCE",
++      "evidence_status": "prior-search-excerpt-observation; durable-capture-missing",
++      "source_locator": null,
++      "review_status": "full-page-and-date-verification-pending"
+     },
+     {
+       "id": "wc:policy-evidence:math-assessment",
+       "source_id": "src:nysed:math-guidance",
+-      "status": "SOURCE",
++      "status": "PROVISIONAL",
+       "event": "Aligned Grades 3–8 mathematics assessments begin",
+       "date": "2023-spring",
+-      "date_precision": "season"
++      "date_precision": "season",
++      "derivation": "SOURCE",
++      "evidence_status": "prior-search-excerpt-observation; durable-capture-missing",
++      "source_locator": null,
++      "review_status": "full-page-and-date-verification-pending"
+     }
+   ],
+-  "interpretation": "Previously recorded guidance dates remain search-excerpt evidence. The uploaded full standards cover identifies a June 2019 update; PDF metadata timestamps are stored separately. Page 90 wording and subparts are visually verified.",
++  "interpretation": "Timeline dates are provisional prior search-excerpt observations; exact supporting excerpts and section locators were not preserved. Reacquire evidence before asserting these dates as verified. The archived full standards cover identifies a June 2019 update; page90 wording was separately reviewed.",
+   "failed_acquisitions": [
+     {
+       "url": "https://www.nysed.gov/sites/default/files/programs/curriculum-instruction/nys-math-standards-grade-7-crosswalk.pdf",
+diff --git a/dist/app.js b/dist/app.js
+index 164bb88..ed8dd39 100644
+--- a/dist/app.js
++++ b/dist/app.js
+@@ -40,7 +40,7 @@ const stage=journey.stages.find(s=>s.id===id);if(!stage)return;
+ transition=stage.id==='transition';if(!transition)grade=stage.default_grade;
+ render();
+ }
+-function render(){let [title,intro]=titles[view];$('#title').textContent=title;$('#intro').textContent=intro;document.querySelectorAll('.rail button').forEach(b=>b.classList.toggle('active',b.dataset.view===view));let html='';
++function render(){$('#release-label').textContent=model.release;let [title,intro]=titles[view];$('#title').textContent=title;$('#intro').textContent=intro;document.querySelectorAll('.rail button').forEach(b=>b.classList.toggle('active',b.dataset.view===view));let html='';
+ if(view==='atlas')html=`<div class="section-head"><h2>First mapped region</h2><span>1 parent · 4 subparts · 6 parsed expectations</span></div><div class="cards"><button class="card clickable" data-node="wc:domain:7-rp"><div class="kicker">MATHEMATICS / GRADE 7</div><h3>Ratios & proportional relationships</h3><p>The current entry point into the source-backed graph. Inspect the standard, its four subparts, and six parsed expectations.</p><div class="foot"><span>NY-7.RP.2</span><span>OPEN RECEIPT ↗</span></div></button><div class="panel"><div class="kicker">HOW TO READ THIS ATLAS</div><div class="path"><span>Source</span><i>→</i><span>Standard</span><i>→</i><span>Parsed expectation</span></div><p>Each step carries an epistemic label. The graph currently stops where the evidence stops.</p></div></div><div class="section-head" style="margin-top:38px"><h2>In this region</h2><span>Click for evidence</span></div>${row(standardId,'Original New York wording')}${row('wc:expectation:recognize-proportional','Parsed from “recognize”')}${row('wc:expectation:represent-proportional','Parsed from “represent”')}`;
+ if(view==='curriculum')html=`<div class="section-head"><h2>Grade → Subject → Domain</h2><span>1 parent standard · 4 subparts</span></div><div class="path"><span>Grade 7</span><i>→</i><span>Mathematics</span><i>→</i><span>Ratios & proportional relationships</span></div>${row(standardId,'NY-7.RP.2 · Recognize and represent proportional relationships between quantities.')}${row('wc:expectation:recognize-proportional','First parsed action')}${row('wc:expectation:represent-proportional','Second parsed action')}<div class="panel" style="margin-top:20px"><div class="kicker">SCOPE NOTE</div><p>Other grades and subjects are not semantically parsed. An empty region here means no data has been ingested, not that New York has no expectation there.</p></div>`;
+ if(view==='journey')html=`<div class="section-head"><h2>Proportional relationships</h2><span>Grade 7 anchor</span></div><div class="path"><span>Earlier grades<br><small>not mapped</small></span><i>→</i><span>Grade 7 · NY-7.RP.2</span><i>→</i><span>Later grades<br><small>not mapped</small></span></div>${row(standardId,'Source-supported Grade 7 endpoint')}<div class="panel"><div class="kicker">OPEN RESEARCH TASK</div><p>Find and review actual earlier and later standards before asserting a developmental or prerequisite edge. Similar language alone is insufficient.</p></div>`;
+@@ -60,7 +60,7 @@ ${transition?`<h3>Policy evidence still needs review</h3><p>There is no diploma
+ ${standards.map(n=>row(n.id,n.original_text)+model.nodes.filter(x=>x.type==='Expectation'&&x.derived_from===n.id).map(x=>row(x.id,'Parsed expectation · source receipt')).join('')).join('')}`}
+ </div><p class="journey-context">Policy snapshot: ${journey.policy_snapshot}. This is a reference pathway, not a personal school history. Moving between stages does not establish mastery, cumulative retention, or graduation eligibility.</p>`;
+ }
+-if(view==='workbench')html=`<div class="section-head"><h2>Source review checkpoint</h2><span>${esc(model.release)}</span></div><div class="metric-grid">${[[manifest.sources.length,'source records identified'],[manifest.sources.filter(x=>x.acquisition_status==='full-document-acquired').length,'full source documents acquired'],[corpus.families.length,'content areas queued'],['5','source standard records (parent + subparts)'],[model.nodes.filter(n=>n.type==='Expectation').length,'expectations parsed'],['0','reviewed findings']].map(([n,l])=>`<div class="metric"><b>${n}</b><span>${l}</span></div>`).join('')}</div><div class="panel" style="margin-top:18px"><h3>Evidence and coverage</h3><p>Two uploaded mathematics PDFs are archived with hashes. All 184 pages have text extracts; the cover and relevant Grade 7 pages received visual review. Five source standard records are represented. Other source records still rely on search extracts. Human semantic review and full-corpus parsing remain pending.</p><h3>Mathematics policy timeline</h3><p>NYSED guidance places adoption in September 2017, full implementation in September 2022, and aligned Grades 3–8 assessments in spring 2023. These dates describe the standards family. The uploaded full document says Updated June 2019; exact edition applicability remains under review.</p><a href="https://www.nysed.gov/standards-instruction/mathematics-guidance-resources" target="_blank" rel="noopener">Inspect NYSED guidance ↗</a></div><div class="section-head"><h2>Content-area acquisition queue</h2><span>12 identified; document review pending</span></div>${corpus.families.map(f=>`<div class="panel" style="margin-bottom:10px"><h3>${esc(f.label)}</h3><p>Acquisition: ${esc(f.acquisition)} · Parsing: ${esc(f.parsing)}<br>Normalization: ${esc(f.normalization)} · Relationships: ${esc(f.relationships)}<br>Validation: ${esc(f.validation)} · Human review: ${esc(f.human_review)}</p></div>`).join('')}<p><a href="https://www.nysed.gov/standards-instruction/nys-p-12-learning-standards-content-area" target="_blank" rel="noopener">NYSED content-area inventory ↗</a></p>`;
++if(view==='workbench')html=`<div class="section-head"><h2>Source review checkpoint</h2><span>${esc(model.release)}</span></div><div class="metric-grid">${[[manifest.sources.length,'source records identified'],[manifest.sources.filter(x=>x.acquisition_status==='full-document-acquired').length,'full source documents acquired'],[corpus.families.length,'content areas queued'],['5','source standard records (parent + subparts)'],[model.nodes.filter(n=>n.type==='Expectation').length,'expectations parsed'],['0','reviewed findings']].map(([n,l])=>`<div class="metric"><b>${n}</b><span>${l}</span></div>`).join('')}</div><div class="panel" style="margin-top:18px"><h3>Evidence and coverage</h3><p>Two uploaded mathematics PDFs are archived with hashes. All 184 pages have text extracts; the cover and relevant Grade 7 pages received visual review. Five source standard records and six parsed expectations represent the bounded family. Other source records still rely on search extracts. Human semantic review and full-corpus parsing remain pending.</p><h3>Mathematics policy timeline</h3><p>Prior search excerpts suggested adoption in September 2017, full implementation in September 2022, and aligned Grades 3–8 assessments in spring 2023. These date observations are provisional: their exact supporting excerpts were not preserved, and full-page verification is pending. The uploaded full document says Updated June 2019; exact edition applicability remains under review.</p><a href="https://www.nysed.gov/standards-instruction/mathematics-guidance-resources" target="_blank" rel="noopener">Inspect NYSED guidance ↗</a></div><div class="section-head"><h2>Content-area acquisition queue</h2><span>12 identified; document review pending</span></div>${corpus.families.map(f=>`<div class="panel" style="margin-bottom:10px"><h3>${esc(f.label)}</h3><p>Acquisition: ${esc(f.acquisition)} · Parsing: ${esc(f.parsing)}<br>Normalization: ${esc(f.normalization)} · Relationships: ${esc(f.relationships)}<br>Validation: ${esc(f.validation)} · Human review: ${esc(f.human_review)}</p></div>`).join('')}<p><a href="https://www.nysed.gov/standards-instruction/nys-p-12-learning-standards-content-area" target="_blank" rel="noopener">NYSED content-area inventory ↗</a></p>`;
+ if(view==='findings')html=`<div class="section-head"><h2>Research state</h2><span>0 published findings</span></div><div class="stack"><div class="panel"><div class="kicker">FINDINGS</div><p>No cross-disciplinary or developmental finding can be supported from one standard. This area will link computed results to source IDs, edges, methods, ontology release, and Git revision.</p></div><div class="panel"><div class="kicker">UNRESOLVED QUESTIONS</div>${model.unresolved.map(q=>`<p style="margin-bottom:12px">${esc(q.text)}</p>`).join('')}</div><div class="panel"><div class="kicker">CANONICAL ASSUMPTIONS / REJECTED HYPOTHESES</div><p>Both registers are empty. No local district choice or rejected mapping has yet been evaluated.</p></div></div>`;
+ if(view==='log')html=`<div class="section-head"><h2>Monday, September 28</h2><span>Initial checkpoint · 0.0.1</span></div><div class="panel"><div class="kicker">SOURCE → STRUCTURE → RECEIPT</div><h2>One standard enters the machine</h2><p>NY-7.RP.2 is represented with its original wording, stable identifier, Grade 7 placement, two parsed expectations, six provenance-bearing edges, and an inspectable receipt.</p><div class="path"><span>7 nodes</span><i>·</i><span>6 edges</span><i>·</i><span>0 findings</span></div><p>First public checkpoint: Site version 1, source commit <code>da6f48d9d9ec725ec8ed33b3f0ac7fbfc515b0ea</code>. The matching Monday research state is archived in <a href="https://github.com/GarageThermonuclearLaboratories/Minerva/commit/647494729893aae73fd764bae9ff2742b260dbd2" target="_blank" rel="noopener">GitHub commit 6474947 ↗</a>. The current Site source commit is recorded in the repository Lab Log. Full PDF page and effective-date verification remain open. No rejected hypothesis has been recorded. The next package expands the primary corpus and verifies its temporal scope.</p></div>`;
+ if(view==='log')html=`<div class="panel" style="margin-bottom:24px"><div class="kicker">0.0.2 · SOURCE REVIEW AND CORPUS INVENTORY</div><h2>Dates supported; document verification still open</h2><p>Added three source records and a twelve-content-area acquisition queue. Recorded mathematics implementation dates with month and season precision. Corrected the earlier overstatement that the full standard was verified: only its heading is represented from search excerpts.</p><p>PDF downloads failed with HTTP 502. Full source files, page anchors, revisions, and human review remain pending. Graph: 7 nodes, 6 edges, 0 findings.</p><p><a href="https://github.com/GarageThermonuclearLaboratories/Minerva/blob/${release.research_commit||'main'}/docs/source-review.md" target="_blank" rel="noopener">Inspect this review and its evidence ↗</a></p></div>`+html;
+diff --git a/dist/corpus-plan.json b/dist/corpus-plan.json
+index b28de2c..de5f499 100644
+--- a/dist/corpus-plan.json
++++ b/dist/corpus-plan.json
+@@ -75,7 +75,7 @@
+       "label": "Mathematics",
+       "source_id": "src:nysed:p12-index",
+       "acquisition": "two-full-documents-acquired",
+-      "parsing": "one-parent-standard-and-four-subparts",
++      "parsing": "one-parent-four-subparts-six-expectations; bounded-agent-review",
+       "normalization": "not-started",
+       "relationships": "source-and-parse-links-only",
+       "validation": "references-hashes-and-reviewed-wording",
+diff --git a/dist/index.html b/dist/index.html
+index 385a64a..f3daac6 100644
+--- a/dist/index.html
++++ b/dist/index.html
+@@ -1,7 +1,7 @@
+ <!doctype html>
+ <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#14191c"><title>Wildcats / Minerva</title><meta name="description" content="An evidence-linked atlas of New York State K–12 educational expectations."><link rel="stylesheet" href="style.css"></head>
+ <body>
+-  <header class="mast"><div class="brand"><span class="mark" aria-hidden="true">W<span>✳</span></span><div><strong>WILDCATS</strong><small>MINERVA · A LIVING EDUCATION ATLAS</small></div></div><div class="snapshot">POLICY SNAPSHOT <b>28 SEP 2026</b><span class="line"></span> MONDAY SLICE <b>0.0.3</b></div></header>
++  <header class="mast"><div class="brand"><span class="mark" aria-hidden="true">W<span>✳</span></span><div><strong>WILDCATS</strong><small>MINERVA · A LIVING EDUCATION ATLAS</small></div></div><div class="snapshot">POLICY SNAPSHOT <b>28 SEP 2026</b><span class="line"></span><b id="release-label">Loading research version</b></div></header>
+   <div class="layout"><nav class="rail" aria-label="Views"><p>EXPLORE</p><button class="active" data-view="atlas">Atlas <span>↗</span></button><button data-view="curriculum">Curriculum <span>↗</span></button><button data-view="journey">Journey <span>↗</span></button><button data-view="crossroads">Crossroads <span>↗</span></button><button data-view="wildcats">Follow the Wildcats <span>↗</span></button><p>RESEARCH</p><button data-view="workbench">Workbench <span>↗</span></button><button data-view="findings">Findings <span>↗</span></button><button data-view="log">Lab Log <span>↗</span></button><div class="rail-foot">New York State sources<br>→ structured claims<br>→ inspectable knowledge</div></nav>
+   <main id="main"><div class="eyebrow">GARAGE CITY SCHOOL DISTRICT / RESEARCH MODEL</div><h1 id="title">What is New York asking students to learn?</h1><p class="intro" id="intro">Explore one traced Grade 7 mathematics standard. The full K–12 atlas is under construction; this checkpoint shows exactly what has been established.</p><div class="notice"><b>Expected ≠ mastered.</b> This model describes educational expectations. It contains no evidence that Matthew, Eva, or any real student has demonstrated mastery.</div><section id="view" aria-live="polite"></section></main>
+   <aside class="receipt" id="receipt"><div class="receipt-top"><span>THE RECEIPT</span><button id="close-receipt" aria-label="Close receipt">×</button></div><div id="receipt-body"><div class="empty-receipt">Select a node to see what New York said, what we parsed, and what remains unverified.</div></div></aside></div>
+diff --git a/dist/release.json b/dist/release.json
+index d4db707..3ec75fb 100644
+--- a/dist/release.json
++++ b/dist/release.json
+@@ -1,4 +1,5 @@
+ {
+-  "release": "wildcats-0.0.3-primary-pdfs",
+-  "research_commit": "cf22f8551cac01cab17d30c94eb10a616e751e01"
++  "release": "wildcats-0.0.4-monday-candidate",
++  "research_commit": null,
++  "publication_status": "pending-M8"
+ }
+diff --git a/dist/source-review.json b/dist/source-review.json
+index 1cf1c3a..4c28278 100644
+--- a/dist/source-review.json
++++ b/dist/source-review.json
+@@ -7,29 +7,41 @@
+     {
+       "id": "wc:policy-evidence:math-adoption",
+       "source_id": "src:nysed:math-guidance",
+-      "status": "SOURCE",
++      "status": "PROVISIONAL",
+       "event": "Mathematics standards adoption",
+       "date": "2017-09",
+-      "date_precision": "month"
++      "date_precision": "month",
++      "derivation": "SOURCE",
++      "evidence_status": "prior-search-excerpt-observation; durable-capture-missing",
++      "source_locator": null,
++      "review_status": "full-page-and-date-verification-pending"
+     },
+     {
+       "id": "wc:policy-evidence:math-implementation",
+       "source_id": "src:nysed:math-guidance",
+-      "status": "SOURCE",
++      "status": "PROVISIONAL",
+       "event": "Full mathematics implementation",
+       "date": "2022-09",
+-      "date_precision": "month"
++      "date_precision": "month",
++      "derivation": "SOURCE",
++      "evidence_status": "prior-search-excerpt-observation; durable-capture-missing",
++      "source_locator": null,
++      "review_status": "full-page-and-date-verification-pending"
+     },
+     {
+       "id": "wc:policy-evidence:math-assessment",
+       "source_id": "src:nysed:math-guidance",
+-      "status": "SOURCE",
++      "status": "PROVISIONAL",
+       "event": "Aligned Grades 3–8 mathematics assessments begin",
+       "date": "2023-spring",
+-      "date_precision": "season"
++      "date_precision": "season",
++      "derivation": "SOURCE",
++      "evidence_status": "prior-search-excerpt-observation; durable-capture-missing",
++      "source_locator": null,
++      "review_status": "full-page-and-date-verification-pending"
+     }
+   ],
+-  "interpretation": "Previously recorded guidance dates remain search-excerpt evidence. The uploaded full standards cover identifies a June 2019 update; PDF metadata timestamps are stored separately. Page 90 wording and subparts are visually verified.",
++  "interpretation": "Timeline dates are provisional prior search-excerpt observations; exact supporting excerpts and section locators were not preserved. Reacquire evidence before asserting these dates as verified. The archived full standards cover identifies a June 2019 update; page90 wording was separately reviewed.",
+   "failed_acquisitions": [
+     {
+       "url": "https://www.nysed.gov/sites/default/files/programs/curriculum-instruction/nys-math-standards-grade-7-crosswalk.pdf",
+diff --git a/docs/source-inventory.md b/docs/source-inventory.md
+index 131c69b..2387d83 100644
+--- a/docs/source-inventory.md
++++ b/docs/source-inventory.md
+@@ -109,7 +109,7 @@ Supporting guidance: [NYSED resource](https://www.nysed.gov/standards-instructio
+ 
+ Date evidence: Document revision: 2019-06 (month; archived-cover-reviewed); [evidence](https://www.nysed.gov/sites/default/files/programs/standards-instruction/nys-next-generation-mathematics-p-12-standards.pdf). Publication and effective dates remain unknown; snapshot applicability unresolved.
+ 
+-Semantic review: parent and four subparts source-reviewed; two heading expectations parsed. Human review pending.
++Semantic review: bounded NY-7.RP.2 family agent-reviewed; six expectations parsed. Independent/human review pending.
+ 
+ **Next action:** Verify edition applicability and complete bounded NY-7.RP.2 semantic trace before broad parsing.
+ 
+diff --git a/scripts/ingest_sources.py b/scripts/ingest_sources.py
+index a9d2452..f2e0b57 100644
+--- a/scripts/ingest_sources.py
++++ b/scripts/ingest_sources.py
+@@ -163,15 +163,27 @@ def check(root):
+     receipt = read(root / "data/ingestion-manifest.json")
+     sources = read(root / "data/sources.json")
+     config = read(root / "data/ingestion-config.json")
+-    if receipt.get("semantic_promotion") is not False or receipt["policy_snapshot"] != sources["snapshot_date"]:
++    if receipt.get("semantic_promotion") is not False or receipt["policy_snapshot"] != sources["snapshot_date"] or receipt["pipeline_version"] != PIPELINE:
+         raise ValueError("Invalid receipt boundary or snapshot")
++    if len({s["id"] for s in sources["sources"]}) != len(sources["sources"]):
++        raise ValueError("Duplicate source IDs")
+     acquired = {s["id"]: s for s in sources["sources"] if s.get("acquisition_status") == "full-document-acquired"}
+-    if {d["source_id"] for d in receipt["documents"]} != set(acquired):
++    if {d["source_id"] for d in receipt["documents"]} != set(acquired) or len(receipt["documents"]) != len(acquired):
+         raise ValueError("Ingestion receipt does not cover acquired sources")
+     for record in receipt["documents"]:
+         source = acquired[record["source_id"]]
+-        if record["selected_pages"] != sorted(set(config["selected_pages"].get(source["id"], [1]))) or record["recipe"]["scale"] != config["render_scale"]:
++        selected = sorted(set(config["selected_pages"].get(source["id"], [1])))
++        expected_recipe = {"pipeline": PIPELINE, "pymupdf": VERSION,
++                           "selected_pages": selected, "scale": config["render_scale"]}
++        if record["selected_pages"] != selected or record["recipe"] != expected_recipe:
+             raise ValueError("Receipt is stale relative to ingestion configuration")
++        if record["archive_path"] != source["archive_path"] or record["page_count"] != source["page_count"]:
++            raise ValueError("Receipt/source metadata mismatch")
++        prefix = f"sources/processed/{source['sha256']}/{digest(encoded(expected_recipe))[:16]}"
++        expected_paths = {f"{prefix}/{name}" for name in ["metadata.json", "pages.json", "review-queue.json"]}
++        expected_paths.update(f"{prefix}/page-{page}.png" for page in selected)
++        if {a["path"] for a in record["artifacts"]} != expected_paths or len(record["artifacts"]) != len(expected_paths):
++            raise ValueError("Artifact inventory does not match the recipe")
+         if record["sha256"] != source["sha256"]:
+             raise ValueError("Receipt/source hash mismatch")
+         if digest(inside(root, source["archive_path"]).read_bytes()) != record["sha256"]:
+@@ -181,12 +193,20 @@ def check(root):
+                 raise ValueError(f"Artifact hash mismatch: {artifact['path']}")
+         artifacts = {Path(a["path"]).name: read(inside(root, a["path"]))
+                      for a in record["artifacts"] if a["path"].endswith(".json")}
++        if any(a["sha256"] != source["sha256"] for a in artifacts.values()):
++            raise ValueError("Embedded source hash mismatch")
++        if artifacts["pages.json"]["recipe"] != expected_recipe:
++            raise ValueError("Embedded recipe mismatch")
++        if artifacts["metadata.json"]["page_count"] != source["page_count"] or artifacts["metadata.json"]["bytes"] != source["bytes"]:
++            raise ValueError("Embedded metadata mismatch")
+         pages = artifacts["pages.json"]["pages"]
+         tasks = artifacts["review-queue.json"]["tasks"]
+         if [p["pdf_page"] for p in pages] != list(range(1, source["page_count"] + 1)) or len(tasks) != len(pages):
+             raise ValueError("Page/queue coverage mismatch")
+         if any(t["status"] != "pending-semantic-review" for t in tasks):
+             raise ValueError("Generated queue must not contain review decisions")
++        if [t["pdf_page"] for t in tasks] != list(range(1, source["page_count"] + 1)):
++            raise ValueError("Review task page sequence mismatch")
+     return receipt
+ 
+ 
+diff --git a/scripts/test_ingestion.py b/scripts/test_ingestion.py
+index b7f9664..8ac3060 100644
+--- a/scripts/test_ingestion.py
++++ b/scripts/test_ingestion.py
+@@ -76,6 +76,22 @@ class IngestionTests(unittest.TestCase):
+             register(self.root, invalid, self.record)
+         self.assertEqual(before, self.snapshot())
+ 
++    def test_missing_evidence_artifact_cannot_evade_check(self):
++        register(self.root, self.input, self.record)
++        receipt = build(self.root)
++        receipt['documents'][0]['artifacts'] = [a for a in receipt['documents'][0]['artifacts'] if not a['path'].endswith('.png')]
++        save_json(self.root / 'data/ingestion-manifest.json', receipt)
++        with self.assertRaisesRegex(ValueError, 'Artifact inventory'):
++            check(self.root)
++
++    def test_recipe_version_must_match(self):
++        register(self.root, self.input, self.record)
++        receipt = build(self.root)
++        receipt['documents'][0]['recipe']['pymupdf'] = 'unknown'
++        save_json(self.root / 'data/ingestion-manifest.json', receipt)
++        with self.assertRaisesRegex(ValueError, 'stale'):
++            check(self.root)
++
+ 
+ if __name__ == '__main__':
+     unittest.main()
+diff --git a/scripts/validate.py b/scripts/validate.py
+index 61d75c5..6d01d34 100644
+--- a/scripts/validate.py
++++ b/scripts/validate.py
+@@ -29,9 +29,10 @@ assert len({f['id'] for f in plan['families']}) == len(plan['families'])
+ assert all(f['source_id'] in source_ids for f in plan['families'])
+ assert all(c['source_id'] in source_ids for c in review['claims'])
+ import hashlib
++ingestion = None
+ if (root / 'data/ingestion-manifest.json').exists():
+     from ingest_sources import check
+-    check(root)
++    ingestion = check(root)
+ for source in sources['sources']:
+     if source['acquisition_status'] == 'full-document-acquired':
+         content = (root / source['archive_path']).read_bytes()
+@@ -41,7 +42,21 @@ for source in sources['sources']:
+             extracted = json.loads((root / 'sources/extracted' / (Path(source['archive_path']).stem + '.pages.json')).read_text())
+             assert len(extracted['pages']) == source['page_count']
+             assert extracted['sha256'] == source['sha256']
+-full_text = json.loads((root / 'sources/extracted/nys-next-generation-mathematics-p-12-standards.pages.json').read_text())
++if ingestion:
++    full_record = next(d for d in ingestion['documents'] if d['source_id'] == 'src:nysed:math-full')
++    page_artifact = next(a for a in full_record['artifacts'] if a['path'].endswith('/pages.json'))
++    full_text = json.loads((root / page_artifact['path']).read_text())
++    # Public receipt images must be the same bytes as the hashed extraction bundles.
++    public_evidence = {'src:nysed:math-full': 'math-full', 'src:nysed:math-2017': 'math-crosswalk'}
++    for record in ingestion['documents']:
++        if record['source_id'] not in public_evidence:
++            continue
++        for artifact in record['artifacts']:
++            if artifact['path'].endswith('.png'):
++                public_path = root / 'dist/evidence' / public_evidence[record['source_id']] / Path(artifact['path']).name
++                assert hashlib.sha256(public_path.read_bytes()).hexdigest() == artifact['sha256'], public_path
++else:
++    full_text = json.loads((root / 'sources/extracted/nys-next-generation-mathematics-p-12-standards.pages.json').read_text())
+ page90 = ' '.join(full_text['pages'][89]['text'].split())
+ for item in data['nodes']:
+     if item.get('original_text'):

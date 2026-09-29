@@ -1,5 +1,11 @@
 # Source review · 2026-09-28
 
+## M7 correction and current status
+
+The review below records the historical 0.0.2 checkpoint. Its timeline observations are **PROVISIONAL**: the exact supporting search excerpts and section locators were not preserved. Adoption in September 2017, implementation in September 2022, and assessment alignment in spring 2023 require reacquired evidence before being presented as verified dates. `data/source-review.json` and the current Workbench carry this qualification. None establishes exact edition or cohort applicability.
+
+Subsequent work acquired two uploaded mathematics PDFs, archived their hashes, and traced NY-7.RP.2 and all four subparts into six parsed expectations. See [primary PDF review](primary-pdf-review.md), [semantic trace](semantic-trace-ny-7-rp-2.md), and the [Monday checklist](monday-closure-checklist.md) for current acquisition and audit status. The historical acquisition failures and counts below are not the current corpus state.
+
 ## Evidence actually obtained
 
 NYSED indexed guidance reports mathematics adoption in September 2017, full implementation from September 2022, and aligned Grades 3–8 assessments from spring 2023. Preserve month/season precision; no exact legal effective day is established here.

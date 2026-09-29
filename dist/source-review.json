@@ -7,29 +7,41 @@
     {
       "id": "wc:policy-evidence:math-adoption",
       "source_id": "src:nysed:math-guidance",
-      "status": "SOURCE",
+      "status": "PROVISIONAL",
       "event": "Mathematics standards adoption",
       "date": "2017-09",
-      "date_precision": "month"
+      "date_precision": "month",
+      "derivation": "SOURCE",
+      "evidence_status": "prior-search-excerpt-observation; durable-capture-missing",
+      "source_locator": null,
+      "review_status": "full-page-and-date-verification-pending"
     },
     {
       "id": "wc:policy-evidence:math-implementation",
       "source_id": "src:nysed:math-guidance",
-      "status": "SOURCE",
+      "status": "PROVISIONAL",
       "event": "Full mathematics implementation",
       "date": "2022-09",
-      "date_precision": "month"
+      "date_precision": "month",
+      "derivation": "SOURCE",
+      "evidence_status": "prior-search-excerpt-observation; durable-capture-missing",
+      "source_locator": null,
+      "review_status": "full-page-and-date-verification-pending"
     },
     {
       "id": "wc:policy-evidence:math-assessment",
       "source_id": "src:nysed:math-guidance",
-      "status": "SOURCE",
+      "status": "PROVISIONAL",
       "event": "Aligned Grades 3–8 mathematics assessments begin",
       "date": "2023-spring",
-      "date_precision": "season"
+      "date_precision": "season",
+      "derivation": "SOURCE",
+      "evidence_status": "prior-search-excerpt-observation; durable-capture-missing",
+      "source_locator": null,
+      "review_status": "full-page-and-date-verification-pending"
     }
   ],
-  "interpretation": "Previously recorded guidance dates remain search-excerpt evidence. The uploaded full standards cover identifies a June 2019 update; PDF metadata timestamps are stored separately. Page 90 wording and subparts are visually verified.",
+  "interpretation": "Timeline dates are provisional prior search-excerpt observations; exact supporting excerpts and section locators were not preserved. Reacquire evidence before asserting these dates as verified. The archived full standards cover identifies a June 2019 update; page90 wording was separately reviewed.",
   "failed_acquisitions": [
     {
       "url": "https://www.nysed.gov/sites/default/files/programs/curriculum-instruction/nys-math-standards-grade-7-crosswalk.pdf",
