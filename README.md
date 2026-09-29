@@ -10,6 +10,7 @@ The v0.1 construction is clean-room: no Garage-internal ontology class, hierarch
 
 ## Contents
 
+- [Monday output assessment](docs/monday-output-assessment.md): post-publication reassessment, negative-test findings, and readiness limits
 - [Public interface revision](docs/site-revision-0.0.4.md): sixteen-part UX brief, bounded graph, Receipt behavior, and verification limits
 - [Monday independent audit](docs/monday-audit.md): M7 pass, reviewed repair commit, verification, and remaining limitations
 - [K–12 journey scaffold](docs/k12-journey.md): shared avatar pathway, five stages, grade coverage, and transition boundary

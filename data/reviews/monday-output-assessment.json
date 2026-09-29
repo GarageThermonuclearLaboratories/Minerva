@@ -1,0 +1,36 @@
+{
+  "id": "wc:review:monday-output-assessment-2026-09-29",
+  "recorded_at": "2026-09-29T10:57:01Z",
+  "reviewer": "builder-agent",
+  "review_kind": "self-review-with-negative-probes",
+  "model": null,
+  "reasoning_effort": null,
+  "local_commit": "47deb88",
+  "research_tree": "6fe90ce2f52a362401038982ede551cd4d83b302",
+  "github_file_identity_match": true,
+  "tracked_files_checked": 64,
+  "site_version": 8,
+  "site_source_commit": "0330ad62646237358200f9e5ac2098324ee093ba",
+  "deployment_status": "succeeded",
+  "access_mode": "public",
+  "verdict": "scoped-foundation-delivered; acceptance-controls-needed-before-semantic-expansion",
+  "existing_tests": "passed",
+  "source_page_90_visual_recheck": "passed for bounded NY-7.RP.2 trace",
+  "negative_probes": [
+    {"change": "invented relation predicate", "validator_accepted": true},
+    {"change": "standard source_locator removed", "validator_accepted": true},
+    {"change": "grade-assigned standard marked REJECTED", "validator_accepted": true, "still_in_expected_projection": true},
+    {"change": "unit-rate parsed qualifiers deleted", "validator_accepted": true, "existing_receipt_test_accepted": true}
+  ],
+  "interaction_probes": {
+    "navigation_before_data_load": "runtime TypeError; recovers after data resolves",
+    "concept_student_lens": "opens Grade 7 with no contextual highlight",
+    "mathematics_subject_neighborhood": "one isolated node"
+  },
+  "review_state_drift": {"nodes_with_independent_pending": 8, "edges_with_independent_pending": 8, "journey_independent_pending": true},
+  "visual_evidence": "docs/review-assets/minerva-v8-atlas.png; native deployment screenshot, 1200x750",
+  "full_browser_visual_accessibility_qa": "not completed",
+  "stored_archive_hash_reconciliation": "unresolved; provider-reported hash differs from local gzip and decompressed-tar hashes; stored artifact download unavailable",
+  "mutation_boundary": "temporary repository copies and in-memory fixtures only; no product changes",
+  "documentation": "docs/monday-output-assessment.md"
+}
