@@ -1,11 +1,12 @@
 {
   "release": "wildcats-0.0.8-wednesday-comparisons",
-  "research_commit": "c654544adef29b6319a74d11f7aebfcd8e661f7a",
-  "interface_revision": "0.0.8-safeguards",
+  "research_commit": null,
+  "interface_revision": "0.0.8-thursday-foundation",
   "publication_status": "prepared-for-publication",
-  "review_scope": "Wednesday independent audit remains valid for its unchanged data snapshot. Comparison baseline and subject validation repairs have builder regression review only.",
+  "review_scope": "Wednesday independent audit covers its unchanged educational data snapshot. Thursday package 1 safeguard verification and interface controls have builder review; separate Thursday review remains package 3.",
   "audit_status": "pass-with-recorded-limits",
   "audit_record": "data/reviews/wednesday-independent.json",
-  "checkpoint": "comparison-safeguards-2026-09-30",
-  "safeguards_record": "docs/comparison-safeguards.md"
+  "checkpoint": "thursday-package-1",
+  "safeguards_record": "docs/comparison-safeguards.md",
+  "package_record": "docs/thursday-foundation.md"
 }

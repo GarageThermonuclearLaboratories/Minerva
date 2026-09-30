@@ -10,6 +10,8 @@ The v0.1 construction is clean-room: no Garage-internal ontology class, hierarch
 
 ## Current checkpoint
 
+[Thursday package 1](docs/thursday-foundation.md) verifies the repaired safeguards and adds subject/disposition filters, claim-status guidance and unresolved-question disclosures. Ask Minerva and the separate Thursday review remain the next packages.
+
 [Wednesday independent audit](docs/wednesday-independent-audit.md) passed the bounded science and comparison packages with recorded limits. The two validation follow-ups were subsequently repaired with builder regression review in [comparison safeguards](docs/comparison-safeguards.md); no graph edge or finding was promoted. [Wednesday comparison package](docs/wednesday-comparisons.md) records package 2. [Wednesday science package](docs/wednesday-science.md) records package 1. [Tuesday continuation](docs/tuesday-completion.md) and its subsequent audit and QA remain historical records. Historical documents below describe their named checkpoints.
 
 ## Contents

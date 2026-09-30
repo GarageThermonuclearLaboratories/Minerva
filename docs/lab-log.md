@@ -187,3 +187,7 @@ Public Site **version 14** succeeded on September 30, 2026 at **19:14:30 America
 Exact native record: `data/publications/comparison-safeguards.json`. This receipt is appended after deployment and is not part of the deployed bundle. GitHub payload preparation initially hit a local output limit; reading the changed files individually resolved it before any remote write. No GitHub blocker remains. Thursday's Ask Minerva, its broader review and Friday's freeze remain the next packages.
 
 A direct public fetch of `/release.json` matched the packaged checkpoint exactly after deployment.
+
+### Thursday package 1 · prepared September 30, 2026
+
+Reconciled the published safeguard repairs, verified their original Git baseline, and added Crossroads subject/disposition filters with a truthful empty state, stable keyboard focus and expandable research questions. Educational data and Wednesday's exact audit snapshot remain unchanged. Builder verification passed 25 comparison, 28 acceptance and 7 ingestion tests, the main validator, Receipt/projection checks and the expanded DOM suite. Ask Minerva and Thursday's separate audit remain open. See `docs/thursday-foundation.md`; actual publication and rendered QA follow in the publication receipt.

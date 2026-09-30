@@ -27,7 +27,7 @@ async function setup(lateInterface=false, delayed=false){
   assert.ok(d.querySelector('#receipt').hidden,'Receipt starts collapsed');
   assert.ok(d.querySelector('.audit-notice').textContent.includes('audit passed'));
   assert.ok(d.querySelector('.audit-notice a').href.endsWith('/docs/wednesday-independent-audit.md'));
-  assert.equal(d.querySelector('#release-label').textContent,'v0.0.8 · Comparison safeguards');
+  assert.equal(d.querySelector('#release-label').textContent,'v0.0.8 · Thursday foundation');
   assert.ok(d.querySelector('.trace-preview [data-node]'));
   d.querySelector('.trace-parsed [data-node]').click();
   assert.ok(!d.querySelector('#receipt').hidden);
@@ -78,8 +78,8 @@ async function setup(lateInterface=false, delayed=false){
   const toggle=d.querySelector('[data-family]'),detail=d.getElementById(toggle.getAttribute('aria-controls'));
   assert.ok(detail.hidden);toggle.click();assert.ok(!detail.hidden);toggle.click();assert.ok(detail.hidden);
   assert.ok(!d.querySelector('#epistemic-notice').open);
-  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,9);
-  assert.ok(d.querySelector('.log-entry').textContent.includes('W1 and W2 repaired'));
+  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,10);
+  assert.ok(d.querySelector('.log-entry').textContent.includes('Claim status and comparison controls'));
   assert.ok(d.querySelector('#view').textContent.includes('PROVISIONAL'));
   d.querySelector('[data-view="crossroads"]').click();
   assert.equal(d.querySelectorAll('.comparison-card').length,3);
@@ -93,6 +93,19 @@ async function setup(lateInterface=false, delayed=false){
     d.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
     assert.equal(d.activeElement,target);
   }
+  const filter=(id,value)=>{const c=d.getElementById(id);c.value=value;c.dispatchEvent(new w.Event('change',{bubbles:true}));assert.equal(d.activeElement.id,id);};
+  const originalIds=[...d.querySelectorAll('.comparison-card')].map(c=>c.id);
+  assert.equal(d.querySelectorAll('.comparison-next').length,3);
+  filter('comparison-status','PROVISIONAL');assert.equal(d.querySelectorAll('.comparison-card').length,1);
+  assert.ok(d.querySelector('.comparison-card .tag.provisional').textContent.includes('PROVISIONAL'));
+  filter('comparison-subject','Mathematics');assert.equal(d.querySelectorAll('.comparison-card').length,0);
+  assert.ok(d.querySelector('.comparison-empty').textContent.includes('not evidence'));
+  filter('comparison-status','REJECTED');assert.equal(d.querySelectorAll('.comparison-card').length,2);
+  filter('comparison-subject','Science');assert.equal(d.querySelectorAll('.comparison-card').length,1);
+  assert.equal(d.querySelector('.comparison-card').id,'wc:comparison:proportion-force-equivalence');
+  filter('comparison-status','ALL');filter('comparison-subject','ALL');
+  assert.deepEqual([...d.querySelectorAll('.comparison-card')].map(c=>c.id),originalIds);
+  assert.ok(d.querySelector('.claim-guide').textContent.includes('None establishes student mastery'));
   d.querySelector('[data-view="findings"]').click();d.querySelector('#open-comparisons').click();
   assert.equal(d.querySelectorAll('.comparison-card').length,3);
   assert.deepEqual(errors,[]);dom.window.close();
