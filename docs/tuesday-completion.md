@@ -46,3 +46,7 @@ Repository transport rejected the largest single PDF payload. Its exact bytes ar
 ## Publication confirmed
 
 Public Site version 10 succeeded on September 30, 2026. See `data/publications/tuesday-0.0.6.json` for exact research/source/deployment identifiers. This post-publication confirmation does not close the independent-audit or rendered-QA gates.
+
+## Subsequent separate AI review · September 30
+
+The [separate AI audit](tuesday-independent-audit.md) passed with limits: no release-blocking defects; one nonblocking conditional coverage-text inconsistency. The independent-AI-review gate is now satisfied for the recorded checkpoint. Rendered website QA remains open. The earlier sections preserve their original builder/publication-time status.
