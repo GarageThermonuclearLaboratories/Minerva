@@ -1,6 +1,6 @@
 {
   "release": "wildcats-0.0.8-wednesday-comparisons",
-  "research_commit": null,
+  "research_commit": "42c31a8185afaee021fea44bfe45aaa1f8187aa4",
   "interface_revision": "0.0.8-thursday-foundation",
   "publication_status": "prepared-for-publication",
   "review_scope": "Wednesday independent audit covers its unchanged educational data snapshot. Thursday package 1 safeguard verification and interface controls have builder review; separate Thursday review remains package 3.",

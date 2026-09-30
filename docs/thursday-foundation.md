@@ -25,3 +25,11 @@ A standalone Chromium attempt crashed at startup. Managed-browser local-preview 
 ## Completion and next package
 
 Package 1 establishes enforced comparison integrity and inspectable claim status. Ask Minerva is package 2; Thursday's separate AI review is package 3. This package does not close Thursday. Publication identifiers and actual rendered-check results belong in `data/publications/thursday-foundation.json`.
+
+## Publication and rendered verification
+
+Package 1 is complete. Public Site version 15 succeeded on September 30, 2026 at 23:30:58 UTC (19:30:58 America/New_York). Research commit `42c31a8185afaee021fea44bfe45aaa1f8187aa4`; Site source `c73c013d0373b22bb17e588ac811a14c161c598b`. Exact native IDs and outcome are preserved in `data/publications/thursday-foundation.json`. The staged research tree matched the created GitHub tree exactly.
+
+Managed Chromium inspected the production Crossroads at desktop width 1363 (1348 content pixels). Filters, empty result, native disclosure and focus worked. The 320-pixel iframe had 305 content pixels with its scrollbar and exactly 305 pixels of scroll width, both for the empty result and expanded analogy. Its next-evidence disclosure opened; source Receipt opened and Escape closed it, restoring the source button's focus. Screenshots are in `docs/review-assets/thursday-foundation-desktop.jpg` and `docs/review-assets/thursday-foundation-mobile.jpg`. Targeted rendered QA passed without a blocking defect; physical-device, native-zoom and full accessibility claims remain outside this check.
+
+These results and screenshots were saved after publication. They do not claim to be part of the deployed source bundle. Ask Minerva remains the next work package.

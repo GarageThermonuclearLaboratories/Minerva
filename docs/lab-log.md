@@ -191,3 +191,5 @@ A direct public fetch of `/release.json` matched the packaged checkpoint exactly
 ### Thursday package 1 · prepared September 30, 2026
 
 Reconciled the published safeguard repairs, verified their original Git baseline, and added Crossroads subject/disposition filters with a truthful empty state, stable keyboard focus and expandable research questions. Educational data and Wednesday's exact audit snapshot remain unchanged. Builder verification passed 25 comparison, 28 acceptance and 7 ingestion tests, the main validator, Receipt/projection checks and the expanded DOM suite. Ask Minerva and Thursday's separate audit remain open. See `docs/thursday-foundation.md`; actual publication and rendered QA follow in the publication receipt.
+
+Thursday package 1 completed: public Site version 15 succeeded, source `c73c013d0373b22bb17e588ac811a14c161c598b`, research `42c31a8185afaee021fea44bfe45aaa1f8187aa4`. Production desktop and 320-pixel iframe checks passed for filters, disclosures and Receipt keyboard behavior. Receipt: `data/publications/thursday-foundation.json`. Ask Minerva is next; Thursday's separate audit remains package 3.

@@ -1,0 +1,61 @@
+{
+  "checkpoint": "thursday-package-1",
+  "completed": true,
+  "release": "wildcats-0.0.8-wednesday-comparisons",
+  "interface_revision": "0.0.8-thursday-foundation",
+  "research_commit": "42c31a8185afaee021fea44bfe45aaa1f8187aa4",
+  "site_version": {
+    "id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_71af6a44bba08191978ef39e9ddc9cff",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "version_number": 15,
+    "source": {
+      "commit_sha": "c73c013d0373b22bb17e588ac811a14c161c598b"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_0000000021fc81f691569db60194b9f1",
+      "content_hash": "sha256:6cc2bfeba0c84d2ff8c87f70727697937e204689510ce41e12144f53a5484456",
+      "size_bytes": 2365440,
+      "file_count": 26
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6abd9babf9048191bef7cad2560e5223",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "title": "Wildcats / Minerva",
+    "version_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_71af6a44bba08191978ef39e9ddc9cff",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://wildcats-minerva.jaredwillis.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6abac050d4cc8191b9d7081e9d8cb8dd",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-30T23:30:58.962645+00:00"
+  },
+  "verification": {
+    "comparison_tests": 25,
+    "acceptance_tests": 28,
+    "ingestion_tests": 7,
+    "main_validator": "passed",
+    "interface_dom": "passed with combined filter and focus checks",
+    "baseline": "Original Git object hash and semantic projection verified",
+    "rendered_desktop": "passed at 1363-pixel outer viewport / 1348-pixel content",
+    "rendered_mobile": "passed in 320-pixel iframe / 305-pixel content with scrollbar; expanded comparison and empty state have no horizontal overflow",
+    "receipt_keyboard": "live narrow layout open, Escape close and origin focus passed",
+    "separate_thursday_audit": "pending package 3"
+  },
+  "screenshots": [
+    "docs/review-assets/thursday-foundation-desktop.jpg",
+    "docs/review-assets/thursday-foundation-mobile.jpg"
+  ],
+  "limits": [
+    "responsive iframe is not a physical phone",
+    "native zoom and full accessibility not audited",
+    "no new independent review of Thursday code"
+  ],
+  "note": "Post-publication receipt and screenshots are not part of deployed source. Wednesday audit remains bound to unchanged educational data."
+}
