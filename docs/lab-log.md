@@ -161,3 +161,9 @@ Wednesday package 1 published successfully as public Site version 11. Research `
 ### September 30 · Wednesday package 2 · Comparisons
 
 Prepared v0.0.8 with three bounded cross-subject analysis records: one provisional evidence-support analogy and two rejected equivalence proposals. Crossroads displays paired source Receipts, six comparison axes and limits. No graph edge or finding is promoted; 26 nodes, 31 edges, 9 expectations and both fictional student projections remain unchanged. Integrity tests and targeted desktop/narrow-screen QA passed. See `docs/wednesday-comparisons.md`. Separate Wednesday AI audit remains package 3.
+
+### September 30 · Wednesday package 3 · Separate AI audit
+
+Separate reviewer `/root/wednesday_audit` passed both frozen Wednesday packages with recorded limits and no blocking findings. Context was inherited; this was not a blind or human audit. Two low-severity generator validation gaps remain explicit follow-ups before reuse/generalization. The current records were independently checked and are correct. See `docs/wednesday-independent-audit.md` and `data/reviews/wednesday-independent.json`.
+
+The ontology, comparison payloads, source manifest and journey are preserved byte-for-byte and tied to the audit by hashes. Current UI notices supersede historical pending-review labels without rewriting those records. Audit-status UI edits receive builder checks separately. Wednesday's agreed bounded scope is ready to close upon publication of this record; broad corpus completion, exact applicability and full accessibility remain outside that closure.

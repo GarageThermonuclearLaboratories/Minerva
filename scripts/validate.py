@@ -112,3 +112,15 @@ for record in comparisons['records']:
     for evidence in record['evidence']:
         assert ' '.join(evidence['quotation'].split()) in source_text(evidence), record['id']
 print('Valid: comparison evidence snapshots and exports; no graph promotion')
+
+# A completed audit applies only to its exact reviewed data, not future edits.
+release = json.loads((root/'dist/release.json').read_text())
+if release.get('audit_status') == 'pass-with-recorded-limits':
+    audit = json.loads((root/release['audit_record']).read_text())
+    assert audit['result'] == release['audit_status'] and audit['release'] == data['release']
+    assert not audit['blocking_findings'], 'Audit has blocking findings'
+    required = {'data/ontology.json','data/comparisons.json','data/comparison-drafts.json','data/sources.json','data/journey.json'}
+    assert set(audit['reviewed_sha256']) == required, 'Incomplete audit snapshot'
+    for path, digest in audit['reviewed_sha256'].items():
+        assert hashlib.sha256((root/path).read_bytes()).hexdigest() == digest, f'Stale independent audit: {path}'
+    print('Valid: independent audit matches the exact reviewed data snapshot')

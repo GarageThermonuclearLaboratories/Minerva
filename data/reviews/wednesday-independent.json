@@ -1,0 +1,26 @@
+{
+  "id": "review:wednesday-independent",
+  "date": "2026-09-30",
+  "result": "pass-with-recorded-limits",
+  "reviewer": "/root/wednesday_audit",
+  "reviewer_type": "separate-ai-agent",
+  "context": "inherited conversation; not blind or human review",
+  "release": "wildcats-0.0.8-wednesday-comparisons",
+  "research_commit": "6c93368df56db11958f4e3f77b20cf02db0e8600",
+  "site_source_commit": "765711539d5007f22b717d2fa1c46238e8036c59",
+  "reviewed_sha256": {
+    "data/ontology.json": "ee25e8a54652dd8f573c5aed370e51ac1eb298fa873562f734bc7be649546ff0",
+    "data/comparisons.json": "4485972875dacd86080a89983fbda2da4eae3a36aadc3dc31b4b55913b9078d1",
+    "data/comparison-drafts.json": "dc07b34fd492dcd2978e370e2a46ffd7bfc6be082d31492a612d97c6c4caf2fd",
+    "data/sources.json": "93b7f454c4e2dce9794c94c218c0d12ebd5571163ca5ceb9f62021c1c523f1de",
+    "data/journey.json": "3d581adc74098d209c83c2718bde6a732f985f2ba6ba24e0b29b62b28ee60d38"
+  },
+  "blocking_findings": [],
+  "nonblocking_findings": [
+    {"id":"W1","severity":"low","status":"open-before-generator-reuse","description":"Baseline commit and method/scope metadata incompletely validated; current values independently verified."},
+    {"id":"W2","severity":"low","status":"open-before-comparison-generalization","description":"Subject labels not bound to paired source identities; current labels independently verified."}
+  ],
+  "verification": {"validator":"passed","comparison_tests":12,"acceptance_tests":28,"receipt_projection":"passed","interface_dom":"passed","source_pages_visually_reviewed":["science:33","science:34","math:90","ela:82"]},
+  "not_covered": ["subsequent audit-status UI edits", "live deployment browsing", "human approval", "exhaustive coverage", "source applicability", "physical devices", "native zoom", "full accessibility"],
+  "documentation": "docs/wednesday-independent-audit.md"
+}

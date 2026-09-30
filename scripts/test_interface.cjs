@@ -25,7 +25,9 @@ async function setup(lateInterface=false, delayed=false){
   const {dom,w,d,errors}=await setup();
   const model=JSON.parse(read('data/ontology.json'));
   assert.ok(d.querySelector('#receipt').hidden,'Receipt starts collapsed');
-  assert.equal(d.querySelector('#release-label').textContent,'v0.0.8 · Wednesday comparisons');
+  assert.ok(d.querySelector('.audit-notice').textContent.includes('audit passed'));
+  assert.ok(d.querySelector('.audit-notice a').href.endsWith('/docs/wednesday-independent-audit.md'));
+  assert.equal(d.querySelector('#release-label').textContent,'v0.0.8 · Wednesday audited');
   assert.ok(d.querySelector('.trace-preview [data-node]'));
   d.querySelector('.trace-parsed [data-node]').click();
   assert.ok(!d.querySelector('#receipt').hidden);

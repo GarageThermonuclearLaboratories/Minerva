@@ -10,7 +10,7 @@ The v0.1 construction is clean-room: no Garage-internal ontology class, hierarch
 
 ## Current checkpoint
 
-[Wednesday comparison package](docs/wednesday-comparisons.md) records the current implementation, verification and limits: three bounded comparisons, no promoted graph edges, independent Wednesday audit pending. [Wednesday science package](docs/wednesday-science.md) records package 1. [Tuesday continuation](docs/tuesday-completion.md) and its subsequent audit and QA remain historical records. Historical documents below describe their named checkpoints.
+[Wednesday independent audit](docs/wednesday-independent-audit.md) passed the bounded science and comparison packages with recorded limits. Two nonblocking validation follow-ups remain open; no graph edge or finding was promoted. [Wednesday comparison package](docs/wednesday-comparisons.md) records package 2. [Wednesday science package](docs/wednesday-science.md) records package 1. [Tuesday continuation](docs/tuesday-completion.md) and its subsequent audit and QA remain historical records. Historical documents below describe their named checkpoints.
 
 ## Contents
 
