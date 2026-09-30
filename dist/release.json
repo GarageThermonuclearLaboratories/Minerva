@@ -1,6 +1,6 @@
 {
   "release": "wildcats-0.0.8-wednesday-comparisons",
-  "research_commit": null,
+  "research_commit": "c654544adef29b6319a74d11f7aebfcd8e661f7a",
   "interface_revision": "0.0.8-safeguards",
   "publication_status": "prepared-for-publication",
   "review_scope": "Wednesday independent audit remains valid for its unchanged data snapshot. Comparison baseline and subject validation repairs have builder regression review only.",

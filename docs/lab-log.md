@@ -178,3 +178,12 @@ Validation: 25 comparison tests, 28 acceptance tests, 7 ingestion tests, main va
 Version: ontology `wildcats-0.0.8-wednesday-comparisons`, interface `0.0.8-safeguards`, checkpoint `comparison-safeguards-2026-09-30`. The dedicated GitHub repository is available. Actual GitHub and Site identifiers and publication outcome will be appended after native deployment completes.
 
 Next: bounded Ask Minerva with source Receipts, status-aware answers and abstention. Thursday and the Friday freeze are not complete. Exact applicability, human review, comprehensive coverage and full accessibility remain open.
+
+
+### Publication receipt · comparison safeguards
+
+Public Site **version 14** succeeded on September 30, 2026 at **19:14:30 America/New_York** (23:14:30 UTC). Public URL: https://wildcats-minerva.jaredwillis.chatgpt.site. GitHub research commit: `c654544adef29b6319a74d11f7aebfcd8e661f7a`, tree `8b0424b0f6fff175def1e031277e8739cc99bd36`; the staged research tree matched GitHub exactly. Site source: `d9a830ff146e6d136bdf02e6cb98565e668ac466`; it additionally pins that research commit in `dist/release.json`. Saved version: `appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_3ce2e2ee0a64819185830a5795993dba`. Deployment: `appgdep_6abd97c8482c819195c34ac061ac615d`; native status `succeeded`, no deployment failure. Public audience preserved.
+
+Exact native record: `data/publications/comparison-safeguards.json`. This receipt is appended after deployment and is not part of the deployed bundle. GitHub payload preparation initially hit a local output limit; reading the changed files individually resolved it before any remote write. No GitHub blocker remains. Thursday's Ask Minerva, its broader review and Friday's freeze remain the next packages.
+
+A direct public fetch of `/release.json` matched the packaged checkpoint exactly after deployment.
