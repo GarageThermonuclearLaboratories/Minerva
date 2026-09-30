@@ -1,8 +1,8 @@
 {
   "release": "wildcats-0.0.6-tuesday-completion",
-  "research_commit": null,
+  "research_commit": "847d73f6e283ee77b20597ef3533608c25a68d84",
   "interface_revision": "0.0.6",
-  "publication_status": "candidate",
+  "publication_status": "prepared-for-publication",
   "review_scope": "Tuesday builder review. Monday independent audit applies only to its historical baseline.",
   "audit_record": "data/reviews/tuesday-completion.json"
 }

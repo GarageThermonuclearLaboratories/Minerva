@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-30",
+  "work_package_date": "2026-09-29",
+  "release": "wildcats-0.0.6-tuesday-completion",
+  "scope": "Tuesday implementation continuation; independent and rendered-review gates remain open",
+  "research_commit": "847d73f6e283ee77b20597ef3533608c25a68d84",
+  "research_tree": "1336618afe654fddf10af7b3d73bb2ce47ba3bf0",
+  "site_source_commit": "c23aca87d9651843cd88e3e6c35903e103b23d6e",
+  "saved_version": {
+    "id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_80238a9378b481919765582b46565dd0",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "version_number": 10,
+    "source": {
+      "commit_sha": "c23aca87d9651843cd88e3e6c35903e103b23d6e"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000132881f6b2395bcd60fdd223",
+      "content_hash": "sha256:6faf851a56f14692cac82d2afbf02d1d0973e88187dd6004441524d984d1c9cd",
+      "size_bytes": 1751040,
+      "file_count": 20
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6abccb1175148191aaf62ff5e0b5e431",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "title": "Wildcats / Minerva",
+    "version_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_80238a9378b481919765582b46565dd0",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://wildcats-minerva.jaredwillis.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6abac050d4cc8191b9d7081e9d8cb8dd",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-30T08:40:55.716636+00:00"
+  },
+  "coverage": {
+    "registered_pdfs": 42,
+    "pages": 1237,
+    "standard_families": 2,
+    "parsed_expectations": 7,
+    "nodes": 19,
+    "edges": 25,
+    "ontology_findings": 0
+  },
+  "validation": {
+    "acceptance_tests": 21,
+    "ingestion_tests": 7,
+    "validator": "passed",
+    "receipt_projection_and_dom": "passed",
+    "multipart_reconstruction_and_corrupt_part_rejection": "passed",
+    "source_page_visual_review": "ELA 82, mathematics timeline 1, roadmap overview 1",
+    "rendered_ui": "blocked; Chromium launch failed"
+  },
+  "review": "Builder only; expanded-checkpoint independent audit and human review pending",
+  "record_timing": "Post-deployment record, not claimed to be included in the deployed archive"
+}

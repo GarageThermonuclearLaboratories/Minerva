@@ -1,5 +1,11 @@
 # Lab Log
 
+## 2026-09-30 · Public version 10 confirmed
+
+Published v0.0.6 at https://wildcats-minerva.jaredwillis.chatgpt.site. Public audience preserved. Native deployment succeeded at 2026-09-30T08:40:55.716636+00:00. Site source `c23aca87d9651843cd88e3e6c35903e103b23d6e`; matching GitHub research state `847d73f6e283ee77b20597ef3533608c25a68d84`. The deployed release pointer pins that research commit. [Exact publication record](../data/publications/tuesday-0.0.6.json).
+
+Implementation checkpoint delivered. Independent review and rendered desktop/mobile/zoom QA remain open; Tuesday is not unconditionally closed. This publication confirmation was recorded after deployment.
+
 ## 2026-09-30 · Tuesday continuation · v0.0.6
 
 Forty supplied PDFs registered (42 total; 1,237 pages). Added ELA 7R1 as one compound expectation, giving two Grade 7 families, 19 nodes, 25 links and seven parsed expectations. Zero findings. Archived mathematics dates replace unsupported excerpt-only observations, with instruction alignment narrowed to Grades 3–8.

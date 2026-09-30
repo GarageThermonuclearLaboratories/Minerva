@@ -42,3 +42,7 @@ Publication is permitted as a transparently labeled research checkpoint; publica
 Source-url provenance is explicit: contextual landing pages are not claimed to be verified exact download URLs. Uploaded bytes have not been independently matched against live NYSED downloads. Historical documents were not silently rewritten to appear contemporaneously correct.
 
 Repository transport rejected the largest single PDF payload. Its exact bytes are stored in eight ordered, individually hashed parts; `scripts/restore_sources.py` reconstructs and verifies the original before use. The original source hash and extracted evidence are unchanged.
+
+## Publication confirmed
+
+Public Site version 10 succeeded on September 30, 2026. See `data/publications/tuesday-0.0.6.json` for exact research/source/deployment identifiers. This post-publication confirmation does not close the independent-audit or rendered-QA gates.
