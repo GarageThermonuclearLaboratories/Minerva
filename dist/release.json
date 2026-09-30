@@ -1,6 +1,6 @@
 {
   "release": "wildcats-0.0.8-wednesday-comparisons",
-  "research_commit": null,
+  "research_commit": "6c93368df56db11958f4e3f77b20cf02db0e8600",
   "interface_revision": "0.0.8",
   "publication_status": "prepared-for-publication",
   "review_scope": "Wednesday packages 1 and 2 builder review; separate Wednesday audit pending. Tuesday independent audit covers v0.0.6 only.",

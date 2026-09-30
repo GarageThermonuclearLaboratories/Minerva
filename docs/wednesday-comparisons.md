@@ -28,4 +28,4 @@ Cloud Chromium rendered the comparison view at a 1348-pixel content width and in
 
 Source applicability remains unresolved. Grades 6–8 science is not assigned specifically to Grade 7. No mastery, developmental sequence, transfer, shared mechanism or Garage ontology import is asserted. Package 3 must independently audit both Wednesday packages before Wednesday is closed.
 
-Publication receipt will be recorded after successful deployment.
+Published successfully as public Site version 12. Research commit: `6c93368df56db11958f4e3f77b20cf02db0e8600`. Site source: `765711539d5007f22b717d2fa1c46238e8036c59`. Exact native result: `data/publications/wednesday-0.0.8.json`. This paragraph and receipt were recorded after publication and are not in the deployed commit. Independent Wednesday audit remains pending.
