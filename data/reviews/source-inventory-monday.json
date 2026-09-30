@@ -1,0 +1,571 @@
+{
+  "inventory_version": "0.1.0",
+  "policy_snapshot": "2026-09-28",
+  "observed_local_date": "2026-09-28",
+  "timezone": "America/New_York",
+  "scope": "Twelve-area acquisition inventory, not an exhaustive document corpus or applicability determination.",
+  "evidence_method": "Official NYSED search-result excerpts and existing archived mathematics sources. Direct opens of index, Arts, CS, Science and World Languages returned HTTP 502. No new PDF bytes acquired.",
+  "document_denominator": null,
+  "families": [
+    {
+      "family_id": "wc:corpus-family:01",
+      "label": "Arts",
+      "authority": "New York State Education Department",
+      "landing_page": {
+        "url": "https://www.nysed.gov/standards-instruction/arts",
+        "evidence_status": "search-excerpt-only",
+        "direct_fetch": "HTTP 502"
+      },
+      "documents": [
+        {
+          "title": "NYS Learning Standards for the Arts — full discipline documents",
+          "url": null,
+          "role": "primary-candidate-set",
+          "acquisition_status": "pending-identification",
+          "review_status": "full-document-review-pending",
+          "note": "Arts landing page identifies dance, music, theater, visual and media arts; full document targets remain unresolved."
+        },
+        {
+          "title": "NYS Learning Standards for the Visual Arts — At a Glance",
+          "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/nys-visual-arts-at-a-glance-final-8-2-2017-high-res-v2.pdf",
+          "role": "summary-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        },
+        {
+          "title": "NYS Learning Standards for Media Arts — At a Glance",
+          "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/nys-media-arts-at-a-glance-final-8-13-2017-high-res.pdf",
+          "role": "summary-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        },
+        {
+          "title": "NYS Learning Standards for the Arts — implementation guide",
+          "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/2017-implementation-guide_update_final.pdf",
+          "role": "supporting-guidance",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        }
+      ],
+      "supporting_guidance": [
+        {
+          "url": "https://www.nysed.gov/standards-instruction/nys-arts-standards-roadmap-and-implementation-timeline",
+          "status": "search-discovered; full-review-pending"
+        }
+      ],
+      "known_date_evidence": [
+        {
+          "event": "Adoption",
+          "value": "2017-09",
+          "precision": "month",
+          "source_url": "https://www.nysed.gov/standards-instruction/nys-arts-standards-roadmap-and-implementation-timeline",
+          "evidence_status": "search-excerpt-only",
+          "note": "Not an established legal effective date."
+        }
+      ],
+      "publication_date": null,
+      "effective_date": null,
+      "snapshot_applicability": "unresolved",
+      "date_gap": "Exact publication/effective dates and edition applicability not established.",
+      "semantic_review": "not-started",
+      "human_review": "pending",
+      "next_action": "Enumerate full standards for dance, music strands, theater, visual arts and media arts; posters are not a verified complete corpus."
+    },
+    {
+      "family_id": "wc:corpus-family:02",
+      "label": "Career Development and Occupational Studies",
+      "authority": "New York State Education Department",
+      "landing_page": {
+        "url": "https://www.nysed.gov/standards-instruction/career-development-and-occupational-studies",
+        "evidence_status": "search-excerpt-only",
+        "direct_fetch": "not-attempted-this-pass"
+      },
+      "documents": [
+        {
+          "title": "Learning Standards for Career Development and Occupational Studies",
+          "url": "https://www.nysed.gov/sites/default/files/programs/career-technical-education/cdoslea.pdf",
+          "role": "primary-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        },
+        {
+          "title": "CDOS Resource Guide with Core Curriculum",
+          "url": "https://www.nysed.gov/sites/default/files/programs/career-technical-education/career-development-and-occupational-studies-resource-guide.pdf",
+          "role": "supporting-guidance",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        }
+      ],
+      "supporting_guidance": [
+        {
+          "url": "https://www.nysed.gov/career-technical-education/requirements-cte-and-cdos-graduation-pathways-and-cdos-credential",
+          "status": "search-discovered; full-review-pending"
+        }
+      ],
+      "known_date_evidence": [],
+      "publication_date": null,
+      "effective_date": null,
+      "snapshot_applicability": "unresolved",
+      "date_gap": "Exact publication/effective dates and edition applicability not established.",
+      "semantic_review": "not-started",
+      "human_review": "pending",
+      "next_action": "Acquire standards; distinguish general learning expectations from career-major specialization and optional credential/pathway requirements."
+    },
+    {
+      "family_id": "wc:corpus-family:03",
+      "label": "Computer Science and Digital Fluency",
+      "authority": "New York State Education Department",
+      "landing_page": {
+        "url": "https://www.nysed.gov/standards-instruction/computer-science-and-digital-fluency",
+        "evidence_status": "search-excerpt-only",
+        "direct_fetch": "HTTP 502"
+      },
+      "documents": [
+        {
+          "title": "NYS K–12 Computer Science and Digital Fluency Learning Standards",
+          "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/computer-science-digital-fluency-standards-k-12.pdf",
+          "role": "primary-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        }
+      ],
+      "supporting_guidance": [
+        {
+          "url": "https://www.nysed.gov/standards-instruction/computer-science-and-digital-fluency-guidance-resources",
+          "status": "search-discovered; full-review-pending"
+        }
+      ],
+      "known_date_evidence": [
+        {
+          "event": "Adoption",
+          "value": "2020",
+          "precision": "year",
+          "source_url": "https://www.nysed.gov/career-technical-education/computer-science-and-digital-fluency-learning-standards",
+          "evidence_status": "search-excerpt-only",
+          "note": "Not an established legal effective date."
+        }
+      ],
+      "publication_date": null,
+      "effective_date": null,
+      "snapshot_applicability": "unresolved",
+      "date_gap": "Exact publication/effective dates and edition applicability not established.",
+      "semantic_review": "not-started",
+      "human_review": "pending",
+      "next_action": "Acquire all-grades standards and roadmap; preserve K–1, 2–3, 4–6, 7–8 and 9–12 source bands; resolve conflicting exact adoption-day evidence before assigning a day."
+    },
+    {
+      "family_id": "wc:corpus-family:04",
+      "label": "English Language Arts",
+      "authority": "New York State Education Department",
+      "landing_page": {
+        "url": "https://www.nysed.gov/standards-instruction/english-language-arts",
+        "evidence_status": "search-excerpt-only",
+        "direct_fetch": "not-attempted-this-pass"
+      },
+      "documents": [
+        {
+          "title": "NYS Next Generation English Language Arts Learning Standards",
+          "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/nys-next-generation-ela-standards.pdf",
+          "role": "primary-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        },
+        {
+          "title": "NYS Next Generation Literacy Standards Grades 6–12",
+          "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/nys-next-generation-literacy-standards-grades-6-12.pdf",
+          "role": "companion-standards-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        },
+        {
+          "title": "Introduction to NYS English Language Arts Standards",
+          "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/introduction-to-the-nys-english-language-arts-standards.pdf",
+          "role": "supporting-guidance",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        }
+      ],
+      "supporting_guidance": [
+        {
+          "url": "https://www.nysed.gov/standards-instruction/ela-guidance-resources",
+          "status": "search-discovered; full-review-pending"
+        }
+      ],
+      "known_date_evidence": [],
+      "publication_date": null,
+      "effective_date": null,
+      "snapshot_applicability": "unresolved",
+      "date_gap": "Exact publication/effective dates and edition applicability not established.",
+      "semantic_review": "not-started",
+      "human_review": "pending",
+      "next_action": "Acquire ELA and literacy companion; verify revision and implementation before parsing. Literacy companion is not evidence of a cross-disciplinary finding."
+    },
+    {
+      "family_id": "wc:corpus-family:05",
+      "label": "Family and Consumer Sciences",
+      "authority": "New York State Education Department",
+      "landing_page": {
+        "url": "https://www.nysed.gov/career-technical-education/facs-learning-standards",
+        "evidence_status": "search-excerpt-only",
+        "direct_fetch": "not-attempted-this-pass"
+      },
+      "documents": [
+        {
+          "title": "Learning Standards for Health, Physical Education, and Family and Consumer Sciences",
+          "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/healthpefacslearningstandards.pdf",
+          "role": "shared-primary-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        }
+      ],
+      "supporting_guidance": [
+        {
+          "url": "https://www.nysed.gov/career-technical-education/new-york-state-middle-level-cte-requirement",
+          "status": "search-discovered; full-review-pending"
+        }
+      ],
+      "known_date_evidence": [],
+      "publication_date": null,
+      "effective_date": null,
+      "snapshot_applicability": "unresolved",
+      "date_gap": "Exact publication/effective dates and edition applicability not established.",
+      "semantic_review": "not-started",
+      "human_review": "pending",
+      "next_action": "Acquire shared document once; isolate FACS sections; distinguish NYS standards from national recommendations and locally selected courses."
+    },
+    {
+      "family_id": "wc:corpus-family:06",
+      "label": "Health",
+      "authority": "New York State Education Department",
+      "landing_page": {
+        "url": "https://www.nysed.gov/standards-instruction/health-education",
+        "evidence_status": "search-excerpt-only",
+        "direct_fetch": "not-attempted-this-pass"
+      },
+      "documents": [
+        {
+          "title": "Learning Standards for Health, Physical Education, and Family and Consumer Sciences",
+          "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/healthpefacslearningstandards.pdf",
+          "role": "shared-primary-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        }
+      ],
+      "supporting_guidance": [
+        {
+          "url": "https://www.nysed.gov/standards-instruction/health-guidance-resources",
+          "status": "search-discovered; full-review-pending"
+        }
+      ],
+      "known_date_evidence": [
+        {
+          "event": "Guidance update",
+          "value": "2014-04-25",
+          "precision": "day",
+          "source_url": "https://www.nysed.gov/standards-instruction/health-guidance-resources",
+          "evidence_status": "search-excerpt-only",
+          "note": "Not an established legal effective date."
+        }
+      ],
+      "publication_date": null,
+      "effective_date": null,
+      "snapshot_applicability": "unresolved",
+      "date_gap": "Exact publication/effective dates and edition applicability not established.",
+      "semantic_review": "not-started",
+      "human_review": "pending",
+      "next_action": "Acquire shared document; isolate Health sections; retrieve guidance separately and establish edition applicability."
+    },
+    {
+      "family_id": "wc:corpus-family:07",
+      "label": "Mathematics",
+      "authority": "New York State Education Department",
+      "landing_page": {
+        "url": "https://www.nysed.gov/standards-instruction/mathematics",
+        "evidence_status": "search-excerpt-only",
+        "direct_fetch": "not-attempted-this-pass"
+      },
+      "documents": [
+        {
+          "title": "NYS Next Generation Mathematics Learning Standards",
+          "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/nys-next-generation-mathematics-p-12-standards.pdf",
+          "role": "primary-candidate",
+          "acquisition_status": "full-document-acquired",
+          "review_status": "selected-pages-agent-reviewed; human-review-pending",
+          "note": "Archived and hashed in sources.json; cover says Updated June 2019; exact snapshot applicability unresolved.",
+          "source_id": "src:nysed:math-full"
+        },
+        {
+          "title": "Grade 7 mathematics crosswalk",
+          "url": "https://www.nysed.gov/sites/default/files/programs/curriculum-instruction/nys-math-standards-grade-7-crosswalk.pdf",
+          "role": "supporting-draft-crosswalk",
+          "acquisition_status": "full-document-acquired",
+          "review_status": "selected-pages-agent-reviewed; human-review-pending",
+          "note": "Draft footer; supporting only. Archived and hashed in sources.json.",
+          "source_id": "src:nysed:math-2017"
+        }
+      ],
+      "supporting_guidance": [
+        {
+          "url": "https://www.nysed.gov/standards-instruction/mathematics-guidance-resources",
+          "status": "search-discovered; full-review-pending"
+        }
+      ],
+      "known_date_evidence": [
+        {
+          "event": "Document revision",
+          "value": "2019-06",
+          "precision": "month",
+          "source_url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/nys-next-generation-mathematics-p-12-standards.pdf",
+          "evidence_status": "archived-cover-reviewed",
+          "note": "Not an established legal effective date."
+        }
+      ],
+      "publication_date": null,
+      "effective_date": null,
+      "snapshot_applicability": "unresolved",
+      "date_gap": "Exact publication/effective dates and edition applicability not established.",
+      "semantic_review": "bounded NY-7.RP.2 family agent-reviewed; six expectations parsed; independent/human review pending",
+      "human_review": "pending",
+      "next_action": "Verify edition applicability and complete bounded NY-7.RP.2 semantic trace before broad parsing."
+    },
+    {
+      "family_id": "wc:corpus-family:08",
+      "label": "Physical Education",
+      "authority": "New York State Education Department",
+      "landing_page": {
+        "url": "https://www.nysed.gov/standards-instruction/physical-education",
+        "evidence_status": "search-excerpt-only",
+        "direct_fetch": "not-attempted-this-pass"
+      },
+      "documents": [
+        {
+          "title": "NYS Physical Education Learning Standards (2020)",
+          "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/new-york-physical-education-learning-standards-2020.pdf",
+          "role": "primary-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        }
+      ],
+      "supporting_guidance": [
+        {
+          "url": "https://www.nysed.gov/standards-instruction/physical-education-guidance-resources",
+          "status": "search-discovered; full-review-pending"
+        }
+      ],
+      "known_date_evidence": [
+        {
+          "event": "Edition label",
+          "value": "2020",
+          "precision": "year",
+          "source_url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/new-york-physical-education-learning-standards-2020.pdf",
+          "evidence_status": "search-excerpt-only",
+          "note": "Not an established legal effective date."
+        }
+      ],
+      "publication_date": null,
+      "effective_date": null,
+      "snapshot_applicability": "unresolved",
+      "date_gap": "Exact publication/effective dates and edition applicability not established.",
+      "semantic_review": "not-started",
+      "human_review": "pending",
+      "next_action": "Acquire 2020 document and implementation roadmap; verify how it replaces PE content in the older shared Health/PE/FACS document."
+    },
+    {
+      "family_id": "wc:corpus-family:09",
+      "label": "Science",
+      "authority": "New York State Education Department",
+      "landing_page": {
+        "url": "https://www.nysed.gov/standards-instruction/science",
+        "evidence_status": "search-excerpt-only",
+        "direct_fetch": "HTTP 502"
+      },
+      "documents": [
+        {
+          "title": "NYS P–12 Science Learning Standards — all grades",
+          "url": null,
+          "role": "primary-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "All-grades document named on NYSED landing page; direct PDF URL unresolved."
+        },
+        {
+          "title": "Science standards spring-2017a file record",
+          "url": "https://www.nysed.gov/file/p12-new-york-state-p-12-science-learning-standards-spring-2017apdf",
+          "role": "file-record-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "File record is not archived PDF bytes; record date is not an effective date."
+        }
+      ],
+      "supporting_guidance": [
+        {
+          "url": "https://www.nysed.gov/standards-instruction/science-guidance-resources",
+          "status": "search-discovered; full-review-pending"
+        }
+      ],
+      "known_date_evidence": [],
+      "publication_date": null,
+      "effective_date": null,
+      "snapshot_applicability": "unresolved",
+      "date_gap": "Exact publication/effective dates and edition applicability not established.",
+      "semantic_review": "not-started",
+      "human_review": "pending",
+      "next_action": "Resolve PDF target; acquire full standards and implementation guidance; separate current standards, legacy 1996 materials, and assessment transitions."
+    },
+    {
+      "family_id": "wc:corpus-family:10",
+      "label": "Social Studies",
+      "authority": "New York State Education Department",
+      "landing_page": {
+        "url": "https://www.nysed.gov/standards-instruction/social-studies",
+        "evidence_status": "search-excerpt-only",
+        "direct_fetch": "not-attempted-this-pass"
+      },
+      "documents": [
+        {
+          "title": "Learning Standards for Social Studies",
+          "url": "https://www.nysed.gov/sites/default/files/sslearn.pdf",
+          "role": "primary-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        },
+        {
+          "title": "NYS K–12 Social Studies Framework — introduction",
+          "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/ss-framework-k-12-intro.pdf",
+          "role": "framework-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        },
+        {
+          "title": "NYS K–8 Social Studies Framework",
+          "url": "https://www.nysed.gov/sites/default/files/programs/standards-instruction/ss-framework-k-8a2.pdf",
+          "role": "framework-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        },
+        {
+          "title": "NYS Grades 9–12 Social Studies Framework",
+          "url": "https://www.nysed.gov/sites/default/files/programs/curriculum-instruction/ss-framework-9-12.pdf",
+          "role": "framework-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        }
+      ],
+      "supporting_guidance": [],
+      "known_date_evidence": [],
+      "publication_date": null,
+      "effective_date": null,
+      "snapshot_applicability": "unresolved",
+      "date_gap": "Exact publication/effective dates and edition applicability not established.",
+      "semantic_review": "not-started",
+      "human_review": "pending",
+      "next_action": "Acquire standards plus framework parts; verify revisions and distinguish standards, key ideas, practices and instructional sequence."
+    },
+    {
+      "family_id": "wc:corpus-family:11",
+      "label": "Technology Education",
+      "authority": "New York State Education Department",
+      "landing_page": {
+        "url": "https://www.nysed.gov/career-technical-education/technology-education-learning-standards",
+        "evidence_status": "search-excerpt-only",
+        "direct_fetch": "not-attempted-this-pass"
+      },
+      "documents": [
+        {
+          "title": "NYS Mathematics, Science and Technology Learning Standards — technology-related sections",
+          "url": null,
+          "role": "primary-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "NYS MST standards identified on official technology learning-standards page; direct complete document URL unresolved."
+        }
+      ],
+      "supporting_guidance": [
+        {
+          "url": "https://www.nysed.gov/career-technical-education/technology-education-content-guides",
+          "status": "search-discovered; full-review-pending"
+        }
+      ],
+      "known_date_evidence": [],
+      "publication_date": null,
+      "effective_date": null,
+      "snapshot_applicability": "unresolved",
+      "date_gap": "Exact publication/effective dates and edition applicability not established.",
+      "semantic_review": "not-started",
+      "human_review": "pending",
+      "next_action": "Resolve full MST document and applicable sections; distinguish technology standards from CS/digital fluency and elective course guides."
+    },
+    {
+      "family_id": "wc:corpus-family:12",
+      "label": "World Languages",
+      "authority": "New York State Education Department",
+      "landing_page": {
+        "url": "https://www.nysed.gov/world-languages/nys-learning-standards-world-languages",
+        "evidence_status": "search-excerpt-only",
+        "direct_fetch": "HTTP 502"
+      },
+      "documents": [
+        {
+          "title": "NYS Learning Standards for World Languages",
+          "url": null,
+          "role": "primary-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Official page lists PDF and Word formats; direct file target unresolved."
+        },
+        {
+          "title": "NYS Learning Standards for Languages Other Than English (1996)",
+          "url": "https://www.nysed.gov/world-languages/nys-learning-standards-languages-other-english-1996",
+          "role": "legacy-comparison-candidate",
+          "acquisition_status": "search-excerpt-only",
+          "review_status": "full-document-review-pending",
+          "note": "Search-discovered; bytes not acquired; edition applicability unresolved."
+        }
+      ],
+      "supporting_guidance": [
+        {
+          "url": "https://www.nysed.gov/world-languages/understanding-standards-modern-languages",
+          "status": "search-discovered; full-review-pending"
+        }
+      ],
+      "known_date_evidence": [
+        {
+          "event": "Landing page update",
+          "value": "2025-08-10",
+          "precision": "day",
+          "source_url": "https://www.nysed.gov/world-languages/nys-learning-standards-world-languages",
+          "evidence_status": "search-excerpt-only",
+          "note": "Not an established legal effective date."
+        }
+      ],
+      "publication_date": null,
+      "effective_date": null,
+      "snapshot_applicability": "unresolved",
+      "date_gap": "Exact publication/effective dates and edition applicability not established.",
+      "semantic_review": "not-started",
+      "human_review": "pending",
+      "next_action": "Resolve PDF and implementation guidance; preserve modern/classical distinctions and checkpoints A/B/C; do not turn proficiency ranges into universal grade requirements."
+    }
+  ],
+  "deduplication_notes": [
+    "Health and FACS reference the same candidate PDF; preserve section scope and acquire once.",
+    "Legacy PE content in the shared PDF must not silently override the separately identified 2020 PE document.",
+    "Document URLs can be aliases; deduplicate by hash after acquisition, retaining every observed URL."
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "sha256": "95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb",
+  "note": "Generated tasks, not review decisions. Store decisions separately.",
+  "tasks": [
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:1",
+      "pdf_page": 1,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": true
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:2",
+      "pdf_page": 2,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:3",
+      "pdf_page": 3,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:4",
+      "pdf_page": 4,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:5",
+      "pdf_page": 5,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:6",
+      "pdf_page": 6,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:7",
+      "pdf_page": 7,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:8",
+      "pdf_page": 8,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:9",
+      "pdf_page": 9,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:10",
+      "pdf_page": 10,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:11",
+      "pdf_page": 11,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:12",
+      "pdf_page": 12,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:13",
+      "pdf_page": 13,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:14",
+      "pdf_page": 14,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:15",
+      "pdf_page": 15,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:16",
+      "pdf_page": 16,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:17",
+      "pdf_page": 17,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:18",
+      "pdf_page": 18,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:19",
+      "pdf_page": 19,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:20",
+      "pdf_page": 20,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:21",
+      "pdf_page": 21,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:22",
+      "pdf_page": 22,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:23",
+      "pdf_page": 23,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:24",
+      "pdf_page": 24,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:25",
+      "pdf_page": 25,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:26",
+      "pdf_page": 26,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:27",
+      "pdf_page": 27,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:28",
+      "pdf_page": 28,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:29",
+      "pdf_page": 29,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:30",
+      "pdf_page": 30,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:31",
+      "pdf_page": 31,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:32",
+      "pdf_page": 32,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:33",
+      "pdf_page": 33,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:34",
+      "pdf_page": 34,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:35",
+      "pdf_page": 35,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:36",
+      "pdf_page": 36,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:37",
+      "pdf_page": 37,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:38",
+      "pdf_page": 38,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:39",
+      "pdf_page": 39,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:40",
+      "pdf_page": 40,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:41",
+      "pdf_page": 41,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:42",
+      "pdf_page": 42,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:43",
+      "pdf_page": 43,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:44",
+      "pdf_page": 44,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:45",
+      "pdf_page": 45,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:46",
+      "pdf_page": 46,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:47",
+      "pdf_page": 47,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:48",
+      "pdf_page": 48,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:49",
+      "pdf_page": 49,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:50",
+      "pdf_page": 50,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:51",
+      "pdf_page": 51,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb:page:52",
+      "pdf_page": 52,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "wc:review:tuesday-continuation",
+  "date": "2026-09-30",
+  "work_package_date": "2026-09-29",
+  "timezone": "America/New_York",
+  "release": "wildcats-0.0.6-tuesday-completion",
+  "reviewer_type": "builder",
+  "result": "bounded-checks-pass; independent-and-rendered-gates-open",
+  "independent_review": "pending",
+  "human_review": "pending",
+  "rendered_browser_review": "blocked; local Chromium launch SIGSEGV; no compatible managed static preview",
+  "source_pages_visually_reviewed": ["src:nysed:ela-full#82", "src:nysed:math-timeline-2023#1", "src:nysed:ela-math-roadmap-overview#1"],
+  "coverage": {"pdfs": 42, "pages": 1237, "nodes": 19, "edges": 25, "expectations": 7, "families": 2, "findings": 0},
+  "verification": {"acceptance_tests": 21, "ingestion_tests": 7, "dom_views": 8, "receipts": 19, "grades_per_avatar": 13},
+  "documentation": "docs/tuesday-completion.md",
+  "historical_independent_audit": "data/reviews/monday-m7.json"
+}

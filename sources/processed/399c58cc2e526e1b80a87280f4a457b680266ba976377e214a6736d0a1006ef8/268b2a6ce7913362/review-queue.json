@@ -1,0 +1,69 @@
+{
+  "sha256": "399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8",
+  "note": "Generated tasks, not review decisions. Store decisions separately.",
+  "tasks": [
+    {
+      "id": "review:399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8:page:1",
+      "pdf_page": 1,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": true
+    },
+    {
+      "id": "review:399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8:page:2",
+      "pdf_page": 2,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8:page:3",
+      "pdf_page": 3,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8:page:4",
+      "pdf_page": 4,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8:page:5",
+      "pdf_page": 5,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8:page:6",
+      "pdf_page": 6,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8:page:7",
+      "pdf_page": 7,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8:page:8",
+      "pdf_page": 8,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8:page:9",
+      "pdf_page": 9,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    }
+  ]
+}

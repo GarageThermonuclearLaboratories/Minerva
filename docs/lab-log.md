@@ -1,5 +1,11 @@
 # Lab Log
 
+## 2026-09-30 · Tuesday continuation · v0.0.6
+
+Forty supplied PDFs registered (42 total; 1,237 pages). Added ELA 7R1 as one compound expectation, giving two Grade 7 families, 19 nodes, 25 links and seven parsed expectations. Zero findings. Archived mathematics dates replace unsupported excerpt-only observations, with instruction alignment narrowed to Grades 3–8.
+
+Current review metadata is reconciled without treating Monday M7 as approval of new work. Navigation during loading, concept/student highlighting and Receipt placement are repaired. Source/acceptance/ingestion/DOM checks pass; source page images were inspected. Browser launch failed, so rendered UI review remains open. This is builder review, not independent daily closure. [Full scope and remaining gates](tuesday-completion.md).
+
 ## 2026-09-29 · Tuesday public deployment confirmed
 
 **Published:** Site version 9, release `wildcats-0.0.5-tuesday-acceptance`, at https://wildcats-minerva.jaredwillis.chatgpt.site. Public audience preserved. Native deployment succeeded at `2026-09-29T23:57:34.438601+00:00` (19:57 New York).

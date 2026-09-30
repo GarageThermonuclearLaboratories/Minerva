@@ -8,133 +8,198 @@
       "id": "wc:corpus-family:01",
       "label": "Arts",
       "source_id": "src:nysed:p12-index",
-      "acquisition": "pending-full-document",
+      "acquisition": "7 PDFs · partial corpus",
       "parsing": "not-started",
       "normalization": "not-started",
       "relationships": "not-started",
-      "validation": "not-started",
-      "human_review": "pending"
+      "validation": "file integrity checked",
+      "human_review": "pending",
+      "source_ids": [
+        "src:nysed:upload-03",
+        "src:nysed:upload-04",
+        "src:nysed:upload-05",
+        "src:nysed:upload-06",
+        "src:nysed:upload-07",
+        "src:nysed:upload-08",
+        "src:nysed:upload-39"
+      ]
     },
     {
       "id": "wc:corpus-family:02",
       "label": "Career Development and Occupational Studies",
       "source_id": "src:nysed:p12-index",
-      "acquisition": "pending-full-document",
+      "acquisition": "2 PDFs · partial corpus",
       "parsing": "not-started",
       "normalization": "not-started",
       "relationships": "not-started",
-      "validation": "not-started",
-      "human_review": "pending"
+      "validation": "file integrity checked",
+      "human_review": "pending",
+      "source_ids": [
+        "src:nysed:upload-10",
+        "src:nysed:upload-11"
+      ]
     },
     {
       "id": "wc:corpus-family:03",
       "label": "Computer Science and Digital Fluency",
       "source_id": "src:nysed:p12-index",
-      "acquisition": "pending-full-document",
+      "acquisition": "2 PDFs · partial corpus",
       "parsing": "not-started",
       "normalization": "not-started",
       "relationships": "not-started",
-      "validation": "not-started",
-      "human_review": "pending"
+      "validation": "file integrity checked",
+      "human_review": "pending",
+      "source_ids": [
+        "src:nysed:upload-14",
+        "src:nysed:upload-30"
+      ]
     },
     {
       "id": "wc:corpus-family:04",
       "label": "English Language Arts",
       "source_id": "src:nysed:p12-index",
-      "acquisition": "pending-full-document",
-      "parsing": "not-started",
+      "acquisition": "3 PDFs · partial corpus",
+      "parsing": "one standard; one compound expectation",
       "normalization": "not-started",
-      "relationships": "not-started",
-      "validation": "not-started",
-      "human_review": "pending"
+      "relationships": "source-and-parse-links-only",
+      "validation": "references-hashes-and-reviewed-wording",
+      "human_review": "pending",
+      "source_ids": [
+        "src:nysed:upload-20",
+        "src:nysed:upload-21",
+        "src:nysed:ela-full"
+      ]
     },
     {
       "id": "wc:corpus-family:05",
       "label": "Family and Consumer Sciences",
       "source_id": "src:nysed:p12-index",
-      "acquisition": "pending-full-document",
+      "acquisition": "5 PDFs · partial corpus",
       "parsing": "not-started",
       "normalization": "not-started",
       "relationships": "not-started",
-      "validation": "not-started",
-      "human_review": "pending"
+      "validation": "file integrity checked",
+      "human_review": "pending",
+      "source_ids": [
+        "src:nysed:upload-13",
+        "src:nysed:upload-34",
+        "src:nysed:upload-35",
+        "src:nysed:upload-36",
+        "src:nysed:upload-37"
+      ]
     },
     {
       "id": "wc:corpus-family:06",
       "label": "Health",
       "source_id": "src:nysed:p12-index",
-      "acquisition": "pending-full-document",
+      "acquisition": "1 PDFs · partial corpus",
       "parsing": "not-started",
       "normalization": "not-started",
       "relationships": "not-started",
-      "validation": "not-started",
-      "human_review": "pending"
+      "validation": "file integrity checked",
+      "human_review": "pending",
+      "source_ids": [
+        "src:nysed:upload-13"
+      ]
     },
     {
       "id": "wc:corpus-family:07",
       "label": "Mathematics",
       "source_id": "src:nysed:p12-index",
-      "acquisition": "two-full-documents-acquired",
+      "acquisition": "5 PDFs · partial corpus",
       "parsing": "one-parent-four-subparts-six-expectations; bounded-agent-review",
       "normalization": "not-started",
       "relationships": "source-and-parse-links-only",
-      "validation": "references-hashes-and-reviewed-wording",
-      "human_review": "pending"
+      "validation": "file integrity checked; semantic review bounded",
+      "human_review": "pending",
+      "source_ids": [
+        "src:nysed:math-timeline-2023",
+        "src:nysed:ela-math-roadmap-overview",
+        "src:nysed:upload-33",
+        "src:nysed:math-2017",
+        "src:nysed:math-full"
+      ]
     },
     {
       "id": "wc:corpus-family:08",
       "label": "Physical Education",
       "source_id": "src:nysed:p12-index",
-      "acquisition": "pending-full-document",
+      "acquisition": "4 PDFs · partial corpus",
       "parsing": "not-started",
       "normalization": "not-started",
       "relationships": "not-started",
-      "validation": "not-started",
-      "human_review": "pending"
+      "validation": "file integrity checked",
+      "human_review": "pending",
+      "source_ids": [
+        "src:nysed:upload-12",
+        "src:nysed:upload-13",
+        "src:nysed:upload-28",
+        "src:nysed:upload-29"
+      ]
     },
     {
       "id": "wc:corpus-family:09",
       "label": "Science",
       "source_id": "src:nysed:p12-index",
-      "acquisition": "pending-full-document",
+      "acquisition": "2 PDFs · partial corpus",
       "parsing": "not-started",
       "normalization": "not-started",
       "relationships": "not-started",
-      "validation": "not-started",
-      "human_review": "pending"
+      "validation": "file integrity checked",
+      "human_review": "pending",
+      "source_ids": [
+        "src:nysed:science-full",
+        "src:nysed:upload-40"
+      ]
     },
     {
       "id": "wc:corpus-family:10",
       "label": "Social Studies",
       "source_id": "src:nysed:p12-index",
-      "acquisition": "pending-full-document",
+      "acquisition": "4 PDFs · partial corpus",
       "parsing": "not-started",
       "normalization": "not-started",
       "relationships": "not-started",
-      "validation": "not-started",
-      "human_review": "pending"
+      "validation": "file integrity checked",
+      "human_review": "pending",
+      "source_ids": [
+        "src:nysed:upload-15",
+        "src:nysed:upload-16",
+        "src:nysed:upload-17",
+        "src:nysed:upload-18"
+      ]
     },
     {
       "id": "wc:corpus-family:11",
       "label": "Technology Education",
       "source_id": "src:nysed:p12-index",
-      "acquisition": "pending-full-document",
+      "acquisition": "2 PDFs · partial corpus",
       "parsing": "not-started",
       "normalization": "not-started",
       "relationships": "not-started",
-      "validation": "not-started",
-      "human_review": "pending"
+      "validation": "file integrity checked",
+      "human_review": "pending",
+      "source_ids": [
+        "src:nysed:upload-23",
+        "src:nysed:upload-38"
+      ]
     },
     {
       "id": "wc:corpus-family:12",
       "label": "World Languages",
       "source_id": "src:nysed:p12-index",
-      "acquisition": "pending-full-document",
+      "acquisition": "4 PDFs · partial corpus",
       "parsing": "not-started",
       "normalization": "not-started",
       "relationships": "not-started",
-      "validation": "not-started",
-      "human_review": "pending"
+      "validation": "file integrity checked",
+      "human_review": "pending",
+      "source_ids": [
+        "src:nysed:upload-01",
+        "src:nysed:upload-02",
+        "src:nysed:upload-09",
+        "src:nysed:upload-27"
+      ]
     }
   ],
   "additional_policy_layers": [

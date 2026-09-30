@@ -34,7 +34,7 @@ for (const word of ['tables','graphs','equations','diagrams','verbal description
   assert.ok(element('#receipt-body').innerHTML.includes(word));
 for (const name of ['atlas','curriculum','wildcats','workbench','journey','findings','log'])
   vm.runInContext(`view=${JSON.stringify(name)};render()`, context);
-console.log('Verified six expectation receipts, preserved qualifiers/notes, and seven view render functions');
+console.log('Verified all expectation receipts, preserved qualifiers/notes, and seven view render functions');
 for(let g=0;g<=12;g++){
   const outputs=[];
   for(const student of ['Eva','Matthew']){
@@ -43,7 +43,7 @@ for(let g=0;g<=12;g++){
     assert.ok(element('#view').innerHTML.includes(g===7?'Partially mapped':'Not yet mapped'));
   }
   assert.deepEqual(outputs[0],outputs[1]);
-  assert.equal(outputs[0].length,g===7?11:0);
+  assert.equal(outputs[0].length,g===7?13:0);
 }
 for(const stage of context.input.journey.stages){
   vm.runInContext(`selectStage('${stage.id}')`,context);
@@ -68,9 +68,9 @@ const baseline=JSON.stringify(context.input.model);
 function reset(){Object.assign(context.input.model,JSON.parse(baseline));}
 for(const status of ['REJECTED','CONTESTED','PROVISIONAL','NORMALIZED','INFERRED']){
   reset();context.input.model.nodes.find(n=>n.id==='wc:standard:ny-7-rp-2').status=status;
-  assert.equal(vm.runInContext('standardsForGrade(7).length',context),0,status+' parent excludes subparts');
+  assert.equal(vm.runInContext('standardsForGrade(7).length',context),1,status+' parent excludes subparts');
   vm.runInContext("view='wildcats';grade=7;transition=false;render()",context);
-  assert.ok(!element('#view').innerHTML.includes('data-node='));
+  assert.ok(!element('#view').innerHTML.includes('data-node="wc:standard:ny-7-rp-2'));
 }
 reset();context.input.model.edges.find(e=>e.id==='wc:edge:grade-2b').status='REJECTED';
 assert.ok(!vm.runInContext('standardsForGrade(7).map(n=>n.id)',context).includes('wc:standard:ny-7-rp-2b'));

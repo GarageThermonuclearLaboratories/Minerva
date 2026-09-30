@@ -1,0 +1,17 @@
+{
+  "sha256": "a11c2cc36253fc7ea17bc379e5196efbd3fc76df0191d6a282dff5b46f0e31d3",
+  "recipe": {
+    "pipeline": "1",
+    "pymupdf": "1.26.6",
+    "selected_pages": [
+      1
+    ],
+    "scale": 1.3
+  },
+  "pages": [
+    {
+      "pdf_page": 1,
+      "text": "New York State Next Generation Mathematics Learning Standards\nInstruction and Assessment Implementation Timeline\nRevised January 2023\nPhase I\nRaise Awareness \n2018\nApril 2018\nRelease of the \nNYS Next \nGeneration  ELA \n& Mathematics \nLearning \nStandards \nImplementation \nRoadmap \nPhase II \nBuild Capacity\nInstruction aligned to NYS Next Generation Mathematics Learning Standards begins…\n…September 2019\nfor grades PK-2\n2019-2022\nSpring 2022\nLast administration \nof NYS Grades 3-8 \nstate assessments \naligned to the NYS \nCCLS for \nMathematics (2011) \nPhase III\nImplementation & Sustainability\n…September 2022\nfor Grades 3-8\n2022-2023\nSpring 2023\nFirst administration of \nNYS Grades 3-8 state \nassessments aligned to \nthe NYS Next Generation \nMathematics Learning \nStandards\n…September 2023\nfor Algebra I\n2023-2024\nJune 2024\nFirst administration of \nAlgebra I Regents \nExam, aligned to the \nNYS Next Generation \nMathematics Learning \nStandards\n* January 2024: Last \nadministration of \nAlgebra I CC (2011) \nRegents Exam.\n…September 2024\nfor Geometry\n2024-2025\nJune 2025\nFirst administration of \nGeometry Regents \nExam, aligned to the \nNYS Next Generation \nMathematics Learning \nStandards.\n* January 2025: Last \nadministration of \nGeometry CC (2011) \nRegents Exam.\n…September 2025\nfor Algebra II\n2025-2026\nJune 2026\nFirst administration of \nAlgebra II Regents \nExam, aligned to the \nNYS Next Generation \nMathematics Learning \nStandards.\n* January 2026: Last \nadministration of \nAlgebra II CC (2011) \nRegents Exam.\nState Level Mathematics Assessment Development & Implementation\n"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "source_id": "src:nysed:ela-full",
+  "pdf_page": 82,
+  "review": "Builder comparison against rendered source page; not independent review",
+  "standards": {
+    "wc:standard:ny-7r1": "Cite textual evidence to support an analysis of what the text says explicitly/implicitly and make logical inferences. (RI&RL)"
+  },
+  "expectations": {
+    "wc:expectation:cite-evidence-infer": {
+      "derived_from": "wc:standard:ny-7r1",
+      "action": "Cite textual evidence and make logical inferences",
+      "object": "an analysis of what the text says explicitly/implicitly",
+      "qualifiers": [
+        "Textual evidence supports the analysis.",
+        "The analysis includes what the text says explicitly/implicitly.",
+        "Inferences must be logical.",
+        "Applies to literary and informational text (RI&RL)."
+      ],
+      "parsing_rationale": "Retains the coordinated tasks as one compound expectation, preserving the connection between evidence, analysis, and inference. RI&RL is interpreted using the page heading Literary and Informational Text. This is not an assessment rubric, prerequisite, or measurable mastery claim."
+    }
+  },
+  "annotations": {}
+}

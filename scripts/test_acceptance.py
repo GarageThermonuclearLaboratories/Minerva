@@ -63,12 +63,12 @@ class AcceptanceTests(unittest.TestCase):
     def test_rejected_parent_stale_export_fails(self):
         self.node('ny-7-rp-2')['status']='REJECTED'
         self.invalid('inadmissible expected projection')
-        self.assertEqual(standards_for_grade(self.data,7),[])
+        self.assertEqual(standards_for_grade(self.data,7),['wc:standard:ny-7r1'])
     def test_rejected_records_retained_after_projection_update(self):
         self.node('ny-7-rp-2')['status']='REJECTED'
-        for s in self.data['students']: s['grade7_standard_ids']=[]
+        for s in self.data['students']: s['grade7_standard_ids']=standards_for_grade(self.data,7)
         validate_claims(self.data,SOURCES)
-        self.assertEqual(len(self.data['nodes']),15)
+        self.assertEqual(len(self.data['nodes']),len(json.loads((ROOT/'data/ontology.json').read_text())['nodes']))
     def test_unresolved_assignment_excluded(self):
         edge=next(e for e in self.data['edges'] if e['id']=='wc:edge:grade-2b')
         edge['status']='PROVISIONAL'
@@ -77,5 +77,12 @@ class AcceptanceTests(unittest.TestCase):
     def test_unknown_node_type(self):
         self.node('ny-7-rp-2')['type']='Invented'
         self.invalid('unknown node type')
+
+    def test_ela_scope_loss(self):
+        self.node('cite-evidence-infer')['qualifiers'].pop()
+        self.invalid('qualifiers changed')
+    def test_ela_source_wording_loss(self):
+        self.node('ny-7r1')['original_text']='Cite textual evidence.'
+        self.invalid('source wording changed')
 
 if __name__=='__main__': unittest.main(verbosity=2)

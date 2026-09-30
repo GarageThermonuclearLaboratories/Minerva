@@ -1,0 +1,34 @@
+{
+  "sha256": "19ceaafd20d3a0b8580ef7e3653082a07706874cb5dfb2e90836ef546f9921b7",
+  "note": "Generated tasks, not review decisions. Store decisions separately.",
+  "tasks": [
+    {
+      "id": "review:19ceaafd20d3a0b8580ef7e3653082a07706874cb5dfb2e90836ef546f9921b7:page:1",
+      "pdf_page": 1,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": true
+    },
+    {
+      "id": "review:19ceaafd20d3a0b8580ef7e3653082a07706874cb5dfb2e90836ef546f9921b7:page:2",
+      "pdf_page": 2,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:19ceaafd20d3a0b8580ef7e3653082a07706874cb5dfb2e90836ef546f9921b7:page:3",
+      "pdf_page": 3,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    },
+    {
+      "id": "review:19ceaafd20d3a0b8580ef7e3653082a07706874cb5dfb2e90836ef546f9921b7:page:4",
+      "pdf_page": 4,
+      "status": "pending-semantic-review",
+      "text_empty": false,
+      "evidence_rendered": false
+    }
+  ]
+}

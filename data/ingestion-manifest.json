@@ -83,6 +83,1412 @@
           "sha256": "c01c7dbfbb1d0e99b4a650468a8b00e7652d6a64c79e95325d4f38256a65e59e"
         }
       ]
+    },
+    {
+      "source_id": "src:nysed:upload-01",
+      "sha256": "ce0c1fc67c5d0a7af570f5c13f312908e6cdac2d13add584f872ba77cf356ed8",
+      "archive_path": "sources/originals/ce0c1fc67c5d0a7af570f5c13f312908e6cdac2d13add584f872ba77cf356ed8.pdf",
+      "page_count": 27,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/ce0c1fc67c5d0a7af570f5c13f312908e6cdac2d13add584f872ba77cf356ed8/268b2a6ce7913362/pages.json",
+          "sha256": "c66a003dfced37072d5c24f151bc88216b8a941df8acc2fb7e053888440747a3"
+        },
+        {
+          "path": "sources/processed/ce0c1fc67c5d0a7af570f5c13f312908e6cdac2d13add584f872ba77cf356ed8/268b2a6ce7913362/metadata.json",
+          "sha256": "3e5184fd2c984df7acaab60b0ea0b9be88c0075def518c626cd31e42ae0132a3"
+        },
+        {
+          "path": "sources/processed/ce0c1fc67c5d0a7af570f5c13f312908e6cdac2d13add584f872ba77cf356ed8/268b2a6ce7913362/review-queue.json",
+          "sha256": "49d9b08f1bb545347b76748169faf92940d00dd9fee9de0ead87ed0aa05bbe86"
+        },
+        {
+          "path": "sources/processed/ce0c1fc67c5d0a7af570f5c13f312908e6cdac2d13add584f872ba77cf356ed8/268b2a6ce7913362/page-1.png",
+          "sha256": "723874bb491d49196a73d39566170937570b7caf75ecf8d98d1e04a2d7ceab26"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-02",
+      "sha256": "485f8e8b9d799c6ba4106171cb1e6d61b2790e2da9f1769b7a6184cdb2b89947",
+      "archive_path": "sources/originals/485f8e8b9d799c6ba4106171cb1e6d61b2790e2da9f1769b7a6184cdb2b89947.pdf",
+      "page_count": 2,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/485f8e8b9d799c6ba4106171cb1e6d61b2790e2da9f1769b7a6184cdb2b89947/268b2a6ce7913362/pages.json",
+          "sha256": "9d3e4c90882024dcc6413072a0191a5e42465c15774c48a284aab7b68339af76"
+        },
+        {
+          "path": "sources/processed/485f8e8b9d799c6ba4106171cb1e6d61b2790e2da9f1769b7a6184cdb2b89947/268b2a6ce7913362/metadata.json",
+          "sha256": "9bb2ea6b039fb05076cb6786c2d4f6fecacfef669bb063fec86d4f6f13f794d1"
+        },
+        {
+          "path": "sources/processed/485f8e8b9d799c6ba4106171cb1e6d61b2790e2da9f1769b7a6184cdb2b89947/268b2a6ce7913362/review-queue.json",
+          "sha256": "bc1bce5954653276af9fdeadfcdab6decfb212dfd8abcd2e069b92f2116a56a7"
+        },
+        {
+          "path": "sources/processed/485f8e8b9d799c6ba4106171cb1e6d61b2790e2da9f1769b7a6184cdb2b89947/268b2a6ce7913362/page-1.png",
+          "sha256": "1e9e3e67493786c146c96a24b1cd5a2b6cf81fdd1d32be7a52c3e243e9398f5f"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-03",
+      "sha256": "95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb",
+      "archive_path": "sources/originals/95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb.pdf",
+      "page_count": 52,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb/268b2a6ce7913362/pages.json",
+          "sha256": "69232881df5d2e7bc4194975621d98bf1c8aa7b2d157024d34f3d4bf995c5802"
+        },
+        {
+          "path": "sources/processed/95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb/268b2a6ce7913362/metadata.json",
+          "sha256": "026f7a8152aceb3328d39f0e7f7247dd4e9b040f0600001f801b4b5be95e38ae"
+        },
+        {
+          "path": "sources/processed/95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb/268b2a6ce7913362/review-queue.json",
+          "sha256": "1e02290dda1a195b9ad7a0053ad01290c366930ee06d65034d748ab2d1865517"
+        },
+        {
+          "path": "sources/processed/95377193431b6518deadf20e79d5ff4acd7e5a668ddea2edce650900c72c28cb/268b2a6ce7913362/page-1.png",
+          "sha256": "15d1872019a064222f65a0053fa7e64547c51cb5913373b147e57aab19ab4736"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-04",
+      "sha256": "9f9b2cb05e452030570e4e28f033dae6b3d39b2f2f6dbaf0de2b82fea7381703",
+      "archive_path": "sources/originals/9f9b2cb05e452030570e4e28f033dae6b3d39b2f2f6dbaf0de2b82fea7381703.pdf",
+      "page_count": 12,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/9f9b2cb05e452030570e4e28f033dae6b3d39b2f2f6dbaf0de2b82fea7381703/268b2a6ce7913362/pages.json",
+          "sha256": "65a82815085e9ab093602e6685e3df6b319924e60ecf82cc8d0e5aa768cce144"
+        },
+        {
+          "path": "sources/processed/9f9b2cb05e452030570e4e28f033dae6b3d39b2f2f6dbaf0de2b82fea7381703/268b2a6ce7913362/metadata.json",
+          "sha256": "2076b815cb2d2cca2a49762f90676a0b216147e8756134caa0e0cd52a6c804cd"
+        },
+        {
+          "path": "sources/processed/9f9b2cb05e452030570e4e28f033dae6b3d39b2f2f6dbaf0de2b82fea7381703/268b2a6ce7913362/review-queue.json",
+          "sha256": "609aba079c2607e1c6b81bf0b8f2bdc0fc5d550dc9f57afc36334515f185618f"
+        },
+        {
+          "path": "sources/processed/9f9b2cb05e452030570e4e28f033dae6b3d39b2f2f6dbaf0de2b82fea7381703/268b2a6ce7913362/page-1.png",
+          "sha256": "f1584d4d6007efa8093d9009abe342240280b08233ed328e14f3da5546b845b6"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-05",
+      "sha256": "7745fed745530dcf9b6ec13e1646d683c7a601d79217df47ed33bf7639bfaad2",
+      "archive_path": "sources/originals/7745fed745530dcf9b6ec13e1646d683c7a601d79217df47ed33bf7639bfaad2.pdf",
+      "page_count": 12,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/7745fed745530dcf9b6ec13e1646d683c7a601d79217df47ed33bf7639bfaad2/268b2a6ce7913362/pages.json",
+          "sha256": "5ada8af86c024236169e3280a90edb8c9a2b0d4f4bbaf9b6420767951fbdd153"
+        },
+        {
+          "path": "sources/processed/7745fed745530dcf9b6ec13e1646d683c7a601d79217df47ed33bf7639bfaad2/268b2a6ce7913362/metadata.json",
+          "sha256": "93a3cc5c33cc7086d9a4af73bd795d9526e1b22700f599811a8b22ebf02baac9"
+        },
+        {
+          "path": "sources/processed/7745fed745530dcf9b6ec13e1646d683c7a601d79217df47ed33bf7639bfaad2/268b2a6ce7913362/review-queue.json",
+          "sha256": "e1487434e6a3e1ab54f3fce4d39ea8344c10a641a1999b976b5f55f01680caea"
+        },
+        {
+          "path": "sources/processed/7745fed745530dcf9b6ec13e1646d683c7a601d79217df47ed33bf7639bfaad2/268b2a6ce7913362/page-1.png",
+          "sha256": "8d85af182891b4b597f5b570fb453b54cf9d52dff4ff0ace6f5aa8b34953d27f"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-06",
+      "sha256": "da1ea53cd50b6ea52517fc9955cd072547bb383a1727e7889f1d3c7ea282a3af",
+      "archive_path": "sources/originals/da1ea53cd50b6ea52517fc9955cd072547bb383a1727e7889f1d3c7ea282a3af.pdf",
+      "page_count": 12,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/da1ea53cd50b6ea52517fc9955cd072547bb383a1727e7889f1d3c7ea282a3af/268b2a6ce7913362/pages.json",
+          "sha256": "abbd151cda5e8770ef0ed8c12a2175675d453a121d043644fb665a512a833589"
+        },
+        {
+          "path": "sources/processed/da1ea53cd50b6ea52517fc9955cd072547bb383a1727e7889f1d3c7ea282a3af/268b2a6ce7913362/metadata.json",
+          "sha256": "9ceb7c2f3d627e97e9c657296816ca023dc22018fe4eb5ab5777d1d840acaede"
+        },
+        {
+          "path": "sources/processed/da1ea53cd50b6ea52517fc9955cd072547bb383a1727e7889f1d3c7ea282a3af/268b2a6ce7913362/review-queue.json",
+          "sha256": "6e0c787be05104a4622ee4a401bb2c60deca60d8dca48949f5442cd17ca936f8"
+        },
+        {
+          "path": "sources/processed/da1ea53cd50b6ea52517fc9955cd072547bb383a1727e7889f1d3c7ea282a3af/268b2a6ce7913362/page-1.png",
+          "sha256": "0c3c667d07186f9494c0589a3adaea7ddd0402da3b968d4ab7fca770bafc2c2a"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-07",
+      "sha256": "df6730ffebe460c90dfeeed2bd622974f0dc30832d9a7ed1fc0de494ced4a2f6",
+      "archive_path": "sources/originals/df6730ffebe460c90dfeeed2bd622974f0dc30832d9a7ed1fc0de494ced4a2f6.pdf",
+      "page_count": 35,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/df6730ffebe460c90dfeeed2bd622974f0dc30832d9a7ed1fc0de494ced4a2f6/268b2a6ce7913362/pages.json",
+          "sha256": "7c5e8fc6da02ca4ca218fb5fa493706ebb9186384973ecaae7695d54474ad598"
+        },
+        {
+          "path": "sources/processed/df6730ffebe460c90dfeeed2bd622974f0dc30832d9a7ed1fc0de494ced4a2f6/268b2a6ce7913362/metadata.json",
+          "sha256": "6c1d74df4c2d3f9796150c356055ed348f56446a25d64d5c82ffcca87999aa69"
+        },
+        {
+          "path": "sources/processed/df6730ffebe460c90dfeeed2bd622974f0dc30832d9a7ed1fc0de494ced4a2f6/268b2a6ce7913362/review-queue.json",
+          "sha256": "43311c41ba5d47ad87b7515d6d5b0f651dc1ba17266a6aad6ddb7aafc3eb2e92"
+        },
+        {
+          "path": "sources/processed/df6730ffebe460c90dfeeed2bd622974f0dc30832d9a7ed1fc0de494ced4a2f6/268b2a6ce7913362/page-1.png",
+          "sha256": "6f9459fb48909d111b780de022ef262cd6ed677b554a0862c600c11e2a1e8e97"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-08",
+      "sha256": "47ffa862a834c51ae9dc0ae8a74fd03869e8bd81f658c7d4cfb9ead537b22c07",
+      "archive_path": "sources/originals/47ffa862a834c51ae9dc0ae8a74fd03869e8bd81f658c7d4cfb9ead537b22c07.pdf",
+      "page_count": 18,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/47ffa862a834c51ae9dc0ae8a74fd03869e8bd81f658c7d4cfb9ead537b22c07/268b2a6ce7913362/pages.json",
+          "sha256": "30f975052bdc9aaecdab2a0469985f615598be1008e3d19c7e35e380af11d5ff"
+        },
+        {
+          "path": "sources/processed/47ffa862a834c51ae9dc0ae8a74fd03869e8bd81f658c7d4cfb9ead537b22c07/268b2a6ce7913362/metadata.json",
+          "sha256": "6346ee188f8e407e249f2c81230d5e0ddbf71adc25d8af8bb55cad441e4949da"
+        },
+        {
+          "path": "sources/processed/47ffa862a834c51ae9dc0ae8a74fd03869e8bd81f658c7d4cfb9ead537b22c07/268b2a6ce7913362/review-queue.json",
+          "sha256": "ce711467b99af83a1afa7e268a7bed38f766eb917caf04fd9158d4fac28d9295"
+        },
+        {
+          "path": "sources/processed/47ffa862a834c51ae9dc0ae8a74fd03869e8bd81f658c7d4cfb9ead537b22c07/268b2a6ce7913362/page-1.png",
+          "sha256": "133375f421357cfe77e851038525b506f861a6c8997ad1e683f1b5966980ba93"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-09",
+      "sha256": "e07bbaf852378aa5cb3b0537b9764f60f9c51e50f7c63ae8352516c59ee9a6d3",
+      "archive_path": "sources/originals/e07bbaf852378aa5cb3b0537b9764f60f9c51e50f7c63ae8352516c59ee9a6d3.pdf",
+      "page_count": 3,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/e07bbaf852378aa5cb3b0537b9764f60f9c51e50f7c63ae8352516c59ee9a6d3/268b2a6ce7913362/pages.json",
+          "sha256": "93b60390cbf31c9e0683cde5619a7851826992deb982b8afb6c575967e08fe09"
+        },
+        {
+          "path": "sources/processed/e07bbaf852378aa5cb3b0537b9764f60f9c51e50f7c63ae8352516c59ee9a6d3/268b2a6ce7913362/metadata.json",
+          "sha256": "1d4494b01f7869d9674548d360b81537b881d220343731bf142155686b54ea85"
+        },
+        {
+          "path": "sources/processed/e07bbaf852378aa5cb3b0537b9764f60f9c51e50f7c63ae8352516c59ee9a6d3/268b2a6ce7913362/review-queue.json",
+          "sha256": "b82fb8561260ea621e1d41a3c24cab4ac69c897f10490200322cac9615f27f0e"
+        },
+        {
+          "path": "sources/processed/e07bbaf852378aa5cb3b0537b9764f60f9c51e50f7c63ae8352516c59ee9a6d3/268b2a6ce7913362/page-1.png",
+          "sha256": "febe5778e32f69dd7f0f4da9fc191b7d6e90d232146b96c58e1fe8bc875ede87"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-10",
+      "sha256": "4c67f02b1000ff1b9161038c01cd31415478078451e421ba8ccdb191de749a6a",
+      "archive_path": "sources/originals/4c67f02b1000ff1b9161038c01cd31415478078451e421ba8ccdb191de749a6a.pdf",
+      "page_count": 26,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/4c67f02b1000ff1b9161038c01cd31415478078451e421ba8ccdb191de749a6a/268b2a6ce7913362/pages.json",
+          "sha256": "4300cf52bf03b769970a44c485aa04ba8157468f623648a53568a343e26eb546"
+        },
+        {
+          "path": "sources/processed/4c67f02b1000ff1b9161038c01cd31415478078451e421ba8ccdb191de749a6a/268b2a6ce7913362/metadata.json",
+          "sha256": "4447575d0c7d818973b61f1756d5e5f4eba9f8752a29f6533d1755e2f6c5ea31"
+        },
+        {
+          "path": "sources/processed/4c67f02b1000ff1b9161038c01cd31415478078451e421ba8ccdb191de749a6a/268b2a6ce7913362/review-queue.json",
+          "sha256": "e63cf990417209e323da218bf45fc86292f54c946e77cbabb92db8f4bc1072a4"
+        },
+        {
+          "path": "sources/processed/4c67f02b1000ff1b9161038c01cd31415478078451e421ba8ccdb191de749a6a/268b2a6ce7913362/page-1.png",
+          "sha256": "f0ed024b5454cf4ec9cd2a851d241e40b8905d45b409ede0ef1360bc0a7569e1"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-11",
+      "sha256": "5f7feaa4e69a15bb9a624a5137b6713fa04a7f1e923f61716d4956f2f02d2d2d",
+      "archive_path": "sources/originals/5f7feaa4e69a15bb9a624a5137b6713fa04a7f1e923f61716d4956f2f02d2d2d.pdf",
+      "page_count": 53,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/5f7feaa4e69a15bb9a624a5137b6713fa04a7f1e923f61716d4956f2f02d2d2d/268b2a6ce7913362/pages.json",
+          "sha256": "12921d684df36e61fb616078837c68fd834e15b6763d78b1f6d5aadba7287e13"
+        },
+        {
+          "path": "sources/processed/5f7feaa4e69a15bb9a624a5137b6713fa04a7f1e923f61716d4956f2f02d2d2d/268b2a6ce7913362/metadata.json",
+          "sha256": "7b953e8610504cb90dd38e6061b9898172c08e2b73155a51d4c2abf6b2b479f6"
+        },
+        {
+          "path": "sources/processed/5f7feaa4e69a15bb9a624a5137b6713fa04a7f1e923f61716d4956f2f02d2d2d/268b2a6ce7913362/review-queue.json",
+          "sha256": "a56c54757c68b63d3e3aa2006309afad9efe3c4df941d6adc45c170dae0c3fe5"
+        },
+        {
+          "path": "sources/processed/5f7feaa4e69a15bb9a624a5137b6713fa04a7f1e923f61716d4956f2f02d2d2d/268b2a6ce7913362/page-1.png",
+          "sha256": "ef4e3f208b27f6820c691584fb0f4dcd4c54ca1f6a71d1e2047a83dd6d775ea6"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-12",
+      "sha256": "73a3ab0e63be58de4c00268f619f7cb65aa533aa920368a2ea066140ab64e92a",
+      "archive_path": "sources/originals/73a3ab0e63be58de4c00268f619f7cb65aa533aa920368a2ea066140ab64e92a.pdf",
+      "page_count": 53,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/73a3ab0e63be58de4c00268f619f7cb65aa533aa920368a2ea066140ab64e92a/268b2a6ce7913362/pages.json",
+          "sha256": "e5f4edf3d7082f7236b55672fba04c3c3ebf59e771be87982e63eced6497eb5f"
+        },
+        {
+          "path": "sources/processed/73a3ab0e63be58de4c00268f619f7cb65aa533aa920368a2ea066140ab64e92a/268b2a6ce7913362/metadata.json",
+          "sha256": "4244b2df55217931a6cfd672814795e430f7d427cdf98d12469b8d29e69f6e60"
+        },
+        {
+          "path": "sources/processed/73a3ab0e63be58de4c00268f619f7cb65aa533aa920368a2ea066140ab64e92a/268b2a6ce7913362/review-queue.json",
+          "sha256": "fadd2499570b7ff1c20deda375acffe7c8d7076633fad431e2871c731fca05d4"
+        },
+        {
+          "path": "sources/processed/73a3ab0e63be58de4c00268f619f7cb65aa533aa920368a2ea066140ab64e92a/268b2a6ce7913362/page-1.png",
+          "sha256": "b43f138f965d84b59bc8f46371046c14146dafa5110f539732fc905af9704abc"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-13",
+      "sha256": "6ea8b49b49a9d0b381967f480491d45d1f89df98e4bbf7dc49d200c5bb9654f9",
+      "archive_path": "sources/originals/6ea8b49b49a9d0b381967f480491d45d1f89df98e4bbf7dc49d200c5bb9654f9.pdf",
+      "page_count": 21,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/6ea8b49b49a9d0b381967f480491d45d1f89df98e4bbf7dc49d200c5bb9654f9/268b2a6ce7913362/pages.json",
+          "sha256": "b2d01264c1da1d4c1b45c698e8e1618145f9291cd8d6cc09d10a98eb0ddfc484"
+        },
+        {
+          "path": "sources/processed/6ea8b49b49a9d0b381967f480491d45d1f89df98e4bbf7dc49d200c5bb9654f9/268b2a6ce7913362/metadata.json",
+          "sha256": "051e536ba71a63398ffbacdd7e34aad6f3bed4af7bcb80480935723dc73fde3d"
+        },
+        {
+          "path": "sources/processed/6ea8b49b49a9d0b381967f480491d45d1f89df98e4bbf7dc49d200c5bb9654f9/268b2a6ce7913362/review-queue.json",
+          "sha256": "2c9a8da49ede4f85d3c3f4747d318d6eded65d38778781163534bb368ca146e7"
+        },
+        {
+          "path": "sources/processed/6ea8b49b49a9d0b381967f480491d45d1f89df98e4bbf7dc49d200c5bb9654f9/268b2a6ce7913362/page-1.png",
+          "sha256": "b8f8b8a88c56bc8a550c1ddb3f29819c45b88d78f0814778ab186c9d90f632ed"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-14",
+      "sha256": "a77f1c81026039925c7639cfa59a716c3de666f15613aa66e712a5b85fdd9b31",
+      "archive_path": "sources/originals/a77f1c81026039925c7639cfa59a716c3de666f15613aa66e712a5b85fdd9b31.pdf",
+      "page_count": 46,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/a77f1c81026039925c7639cfa59a716c3de666f15613aa66e712a5b85fdd9b31/268b2a6ce7913362/pages.json",
+          "sha256": "48077d46752c3e04adafe24414f7154ebef69a7b4ddc1c08d4ef78d01b6e421c"
+        },
+        {
+          "path": "sources/processed/a77f1c81026039925c7639cfa59a716c3de666f15613aa66e712a5b85fdd9b31/268b2a6ce7913362/metadata.json",
+          "sha256": "2249543a19cbd8041232205106124351e36ac2ddb0c9dd9210666def4ca6d18d"
+        },
+        {
+          "path": "sources/processed/a77f1c81026039925c7639cfa59a716c3de666f15613aa66e712a5b85fdd9b31/268b2a6ce7913362/review-queue.json",
+          "sha256": "849d32e29bfa0ef80e242d3f60c24d08c980594c2fc2b0419a2179e496d80ad8"
+        },
+        {
+          "path": "sources/processed/a77f1c81026039925c7639cfa59a716c3de666f15613aa66e712a5b85fdd9b31/268b2a6ce7913362/page-1.png",
+          "sha256": "b5378dc7d97c6b25f5e0f86d4cb4728de7c923714e01b2f0034fc8b3b6d4a1e0"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-15",
+      "sha256": "832504960159d9841b7a61a052553d68b60d0b1cbe89938c60004b65b966ba88",
+      "archive_path": "sources/originals/832504960159d9841b7a61a052553d68b60d0b1cbe89938c60004b65b966ba88.pdf",
+      "page_count": 51,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/832504960159d9841b7a61a052553d68b60d0b1cbe89938c60004b65b966ba88/268b2a6ce7913362/pages.json",
+          "sha256": "2d88a29afe7d61335b22c9873fffb1a823da757bd8296f480a8a5bdc3d0c63ed"
+        },
+        {
+          "path": "sources/processed/832504960159d9841b7a61a052553d68b60d0b1cbe89938c60004b65b966ba88/268b2a6ce7913362/metadata.json",
+          "sha256": "c47434bac1945bb766941090b387be398976c14179fdbb471d4d7dbff6e2cbbe"
+        },
+        {
+          "path": "sources/processed/832504960159d9841b7a61a052553d68b60d0b1cbe89938c60004b65b966ba88/268b2a6ce7913362/review-queue.json",
+          "sha256": "949756beba84b0b2040cb24760fd640fa78b5e2bab0969b25b62e16d5635e5e3"
+        },
+        {
+          "path": "sources/processed/832504960159d9841b7a61a052553d68b60d0b1cbe89938c60004b65b966ba88/268b2a6ce7913362/page-1.png",
+          "sha256": "c89930476d98b18c44eb2c7f2114f68eb4a2d7f6e00fd3e4031967ee44d52d94"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-16",
+      "sha256": "029c37e4eb45691d7ae724cd6e47e025ce3d4a2d442f61920a3de9960d927e14",
+      "archive_path": "sources/originals/029c37e4eb45691d7ae724cd6e47e025ce3d4a2d442f61920a3de9960d927e14.pdf",
+      "page_count": 110,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/029c37e4eb45691d7ae724cd6e47e025ce3d4a2d442f61920a3de9960d927e14/268b2a6ce7913362/pages.json",
+          "sha256": "6a250292cc6763ac49cfde0e47550fc3784a39b714395322465a633f3d682a83"
+        },
+        {
+          "path": "sources/processed/029c37e4eb45691d7ae724cd6e47e025ce3d4a2d442f61920a3de9960d927e14/268b2a6ce7913362/metadata.json",
+          "sha256": "20497e6e9218adbe01003c2eb4d9834a122eaa40547f81638ab4067744d2bb29"
+        },
+        {
+          "path": "sources/processed/029c37e4eb45691d7ae724cd6e47e025ce3d4a2d442f61920a3de9960d927e14/268b2a6ce7913362/review-queue.json",
+          "sha256": "2b7dcf515879f34eb28c1379b6efb25023d1b7ca000902bf723c671424f68067"
+        },
+        {
+          "path": "sources/processed/029c37e4eb45691d7ae724cd6e47e025ce3d4a2d442f61920a3de9960d927e14/268b2a6ce7913362/page-1.png",
+          "sha256": "7d94b67ac609c8bd0e53c5b8055f7a459e25109cd51b0cd8200a3fa0d70960f9"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-17",
+      "sha256": "557f3593f1e11b9e898d9aa026dcb8cde30b7aaf31bcd69ef5c4e3c3367afe1b",
+      "archive_path": "sources/originals/557f3593f1e11b9e898d9aa026dcb8cde30b7aaf31bcd69ef5c4e3c3367afe1b.pdf",
+      "page_count": 29,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/557f3593f1e11b9e898d9aa026dcb8cde30b7aaf31bcd69ef5c4e3c3367afe1b/268b2a6ce7913362/pages.json",
+          "sha256": "e5b5a309219f59c673c0e1d2e84c033974198f9f4517e0952060b8bd9e9e6a81"
+        },
+        {
+          "path": "sources/processed/557f3593f1e11b9e898d9aa026dcb8cde30b7aaf31bcd69ef5c4e3c3367afe1b/268b2a6ce7913362/metadata.json",
+          "sha256": "4a7c1507a1b63d8e9374c423f0587f815e7555ee6395066cce869aff4535f4c8"
+        },
+        {
+          "path": "sources/processed/557f3593f1e11b9e898d9aa026dcb8cde30b7aaf31bcd69ef5c4e3c3367afe1b/268b2a6ce7913362/review-queue.json",
+          "sha256": "828c60b90065ec7c89ad5de72d12450d790f765e38acda45ae427724a73e7809"
+        },
+        {
+          "path": "sources/processed/557f3593f1e11b9e898d9aa026dcb8cde30b7aaf31bcd69ef5c4e3c3367afe1b/268b2a6ce7913362/page-1.png",
+          "sha256": "c15fbd931da17d141de45c5f4681f5b82e3bbbaad82f6a116f31e6a54ea89cf0"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-18",
+      "sha256": "f5e0220d5b6703fbd96d8f5c294c80026bdfbb17eeca41470d48360fedb74d0a",
+      "archive_path": "sources/originals/f5e0220d5b6703fbd96d8f5c294c80026bdfbb17eeca41470d48360fedb74d0a.pdf",
+      "page_count": 34,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/f5e0220d5b6703fbd96d8f5c294c80026bdfbb17eeca41470d48360fedb74d0a/268b2a6ce7913362/pages.json",
+          "sha256": "7b35cc23945ac01bdca4dc4b9b2f320cd768d694c7b08aef8e746569806d2dcb"
+        },
+        {
+          "path": "sources/processed/f5e0220d5b6703fbd96d8f5c294c80026bdfbb17eeca41470d48360fedb74d0a/268b2a6ce7913362/metadata.json",
+          "sha256": "98eaf518a8baf71fadfeb8bf3454915122673b4f17a9e15bd6ae910d4c0f6de0"
+        },
+        {
+          "path": "sources/processed/f5e0220d5b6703fbd96d8f5c294c80026bdfbb17eeca41470d48360fedb74d0a/268b2a6ce7913362/review-queue.json",
+          "sha256": "24ef73db9bfc1ab06f3eb77aa252b7a63dc49b88966452f095b70e4ad7f3da6e"
+        },
+        {
+          "path": "sources/processed/f5e0220d5b6703fbd96d8f5c294c80026bdfbb17eeca41470d48360fedb74d0a/268b2a6ce7913362/page-1.png",
+          "sha256": "652937820135a6601e06408cfdbe30c70168d2bc47484e1959529e8740d2c972"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:science-full",
+      "sha256": "673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670",
+      "archive_path": "sources/originals/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670.pdf",
+      "page_count": 83,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670/268b2a6ce7913362/pages.json",
+          "sha256": "7d17934a9e30574b9b585aeb19ce844ef5277054e2522e8dfc5c1a95bb122818"
+        },
+        {
+          "path": "sources/processed/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670/268b2a6ce7913362/metadata.json",
+          "sha256": "824584df280573e23e09feea9f1ce22c00437cff07569d1aa5c629e01a394577"
+        },
+        {
+          "path": "sources/processed/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670/268b2a6ce7913362/review-queue.json",
+          "sha256": "ba6afb509dab4930d3ca6c52b6ab72fb793d5b06dc7c7be6468bf9948f24fe10"
+        },
+        {
+          "path": "sources/processed/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670/268b2a6ce7913362/page-1.png",
+          "sha256": "2afa12e8d18ce332f465e0a63bebfec82f9a52b62d9cb0505840e3f4c2477e33"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-20",
+      "sha256": "2b325e456151c33bcbd5659ca19ae86d05d639ca55d5f060681dbcb593f3422b",
+      "archive_path": "sources/originals/2b325e456151c33bcbd5659ca19ae86d05d639ca55d5f060681dbcb593f3422b.pdf",
+      "page_count": 16,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/2b325e456151c33bcbd5659ca19ae86d05d639ca55d5f060681dbcb593f3422b/268b2a6ce7913362/pages.json",
+          "sha256": "8aaddb7d8c845faa894cdabc2ec6a30edda90fa92631958b3743f9de1dcb5284"
+        },
+        {
+          "path": "sources/processed/2b325e456151c33bcbd5659ca19ae86d05d639ca55d5f060681dbcb593f3422b/268b2a6ce7913362/metadata.json",
+          "sha256": "43ab848aea279239263dc550551ff2cb3fab55b09fa17370421e33c610f2de69"
+        },
+        {
+          "path": "sources/processed/2b325e456151c33bcbd5659ca19ae86d05d639ca55d5f060681dbcb593f3422b/268b2a6ce7913362/review-queue.json",
+          "sha256": "189d8c97f3cdad7d7dcb8da73391c8e6c77207363b85db836fdcb77417d8972c"
+        },
+        {
+          "path": "sources/processed/2b325e456151c33bcbd5659ca19ae86d05d639ca55d5f060681dbcb593f3422b/268b2a6ce7913362/page-1.png",
+          "sha256": "d648ae037578e35abf5018248e1926adc4f642ca1b456a0ad4231588df71709c"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-21",
+      "sha256": "a613354f3d0bef32eaba57150be28b430431545d76845b9132ba5326c0011023",
+      "archive_path": "sources/originals/a613354f3d0bef32eaba57150be28b430431545d76845b9132ba5326c0011023.pdf",
+      "page_count": 20,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/a613354f3d0bef32eaba57150be28b430431545d76845b9132ba5326c0011023/268b2a6ce7913362/pages.json",
+          "sha256": "d1190d8aff5b6c8809bd1e9563f29972085f6c98e6dcab2755c5cacfc62cc692"
+        },
+        {
+          "path": "sources/processed/a613354f3d0bef32eaba57150be28b430431545d76845b9132ba5326c0011023/268b2a6ce7913362/metadata.json",
+          "sha256": "da82c8d94dc41b9464071b0b099671630a1bc582c2b574703e7ede1bdd9efa7f"
+        },
+        {
+          "path": "sources/processed/a613354f3d0bef32eaba57150be28b430431545d76845b9132ba5326c0011023/268b2a6ce7913362/review-queue.json",
+          "sha256": "3de2a652d8ba9e1e7e05c01f1e8f40f9831c2494d7f3a2d438271797a5dc0923"
+        },
+        {
+          "path": "sources/processed/a613354f3d0bef32eaba57150be28b430431545d76845b9132ba5326c0011023/268b2a6ce7913362/page-1.png",
+          "sha256": "ab39f9398e59cd94c8fe1e824f8fcdebf1a3c2e9e3e29403b76b8e35852e8865"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:ela-full",
+      "sha256": "e32b36ec11d6b2503cf968a28efcf2b290554165444a0b3bf4efd23544cfe783",
+      "archive_path": "sources/originals/e32b36ec11d6b2503cf968a28efcf2b290554165444a0b3bf4efd23544cfe783.pdf",
+      "page_count": 129,
+      "selected_pages": [
+        1,
+        82
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1,
+          82
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/e32b36ec11d6b2503cf968a28efcf2b290554165444a0b3bf4efd23544cfe783/f2ac19d62a7cc106/pages.json",
+          "sha256": "ee1cc93aecbe6f0f453bbd30b9680034ad0793e673dfa684c06d15623bb04d4e"
+        },
+        {
+          "path": "sources/processed/e32b36ec11d6b2503cf968a28efcf2b290554165444a0b3bf4efd23544cfe783/f2ac19d62a7cc106/metadata.json",
+          "sha256": "2740b7559418b1317f974927bebdfd9f520d1d80f4593203b023b8ac0f385ad2"
+        },
+        {
+          "path": "sources/processed/e32b36ec11d6b2503cf968a28efcf2b290554165444a0b3bf4efd23544cfe783/f2ac19d62a7cc106/review-queue.json",
+          "sha256": "bdcd2c89e0d628cf92e634182200f6c552eb83148b7a27fa25f09ab03681be42"
+        },
+        {
+          "path": "sources/processed/e32b36ec11d6b2503cf968a28efcf2b290554165444a0b3bf4efd23544cfe783/f2ac19d62a7cc106/page-1.png",
+          "sha256": "ea007b9b6eb2fb3a6d2c5eec10f68466c8fac2b57c5f9f21c90e6c40470bbf3b"
+        },
+        {
+          "path": "sources/processed/e32b36ec11d6b2503cf968a28efcf2b290554165444a0b3bf4efd23544cfe783/f2ac19d62a7cc106/page-82.png",
+          "sha256": "629aef51ec7f50b9bb484496dc6692808de57b3d3c3642499a69315196276609"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-23",
+      "sha256": "ecf099e37ee3ff19ab9c46bae7f3a557f04c8c0db15ffe53705290ac9eae9ff0",
+      "archive_path": "sources/originals/ecf099e37ee3ff19ab9c46bae7f3a557f04c8c0db15ffe53705290ac9eae9ff0.pdf",
+      "page_count": 6,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/ecf099e37ee3ff19ab9c46bae7f3a557f04c8c0db15ffe53705290ac9eae9ff0/268b2a6ce7913362/pages.json",
+          "sha256": "2f3ab12983bc5e59064b714081e6b927bf7d5a470f2d7fd3ba449f8ada8bc8a0"
+        },
+        {
+          "path": "sources/processed/ecf099e37ee3ff19ab9c46bae7f3a557f04c8c0db15ffe53705290ac9eae9ff0/268b2a6ce7913362/metadata.json",
+          "sha256": "cbfed3219a218308559680d034e52330c7af441c976968ab7f6ba5bb75a29234"
+        },
+        {
+          "path": "sources/processed/ecf099e37ee3ff19ab9c46bae7f3a557f04c8c0db15ffe53705290ac9eae9ff0/268b2a6ce7913362/review-queue.json",
+          "sha256": "acbf95d43bd48eb70f2fd2bf9f51e0ce3e8fc2a2069df361a849045c0b3df27b"
+        },
+        {
+          "path": "sources/processed/ecf099e37ee3ff19ab9c46bae7f3a557f04c8c0db15ffe53705290ac9eae9ff0/268b2a6ce7913362/page-1.png",
+          "sha256": "0ffc1d5c709d3e542fe989e50569f321fd568b5fa03ae9a7cbe785c8c525f30f"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-24",
+      "sha256": "11b3543536f387fcc1a89c6ce4ec0e3def2a1ca310a5ca9b66daa6b6faa31a94",
+      "archive_path": "sources/originals/11b3543536f387fcc1a89c6ce4ec0e3def2a1ca310a5ca9b66daa6b6faa31a94.pdf",
+      "page_count": 85,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/11b3543536f387fcc1a89c6ce4ec0e3def2a1ca310a5ca9b66daa6b6faa31a94/268b2a6ce7913362/pages.json",
+          "sha256": "bb29c07718eb3f546b49343c295b3f7cf2175bc8baae1663d1e8d073ebcbc6c9"
+        },
+        {
+          "path": "sources/processed/11b3543536f387fcc1a89c6ce4ec0e3def2a1ca310a5ca9b66daa6b6faa31a94/268b2a6ce7913362/metadata.json",
+          "sha256": "c00839fa5ef76d2b5768302b58c5152d3357fd838878ad60bcdda35a434ffaf3"
+        },
+        {
+          "path": "sources/processed/11b3543536f387fcc1a89c6ce4ec0e3def2a1ca310a5ca9b66daa6b6faa31a94/268b2a6ce7913362/review-queue.json",
+          "sha256": "bd05d0efccd241d6401fa898e0a086ba1cc6d2fbb0a7ca070013cf8bb4a64576"
+        },
+        {
+          "path": "sources/processed/11b3543536f387fcc1a89c6ce4ec0e3def2a1ca310a5ca9b66daa6b6faa31a94/268b2a6ce7913362/page-1.png",
+          "sha256": "df22f1a3b0d6ac2da45735c8b3f28698860664d6f11eebe234b44a859f52eb2a"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-25",
+      "sha256": "27c880c2dca719485f11f2db9816254659e716165bcdefb632831bd71c6d8801",
+      "archive_path": "sources/originals/27c880c2dca719485f11f2db9816254659e716165bcdefb632831bd71c6d8801.pdf",
+      "page_count": 9,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/27c880c2dca719485f11f2db9816254659e716165bcdefb632831bd71c6d8801/268b2a6ce7913362/pages.json",
+          "sha256": "5b6d57cda535fe1b0bcb3107b4c3733a049c3bff2b20f281645eab653efbe8a1"
+        },
+        {
+          "path": "sources/processed/27c880c2dca719485f11f2db9816254659e716165bcdefb632831bd71c6d8801/268b2a6ce7913362/metadata.json",
+          "sha256": "91215ad90a240b2f44441c2efda847ce521059fadd868ca18e14ee2358d45079"
+        },
+        {
+          "path": "sources/processed/27c880c2dca719485f11f2db9816254659e716165bcdefb632831bd71c6d8801/268b2a6ce7913362/review-queue.json",
+          "sha256": "facb5dc522de492e2546016a2e5f8686475c0a13323c6737d4e85350c1c80c8c"
+        },
+        {
+          "path": "sources/processed/27c880c2dca719485f11f2db9816254659e716165bcdefb632831bd71c6d8801/268b2a6ce7913362/page-1.png",
+          "sha256": "c9c2553d5fb29fec20f6673138b88345b3b68c2c84df141375ed34e731c33a05"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-26",
+      "sha256": "937e28c3ed09866ac545d03e2a3a61fca3990b1cbd1258a9bd284ff6bd2d0c91",
+      "archive_path": "sources/originals/937e28c3ed09866ac545d03e2a3a61fca3990b1cbd1258a9bd284ff6bd2d0c91.pdf",
+      "page_count": 2,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/937e28c3ed09866ac545d03e2a3a61fca3990b1cbd1258a9bd284ff6bd2d0c91/268b2a6ce7913362/pages.json",
+          "sha256": "d97702ef9892cd18aba2f0262662aeff41023c66ac0a33afb0757d74e414a5ee"
+        },
+        {
+          "path": "sources/processed/937e28c3ed09866ac545d03e2a3a61fca3990b1cbd1258a9bd284ff6bd2d0c91/268b2a6ce7913362/metadata.json",
+          "sha256": "eb6bf06903947a3c200eb4c59bf89f4f4585e1934264e54699f6c50fd6084b73"
+        },
+        {
+          "path": "sources/processed/937e28c3ed09866ac545d03e2a3a61fca3990b1cbd1258a9bd284ff6bd2d0c91/268b2a6ce7913362/review-queue.json",
+          "sha256": "bb4ed705e52dda1a006b8ec2fa8b95b7a122229c2948e6dbf1fe1229ca298fbb"
+        },
+        {
+          "path": "sources/processed/937e28c3ed09866ac545d03e2a3a61fca3990b1cbd1258a9bd284ff6bd2d0c91/268b2a6ce7913362/page-1.png",
+          "sha256": "c50c7424addd69d079ab78eed3c2b3f2961620e1506d7b27c35b9c920b62ce02"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-27",
+      "sha256": "19ceaafd20d3a0b8580ef7e3653082a07706874cb5dfb2e90836ef546f9921b7",
+      "archive_path": "sources/originals/19ceaafd20d3a0b8580ef7e3653082a07706874cb5dfb2e90836ef546f9921b7.pdf",
+      "page_count": 4,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/19ceaafd20d3a0b8580ef7e3653082a07706874cb5dfb2e90836ef546f9921b7/268b2a6ce7913362/pages.json",
+          "sha256": "1d082980e263c68263958caecba46a318f61b42a5a359f9fc6b84f6a89c5c924"
+        },
+        {
+          "path": "sources/processed/19ceaafd20d3a0b8580ef7e3653082a07706874cb5dfb2e90836ef546f9921b7/268b2a6ce7913362/metadata.json",
+          "sha256": "02b099713d698b8db3772f05ac02fc8912bc2cbdb0e09c653615027591c0eb57"
+        },
+        {
+          "path": "sources/processed/19ceaafd20d3a0b8580ef7e3653082a07706874cb5dfb2e90836ef546f9921b7/268b2a6ce7913362/review-queue.json",
+          "sha256": "477ad6af57a2be066f5607cccc4f73f7a0ef3673af514d95468660ddbde865b1"
+        },
+        {
+          "path": "sources/processed/19ceaafd20d3a0b8580ef7e3653082a07706874cb5dfb2e90836ef546f9921b7/268b2a6ce7913362/page-1.png",
+          "sha256": "1c6d7454b98ef141a954b7b373fc79bc4c49dd20eabc79db07866657b974aaac"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-28",
+      "sha256": "575faf3c119935357f5a254eda24dc25426666fb5afdd5f028dbb67a839cb222",
+      "archive_path": "sources/originals/575faf3c119935357f5a254eda24dc25426666fb5afdd5f028dbb67a839cb222.pdf",
+      "page_count": 1,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/575faf3c119935357f5a254eda24dc25426666fb5afdd5f028dbb67a839cb222/268b2a6ce7913362/pages.json",
+          "sha256": "bae3a33a30840cc944ae1f4c25d48f1cce32410f7b96a30609d93a58b2749a27"
+        },
+        {
+          "path": "sources/processed/575faf3c119935357f5a254eda24dc25426666fb5afdd5f028dbb67a839cb222/268b2a6ce7913362/metadata.json",
+          "sha256": "a26f710e0e9ed2a37832988c22133c6fa6b52dc5529cf9a2d7e7868367f6ff16"
+        },
+        {
+          "path": "sources/processed/575faf3c119935357f5a254eda24dc25426666fb5afdd5f028dbb67a839cb222/268b2a6ce7913362/review-queue.json",
+          "sha256": "a48dfd88ef350d90079aa692ce4cc8ff8c38fd1b8803457fb1a384b38f2fb889"
+        },
+        {
+          "path": "sources/processed/575faf3c119935357f5a254eda24dc25426666fb5afdd5f028dbb67a839cb222/268b2a6ce7913362/page-1.png",
+          "sha256": "767897f9a3ed37b6d1eebe5b3ad733bf78660e470f3ce677ee5259c7099d992c"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-29",
+      "sha256": "d8861112b442e63cbf9ab552c962a0f708f16f6ceba0374aebc06ea71393f02d",
+      "archive_path": "sources/originals/d8861112b442e63cbf9ab552c962a0f708f16f6ceba0374aebc06ea71393f02d.pdf",
+      "page_count": 9,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/d8861112b442e63cbf9ab552c962a0f708f16f6ceba0374aebc06ea71393f02d/268b2a6ce7913362/pages.json",
+          "sha256": "1b99ee774968bad7edbf952692fa106e5cf5d81d8436246489144d7af6fed9b6"
+        },
+        {
+          "path": "sources/processed/d8861112b442e63cbf9ab552c962a0f708f16f6ceba0374aebc06ea71393f02d/268b2a6ce7913362/metadata.json",
+          "sha256": "3509898f6bd12f7fcf52fe3bdaa2155e7d2d2aa49088c1a692c3efa47b4bf7f7"
+        },
+        {
+          "path": "sources/processed/d8861112b442e63cbf9ab552c962a0f708f16f6ceba0374aebc06ea71393f02d/268b2a6ce7913362/review-queue.json",
+          "sha256": "168ff9623bdcfdb8e8d3ed31f92f7be39aa13dabd0e52217dc8a676fc7d7b863"
+        },
+        {
+          "path": "sources/processed/d8861112b442e63cbf9ab552c962a0f708f16f6ceba0374aebc06ea71393f02d/268b2a6ce7913362/page-1.png",
+          "sha256": "804c6e59b8d10f25f53a23ceb80c215bc2886cb92626e356d1ea06e8a10bfc5b"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-30",
+      "sha256": "4d374c979c60b8cee0af3bf62e83ae6b8681850bf239eca62a602f3b1209e915",
+      "archive_path": "sources/originals/4d374c979c60b8cee0af3bf62e83ae6b8681850bf239eca62a602f3b1209e915.pdf",
+      "page_count": 10,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/4d374c979c60b8cee0af3bf62e83ae6b8681850bf239eca62a602f3b1209e915/268b2a6ce7913362/pages.json",
+          "sha256": "7c41575b0af732beb195487ee125b506b168852d57a8090d620a576dfb490929"
+        },
+        {
+          "path": "sources/processed/4d374c979c60b8cee0af3bf62e83ae6b8681850bf239eca62a602f3b1209e915/268b2a6ce7913362/metadata.json",
+          "sha256": "b2fc795b473ebbb7e590fe14af408b18c5b8fc0a482e0e61bd844f5f0dbb11f0"
+        },
+        {
+          "path": "sources/processed/4d374c979c60b8cee0af3bf62e83ae6b8681850bf239eca62a602f3b1209e915/268b2a6ce7913362/review-queue.json",
+          "sha256": "ccb7dc9ad57e0ff2dae9cf5c10d372eaf735a24d16e6ee96a14f52b08d30839d"
+        },
+        {
+          "path": "sources/processed/4d374c979c60b8cee0af3bf62e83ae6b8681850bf239eca62a602f3b1209e915/268b2a6ce7913362/page-1.png",
+          "sha256": "d77f4c0555718947afc5a8a071af5fff5a9711c348667ae3555e134d235d4cc6"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:math-timeline-2023",
+      "sha256": "a11c2cc36253fc7ea17bc379e5196efbd3fc76df0191d6a282dff5b46f0e31d3",
+      "archive_path": "sources/originals/a11c2cc36253fc7ea17bc379e5196efbd3fc76df0191d6a282dff5b46f0e31d3.pdf",
+      "page_count": 1,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/a11c2cc36253fc7ea17bc379e5196efbd3fc76df0191d6a282dff5b46f0e31d3/268b2a6ce7913362/pages.json",
+          "sha256": "5df6452a390858dda13a4417a8f109250c40c53375c7a5fac0ba74c1536ab6e2"
+        },
+        {
+          "path": "sources/processed/a11c2cc36253fc7ea17bc379e5196efbd3fc76df0191d6a282dff5b46f0e31d3/268b2a6ce7913362/metadata.json",
+          "sha256": "01deda4031fb76eb258810c5e21bd8f06309354c7ea3eb7521803645c65a6834"
+        },
+        {
+          "path": "sources/processed/a11c2cc36253fc7ea17bc379e5196efbd3fc76df0191d6a282dff5b46f0e31d3/268b2a6ce7913362/review-queue.json",
+          "sha256": "f9daf8be37e7a384b9cf609dedef89af9481c4661420cba962312d676adf7d87"
+        },
+        {
+          "path": "sources/processed/a11c2cc36253fc7ea17bc379e5196efbd3fc76df0191d6a282dff5b46f0e31d3/268b2a6ce7913362/page-1.png",
+          "sha256": "124804efd6432749c9685b7ab0011db0f54c4fae17b14c3473d318a356d5c9d5"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:ela-math-roadmap-overview",
+      "sha256": "c01a1a9b6c2d88fa2e0913819f5c356ab146f5f9f3e31fd7f4248524ea649952",
+      "archive_path": "sources/originals/c01a1a9b6c2d88fa2e0913819f5c356ab146f5f9f3e31fd7f4248524ea649952.pdf",
+      "page_count": 4,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/c01a1a9b6c2d88fa2e0913819f5c356ab146f5f9f3e31fd7f4248524ea649952/268b2a6ce7913362/pages.json",
+          "sha256": "84fddeb0b04e81ea680dc15eb0b523de4d5e1508805d059e3572b7c9b6ecdf73"
+        },
+        {
+          "path": "sources/processed/c01a1a9b6c2d88fa2e0913819f5c356ab146f5f9f3e31fd7f4248524ea649952/268b2a6ce7913362/metadata.json",
+          "sha256": "a270375b872b135d137995c7096d5a87999e2662050b554fc64be5a35b4b33c2"
+        },
+        {
+          "path": "sources/processed/c01a1a9b6c2d88fa2e0913819f5c356ab146f5f9f3e31fd7f4248524ea649952/268b2a6ce7913362/review-queue.json",
+          "sha256": "d05446d14016ab61d003c8d1763c7b602d9966a1fc092e385c2388901b1b580e"
+        },
+        {
+          "path": "sources/processed/c01a1a9b6c2d88fa2e0913819f5c356ab146f5f9f3e31fd7f4248524ea649952/268b2a6ce7913362/page-1.png",
+          "sha256": "5a8e247a5c7ea54b276be5034a4b44fc8e55ca149ddf911ebcaecc03fdff0a5f"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-33",
+      "sha256": "e8b01d2c4b7c119f12b68bbe9a1fd34f8af104b111851ae2a0ae16c169d0b1ad",
+      "archive_path": "sources/originals/e8b01d2c4b7c119f12b68bbe9a1fd34f8af104b111851ae2a0ae16c169d0b1ad.pdf",
+      "page_count": 11,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/e8b01d2c4b7c119f12b68bbe9a1fd34f8af104b111851ae2a0ae16c169d0b1ad/268b2a6ce7913362/pages.json",
+          "sha256": "685a2736146a1140b1220da099a5f6a1cb290b0d0d80b0f69f79ef51271b2564"
+        },
+        {
+          "path": "sources/processed/e8b01d2c4b7c119f12b68bbe9a1fd34f8af104b111851ae2a0ae16c169d0b1ad/268b2a6ce7913362/metadata.json",
+          "sha256": "a4977d00ee779a6eff1fbfeab525047013bd3e971c5ad54325e9f8739c2f0db1"
+        },
+        {
+          "path": "sources/processed/e8b01d2c4b7c119f12b68bbe9a1fd34f8af104b111851ae2a0ae16c169d0b1ad/268b2a6ce7913362/review-queue.json",
+          "sha256": "70df1255214b8d5387f70be06b48e2d21f0ddcf6feb683494a4256f3231e67be"
+        },
+        {
+          "path": "sources/processed/e8b01d2c4b7c119f12b68bbe9a1fd34f8af104b111851ae2a0ae16c169d0b1ad/268b2a6ce7913362/page-1.png",
+          "sha256": "0ffdfa57ea0b5a9be956a73acfb813a9580d8f83f468f0526855dca38e122e63"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-34",
+      "sha256": "3e04fcef6a71a80996cdf71db1d327e245cb5bd59a4293d8eaf6498581da537d",
+      "archive_path": "sources/originals/3e04fcef6a71a80996cdf71db1d327e245cb5bd59a4293d8eaf6498581da537d.pdf",
+      "page_count": 10,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/3e04fcef6a71a80996cdf71db1d327e245cb5bd59a4293d8eaf6498581da537d/268b2a6ce7913362/pages.json",
+          "sha256": "bad4915672db194db200a10d17e499225b14327a5c5b812a52fe3a2c0c3f6780"
+        },
+        {
+          "path": "sources/processed/3e04fcef6a71a80996cdf71db1d327e245cb5bd59a4293d8eaf6498581da537d/268b2a6ce7913362/metadata.json",
+          "sha256": "37dc3a6a6c715f23f1591174a6f8d6cd66d05f360c85fc6931b3655382ad5dcf"
+        },
+        {
+          "path": "sources/processed/3e04fcef6a71a80996cdf71db1d327e245cb5bd59a4293d8eaf6498581da537d/268b2a6ce7913362/review-queue.json",
+          "sha256": "cb1594fe30c097dc90e812b4ccf1182871c7da2a8b4ba0f115f604c7ada3978e"
+        },
+        {
+          "path": "sources/processed/3e04fcef6a71a80996cdf71db1d327e245cb5bd59a4293d8eaf6498581da537d/268b2a6ce7913362/page-1.png",
+          "sha256": "2ef2e6173618491fe893346a056af1a4c23ee0455f2b1dcad99f707385a9243e"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-35",
+      "sha256": "263bd0fcfdcf353392d65d8efbcd093f5d57f31c9319f8f1614aaf049592b0a7",
+      "archive_path": "sources/originals/263bd0fcfdcf353392d65d8efbcd093f5d57f31c9319f8f1614aaf049592b0a7.pdf",
+      "page_count": 10,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/263bd0fcfdcf353392d65d8efbcd093f5d57f31c9319f8f1614aaf049592b0a7/268b2a6ce7913362/pages.json",
+          "sha256": "7a5237945c9248e6f1d92610038303d2edafe3c214fecc54e54c741804df22da"
+        },
+        {
+          "path": "sources/processed/263bd0fcfdcf353392d65d8efbcd093f5d57f31c9319f8f1614aaf049592b0a7/268b2a6ce7913362/metadata.json",
+          "sha256": "65df14db6f837bd795a9f311e9028108a6635dd8a4899d5bf791eb8d633d3d99"
+        },
+        {
+          "path": "sources/processed/263bd0fcfdcf353392d65d8efbcd093f5d57f31c9319f8f1614aaf049592b0a7/268b2a6ce7913362/review-queue.json",
+          "sha256": "8d25adcfd42dc93ad9890cea6163174447a8cdc51b6600e6879fa61fdd2bcca8"
+        },
+        {
+          "path": "sources/processed/263bd0fcfdcf353392d65d8efbcd093f5d57f31c9319f8f1614aaf049592b0a7/268b2a6ce7913362/page-1.png",
+          "sha256": "fad84b936b4e12f67fa910bf1a4793c36cea8aaa945b4a74d477288175558ec2"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-36",
+      "sha256": "3c479c824fd88822e61726b9bd551e04b40905a644a5b32eacd56a279a31a606",
+      "archive_path": "sources/originals/3c479c824fd88822e61726b9bd551e04b40905a644a5b32eacd56a279a31a606.pdf",
+      "page_count": 11,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/3c479c824fd88822e61726b9bd551e04b40905a644a5b32eacd56a279a31a606/268b2a6ce7913362/pages.json",
+          "sha256": "90e3c37230757c26eeaffa1becac4709fdf8136a3515d36f23832e4d33306252"
+        },
+        {
+          "path": "sources/processed/3c479c824fd88822e61726b9bd551e04b40905a644a5b32eacd56a279a31a606/268b2a6ce7913362/metadata.json",
+          "sha256": "93650ee53ffdb3db91e6f44495ca43e0142680b56c235125e8894e9426f61fcc"
+        },
+        {
+          "path": "sources/processed/3c479c824fd88822e61726b9bd551e04b40905a644a5b32eacd56a279a31a606/268b2a6ce7913362/review-queue.json",
+          "sha256": "9ba93f70c15c9923a98a3bbbda64d2c16ad460d2e2954058c09213e72796673a"
+        },
+        {
+          "path": "sources/processed/3c479c824fd88822e61726b9bd551e04b40905a644a5b32eacd56a279a31a606/268b2a6ce7913362/page-1.png",
+          "sha256": "7005159917bb578a9ddc6526a77961560e8818d875de21bfc470104f6c501a83"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-37",
+      "sha256": "399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8",
+      "archive_path": "sources/originals/399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8.pdf",
+      "page_count": 9,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8/268b2a6ce7913362/pages.json",
+          "sha256": "70a07a92df848883ac7048e58436104899390c950bb30594e568bb9c4455a588"
+        },
+        {
+          "path": "sources/processed/399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8/268b2a6ce7913362/metadata.json",
+          "sha256": "fd3f96efe9eff0826efb9c62f9660b1a6af54eb86e9833bf4e976e84ffd1a88c"
+        },
+        {
+          "path": "sources/processed/399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8/268b2a6ce7913362/review-queue.json",
+          "sha256": "f339db304ebbedf8fd3b7d47c01e5c5e125081370a6abd8098eb8d531f24b9aa"
+        },
+        {
+          "path": "sources/processed/399c58cc2e526e1b80a87280f4a457b680266ba976377e214a6736d0a1006ef8/268b2a6ce7913362/page-1.png",
+          "sha256": "9e06501d24e462b308449308ae6c4ae2fed6d8847f0877df5dfae2701b44806b"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-38",
+      "sha256": "a7a680238803b0e6e1959360358eeb15961d0f62a1fb30bddeb2d8bb3b241f39",
+      "archive_path": "sources/originals/a7a680238803b0e6e1959360358eeb15961d0f62a1fb30bddeb2d8bb3b241f39.pdf",
+      "page_count": 3,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/a7a680238803b0e6e1959360358eeb15961d0f62a1fb30bddeb2d8bb3b241f39/268b2a6ce7913362/pages.json",
+          "sha256": "f7077df4face487c39f6c774c499635103edd05566a36acb68bd0dccf604bdc7"
+        },
+        {
+          "path": "sources/processed/a7a680238803b0e6e1959360358eeb15961d0f62a1fb30bddeb2d8bb3b241f39/268b2a6ce7913362/metadata.json",
+          "sha256": "e8b3758f5e2be067dbc0d12aabfd90f1cd556f357b34f5521da8eb6d946cc9d9"
+        },
+        {
+          "path": "sources/processed/a7a680238803b0e6e1959360358eeb15961d0f62a1fb30bddeb2d8bb3b241f39/268b2a6ce7913362/review-queue.json",
+          "sha256": "fd6af9ab21b663ba24fde86801a252ed0483600526b3eb7bbb27eec80763f6f3"
+        },
+        {
+          "path": "sources/processed/a7a680238803b0e6e1959360358eeb15961d0f62a1fb30bddeb2d8bb3b241f39/268b2a6ce7913362/page-1.png",
+          "sha256": "53ee20cda3f2d1f388dee9fbd25e390a17703eaac317adc2578b8a8138a9f24d"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-39",
+      "sha256": "8bbf71e390a2e85cd7ed28cace2db9dba716fcd94c8c520143dd3ae996539fe8",
+      "archive_path": "sources/originals/8bbf71e390a2e85cd7ed28cace2db9dba716fcd94c8c520143dd3ae996539fe8.pdf",
+      "page_count": 20,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/8bbf71e390a2e85cd7ed28cace2db9dba716fcd94c8c520143dd3ae996539fe8/268b2a6ce7913362/pages.json",
+          "sha256": "f7bfe6f543bb431ee24353c73fb1571d7eb1df85291c441e39db90b71318ca1e"
+        },
+        {
+          "path": "sources/processed/8bbf71e390a2e85cd7ed28cace2db9dba716fcd94c8c520143dd3ae996539fe8/268b2a6ce7913362/metadata.json",
+          "sha256": "5f4d2647fd1e9022f1c89767da4023ef35d3af83d9f5ede7c130d34c8308b87e"
+        },
+        {
+          "path": "sources/processed/8bbf71e390a2e85cd7ed28cace2db9dba716fcd94c8c520143dd3ae996539fe8/268b2a6ce7913362/review-queue.json",
+          "sha256": "5ac3f61972a6d61e1cbc72fcd2dd30774ad60e41a046062f1d11d5e2d4200637"
+        },
+        {
+          "path": "sources/processed/8bbf71e390a2e85cd7ed28cace2db9dba716fcd94c8c520143dd3ae996539fe8/268b2a6ce7913362/page-1.png",
+          "sha256": "f6695e32081b5038938dd229733b3a33eff6f72bc401b8caa071faad9464d494"
+        }
+      ]
+    },
+    {
+      "source_id": "src:nysed:upload-40",
+      "sha256": "92c81f8ecdc75249e10991d758aa007dabeaceae5dc8dce11a975f919caede02",
+      "archive_path": "sources/originals/92c81f8ecdc75249e10991d758aa007dabeaceae5dc8dce11a975f919caede02.pdf",
+      "page_count": 4,
+      "selected_pages": [
+        1
+      ],
+      "recipe": {
+        "pipeline": "1",
+        "pymupdf": "1.26.6",
+        "selected_pages": [
+          1
+        ],
+        "scale": 1.3
+      },
+      "artifacts": [
+        {
+          "path": "sources/processed/92c81f8ecdc75249e10991d758aa007dabeaceae5dc8dce11a975f919caede02/268b2a6ce7913362/pages.json",
+          "sha256": "69357ec572736f618232167976d563dfaa03a8ac12b1a188baf42941ee75b436"
+        },
+        {
+          "path": "sources/processed/92c81f8ecdc75249e10991d758aa007dabeaceae5dc8dce11a975f919caede02/268b2a6ce7913362/metadata.json",
+          "sha256": "d38a3ed9a6d8964efa95877e300f1b52e69cf341d07aee31ae4d78b4c939cc74"
+        },
+        {
+          "path": "sources/processed/92c81f8ecdc75249e10991d758aa007dabeaceae5dc8dce11a975f919caede02/268b2a6ce7913362/review-queue.json",
+          "sha256": "cda62c19f99f78626b230bf65a59ef5b781bc8e08357b581db0fdcb829d9743b"
+        },
+        {
+          "path": "sources/processed/92c81f8ecdc75249e10991d758aa007dabeaceae5dc8dce11a975f919caede02/268b2a6ce7913362/page-1.png",
+          "sha256": "fbfd678eeb6a47729a326d3e3b86bbf98d7e199c5608fc7e80d2a2fbe11d6345"
+        }
+      ]
     }
   ],
   "semantic_promotion": false

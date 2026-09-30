@@ -1,8 +1,8 @@
 {
-  "release": "wildcats-0.0.5-tuesday-acceptance",
+  "release": "wildcats-0.0.6-tuesday-completion",
   "policy_snapshot": "2026-09-28",
   "git_revision": null,
-  "scope": "Bounded semantic trace of NY-7.RP.2 heading and subparts a–d, with source notes/examples preserved; edition applicability and independent/human review pending.",
+  "scope": "Two bounded Grade 7 families: mathematics NY-7.RP.2 and ELA 7R1. Source-edition expectations only; snapshot applicability and human review unresolved.",
   "nodes": [
     {
       "id": "wc:grade:7",
@@ -10,9 +10,10 @@
       "label": "Grade 7",
       "status": "SOURCE",
       "source_id": "src:nysed:math-full",
-      "review_status": "agent-visual-review; human-review-pending",
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
       "source_locator": "PDF page 90; NY-7.RP grade identifier",
-      "pdf_page": 90
+      "pdf_page": 90,
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:subject:mathematics",
@@ -20,9 +21,10 @@
       "label": "Mathematics",
       "status": "SOURCE",
       "source_id": "src:nysed:math-full",
-      "review_status": "agent-visual-review; human-review-pending",
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
-      "pdf_page": 90
+      "pdf_page": 90,
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:domain:7-rp",
@@ -30,9 +32,10 @@
       "label": "Ratios and Proportional Relationships",
       "status": "SOURCE",
       "source_id": "src:nysed:math-full",
-      "review_status": "agent-visual-review; human-review-pending",
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
-      "pdf_page": 90
+      "pdf_page": 90,
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:standard:ny-7-rp-2",
@@ -42,7 +45,7 @@
       "source_id": "src:nysed:math-full",
       "original_text": "Recognize and represent proportional relationships between quantities.",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
-      "review_status": "agent-visual-review; human-review-pending",
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
       "pdf_page": 90,
       "source_annotations": [
         {
@@ -57,7 +60,8 @@
           "example_summary": "The source illustrates modeling by treating apartment-building population as proportional to story count. This is a modeling assumption in the example, not an empirical law.",
           "source_footnote": "14; citation target not reviewed"
         }
-      ]
+      ],
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:expectation:recognize-proportional",
@@ -66,14 +70,15 @@
       "status": "PARSED",
       "source_id": "src:nysed:math-full",
       "derived_from": "wc:standard:ny-7-rp-2",
-      "review_status": "agent-visual-review; human-review-pending",
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
       "pdf_page": 90,
       "parsing_rationale": "Separates one action in the parent heading; the four subparts provide additional detail.",
       "scope": "heading decomposition; not an exhaustive account of subparts",
       "action": "Recognize",
       "object": "proportional relationships between quantities",
-      "qualifiers": []
+      "qualifiers": [],
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:expectation:represent-proportional",
@@ -82,14 +87,15 @@
       "status": "PARSED",
       "source_id": "src:nysed:math-full",
       "derived_from": "wc:standard:ny-7-rp-2",
-      "review_status": "agent-visual-review; human-review-pending",
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
       "pdf_page": 90,
       "parsing_rationale": "Separates one action in the parent heading; the four subparts provide additional detail.",
       "scope": "heading decomposition; not an exhaustive account of subparts",
       "action": "Represent",
       "object": "proportional relationships between quantities",
-      "qualifiers": []
+      "qualifiers": [],
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:concept:proportional-relationship",
@@ -98,10 +104,11 @@
       "status": "PARSED",
       "source_id": "src:nysed:math-full",
       "derived_from": "wc:standard:ny-7-rp-2",
-      "review_status": "agent-visual-review; human-review-pending",
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
       "pdf_page": 90,
-      "parsing_rationale": "Extracts the named relationship from the parent heading; this introduces no equivalence, prerequisite, or broader capability hierarchy."
+      "parsing_rationale": "Extracts the named relationship from the parent heading; this introduces no equivalence, prerequisite, or broader capability hierarchy.",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:standard:ny-7-rp-2a",
@@ -113,7 +120,7 @@
       "parent_standard_id": "wc:standard:ny-7-rp-2",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2a",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
       "source_annotations": [
         {
           "id": "wc:annotation:7-rp-2a-strategies",
@@ -125,7 +132,8 @@
           "source_locator": "PDF/printed page 90; note beside NY-7.RP.2a",
           "interpretation": "Non-exhaustive strategies; does not require both strategies on every task."
         }
-      ]
+      ],
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:standard:ny-7-rp-2b",
@@ -137,7 +145,8 @@
       "parent_standard_id": "wc:standard:ny-7-rp-2",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2b",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending"
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:standard:ny-7-rp-2c",
@@ -149,7 +158,7 @@
       "parent_standard_id": "wc:standard:ny-7-rp-2",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2c",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
       "source_annotations": [
         {
           "id": "wc:annotation:7-rp-2c-example",
@@ -161,7 +170,8 @@
           "source_locator": "PDF/printed page 90; example beside NY-7.RP.2c",
           "interpretation": "Illustrative cost equation; t, p, and n are example variables, not mandated names for every task."
         }
-      ]
+      ],
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:standard:ny-7-rp-2d",
@@ -173,7 +183,8 @@
       "parent_standard_id": "wc:standard:ny-7-rp-2",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2d",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending"
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:expectation:decide-proportional",
@@ -184,12 +195,13 @@
       "derived_from": "wc:standard:ny-7-rp-2a",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2a",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
       "action": "Decide",
       "object": "whether two quantities are in a proportional relationship",
       "qualifiers": [],
       "parsing_rationale": "Retains the yes/no classification task; the source's strategy note is non-exhaustive.",
-      "scope": "one source subpart; not a mastery assertion"
+      "scope": "one source subpart; not a mastery assertion",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:expectation:identify-unit-rate",
@@ -200,7 +212,7 @@
       "derived_from": "wc:standard:ny-7-rp-2b",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2b",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
       "action": "Identify",
       "object": "constant of proportionality (unit rate)",
       "qualifiers": [
@@ -211,7 +223,8 @@
         "in verbal descriptions of proportional relationships"
       ],
       "parsing_rationale": "Retains every listed representation; no claim of equivalence to other standards is introduced.",
-      "scope": "one source subpart; not a mastery assertion"
+      "scope": "one source subpart; not a mastery assertion",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:expectation:represent-proportional-equation",
@@ -222,14 +235,15 @@
       "derived_from": "wc:standard:ny-7-rp-2c",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2c",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
       "action": "Represent",
       "object": "a proportional relationship",
       "qualifiers": [
         "using an equation"
       ],
       "parsing_rationale": "Retains the required representation form; the cost example illustrates this action and is not an additional universal task.",
-      "scope": "one source subpart; not a mastery assertion"
+      "scope": "one source subpart; not a mastery assertion",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:expectation:explain-proportional-point",
@@ -240,7 +254,7 @@
       "derived_from": "wc:standard:ny-7-rp-2d",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2d",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending",
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
       "action": "Explain",
       "object": "what a point (x, y) on the graph of a proportional relationship means",
       "qualifiers": [
@@ -249,7 +263,63 @@
         "r is the unit rate"
       ],
       "parsing_rationale": "Preserves the contextual explanation, both distinguished points, and the meaning of r.",
-      "scope": "one source subpart; not a mastery assertion"
+      "scope": "one source subpart; not a mastery assertion",
+      "review_record": "data/reviews/monday-m7.json"
+    },
+    {
+      "source_id": "src:nysed:ela-full",
+      "pdf_page": 82,
+      "source_locator": "PDF/printed page 82; Grade 7 Reading, Key Ideas and Details; 7R1",
+      "review_status": "source-page visually reviewed; builder semantic review; independent and human review pending",
+      "review_record": "data/reviews/tuesday-completion.json",
+      "id": "wc:subject:ela",
+      "type": "Subject",
+      "label": "English Language Arts",
+      "status": "SOURCE"
+    },
+    {
+      "source_id": "src:nysed:ela-full",
+      "pdf_page": 82,
+      "source_locator": "PDF/printed page 82; Grade 7 Reading, Key Ideas and Details; 7R1",
+      "review_status": "source-page visually reviewed; builder semantic review; independent and human review pending",
+      "review_record": "data/reviews/tuesday-completion.json",
+      "id": "wc:domain:7r",
+      "type": "Domain",
+      "label": "7th Grade Reading Standards (Literary and Informational Text)",
+      "status": "SOURCE"
+    },
+    {
+      "source_id": "src:nysed:ela-full",
+      "pdf_page": 82,
+      "source_locator": "PDF/printed page 82; Grade 7 Reading, Key Ideas and Details; 7R1",
+      "review_status": "source-page visually reviewed; builder semantic review; independent and human review pending",
+      "review_record": "data/reviews/tuesday-completion.json",
+      "id": "wc:standard:ny-7r1",
+      "type": "Standard",
+      "label": "7R1",
+      "status": "SOURCE",
+      "original_text": "Cite textual evidence to support an analysis of what the text says explicitly/implicitly and make logical inferences. (RI&RL)"
+    },
+    {
+      "source_id": "src:nysed:ela-full",
+      "pdf_page": 82,
+      "source_locator": "PDF/printed page 82; Grade 7 Reading, Key Ideas and Details; 7R1",
+      "review_status": "source-page visually reviewed; builder semantic review; independent and human review pending",
+      "review_record": "data/reviews/tuesday-completion.json",
+      "id": "wc:expectation:cite-evidence-infer",
+      "type": "Expectation",
+      "label": "Cite textual evidence and make logical inferences",
+      "status": "PARSED",
+      "derived_from": "wc:standard:ny-7r1",
+      "action": "Cite textual evidence and make logical inferences",
+      "object": "an analysis of what the text says explicitly/implicitly",
+      "qualifiers": [
+        "Textual evidence supports the analysis.",
+        "The analysis includes what the text says explicitly/implicitly.",
+        "Inferences must be logical.",
+        "Applies to literary and informational text (RI&RL)."
+      ],
+      "parsing_rationale": "Retains the coordinated tasks as one compound expectation, preserving the connection between evidence, analysis, and inference. RI&RL is interpreted using the page heading Literary and Informational Text. This is not an assessment rubric, prerequisite, or measurable mastery claim."
     }
   ],
   "edges": [
@@ -262,7 +332,8 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:002",
@@ -273,8 +344,9 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending",
-      "interpretation": "Records source grade placement only; does not establish an exact attainment date or cohort applicability."
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "interpretation": "Records source grade placement only; does not establish an exact attainment date or cohort applicability.",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:003",
@@ -285,7 +357,8 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:004",
@@ -296,7 +369,8 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:005",
@@ -307,7 +381,8 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:006",
@@ -318,7 +393,8 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:subpart-2a",
@@ -329,7 +405,8 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; NY-7.RP.2a",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:grade-2a",
@@ -340,8 +417,9 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; NY-7.RP",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending",
-      "interpretation": "Records source grade placement only; does not establish an exact attainment date or cohort applicability."
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "interpretation": "Records source grade placement only; does not establish an exact attainment date or cohort applicability.",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:subpart-2b",
@@ -352,7 +430,8 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; NY-7.RP.2b",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:grade-2b",
@@ -363,8 +442,9 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; NY-7.RP",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending",
-      "interpretation": "Records source grade placement only; does not establish an exact attainment date or cohort applicability."
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "interpretation": "Records source grade placement only; does not establish an exact attainment date or cohort applicability.",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:subpart-2c",
@@ -375,7 +455,8 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; NY-7.RP.2c",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:grade-2c",
@@ -386,8 +467,9 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; NY-7.RP",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending",
-      "interpretation": "Records source grade placement only; does not establish an exact attainment date or cohort applicability."
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "interpretation": "Records source grade placement only; does not establish an exact attainment date or cohort applicability.",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:subpart-2d",
@@ -398,7 +480,8 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; NY-7.RP.2d",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending"
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:grade-2d",
@@ -409,8 +492,9 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; NY-7.RP",
       "pdf_page": 90,
-      "review_status": "agent-visual-review; human-review-pending",
-      "interpretation": "Records source grade placement only; does not establish an exact attainment date or cohort applicability."
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "interpretation": "Records source grade placement only; does not establish an exact attainment date or cohort applicability.",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:parse-2a",
@@ -421,7 +505,8 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2a",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending"
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:concept-2a",
@@ -432,8 +517,9 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2a",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending",
-      "rationale": "The subpart explicitly concerns a proportional relationship; no prerequisite or mastery inference."
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "rationale": "The subpart explicitly concerns a proportional relationship; no prerequisite or mastery inference.",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:parse-2b",
@@ -444,7 +530,8 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2b",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending"
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:concept-2b",
@@ -455,8 +542,9 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2b",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending",
-      "rationale": "The subpart explicitly concerns a proportional relationship; no prerequisite or mastery inference."
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "rationale": "The subpart explicitly concerns a proportional relationship; no prerequisite or mastery inference.",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:parse-2c",
@@ -467,7 +555,8 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2c",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending"
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:concept-2c",
@@ -478,8 +567,9 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2c",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending",
-      "rationale": "The subpart explicitly concerns a proportional relationship; no prerequisite or mastery inference."
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "rationale": "The subpart explicitly concerns a proportional relationship; no prerequisite or mastery inference.",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:parse-2d",
@@ -490,7 +580,8 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2d",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending"
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "review_record": "data/reviews/monday-m7.json"
     },
     {
       "id": "wc:edge:concept-2d",
@@ -501,8 +592,45 @@
       "source_id": "src:nysed:math-full",
       "source_locator": "PDF page 90; printed page 90; NY-7.RP.2d",
       "pdf_page": 90,
-      "review_status": "agent-semantic-review; independent-and-human-review-pending",
-      "rationale": "The subpart explicitly concerns a proportional relationship; no prerequisite or mastery inference."
+      "review_status": "Monday M7 baseline audited; Tuesday metadata/acceptance changes builder-reviewed; human review pending",
+      "rationale": "The subpart explicitly concerns a proportional relationship; no prerequisite or mastery inference.",
+      "review_record": "data/reviews/monday-m7.json"
+    },
+    {
+      "source_id": "src:nysed:ela-full",
+      "pdf_page": 82,
+      "source_locator": "PDF/printed page 82; Grade 7 Reading, Key Ideas and Details; 7R1",
+      "review_status": "source-page visually reviewed; builder semantic review; independent and human review pending",
+      "review_record": "data/reviews/tuesday-completion.json",
+      "id": "wc:edge:7r1-part",
+      "relation": "PART_OF",
+      "from": "wc:standard:ny-7r1",
+      "to": "wc:domain:7r",
+      "status": "SOURCE"
+    },
+    {
+      "source_id": "src:nysed:ela-full",
+      "pdf_page": 82,
+      "source_locator": "PDF/printed page 82; Grade 7 Reading, Key Ideas and Details; 7R1",
+      "review_status": "source-page visually reviewed; builder semantic review; independent and human review pending",
+      "review_record": "data/reviews/tuesday-completion.json",
+      "id": "wc:edge:7r1-grade",
+      "relation": "ASSIGNED_TO_GRADE",
+      "from": "wc:standard:ny-7r1",
+      "to": "wc:grade:7",
+      "status": "SOURCE"
+    },
+    {
+      "source_id": "src:nysed:ela-full",
+      "pdf_page": 82,
+      "source_locator": "PDF/printed page 82; Grade 7 Reading, Key Ideas and Details; 7R1",
+      "review_status": "source-page visually reviewed; builder semantic review; independent and human review pending",
+      "review_record": "data/reviews/tuesday-completion.json",
+      "id": "wc:edge:7r1-parse",
+      "relation": "DERIVED_FROM",
+      "from": "wc:expectation:cite-evidence-infer",
+      "to": "wc:standard:ny-7r1",
+      "status": "PARSED"
     }
   ],
   "students": [
@@ -515,7 +643,8 @@
         "wc:standard:ny-7-rp-2a",
         "wc:standard:ny-7-rp-2b",
         "wc:standard:ny-7-rp-2c",
-        "wc:standard:ny-7-rp-2d"
+        "wc:standard:ny-7-rp-2d",
+        "wc:standard:ny-7r1"
       ],
       "pathway_id": "wc:pathway:canonical-nys-general-education"
     },
@@ -528,7 +657,8 @@
         "wc:standard:ny-7-rp-2a",
         "wc:standard:ny-7-rp-2b",
         "wc:standard:ny-7-rp-2c",
-        "wc:standard:ny-7-rp-2d"
+        "wc:standard:ny-7-rp-2d",
+        "wc:standard:ny-7r1"
       ],
       "pathway_id": "wc:pathway:canonical-nys-general-education"
     }

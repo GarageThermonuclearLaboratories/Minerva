@@ -6,42 +6,48 @@
   "claims": [
     {
       "id": "wc:policy-evidence:math-adoption",
-      "source_id": "src:nysed:math-guidance",
-      "status": "PROVISIONAL",
+      "source_id": "src:nysed:ela-math-roadmap-overview",
+      "status": "SOURCE",
       "event": "Mathematics standards adoption",
       "date": "2017-09",
       "date_precision": "month",
       "derivation": "SOURCE",
-      "evidence_status": "prior-search-excerpt-observation; durable-capture-missing",
-      "source_locator": null,
-      "review_status": "full-page-and-date-verification-pending"
+      "evidence_status": "archived-upload; text-and-render-reviewed",
+      "source_locator": "PDF page 1; adoption bullet",
+      "review_status": "builder-source-review; applicability-and-human-review-pending",
+      "original_text": "September 2017: Adoption of NYS Next Generation Learning Standards.",
+      "pdf_page": 1
     },
     {
       "id": "wc:policy-evidence:math-implementation",
-      "source_id": "src:nysed:math-guidance",
-      "status": "PROVISIONAL",
-      "event": "Full mathematics implementation",
+      "source_id": "src:nysed:math-timeline-2023",
+      "status": "SOURCE",
+      "event": "Grades 3–8 mathematics instruction alignment begins",
       "date": "2022-09",
       "date_precision": "month",
       "derivation": "SOURCE",
-      "evidence_status": "prior-search-excerpt-observation; durable-capture-missing",
-      "source_locator": null,
-      "review_status": "full-page-and-date-verification-pending"
+      "evidence_status": "archived-upload; text-and-render-reviewed",
+      "source_locator": "PDF page 1; Grades 3–8 instruction / assessment timeline",
+      "review_status": "builder-source-review; applicability-and-human-review-pending",
+      "original_text": "…September 2022\nfor Grades 3-8",
+      "pdf_page": 1
     },
     {
       "id": "wc:policy-evidence:math-assessment",
-      "source_id": "src:nysed:math-guidance",
-      "status": "PROVISIONAL",
+      "source_id": "src:nysed:math-timeline-2023",
+      "status": "SOURCE",
       "event": "Aligned Grades 3–8 mathematics assessments begin",
       "date": "2023-spring",
       "date_precision": "season",
       "derivation": "SOURCE",
-      "evidence_status": "prior-search-excerpt-observation; durable-capture-missing",
-      "source_locator": null,
-      "review_status": "full-page-and-date-verification-pending"
+      "evidence_status": "archived-upload; text-and-render-reviewed",
+      "source_locator": "PDF page 1; Grades 3–8 instruction / assessment timeline",
+      "review_status": "builder-source-review; applicability-and-human-review-pending",
+      "original_text": "Spring 2023\nFirst administration of \nNYS Grades 3-8 state \nassessments aligned to \nthe NYS Next Generation \nMathematics Learning \nStandards",
+      "pdf_page": 1
     }
   ],
-  "interpretation": "Timeline dates are provisional prior search-excerpt observations; exact supporting excerpts and section locators were not preserved. Reacquire evidence before asserting these dates as verified. The archived full standards cover identifies a June 2019 update; page90 wording was separately reviewed.",
+  "interpretation": "Archived uploaded documents now support these edition-specific dates. The September 2022 instruction claim is limited to Grades 3–8, not all mathematics. These documents do not prove absence of later changes or exact edition/cohort applicability to the snapshot.",
   "failed_acquisitions": [
     {
       "url": "https://www.nysed.gov/sites/default/files/programs/curriculum-instruction/nys-math-standards-grade-7-crosswalk.pdf",
@@ -61,16 +67,17 @@
     }
   ],
   "next": [
-    "Verify applicability of uploaded edition against policy snapshot",
-    "Review definitions of source coherence links before importing them as graph relations",
-    "Expand mathematics parsing beyond NY-7.RP.2",
-    "Acquire other content-area standards"
+    "Resolve exact edition/cohort applicability",
+    "Review Coherence semantics before graph promotion",
+    "Continue bounded semantic and human review"
   ],
   "resolved": [
     "Both PDFs acquired from user and SHA-256 hashed",
     "Full standards cover revision label inspected",
     "NY-7.RP.2 and a–d verified on printed/PDF page 90",
-    "Crosswalk pages 1–2 corroborated; Draft footer recorded"
+    "Crosswalk pages 1–2 corroborated; Draft footer recorded",
+    "Forty additional PDFs registered without promoting their contents to expectations",
+    "Math dates supported by archived timeline and roadmap overview; instruction scope narrowed to Grades 3–8"
   ],
   "coherence_observations": [
     {

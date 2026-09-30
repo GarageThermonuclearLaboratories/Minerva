@@ -1,0 +1,17 @@
+{
+  "sha256": "575faf3c119935357f5a254eda24dc25426666fb5afdd5f028dbb67a839cb222",
+  "recipe": {
+    "pipeline": "1",
+    "pymupdf": "1.26.6",
+    "selected_pages": [
+      1
+    ],
+    "scale": 1.3
+  },
+  "pages": [
+    {
+      "pdf_page": 1,
+      "text": "NYS Physical Education Learning Standards (2020) \nImplementation Timeline \nPhase I: Raise Awareness \n(Fall 2020-Fall 2021) \nTraining on the new standards; awareness of the \nrollout timeline; statewide collaboration with the \nBOCES, school districts, professional \norganizations, and higher education \nPhase II:  Build Capacity \n(Fall 2021-Fall 2023) \nGuidance for local programs and curriculum \ndevelopment and additional standards resources \nand training \nPhase III:  Full Implementation \n(Fall 2023-ongoing) \nFirst full year of new standards implemented in \nthe classroom  \n"
+    }
+  ]
+}

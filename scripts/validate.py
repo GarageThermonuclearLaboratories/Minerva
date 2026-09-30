@@ -49,7 +49,7 @@ if ingestion:
     page_artifact = next(a for a in full_record['artifacts'] if a['path'].endswith('/pages.json'))
     full_text = json.loads((root / page_artifact['path']).read_text())
     # Public receipt images must be the same bytes as the hashed extraction bundles.
-    public_evidence = {'src:nysed:math-full': 'math-full', 'src:nysed:math-2017': 'math-crosswalk'}
+    public_evidence = {'src:nysed:math-full': 'math-full', 'src:nysed:math-2017': 'math-crosswalk', 'src:nysed:ela-full':'ela-full', 'src:nysed:math-timeline-2023':'math-timeline', 'src:nysed:ela-math-roadmap-overview':'ela-math-roadmap'}
     for record in ingestion['documents']:
         if record['source_id'] not in public_evidence:
             continue
@@ -60,14 +60,20 @@ if ingestion:
 else:
     full_text = json.loads((root / 'sources/extracted/nys-next-generation-mathematics-p-12-standards.pages.json').read_text())
 page90 = ' '.join(full_text['pages'][89]['text'].split())
+page_texts = {}
+for record in ingestion['documents']:
+    artifact = next(a for a in record['artifacts'] if a['path'].endswith('/pages.json'))
+    page_texts[record['source_id']] = json.loads((root / artifact['path']).read_text())['pages']
+def source_text(item):
+    return ' '.join(page_texts[item['source_id']][item['pdf_page']-1]['text'].split())
 for item in data['nodes']:
     if item.get('original_text'):
-        assert ' '.join(item['original_text'].split()) in page90, item['id']
+        assert ' '.join(item['original_text'].split()) in source_text(item), item['id']
 assert len([n for n in data['nodes'] if n.get('parent_standard_id') == 'wc:standard:ny-7-rp-2']) == 4
 for n in data['nodes']:
     for annotation in n.get('source_annotations', []):
-        assert annotation['source_id'] in source_ids and annotation['pdf_page'] == 90
-        assert ' '.join(annotation['original_text'].split()) in page90, annotation['id']
+        assert annotation['source_id'] in source_ids and 1 <= annotation['pdf_page'] <= len(page_texts[annotation['source_id']])
+        assert ' '.join(annotation['original_text'].split()) in source_text(annotation), annotation['id']
     if n['type'] == 'Expectation':
         assert n['derived_from'] in node_ids and n.get('parsing_rationale'), n['id']
         assert any(e['from'] == n['id'] and e['to'] == n['derived_from'] and e['relation'] == 'DERIVED_FROM' for e in data['edges'])
@@ -88,3 +94,8 @@ for stage in journey['stages']:
     assert stage['default_grade'] in stage['grades'] if stage['grades'] else stage['default_grade'] is None
     assert all(s in source_ids for s in stage.get('source_ids', []))
 print('Valid: shared K–12 journey, 13 grades and transition scaffold; no mastery data')
+
+for claim in review['claims']:
+    if claim['status'] == 'SOURCE':
+        assert ' '.join(claim['original_text'].split()) in source_text(claim), claim['id']
+print('Valid: each source quotation checked against its own document and page')

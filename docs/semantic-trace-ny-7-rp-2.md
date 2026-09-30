@@ -44,4 +44,4 @@ The graph now contains 15 nodes and 22 edges, including six parsed expectation n
 
 `node scripts/test_receipts.js` exercises all six expectation receipts and seven view render functions using the actual data. It verifies exact source linkage and retained representation/strategy details. This is a programmatic rendering check, not a browser visual or accessibility audit.
 
-M5 is complete as a prepared bounded trace and receipt implementation. The public Site remains at the earlier release until M8. Independent review is M7. The candidate receipt explicitly says publication is pending rather than claiming the previous public commit contains the new model.
+Historical M5 state: prepared bounded trace awaiting M7 and M8. M7 subsequently passed and M8 published; their original records retain review-time status. Current Tuesday changes have builder review only. See docs/tuesday-completion.md and the publication records.

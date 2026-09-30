@@ -121,7 +121,7 @@ M5 migration: the candidate replaces the five `EXPECTED_BY` edges with `ASSIGNED
 | Relation | Direction and meaning | Does not imply |
 | --- | --- | --- |
 | `PART_OF` | Standard/subpart → documented parent standard or domain | Prerequisite, teaching order, or mastery inheritance |
-| `EXPECTED_BY` | Standard → source-associated grade endpoint in the reference pathway | Observed mastery, an exact lesson date, or independently verified cohort applicability |
+| `ASSIGNED_TO_GRADE` | Standard → grade placement in its source edition; replaces the initial EXPECTED_BY predicate | Observed mastery, an attainment deadline, or independently verified cohort applicability |
 | `DERIVED_FROM` | Parsed expectation → source standard whose wording was decomposed | That the source author endorsed the project's decomposition |
 | `USES_CONCEPT` | Expectation → concept identified through parsing | Concept equivalence across every subject or context |
 
@@ -199,7 +199,7 @@ This matrix reports the inspected 0.0.3 baseline, not promises about future code
 | Clean room and prohibited inferences | README, decisions, this specification; no inferred findings currently recorded | Governance/manual review, not an automated contamination or reasoning check. |
 | Extraction | [extract_sources.py](../scripts/extract_sources.py) regenerates text for acquired manifest entries | Generic acquisition/registration, evidence rendering, dependency pinning, and semantic review queue remain incomplete. |
 | Public receipts and humane interface | [app.js](../dist/app.js) exposes source wording, page evidence, statuses and review notes | Receipts are tailored to page 90; broad K–12 journey and advanced Ask Minerva remain unimplemented. |
-| Versioning and publication | [release pointer](../dist/release.json), [Lab Log](lab-log.md), separate Git histories | No v0.1 freeze, comprehensive schema migrations, or independent audit record yet. |
+| Versioning and publication | [release pointer](../dist/release.json), [Lab Log](lab-log.md), separate Git histories | Monday M7 audit exists; Tuesday expansion has builder review only. No v0.1 freeze or comprehensive schema migrations. |
 | Validation | Explicit Python assertions and public/source JSON equality | JSON schema is skeletal and is not loaded by the validator; passing the script is not proof of specification compliance. Run without Python optimization, which disables assertions. |
 
 ## 13. Reader acceptance check

@@ -44,7 +44,7 @@
       ],
       "default_grade": 7,
       "coverage": "one-grade-partial",
-      "description": "One Grade 7 mathematics family is traced. Grades 6 and 8 and the rest of Grade 7 remain unmapped."
+      "description": "Two Grade 7 families are traced: mathematics NY-7.RP.2 and ELA 7R1. Grades 6 and 8 and the rest of Grade 7 remain unmapped."
     },
     {
       "id": "9-12",
@@ -76,5 +76,5 @@
   ],
   "projection_rule": "Select Standard nodes linked to the selected grade by ASSIGNED_TO_GRADE. Both avatars use this same rule. Show exact edition applicability as unresolved; never infer mastery, cumulative retention, promotion, or graduation.",
   "missing_data_message": "This grade is not yet mapped. No claim about the absence of NYS expectations follows from this gap.",
-  "review_status": "builder-reviewed scaffold; independent review pending"
+  "review_status": "Monday baseline independently audited; Tuesday expansion builder-reviewed; human review pending"
 }

@@ -14,7 +14,7 @@ These stage bands are a project navigation convention. They are not asserted to 
 
 ## How projection works
 
-For a selected grade, the interface finds source Standard nodes connected to that grade by `ASSIGNED_TO_GRADE`. It shows their parsed expectations with source receipts. This query is identical for both avatars and does not depend on race, gender, or a personal profile. Grade 7 currently displays one parent standard, four subparts, and six parsed expectations; those are different levels of representation, not eleven independent standards.
+For a selected grade, the interface finds source Standard nodes connected to that grade by `ASSIGNED_TO_GRADE`. It shows their parsed expectations with source receipts. This query is identical for both avatars and does not depend on race, gender, or a personal profile. Grade 7 currently displays mathematics NY-7.RP.2 with four subparts and six parsed expectations, plus ELA 7R1 with one compound expectation. These are overlapping representation levels, not thirteen independent standards.
 
 The stage buttons select a stage and its initial grade; the grade selector moves within that stage. The 6–8 stage initially selects Grade 7 so the existing trace is immediately inspectable. Switching avatars preserves the selected stage and grade. Kindergarten is named explicitly rather than displayed as Grade 0.
 
@@ -29,4 +29,4 @@ An empty stage explicitly means the project has not modeled its expectations. It
 - All five stage selections render, including transition without standard-node or diploma claims. Existing six receipt tests and repository validation pass.
 - Native buttons with pressed-state labels and a labeled native grade selector support keyboard operation. No browser visual or accessibility audit is claimed; those controls have been checked programmatically.
 
-The scaffold adds navigation data, not educational ontology nodes. The graph remains 15 nodes / 22 relationships. The public Site is still the earlier checkpoint; this implementation is prepared locally for M7 review and M8 publication.
+The scaffold adds navigation data, not educational ontology nodes. At v0.0.6 the graph has 19 nodes and 25 relationships. Monday M7 and subsequent publications are historical records; see the current Tuesday checkpoint for its separate review and publication status.

@@ -84,14 +84,17 @@ def validate_claims(data, manifest):
     expected = standards_for_grade(data, 7)
     for student in data['students']:
         require(student['grade7_standard_ids'] == expected, f"{student['id']}: stale or inadmissible expected projection")
-    fixture = json.loads((ROOT / 'data/acceptance/ny-7-rp-2.json').read_text())
-    for ident, fields in fixture['expectations'].items():
-        n = nodes.get(ident)
-        require(n is not None, f'{ident}: missing bounded expectation')
-        for field, value in fields.items():
-            require(n.get(field) == value, f'{ident}: source-reviewed {field} changed; review required')
-    for ident, fields in fixture['annotations'].items():
-        annotations = {a['id']: a for n in nodes.values() for a in n.get('source_annotations', [])}
-        require(ident in annotations, f'{ident}: missing source annotation')
-        for field, value in fields.items():
-            require(annotations[ident].get(field) == value, f'{ident}: source annotation {field} changed; review required')
+    for fixture_path in sorted((ROOT / 'data/acceptance').glob('*.json')):
+        fixture = json.loads(fixture_path.read_text())
+        for ident, wording in fixture.get('standards', {}).items():
+            require(nodes.get(ident, {}).get('original_text') == wording, f'{ident}: source wording changed; review required')
+        for ident, fields in fixture['expectations'].items():
+            n = nodes.get(ident)
+            require(n is not None, f'{ident}: missing bounded expectation')
+            for field, value in fields.items():
+                require(n.get(field) == value, f'{ident}: source-reviewed {field} changed; review required')
+        for ident, fields in fixture['annotations'].items():
+            annotations = {a['id']: a for n in nodes.values() for a in n.get('source_annotations', [])}
+            require(ident in annotations, f'{ident}: missing source annotation')
+            for field, value in fields.items():
+                require(annotations[ident].get(field) == value, f'{ident}: source annotation {field} changed; review required')
