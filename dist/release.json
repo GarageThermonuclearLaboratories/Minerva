@@ -1,6 +1,6 @@
 {
   "release": "wildcats-0.0.8-wednesday-comparisons",
-  "research_commit": "6c93368df56db11958f4e3f77b20cf02db0e8600",
+  "research_commit": "ed34f4e4197a9905e38eaf20b0aabd475ee3425b",
   "interface_revision": "0.0.8-audited",
   "publication_status": "prepared-for-publication",
   "review_scope": "Separate AI audit passed with recorded limits for Wednesday packages 1 and 2. Historical claim-level review fields are preserved. Audit-status interface changes have builder verification.",
