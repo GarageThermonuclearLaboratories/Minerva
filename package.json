@@ -1,0 +1,10 @@
+{
+  "name": "wildcats-minerva",
+  "private": true,
+  "scripts": {
+    "dev": "vite --config vite.config.mjs"
+  },
+  "devDependencies": {
+    "vite": "8.3.1"
+  }
+}

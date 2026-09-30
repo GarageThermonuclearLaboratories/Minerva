@@ -50,3 +50,9 @@ Public Site version 10 succeeded on September 30, 2026. See `data/publications/t
 ## Subsequent separate AI review · September 30
 
 The [separate AI audit](tuesday-independent-audit.md) passed with limits: no release-blocking defects; one nonblocking conditional coverage-text inconsistency. The independent-AI-review gate is now satisfied for the recorded checkpoint. Rendered website QA remains open. The earlier sections preserve their original builder/publication-time status.
+
+## Subsequent rendered QA · September 30
+
+[Desktop/mobile QA](tuesday-rendered-qa.md) passed on the unchanged v0.0.6 application with no blocking defects in the exercised paths. All eight views fit desktop and 320 px iframe viewports; Receipt keyboard/focus behavior, student-lens navigation, equal Matthew/Eva projections, graph expansion and matrix expansion passed. Screenshots are archived with the report. A compatible managed Vite preview resolved the earlier preview limitation.
+
+The desktop/mobile portion is complete. A 200% scale simulation passed, but native browser zoom, physical-device behavior, screen-reader and comprehensive contrast checks remain unverified. The broader accessibility gate is therefore partial, not falsely closed.

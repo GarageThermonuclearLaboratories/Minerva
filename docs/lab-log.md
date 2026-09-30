@@ -147,3 +147,7 @@ This post-deployment receipt is added to GitHub after publication; it was not co
 ### Deployment receipt · primary PDFs
 
 Site version 7 succeeded at 2026-09-28T23:14:51Z (19:14 New York). Public URL: https://wildcats-minerva.jaredwillis.chatgpt.site. Site source: `0e64366e143eb66d03c92255a0ff1e4948737f98`; GitHub published source: `6dc44b42d3f7e18f6a8e949f021af77a8dc59b5c`; research: `cf22f8551cac01cab17d30c94eb10a616e751e01`; deployment: `appgdep_6abaf4e6292c8191a408ec237641e9a7`. Validation passed for 11 nodes, 14 edges, 7 source records, PDF hashes, page text, and public/source data equality. This receipt is recorded after publication and is not contained in the deployed commit.
+
+### September 30 · Desktop/mobile QA
+
+Rendered the unchanged v0.0.6 checkpoint in cloud Chromium. Desktop and narrow responsive layouts passed with no blocking defects in the exercised paths; Receipt keyboard/focus, student lens, matching avatar expectations, graph expansion and matrix expansion verified. Added development preview tooling and archived screenshots. See `docs/tuesday-rendered-qa.md` for exact dimensions and limits. Native zoom and full accessibility verification remain open. No production assets changed and no new deployment was needed.
