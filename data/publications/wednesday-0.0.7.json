@@ -1,0 +1,39 @@
+{
+  "release": "wildcats-0.0.7-wednesday-science",
+  "date": "2026-09-30",
+  "research_commit": "6b64e00d3fe710ebb256770cdd475c9cfded88c1",
+  "site_source_commit": "c8ec5ff7a808e609a736985cec09f92c31ec523a",
+  "site_version": {
+    "id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_c6250a3ea9dc819197dd5464a5e3401d",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "version_number": 11,
+    "source": {
+      "commit_sha": "c8ec5ff7a808e609a736985cec09f92c31ec523a"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000cd58820ca8848362c487a07e",
+      "content_hash": "sha256:dad9e433e935c3837fdbc0d01315f0ed6a3dafb8fc3a9ae39109ef26600ff23b",
+      "size_bytes": 2344960,
+      "file_count": 23
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6abd35dc43b8819194b3594f6e9393d8",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "title": "Wildcats / Minerva",
+    "version_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_c6250a3ea9dc819197dd5464a5e3401d",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://wildcats-minerva.jaredwillis.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6abac050d4cc8191b9d7081e9d8cb8dd",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-09-30T16:16:36.041069+00:00"
+  },
+  "scope": "Wednesday package 1 complete; package 2 comparison and package 3 independent audit pending"
+}

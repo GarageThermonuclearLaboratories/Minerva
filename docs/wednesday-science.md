@@ -43,3 +43,7 @@ Completed checks:
 Package 2 compares the bounded science, mathematics and ELA material without presupposing equivalence. Page 34's references to other literacy and math standards are source leads, not links to our existing NY-7.RP.2 and 7R1 nodes. Package 3 supplies a separate AI audit, repairs and final Wednesday review. This first publication does not close all of Wednesday.
 
 Exact edition/cohort applicability remains unresolved. No local district assumption, mastery assertion or broader completion claim was added. The first package is complete when this candidate and its evidence are durably saved and successfully published; the publication record is added after deployment.
+
+## Publication confirmed
+
+Public Site version 11 succeeded on September 30, 2026. Research commit `6b64e00d3fe710ebb256770cdd475c9cfded88c1`; Site source `c8ec5ff7a808e609a736985cec09f92c31ec523a`. See `data/publications/wednesday-0.0.7.json` for the exact native publication record. Package 1 is complete. This post-publication confirmation does not imply completion of packages 2 or 3.
