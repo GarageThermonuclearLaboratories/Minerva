@@ -151,3 +151,7 @@ Site version 7 succeeded at 2026-09-28T23:14:51Z (19:14 New York). Public URL: h
 ### September 30 · Desktop/mobile QA
 
 Rendered the unchanged v0.0.6 checkpoint in cloud Chromium. Desktop and narrow responsive layouts passed with no blocking defects in the exercised paths; Receipt keyboard/focus, student lens, matching avatar expectations, graph expansion and matrix expansion verified. Added development preview tooling and archived screenshots. See `docs/tuesday-rendered-qa.md` for exact dimensions and limits. Native zoom and full accessibility verification remain open. No production assets changed and no new deployment was needed.
+
+### September 30 · Wednesday package 1 · Science
+
+Prepared v0.0.7: two middle-school science performance expectations and two compound parses, preserving page 33 clarification and assessment boundaries. Added an explicit grades 6–8 band and separate band-context projection. Graph: 26 nodes, 31 edges, 9 parsed expectations, 0 findings. Builder validation, 28 acceptance tests, 7 ingestion tests, DOM/Receipt checks and targeted desktop/mobile render checks passed. Wednesday's cross-subject comparison and separate audit remain later packages. See `docs/wednesday-science.md`; publication is recorded separately after success.

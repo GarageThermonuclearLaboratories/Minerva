@@ -1,6 +1,6 @@
 # Wildcats / Minerva
 
-An evidence-linked computational model of the canonical New York State K–12 educational pathway, with a humane exploration interface. Policy snapshot: **2026-09-28**. Current checkpoint: two bounded Grade 7 families (mathematics NY-7.RP.2 and ELA 7R1), 42 archived PDFs and 1,237 extracted pages. It does not claim statewide corpus completion.
+An evidence-linked computational model of the canonical New York State K–12 educational pathway, with a humane exploration interface. Policy snapshot: **2026-09-28**. Current checkpoint: two bounded Grade 7 families (mathematics NY-7.RP.2 and ELA 7R1) plus two science performance expectations at the grades 6–8 band, 42 archived PDFs and 1,237 extracted pages. It does not claim statewide corpus completion.
 
 ## Method
 
@@ -10,7 +10,7 @@ The v0.1 construction is clean-room: no Garage-internal ontology class, hierarch
 
 ## Current checkpoint
 
-[Tuesday continuation and review gates](docs/tuesday-completion.md) records implementation, verification, publication, and remaining limits. Historical documents below describe their named checkpoints.
+[Wednesday science package](docs/wednesday-science.md) records the current implementation, verification and limits. [Tuesday continuation](docs/tuesday-completion.md) and its subsequent audit and QA remain historical records. Historical documents below describe their named checkpoints.
 
 ## Contents
 

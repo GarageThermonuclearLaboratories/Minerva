@@ -43,7 +43,7 @@ for(let g=0;g<=12;g++){
     assert.ok(element('#view').innerHTML.includes(g===7?'Partially mapped':'Not yet mapped'));
   }
   assert.deepEqual(outputs[0],outputs[1]);
-  assert.equal(outputs[0].length,g===7?13:0);
+  assert.equal(outputs[0].length,(g===7?13:0)+([6,7,8].includes(g)?4:0));
 }
 for(const stage of context.input.journey.stages){
   vm.runInContext(`selectStage('${stage.id}')`,context);
@@ -71,6 +71,7 @@ for(const status of ['REJECTED','CONTESTED','PROVISIONAL','NORMALIZED','INFERRED
   assert.equal(vm.runInContext('standardsForGrade(7).length',context),1,status+' parent excludes subparts');
   vm.runInContext("view='wildcats';grade=7;transition=false;render()",context);
   assert.ok(!element('#view').innerHTML.includes('data-node="wc:standard:ny-7-rp-2'));
+  assert.ok(element('#view').innerHTML.includes('Grade-specific source families shown: 7R1.'));
 }
 reset();context.input.model.edges.find(e=>e.id==='wc:edge:grade-2b').status='REJECTED';
 assert.ok(!vm.runInContext('standardsForGrade(7).map(n=>n.id)',context).includes('wc:standard:ny-7-rp-2b'));
@@ -81,3 +82,15 @@ reset();context.input.model.edges.find(e=>e.id==='wc:edge:parse-2b').status='REJ
 assert.equal(vm.runInContext("expectationsForStandard('wc:standard:ny-7-rp-2b').length",context),0);
 reset();
 console.log('Acceptance UI checks passed: structured fields independent of quotes; unsupported nodes, assignments, derivations, and rejected parent subparts excluded.');
+
+for(const status of ['REJECTED','CONTESTED','PROVISIONAL']){
+  reset();context.input.model.nodes.find(n=>n.id==='wc:standard:ms-ps2-2').status=status;
+  assert.equal(vm.runInContext("standardsForBand('wc:grade-band:6-8').length",context),1);
+  vm.runInContext("view='wildcats';grade=7;transition=false;render()",context);
+  assert.ok(!element('#view').innerHTML.includes('data-node="wc:standard:ms-ps2-2"'));
+}
+reset();context.input.model.edges.find(e=>e.id==='wc:edge:ms-ps2-2-assigned_to_grade_band').status='REJECTED';
+assert.equal(vm.runInContext("standardsForBand('wc:grade-band:6-8').length",context),1);
+reset();context.input.model.nodes.find(n=>n.id==='wc:grade-band:6-8').status='REJECTED';
+assert.equal(vm.runInContext("standardsForBand('wc:grade-band:6-8').length",context),0);
+reset();console.log('Science UI negative checks passed: band, assignment and standard eligibility; exact-grade projection unchanged.');

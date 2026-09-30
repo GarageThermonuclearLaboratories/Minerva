@@ -220,3 +220,7 @@ Prepared through builder review of the repository and established project requir
 ## September 29 implementation amendment · Tuesday package 1
 
 `validate.py` now invokes `acceptance.py` for bounded relation/endpoint, provenance, derivation, parsed-field, and avatar-export checks. Expected-learning projection excludes rejected/unresolved records and requires eligible assignment, parent, and derivation links. The original implementation-gap table above is a historical baseline. General inference validation, separate derivation/disposition fields, and applicability resolution remain open. The JSON Schema is still descriptive and skeletal, not the enforcement mechanism. See [Tuesday acceptance checkpoint](tuesday-acceptance.md) for tested scope and remaining limits.
+
+## Wednesday bounded extension: source grade bands
+
+Release 0.0.7 adds `GradeBand` (ordered unique `grades`) and `ASSIGNED_TO_GRADE_BAND` from Standard to GradeBand. `grade_band_id` must match its placement edge; band-scoped science cannot also acquire an exact-grade edge. Grade-specific projection remains `ASSIGNED_TO_GRADE` only. Separate shared-band context uses eligible bands, placement edges and standards, with equal projections for both avatars. This is source placement, never a prerequisite, per-grade requirement or mastery deadline. See `docs/wednesday-science.md` for source evidence and scope.

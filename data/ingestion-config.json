@@ -13,6 +13,11 @@
     "src:nysed:ela-full": [
       1,
       82
+    ],
+    "src:nysed:science-full": [
+      1,
+      33,
+      34
     ]
   }
 }

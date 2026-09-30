@@ -1,5 +1,5 @@
 {
-  "release": "wildcats-0.0.6-tuesday-completion",
+  "release": "wildcats-0.0.7-wednesday-science",
   "policy_snapshot": "2026-09-28",
   "git_revision": null,
   "scope": "Two bounded Grade 7 families: mathematics NY-7.RP.2 and ELA 7R1. Source-edition expectations only; snapshot applicability and human review unresolved.",
@@ -320,6 +320,150 @@
         "Applies to literary and informational text (RI&RL)."
       ],
       "parsing_rationale": "Retains the coordinated tasks as one compound expectation, preserving the connection between evidence, analysis, and inference. RI&RL is interpreted using the page heading Literary and Informational Text. This is not an assessment rubric, prerequisite, or measurable mastery claim."
+    },
+    {
+      "id": "wc:grade-band:6-8",
+      "type": "GradeBand",
+      "label": "Middle school · grades 6–8",
+      "status": "SOURCE",
+      "source_id": "src:nysed:science-full",
+      "pdf_page": 33,
+      "source_locator": "PDF/printed page 33; MS. Forces and Interactions; grades 6–8 practice descriptions",
+      "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending",
+      "grades": [
+        6,
+        7,
+        8
+      ],
+      "original_text": "grades 6–8",
+      "parsing_rationale": "The MS performance expectations are presented with grades 6–8 practices on this page. The band does not assign these expectations to each individual grade or establish an attainment deadline."
+    },
+    {
+      "id": "wc:subject:science",
+      "type": "Subject",
+      "label": "Science",
+      "status": "SOURCE",
+      "source_id": "src:nysed:science-full",
+      "pdf_page": 33,
+      "source_locator": "PDF/printed page 33; MS. Forces and Interactions; grades 6–8 practice descriptions",
+      "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending"
+    },
+    {
+      "id": "wc:domain:ms-forces-interactions",
+      "type": "Domain",
+      "label": "MS. Forces and Interactions",
+      "status": "SOURCE",
+      "source_id": "src:nysed:science-full",
+      "pdf_page": 33,
+      "source_locator": "PDF/printed page 33; MS. Forces and Interactions; grades 6–8 practice descriptions",
+      "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending",
+      "original_text": "MS. Forces and Interactions"
+    },
+    {
+      "id": "wc:standard:ms-ps2-2",
+      "type": "Standard",
+      "label": "MS-PS2-2",
+      "status": "SOURCE",
+      "source_id": "src:nysed:science-full",
+      "pdf_page": 33,
+      "source_locator": "PDF/printed page 33; MS. Forces and Interactions; MS-PS2-2",
+      "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending",
+      "original_text": "Plan and conduct an investigation to provide evidence that the change in an object’s motion depends on the sum of the forces on the object and the mass of the object.",
+      "grade_band_id": "wc:grade-band:6-8",
+      "source_annotations": [
+        {
+          "id": "wc:annotation:ms-ps2-2-clarification",
+          "kind": "Clarification Statement",
+          "original_text": "Emphasis is on balanced (Newton’s First Law) and unbalanced forces in a system (including simple machines), qualitative comparisons of forces, mass and changes in motion (Newton’s Second Law), frame of reference, and specification of units.",
+          "interpretation": "Preserved source emphasis and examples; examples do not become additional mandatory performances.",
+          "source_id": "src:nysed:science-full",
+          "pdf_page": 33,
+          "source_locator": "PDF/printed page 33; MS. Forces and Interactions; MS-PS2-2",
+          "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending"
+        },
+        {
+          "id": "wc:annotation:ms-ps2-2-boundary",
+          "kind": "Assessment Boundary",
+          "original_text": "Assessment is limited to forces and changes in motion in one-dimension in an inertial reference frame and to change in one variable at a time. Assessment does not include the use of trigonometry.",
+          "interpretation": "Boundary of the source assessment expectation; not a claim about the limits of science or a student’s knowledge.",
+          "source_id": "src:nysed:science-full",
+          "pdf_page": 33,
+          "source_locator": "PDF/printed page 33; MS. Forces and Interactions; MS-PS2-2",
+          "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending"
+        }
+      ]
+    },
+    {
+      "id": "wc:expectation:investigate-forces-motion",
+      "type": "Expectation",
+      "label": "Investigate forces, mass, and changes in motion",
+      "status": "PARSED",
+      "source_id": "src:nysed:science-full",
+      "pdf_page": 33,
+      "source_locator": "PDF/printed page 33; MS. Forces and Interactions; grades 6–8 practice descriptions",
+      "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending",
+      "derived_from": "wc:standard:ms-ps2-2",
+      "action": "Plan and conduct an investigation",
+      "object": "evidence that the change in an object’s motion depends on the sum of forces on the object and its mass",
+      "qualifiers": [
+        "The investigation must provide evidence for dependence on both the sum of forces and the mass of the object.",
+        "Emphasis includes balanced and unbalanced forces, simple machines, qualitative comparisons, frame of reference, and units.",
+        "Assessment is limited to one-dimensional motion in an inertial reference frame, changing one variable at a time; trigonometry is excluded."
+      ],
+      "parsing_rationale": "Retains the coordinated actions as one compound expectation and preserves the scientific claim they serve. Clarification and assessment boundaries are retained on the source standard. No student mastery, prerequisite, exact grade assignment, or cross-subject equivalence is inferred."
+    },
+    {
+      "id": "wc:standard:ms-ps2-4",
+      "type": "Standard",
+      "label": "MS-PS2-4",
+      "status": "SOURCE",
+      "source_id": "src:nysed:science-full",
+      "pdf_page": 33,
+      "source_locator": "PDF/printed page 33; MS. Forces and Interactions; MS-PS2-4",
+      "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending",
+      "original_text": "Construct and present arguments using evidence to support the claim that gravitational interactions are attractive and depend on the masses of interacting objects and the distance between them.",
+      "grade_band_id": "wc:grade-band:6-8",
+      "source_annotations": [
+        {
+          "id": "wc:annotation:ms-ps2-4-clarification",
+          "kind": "Clarification Statement",
+          "original_text": "Examples of evidence for arguments could include data generated from simulations or digital tools; and charts displaying mass, strength of interaction, distance from the Sun, and orbital periods of objects within the solar system.",
+          "interpretation": "Preserved source emphasis and examples; examples do not become additional mandatory performances.",
+          "source_id": "src:nysed:science-full",
+          "pdf_page": 33,
+          "source_locator": "PDF/printed page 33; MS. Forces and Interactions; MS-PS2-4",
+          "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending"
+        },
+        {
+          "id": "wc:annotation:ms-ps2-4-boundary",
+          "kind": "Assessment Boundary",
+          "original_text": "Assessment does not include Newton’s Law of Gravitation or Kepler’s Laws.",
+          "interpretation": "Boundary of the source assessment expectation; not a claim about the limits of science or a student’s knowledge.",
+          "source_id": "src:nysed:science-full",
+          "pdf_page": 33,
+          "source_locator": "PDF/printed page 33; MS. Forces and Interactions; MS-PS2-4",
+          "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending"
+        }
+      ]
+    },
+    {
+      "id": "wc:expectation:argue-gravitational-interactions",
+      "type": "Expectation",
+      "label": "Argue from evidence about gravitational interactions",
+      "status": "PARSED",
+      "source_id": "src:nysed:science-full",
+      "pdf_page": 33,
+      "source_locator": "PDF/printed page 33; MS. Forces and Interactions; grades 6–8 practice descriptions",
+      "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending",
+      "derived_from": "wc:standard:ms-ps2-4",
+      "action": "Construct and present arguments using evidence",
+      "object": "the claim that gravitational interactions are attractive and depend on the masses of interacting objects and the distance between them",
+      "qualifiers": [
+        "Arguments must use evidence supporting both attraction and dependence on masses and distance.",
+        "Simulation or digital-tool data and charts are examples of evidence, not mandatory formats.",
+        "Assessment excludes Newton’s Law of Gravitation and Kepler’s Laws."
+      ],
+      "parsing_rationale": "Retains the coordinated actions as one compound expectation and preserves the scientific claim they serve. Clarification and assessment boundaries are retained on the source standard. No student mastery, prerequisite, exact grade assignment, or cross-subject equivalence is inferred."
     }
   ],
   "edges": [
@@ -631,6 +775,72 @@
       "from": "wc:expectation:cite-evidence-infer",
       "to": "wc:standard:ny-7r1",
       "status": "PARSED"
+    },
+    {
+      "id": "wc:edge:ms-ps2-2-part_of",
+      "relation": "PART_OF",
+      "from": "wc:standard:ms-ps2-2",
+      "to": "wc:domain:ms-forces-interactions",
+      "status": "SOURCE",
+      "source_id": "src:nysed:science-full",
+      "pdf_page": 33,
+      "source_locator": "PDF/printed page 33; MS. Forces and Interactions; MS-PS2-2",
+      "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending"
+    },
+    {
+      "id": "wc:edge:ms-ps2-2-assigned_to_grade_band",
+      "relation": "ASSIGNED_TO_GRADE_BAND",
+      "from": "wc:standard:ms-ps2-2",
+      "to": "wc:grade-band:6-8",
+      "status": "SOURCE",
+      "source_id": "src:nysed:science-full",
+      "pdf_page": 33,
+      "source_locator": "PDF/printed page 33; MS. Forces and Interactions; MS-PS2-2",
+      "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending"
+    },
+    {
+      "id": "wc:edge:ms-ps2-2-derived_from",
+      "relation": "DERIVED_FROM",
+      "from": "wc:expectation:investigate-forces-motion",
+      "to": "wc:standard:ms-ps2-2",
+      "status": "PARSED",
+      "source_id": "src:nysed:science-full",
+      "pdf_page": 33,
+      "source_locator": "PDF/printed page 33; MS. Forces and Interactions; MS-PS2-2",
+      "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending"
+    },
+    {
+      "id": "wc:edge:ms-ps2-4-part_of",
+      "relation": "PART_OF",
+      "from": "wc:standard:ms-ps2-4",
+      "to": "wc:domain:ms-forces-interactions",
+      "status": "SOURCE",
+      "source_id": "src:nysed:science-full",
+      "pdf_page": 33,
+      "source_locator": "PDF/printed page 33; MS. Forces and Interactions; MS-PS2-4",
+      "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending"
+    },
+    {
+      "id": "wc:edge:ms-ps2-4-assigned_to_grade_band",
+      "relation": "ASSIGNED_TO_GRADE_BAND",
+      "from": "wc:standard:ms-ps2-4",
+      "to": "wc:grade-band:6-8",
+      "status": "SOURCE",
+      "source_id": "src:nysed:science-full",
+      "pdf_page": 33,
+      "source_locator": "PDF/printed page 33; MS. Forces and Interactions; MS-PS2-4",
+      "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending"
+    },
+    {
+      "id": "wc:edge:ms-ps2-4-derived_from",
+      "relation": "DERIVED_FROM",
+      "from": "wc:expectation:argue-gravitational-interactions",
+      "to": "wc:standard:ms-ps2-4",
+      "status": "PARSED",
+      "source_id": "src:nysed:science-full",
+      "pdf_page": 33,
+      "source_locator": "PDF/printed page 33; MS. Forces and Interactions; MS-PS2-4",
+      "review_status": "source page visually inspected; builder semantic review; Wednesday independent and human review pending"
     }
   ],
   "students": [
@@ -646,7 +856,11 @@
         "wc:standard:ny-7-rp-2d",
         "wc:standard:ny-7r1"
       ],
-      "pathway_id": "wc:pathway:canonical-nys-general-education"
+      "pathway_id": "wc:pathway:canonical-nys-general-education",
+      "middle_school_band_standard_ids": [
+        "wc:standard:ms-ps2-2",
+        "wc:standard:ms-ps2-4"
+      ]
     },
     {
       "id": "wc:avatar:eva",
@@ -660,7 +874,11 @@
         "wc:standard:ny-7-rp-2d",
         "wc:standard:ny-7r1"
       ],
-      "pathway_id": "wc:pathway:canonical-nys-general-education"
+      "pathway_id": "wc:pathway:canonical-nys-general-education",
+      "middle_school_band_standard_ids": [
+        "wc:standard:ms-ps2-2",
+        "wc:standard:ms-ps2-4"
+      ]
     }
   ],
   "canonical_assumptions": [],
@@ -682,6 +900,10 @@
     {
       "id": "wc:question:004",
       "text": "The bounded family has six parsed expectations and preserved source annotations. Independently review parsing and source Coherence semantics; no prerequisite or MP.4 edge is asserted."
+    },
+    {
+      "id": "wc:question:science-band-placement",
+      "text": "Science MS-PS2-2 and MS-PS2-4 are modeled at the grades 6–8 band. Their assignment to a particular grade, full performance-expectation foundation analysis, and edition applicability remain unresolved."
     }
   ]
 }

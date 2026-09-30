@@ -4,10 +4,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 STATUSES = {'SOURCE', 'PARSED', 'NORMALIZED', 'INFERRED', 'PROVISIONAL', 'CONTESTED', 'REJECTED'}
-TYPES = {'Grade', 'Subject', 'Domain', 'Standard', 'Expectation', 'Concept'}
+TYPES = {'Grade', 'GradeBand', 'Subject', 'Domain', 'Standard', 'Expectation', 'Concept'}
 RELATIONS = {
     'PART_OF': {('Standard', 'Standard'), ('Standard', 'Domain')},
     'ASSIGNED_TO_GRADE': {('Standard', 'Grade')},
+    'ASSIGNED_TO_GRADE_BAND': {('Standard', 'GradeBand')},
     'DERIVED_FROM': {('Expectation', 'Standard'), ('Concept', 'Standard')},
     'USES_CONCEPT': {('Expectation', 'Concept')},
 }
@@ -35,6 +36,12 @@ def standards_for_grade(data, grade):
            and e['to'] == f'wc:grade:{grade}' and eligible(e) and eligible(nodes.get(e['to']))}
     return [n['id'] for n in data['nodes'] if n['type'] == 'Standard' and n['id'] in ids and active(n)]
 
+def standards_for_band(data, band_id):
+    nodes = {n['id']: n for n in data['nodes']}
+    ids = {e['from'] for e in data['edges'] if e['relation'] == 'ASSIGNED_TO_GRADE_BAND'
+           and e['to'] == band_id and eligible(e) and eligible(nodes.get(band_id))}
+    return [n['id'] for n in data['nodes'] if n['type'] == 'Standard' and n['id'] in ids and eligible(n)]
+
 def validate_claims(data, manifest):
     nodes = {n['id']: n for n in data['nodes']}
     sources = {s['id']: s for s in manifest['sources']}
@@ -53,6 +60,14 @@ def validate_claims(data, manifest):
     for n in nodes.values():
         ident = n['id']
         require(n.get('type') in TYPES, f'{ident}: unknown node type')
+        if n['type'] == 'GradeBand':
+            grades = n.get('grades')
+            require(isinstance(grades, list) and bool(grades) and all(type(g) is int and 0 <= g <= 12 for g in grades) and grades == sorted(set(grades)), f'{ident}: invalid grade band')
+        if n.get('grade_band_id'):
+            band = nodes.get(n['grade_band_id'])
+            require(band is not None and band['type'] == 'GradeBand', f'{ident}: invalid grade-band target')
+            require(any(e['relation'] == 'ASSIGNED_TO_GRADE_BAND' and e['from'] == ident and e['to'] == band['id'] for e in data['edges']), f'{ident}: missing grade-band assignment')
+            require(not any(e['relation'] == 'ASSIGNED_TO_GRADE' and e['from'] == ident for e in data['edges']), f'{ident}: unsupported exact-grade assignment')
         if n['type'] == 'Standard':
             require(bool(n.get('original_text', '').strip()), f'{ident}: missing source wording')
         if n['type'] in {'Expectation', 'Concept'}:
@@ -81,11 +96,17 @@ def validate_claims(data, manifest):
         require(e['source_id'] == a['source_id'] and e['pdf_page'] == a['pdf_page'], f"{e['id']}: edge provenance differs")
         if e['relation'] == 'DERIVED_FROM':
             require(a.get('derived_from') == b['id'], f"{e['id']}: contradictory derivation")
+        if e['relation'] == 'ASSIGNED_TO_GRADE_BAND':
+            require(a.get('grade_band_id') == b['id'], f"{e['id']}: contradictory grade-band assignment")
     expected = standards_for_grade(data, 7)
     for student in data['students']:
         require(student['grade7_standard_ids'] == expected, f"{student['id']}: stale or inadmissible expected projection")
+        require(student['middle_school_band_standard_ids'] == standards_for_band(data, 'wc:grade-band:6-8'), f"{student['id']}: stale or inadmissible band projection")
     for fixture_path in sorted((ROOT / 'data/acceptance').glob('*.json')):
         fixture = json.loads(fixture_path.read_text())
+        for ident, fields in fixture.get('nodes', {}).items():
+            for field, value in fields.items():
+                require(nodes.get(ident, {}).get(field) == value, f'{ident}: source-reviewed {field} changed; review required')
         for ident, wording in fixture.get('standards', {}).items():
             require(nodes.get(ident, {}).get('original_text') == wording, f'{ident}: source wording changed; review required')
         for ident, fields in fixture['expectations'].items():

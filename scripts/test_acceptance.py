@@ -3,7 +3,7 @@ import copy
 import json
 import unittest
 from pathlib import Path
-from acceptance import validate_claims, standards_for_grade
+from acceptance import validate_claims, standards_for_grade, standards_for_band
 ROOT = Path(__file__).resolve().parents[1]
 BASE = json.loads((ROOT/'data/ontology.json').read_text())
 SOURCES = json.loads((ROOT/'data/sources.json').read_text())
@@ -84,5 +84,30 @@ class AcceptanceTests(unittest.TestCase):
     def test_ela_source_wording_loss(self):
         self.node('ny-7r1')['original_text']='Cite textual evidence.'
         self.invalid('source wording changed')
+
+    def test_science_not_assigned_to_grade7(self):
+        self.assertFalse(any('ms-ps2' in x for x in standards_for_grade(self.data,7)))
+        self.assertEqual(len(standards_for_band(self.data,'wc:grade-band:6-8')),2)
+    def test_science_false_exact_grade_fails(self):
+        edge=copy.deepcopy(next(e for e in self.data['edges'] if e['relation']=='ASSIGNED_TO_GRADE_BAND'))
+        edge.update(id='bad-exact-grade',relation='ASSIGNED_TO_GRADE',to='wc:grade:7')
+        self.data['edges'].append(edge)
+        self.invalid('unsupported exact-grade assignment')
+    def test_science_band_membership_changed(self):
+        self.node('grade-band:6-8')['grades']=[7]
+        self.invalid('grades changed')
+    def test_science_boundary_deleted(self):
+        self.node('standard:ms-ps2-2')['source_annotations'].pop()
+        self.invalid('missing source annotation')
+    def test_science_qualifier_lost(self):
+        self.node('argue-gravitational-interactions')['qualifiers'].pop()
+        self.invalid('qualifiers changed')
+    def test_science_rejected_assignment_excluded(self):
+        next(e for e in self.data['edges'] if e['id']=='wc:edge:ms-ps2-2-assigned_to_grade_band')['status']='REJECTED'
+        self.assertEqual(standards_for_band(self.data,'wc:grade-band:6-8'),['wc:standard:ms-ps2-4'])
+        self.invalid('inadmissible band projection')
+    def test_science_mismatched_band_fails(self):
+        self.node('standard:ms-ps2-2')['grade_band_id']='wc:grade:7'
+        self.invalid('invalid grade-band target')
 
 if __name__=='__main__': unittest.main(verbosity=2)

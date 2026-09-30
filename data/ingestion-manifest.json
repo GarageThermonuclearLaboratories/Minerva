@@ -720,32 +720,44 @@
       "archive_path": "sources/originals/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670.pdf",
       "page_count": 83,
       "selected_pages": [
-        1
+        1,
+        33,
+        34
       ],
       "recipe": {
         "pipeline": "1",
         "pymupdf": "1.26.6",
         "selected_pages": [
-          1
+          1,
+          33,
+          34
         ],
         "scale": 1.3
       },
       "artifacts": [
         {
-          "path": "sources/processed/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670/268b2a6ce7913362/pages.json",
-          "sha256": "7d17934a9e30574b9b585aeb19ce844ef5277054e2522e8dfc5c1a95bb122818"
+          "path": "sources/processed/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670/24484cc83590b335/pages.json",
+          "sha256": "9b901d9db1ac20d51dd8062a86f53eb9a951730dad1aaadc944ef7b562e692d4"
         },
         {
-          "path": "sources/processed/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670/268b2a6ce7913362/metadata.json",
+          "path": "sources/processed/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670/24484cc83590b335/metadata.json",
           "sha256": "824584df280573e23e09feea9f1ce22c00437cff07569d1aa5c629e01a394577"
         },
         {
-          "path": "sources/processed/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670/268b2a6ce7913362/review-queue.json",
-          "sha256": "ba6afb509dab4930d3ca6c52b6ab72fb793d5b06dc7c7be6468bf9948f24fe10"
+          "path": "sources/processed/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670/24484cc83590b335/review-queue.json",
+          "sha256": "580f7fe716ab83f24894087cd1010ec691d0c07586432eca7498eedcfdf334c6"
         },
         {
-          "path": "sources/processed/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670/268b2a6ce7913362/page-1.png",
+          "path": "sources/processed/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670/24484cc83590b335/page-1.png",
           "sha256": "2afa12e8d18ce332f465e0a63bebfec82f9a52b62d9cb0505840e3f4c2477e33"
+        },
+        {
+          "path": "sources/processed/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670/24484cc83590b335/page-33.png",
+          "sha256": "ef2a1e4cc52f424f1e14583a2ad5cd6ab067e09a04131f2b2714b50606bb864c"
+        },
+        {
+          "path": "sources/processed/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670/24484cc83590b335/page-34.png",
+          "sha256": "463ba97afc0e6fc39d514d41e97bc8d5e2451f87a372e7a0a4eef2f7e00b87d5"
         }
       ]
     },

@@ -49,7 +49,7 @@ if ingestion:
     page_artifact = next(a for a in full_record['artifacts'] if a['path'].endswith('/pages.json'))
     full_text = json.loads((root / page_artifact['path']).read_text())
     # Public receipt images must be the same bytes as the hashed extraction bundles.
-    public_evidence = {'src:nysed:math-full': 'math-full', 'src:nysed:math-2017': 'math-crosswalk', 'src:nysed:ela-full':'ela-full', 'src:nysed:math-timeline-2023':'math-timeline', 'src:nysed:ela-math-roadmap-overview':'ela-math-roadmap'}
+    public_evidence = {'src:nysed:math-full': 'math-full', 'src:nysed:math-2017': 'math-crosswalk', 'src:nysed:ela-full':'ela-full', 'src:nysed:science-full':'science-full', 'src:nysed:math-timeline-2023':'math-timeline', 'src:nysed:ela-math-roadmap-overview':'ela-math-roadmap'}
     for record in ingestion['documents']:
         if record['source_id'] not in public_evidence:
             continue

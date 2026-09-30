@@ -142,10 +142,10 @@
       "label": "Science",
       "source_id": "src:nysed:p12-index",
       "acquisition": "2 PDFs · partial corpus",
-      "parsing": "not-started",
+      "parsing": "Partial: MS-PS2-2 and MS-PS2-4; 2 compound expectations",
       "normalization": "not-started",
-      "relationships": "not-started",
-      "validation": "file integrity checked",
+      "relationships": "Source placement and parsing only; grades 6–8 band",
+      "validation": "Bounded wording, qualifiers, grade-band and Receipt checks",
       "human_review": "pending",
       "source_ids": [
         "src:nysed:science-full",

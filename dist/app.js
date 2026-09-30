@@ -5,7 +5,7 @@ const sourceUrl='https://www.nysed.gov/sites/default/files/programs/curriculum-i
 const titles={atlas:['What is New York asking students to learn?','Explore one traced Grade 7 mathematics standard. The full K–12 atlas is under construction; this checkpoint shows exactly what has been established.'],curriculum:['Curriculum','Follow the state’s familiar path from grade and subject to a standard and its parsed expectations.'],journey:['A capability through time','Developmental links require source review. This first slice establishes an endpoint, not a fabricated K–12 chain.'],crossroads:['Where subjects meet','Cross-disciplinary equivalences will appear here once they have evidence and review. None are asserted in this release.'],wildcats:['Follow the Wildcats','Matthew and Eva are fictional reference students. They have the same canonical expectations and no demonstrated-mastery data.'],workbench:['Inside the workbench','Coverage is a set of separate questions. Source identification, parsing, normalization, relationships, validation, and review do not advance together.'],findings:['Findings and open questions','Findings must be computed from the ontology and linked to their evidence. The first slice has no published discovery yet.'],log:['Lab Log','The public history of what entered the model, what was learned, and what remains open.']};
 function sourceLink(source,page){return `https://github.com/GarageThermonuclearLaboratories/Minerva/blob/${release.research_commit||'main'}/${source.archive_path}#page=${page}`;}
 function evidencePage(n){
-const folder={'src:nysed:math-full':'math-full','src:nysed:ela-full':'ela-full'}[n.source_id];
+const folder={'src:nysed:math-full':'math-full','src:nysed:ela-full':'ela-full','src:nysed:science-full':'science-full'}[n.source_id];
 return folder?`evidence/${folder}/page-${n.pdf_page}.png`:sourceLink(manifest.sources.find(s=>s.id===n.source_id),n.pdf_page);
 }
 function showReceipt(id){
@@ -49,6 +49,20 @@ return model.nodes.filter(n=>n.type==='Standard'&&ids.has(n.id)&&activeStandard(
 function expectationsForStandard(id){
 return model.nodes.filter(n=>n.type==='Expectation'&&n.derived_from===id&&claimEligible(n)&&activeStandard(node(id))&&model.edges.some(e=>e.relation==='DERIVED_FROM'&&e.from===n.id&&e.to===id&&claimEligible(e)));
 }
+function standardsForBand(id){
+const ids=new Set(model.edges.filter(e=>e.relation==='ASSIGNED_TO_GRADE_BAND'&&e.to===id&&claimEligible(e)&&claimEligible(node(id))).map(e=>e.from));
+return model.nodes.filter(n=>n.type==='Standard'&&ids.has(n.id)&&activeStandard(n));
+}
+function bandContextHtml(g){
+return model.nodes.filter(n=>n.type==='GradeBand'&&n.grades.includes(g)).map(b=>{
+const standards=standardsForBand(b.id);if(!standards.length)return '';
+return `<section class="band-context" aria-label="Shared grade-band context"><h3>${esc(b.label)} · shared band context</h3><p>These science expectations belong to the grades 6–8 band. Their placement in a particular grade is not established here; they are not additional Grade ${g} assignments.</p>${standards.map(n=>row(n.id,n.original_text)+expectationsForStandard(n.id).map(x=>row(x.id,'Parsed science expectation · source Receipt')).join('')).join('')}</section>`;
+}).join('');
+}
+function gradeCoverageText(standards){
+const families=standards.filter(n=>!n.parent_standard_id).map(n=>n.label);
+return families.length?`Grade-specific source families shown: ${families.join(', ')}. Exact edition applicability remains unresolved.`:journey.missing_data_message;
+}
 function selectStage(id){
 const stage=journey.stages.find(s=>s.id===id);if(!stage)return;
 transition=stage.id==='transition';if(!transition)grade=stage.default_grade;
@@ -69,10 +83,10 @@ html=`<div class="section-head"><h2>${esc(student)} · ${transition?'Graduation 
 <div class="panel journey-panel"><h3>${esc(stage.title)}</h3><p>${esc(stage.description)}</p>
 ${transition?`<h3>Policy evidence still needs review</h3><p>There is no diploma decision or destination prediction for either avatar. The links below are research leads with full review pending.</p><ul>${stage.source_ids.map(id=>{const source=manifest.sources.find(s=>s.id===id);return `<li><a href="${source.url}" target="_blank" rel="noopener">${esc(source.title)}</a> · ${esc(source.acquisition_status)}</li>`;}).join('')}</ul>`:
 `<label for="journey-grade">Choose a grade in this stage</label><select id="journey-grade">${stage.grades.map(g=>`<option value="${g}" ${g===grade?'selected':''}>${gradeLabel(g)}</option>`).join('')}</select>
-<h3>${standards.length?'Partially mapped: mathematics and ELA':'Not yet mapped'}</h3>
-<p>${standards.length?'The current trace contains two standard families: mathematics NY-7.RP.2 with four subparts, and ELA 7R1. Exact edition applicability to the policy snapshot remains unresolved.':esc(journey.missing_data_message)}</p>
+<h3>${standards.length?'Partially mapped · grade-specific expectations':'Not yet mapped · grade-specific expectations'}</h3>
+<p>${esc(gradeCoverageText(standards))}</p>
 ${standards.map(n=>row(n.id,n.original_text)+expectationsForStandard(n.id).map(x=>row(x.id,'Parsed expectation · source receipt')).join('')).join('')}`}
-</div><p class="journey-context">Policy snapshot: ${journey.policy_snapshot}. This is a reference pathway, not a personal school history. Moving between stages does not establish mastery, cumulative retention, or graduation eligibility.</p>`;
+</div>${transition?'':bandContextHtml(grade)}<p class="journey-context">Policy snapshot: ${journey.policy_snapshot}. This is a reference pathway, not a personal school history. Moving between stages does not establish mastery, cumulative retention, or graduation eligibility.</p>`;
 }
 if(view==='workbench')html=`<div class="section-head"><h2>Source review checkpoint</h2><span>${esc(model.release)}</span></div><div class="metric-grid">${[[manifest.sources.length,'source records identified'],[manifest.sources.filter(x=>x.acquisition_status==='full-document-acquired').length,'full source documents acquired'],[corpus.families.length,'content areas queued'],['5','source standard records (parent + subparts)'],[model.nodes.filter(n=>n.type==='Expectation').length,'expectations parsed'],['0','reviewed findings']].map(([n,l])=>`<div class="metric"><b>${n}</b><span>${l}</span></div>`).join('')}</div><div class="panel" style="margin-top:18px"><h3>Evidence and coverage</h3><p>Two uploaded mathematics PDFs are archived with hashes. All 184 pages have text extracts; the cover and relevant Grade 7 pages received visual review. Five source standard records and six parsed expectations represent the bounded family. Other source records still rely on search extracts. Human semantic review and full-corpus parsing remain pending.</p><h3>Mathematics policy timeline</h3><p>Prior search excerpts suggested adoption in September 2017, full implementation in September 2022, and aligned Grades 3–8 assessments in spring 2023. These date observations are provisional: their exact supporting excerpts were not preserved, and full-page verification is pending. The uploaded full document says Updated June 2019; exact edition applicability remains under review.</p><a href="https://www.nysed.gov/standards-instruction/mathematics-guidance-resources" target="_blank" rel="noopener">Inspect NYSED guidance ↗</a></div><div class="section-head"><h2>Content-area acquisition queue</h2><span>12 identified; document review pending</span></div>${corpus.families.map(f=>`<div class="panel" style="margin-bottom:10px"><h3>${esc(f.label)}</h3><p>Acquisition: ${esc(f.acquisition)} · Parsing: ${esc(f.parsing)}<br>Normalization: ${esc(f.normalization)} · Relationships: ${esc(f.relationships)}<br>Validation: ${esc(f.validation)} · Human review: ${esc(f.human_review)}</p></div>`).join('')}<p><a href="https://www.nysed.gov/standards-instruction/nys-p-12-learning-standards-content-area" target="_blank" rel="noopener">NYSED content-area inventory ↗</a></p>`;
 if(view==='findings')html=`<div class="section-head"><h2>Research state</h2><span>0 published findings</span></div><div class="stack"><div class="panel"><div class="kicker">FINDINGS</div><p>No cross-disciplinary or developmental finding has been established in this bounded slice. This area will link computed results to source IDs, edges, methods, ontology release, and Git revision.</p></div><div class="panel"><div class="kicker">UNRESOLVED QUESTIONS</div>${model.unresolved.map(q=>`<p style="margin-bottom:12px">${esc(q.text)}</p>`).join('')}</div><div class="panel"><div class="kicker">CANONICAL ASSUMPTIONS / REJECTED HYPOTHESES</div><p>Both registers are empty. No local district choice or rejected mapping has yet been evaluated.</p></div></div>`;

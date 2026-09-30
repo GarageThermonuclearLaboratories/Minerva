@@ -1,8 +1,8 @@
 {
-  "release": "wildcats-0.0.6-tuesday-completion",
-  "research_commit": "847d73f6e283ee77b20597ef3533608c25a68d84",
-  "interface_revision": "0.0.6",
+  "release": "wildcats-0.0.7-wednesday-science",
+  "research_commit": null,
+  "interface_revision": "0.0.7",
   "publication_status": "prepared-for-publication",
-  "review_scope": "Tuesday builder review. Monday independent audit applies only to its historical baseline.",
-  "audit_record": "data/reviews/tuesday-completion.json"
+  "review_scope": "Wednesday package 1 builder review; separate Wednesday audit pending. Tuesday independent audit covers v0.0.6 only.",
+  "audit_record": "data/reviews/wednesday-science.json"
 }

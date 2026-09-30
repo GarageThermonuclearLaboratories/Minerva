@@ -1,0 +1,36 @@
+{
+  "id": "review:wednesday-science-package-1",
+  "date": "2026-09-30",
+  "release": "wildcats-0.0.7-wednesday-science",
+  "reviewer_type": "builder",
+  "result": "pass-with-recorded-limits",
+  "independent_review": "pending-package-3",
+  "source_id": "src:nysed:science-full",
+  "source_pages_visually_reviewed": [
+    33,
+    34
+  ],
+  "modeled_standards": [
+    "MS-PS2-2",
+    "MS-PS2-4"
+  ],
+  "coverage": {
+    "nodes": 26,
+    "edges": 31,
+    "expectations": 9,
+    "findings": 0
+  },
+  "verification": {
+    "acceptance_tests": 28,
+    "ingestion_tests": 7,
+    "receipt_and_dom": "passed",
+    "targeted_rendered_desktop_mobile": "passed"
+  },
+  "limits": [
+    "source applicability unresolved",
+    "two of five page-33 performance expectations; foundation elements not separately modeled",
+    "cross-subject comparison deferred to package 2",
+    "native zoom, physical device and full accessibility review unverified"
+  ],
+  "documentation": "docs/wednesday-science.md"
+}

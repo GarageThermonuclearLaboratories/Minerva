@@ -923,12 +923,13 @@
       },
       "archive_path": "sources/originals/673499b3a712830b56117d4cfd69cf53bc23bd7f37a123f1a030924f07527670.pdf",
       "acquisition_status": "full-document-acquired",
-      "review_status": "full-document-review-pending",
+      "review_status": "Selected page 33 performance expectations MS-PS2-2 and MS-PS2-4 builder-reviewed; page 34 connections visually inspected but unmodeled; full-document, independent, and human review pending",
       "publication_date": null,
       "effective_date": null,
       "superseded_date": null,
       "retrieved_date": "2026-09-30",
-      "policy_status": "applicability-review-pending"
+      "policy_status": "applicability-review-pending",
+      "document_revision_label": "Uploaded edition; page 34 connection boxes updated September 2018; whole-document revision not established"
     },
     {
       "id": "src:nysed:upload-20",

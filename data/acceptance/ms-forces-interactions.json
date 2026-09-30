@@ -1,0 +1,67 @@
+{
+  "source_id": "src:nysed:science-full",
+  "pdf_page": 33,
+  "review": "Builder comparison with rendered page 33; independent review pending",
+  "standards": {
+    "wc:standard:ms-ps2-2": "Plan and conduct an investigation to provide evidence that the change in an object’s motion depends on the sum of the forces on the object and the mass of the object.",
+    "wc:standard:ms-ps2-4": "Construct and present arguments using evidence to support the claim that gravitational interactions are attractive and depend on the masses of interacting objects and the distance between them."
+  },
+  "expectations": {
+    "wc:expectation:investigate-forces-motion": {
+      "derived_from": "wc:standard:ms-ps2-2",
+      "action": "Plan and conduct an investigation",
+      "object": "evidence that the change in an object’s motion depends on the sum of forces on the object and its mass",
+      "qualifiers": [
+        "The investigation must provide evidence for dependence on both the sum of forces and the mass of the object.",
+        "Emphasis includes balanced and unbalanced forces, simple machines, qualitative comparisons, frame of reference, and units.",
+        "Assessment is limited to one-dimensional motion in an inertial reference frame, changing one variable at a time; trigonometry is excluded."
+      ],
+      "parsing_rationale": "Retains the coordinated actions as one compound expectation and preserves the scientific claim they serve. Clarification and assessment boundaries are retained on the source standard. No student mastery, prerequisite, exact grade assignment, or cross-subject equivalence is inferred."
+    },
+    "wc:expectation:argue-gravitational-interactions": {
+      "derived_from": "wc:standard:ms-ps2-4",
+      "action": "Construct and present arguments using evidence",
+      "object": "the claim that gravitational interactions are attractive and depend on the masses of interacting objects and the distance between them",
+      "qualifiers": [
+        "Arguments must use evidence supporting both attraction and dependence on masses and distance.",
+        "Simulation or digital-tool data and charts are examples of evidence, not mandatory formats.",
+        "Assessment excludes Newton’s Law of Gravitation and Kepler’s Laws."
+      ],
+      "parsing_rationale": "Retains the coordinated actions as one compound expectation and preserves the scientific claim they serve. Clarification and assessment boundaries are retained on the source standard. No student mastery, prerequisite, exact grade assignment, or cross-subject equivalence is inferred."
+    }
+  },
+  "annotations": {
+    "wc:annotation:ms-ps2-2-clarification": {
+      "original_text": "Emphasis is on balanced (Newton’s First Law) and unbalanced forces in a system (including simple machines), qualitative comparisons of forces, mass and changes in motion (Newton’s Second Law), frame of reference, and specification of units.",
+      "interpretation": "Preserved source emphasis and examples; examples do not become additional mandatory performances."
+    },
+    "wc:annotation:ms-ps2-2-boundary": {
+      "original_text": "Assessment is limited to forces and changes in motion in one-dimension in an inertial reference frame and to change in one variable at a time. Assessment does not include the use of trigonometry.",
+      "interpretation": "Boundary of the source assessment expectation; not a claim about the limits of science or a student’s knowledge."
+    },
+    "wc:annotation:ms-ps2-4-clarification": {
+      "original_text": "Examples of evidence for arguments could include data generated from simulations or digital tools; and charts displaying mass, strength of interaction, distance from the Sun, and orbital periods of objects within the solar system.",
+      "interpretation": "Preserved source emphasis and examples; examples do not become additional mandatory performances."
+    },
+    "wc:annotation:ms-ps2-4-boundary": {
+      "original_text": "Assessment does not include Newton’s Law of Gravitation or Kepler’s Laws.",
+      "interpretation": "Boundary of the source assessment expectation; not a claim about the limits of science or a student’s knowledge."
+    }
+  },
+  "nodes": {
+    "wc:grade-band:6-8": {
+      "type": "GradeBand",
+      "grades": [
+        6,
+        7,
+        8
+      ]
+    },
+    "wc:standard:ms-ps2-2": {
+      "grade_band_id": "wc:grade-band:6-8"
+    },
+    "wc:standard:ms-ps2-4": {
+      "grade_band_id": "wc:grade-band:6-8"
+    }
+  }
+}
