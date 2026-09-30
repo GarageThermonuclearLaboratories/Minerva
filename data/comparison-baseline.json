@@ -1,0 +1,33 @@
+{
+  "version": "1",
+  "input_research_commit": "6b64e00d3fe710ebb256770cdd475c9cfded88c1",
+  "baseline_url": "https://github.com/GarageThermonuclearLaboratories/Minerva/blob/6b64e00d3fe710ebb256770cdd475c9cfded88c1/data/ontology.json",
+  "baseline_file_sha256": "d3464bc3b167d533ed7da319bfca414235a15fcdaa01b5b3e3a26a42ad5fb223",
+  "verified_date": "2026-09-30",
+  "model_fields": [
+    "policy_snapshot",
+    "nodes",
+    "edges",
+    "students",
+    "hypotheses",
+    "findings"
+  ],
+  "model_fingerprint": "86c6214548f9dc8a72b1e4ee62d25280f3b96507eb3fb24a08bf6284162f2c26",
+  "method": "bounded-pairwise-v1",
+  "scope": "Three purposively selected comparisons, one per subject pair; not an exhaustive search or a learned capability hierarchy.",
+  "subject_bindings": {
+    "src:nysed:math-full": {
+      "id": "wc:subject:mathematics",
+      "label": "Mathematics"
+    },
+    "src:nysed:ela-full": {
+      "id": "wc:subject:ela",
+      "label": "English Language Arts"
+    },
+    "src:nysed:science-full": {
+      "id": "wc:subject:science",
+      "label": "Science"
+    }
+  },
+  "note": "Verified against the named GitHub baseline. Release labels and scope prose are excluded from the semantic projection; all nodes, edges, students, hypotheses, findings and policy snapshot are included. This lock must be explicitly re-established and reviewed before a changed educational graph can generate comparisons."
+}

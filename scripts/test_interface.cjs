@@ -27,7 +27,7 @@ async function setup(lateInterface=false, delayed=false){
   assert.ok(d.querySelector('#receipt').hidden,'Receipt starts collapsed');
   assert.ok(d.querySelector('.audit-notice').textContent.includes('audit passed'));
   assert.ok(d.querySelector('.audit-notice a').href.endsWith('/docs/wednesday-independent-audit.md'));
-  assert.equal(d.querySelector('#release-label').textContent,'v0.0.8 · Wednesday audited');
+  assert.equal(d.querySelector('#release-label').textContent,'v0.0.8 · Comparison safeguards');
   assert.ok(d.querySelector('.trace-preview [data-node]'));
   d.querySelector('.trace-parsed [data-node]').click();
   assert.ok(!d.querySelector('#receipt').hidden);
@@ -78,7 +78,8 @@ async function setup(lateInterface=false, delayed=false){
   const toggle=d.querySelector('[data-family]'),detail=d.getElementById(toggle.getAttribute('aria-controls'));
   assert.ok(detail.hidden);toggle.click();assert.ok(!detail.hidden);toggle.click();assert.ok(detail.hidden);
   assert.ok(!d.querySelector('#epistemic-notice').open);
-  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,8);
+  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,9);
+  assert.ok(d.querySelector('.log-entry').textContent.includes('W1 and W2 repaired'));
   assert.ok(d.querySelector('#view').textContent.includes('PROVISIONAL'));
   d.querySelector('[data-view="crossroads"]').click();
   assert.equal(d.querySelectorAll('.comparison-card').length,3);

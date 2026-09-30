@@ -10,7 +10,7 @@ The v0.1 construction is clean-room: no Garage-internal ontology class, hierarch
 
 ## Current checkpoint
 
-[Wednesday independent audit](docs/wednesday-independent-audit.md) passed the bounded science and comparison packages with recorded limits. Two nonblocking validation follow-ups remain open; no graph edge or finding was promoted. [Wednesday comparison package](docs/wednesday-comparisons.md) records package 2. [Wednesday science package](docs/wednesday-science.md) records package 1. [Tuesday continuation](docs/tuesday-completion.md) and its subsequent audit and QA remain historical records. Historical documents below describe their named checkpoints.
+[Wednesday independent audit](docs/wednesday-independent-audit.md) passed the bounded science and comparison packages with recorded limits. The two validation follow-ups were subsequently repaired with builder regression review in [comparison safeguards](docs/comparison-safeguards.md); no graph edge or finding was promoted. [Wednesday comparison package](docs/wednesday-comparisons.md) records package 2. [Wednesday science package](docs/wednesday-science.md) records package 1. [Tuesday continuation](docs/tuesday-completion.md) and its subsequent audit and QA remain historical records. Historical documents below describe their named checkpoints.
 
 ## Contents
 
@@ -41,3 +41,5 @@ Run `python3 scripts/restore_sources.py` once after cloning to reassemble the la
 For acquired PDFs, install `requirements.txt`, then run `python3 scripts/ingest_sources.py build` and `python3 scripts/ingest_sources.py check`. See the ingestion workflow for new-document registration and review boundaries.
 
 GitHub is the canonical engineering record: [GarageThermonuclearLaboratories/Minerva](https://github.com/GarageThermonuclearLaboratories/Minerva). ChatGPT Site source commits and GitHub commits are separate Git histories; each deployment records both identifiers where available.
+
+To rebuild the frozen comparisons, run `python3 scripts/build_comparisons.py --baseline data/comparison-baseline.json`, then `python3 scripts/test_comparisons.py` and the main validator. A changed educational graph requires a new explicitly verified baseline contract and review; do not relabel the old baseline.

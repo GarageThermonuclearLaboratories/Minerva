@@ -1,8 +1,14 @@
 import copy
 import json
 import unittest
+import subprocess
+import sys
+import tempfile
+from unittest.mock import patch
 from pathlib import Path
 from comparison_validation import check_comparisons
+from comparison_contract import load_baseline
+from build_comparisons import build
 
 ROOT=Path(__file__).resolve().parents[1]
 def read(p):return json.loads((ROOT/p).read_text())
@@ -39,5 +45,53 @@ class ComparisonTests(unittest.TestCase):
         self.c['records'][0]['status']='SOURCE';self.invalid('Unsupported comparison disposition')
     def test_missing_rationale(self):
         self.c['records'][1]['decision']='';self.invalid('Missing comparison decision')
+    def test_false_baseline(self):
+        self.c['input_research_commit']='0'*40;self.invalid('baseline commit mismatch')
+    def test_false_method(self):
+        self.c['method']='invented';self.invalid('method mismatch')
+    def test_false_scope(self):
+        self.c['scope']='All subjects and all grades';self.invalid('scope mismatch')
+    def test_coordinated_method_change(self):
+        draft=read('data/comparison-drafts.json');draft['method']=self.c['method']='invented'
+        with self.assertRaisesRegex(ValueError,'method mismatch'):
+            check_comparisons(self.c,self.m,self.s,draft=draft)
+    def test_coordinated_scope_change(self):
+        draft=read('data/comparison-drafts.json');draft['scope']=self.c['scope']='Exhaustive'
+        with self.assertRaisesRegex(ValueError,'scope mismatch'):
+            check_comparisons(self.c,self.m,self.s,draft=draft)
+    def test_wrong_subject_label(self):
+        self.c['records'][0]['subjects'][0]='Mathematics';self.invalid('subject identity mismatch')
+    def test_reversed_subjects(self):
+        self.c['records'][0]['subjects'].reverse();self.invalid('subject identity mismatch')
+    def test_unpaired_model_change(self):
+        self.m['students'][0]['label']='Changed avatar';self.invalid('explicit baseline review')
+    def test_incomplete_baseline_projection(self):
+        baseline=load_baseline();baseline['model_fields'].remove('students')
+        with self.assertRaisesRegex(ValueError,'field coverage'):
+            check_comparisons(self.c,self.m,self.s,baseline=baseline)
+    def build_in_sandbox(self, change=None):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);(root/'data').mkdir();(root/'dist').mkdir()
+            draft=read('data/comparison-drafts.json')
+            if change:change(self.m,draft)
+            for name,value in [('ontology',self.m),('sources',self.s),('comparison-drafts',draft)]:
+                (root/f'data/{name}.json').write_text(json.dumps(value))
+            outputs=[root/'data/comparisons.json',root/'dist/comparisons.json']
+            for output in outputs:output.write_text('unchanged sentinel')
+            with patch('build_comparisons.ROOT',root):
+                if change:
+                    with self.assertRaises(ValueError):build(ROOT/'data/comparison-baseline.json')
+                    self.assertTrue(all(p.read_text()=='unchanged sentinel' for p in outputs))
+                else:
+                    build(ROOT/'data/comparison-baseline.json')
+                    self.assertTrue(all(p.read_bytes()==(ROOT/'data/comparisons.json').read_bytes() for p in outputs))
+    def test_rebuild_is_byte_identical(self):self.build_in_sandbox()
+    def test_generator_rejects_changed_model_without_writing(self):
+        self.build_in_sandbox(lambda m,d:m['students'][0].update(label='Changed'))
+    def test_generator_rejects_coordinated_subject_error_without_writing(self):
+        self.build_in_sandbox(lambda m,d:d['records'][0]['subjects'].__setitem__(0,'Mathematics'))
+    def test_generator_requires_explicit_baseline(self):
+        result=subprocess.run([sys.executable,str(ROOT/'scripts/build_comparisons.py')],capture_output=True,text=True)
+        self.assertNotEqual(result.returncode,0);self.assertIn('--baseline',result.stderr)
 
 if __name__=='__main__':unittest.main(verbosity=2)

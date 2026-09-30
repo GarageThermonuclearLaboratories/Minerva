@@ -105,6 +105,7 @@ comparisons = json.loads((root/'data/comparisons.json').read_text())
 assert comparisons == json.loads((root/'dist/comparisons.json').read_text()), 'Comparison export mismatch'
 check_comparisons(comparisons, data, sources)
 drafts = json.loads((root/'data/comparison-drafts.json').read_text())
+assert all(drafts[k] == comparisons[k] for k in ['method','scope']), 'Comparison method/scope mismatch'
 assert len(drafts['records']) == len(comparisons['records']), 'Comparison draft count mismatch'
 for draft, record in zip(drafts['records'], comparisons['records']):
     assert all(record.get(k) == v for k, v in draft.items()), 'Comparison draft/export mismatch'

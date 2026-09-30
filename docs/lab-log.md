@@ -167,3 +167,14 @@ Prepared v0.0.8 with three bounded cross-subject analysis records: one provision
 Separate reviewer `/root/wednesday_audit` passed both frozen Wednesday packages with recorded limits and no blocking findings. Context was inherited; this was not a blind or human audit. Two low-severity generator validation gaps remain explicit follow-ups before reuse/generalization. The current records were independently checked and are correct. See `docs/wednesday-independent-audit.md` and `data/reviews/wednesday-independent.json`.
 
 The ontology, comparison payloads, source manifest and journey are preserved byte-for-byte and tied to the audit by hashes. Current UI notices supersede historical pending-review labels without rewriting those records. Audit-status UI edits receive builder checks separately. Wednesday's agreed bounded scope is ready to close upon publication of this record; broad corpus completion, exact applicability and full accessibility remain outside that closure.
+
+
+### September 30 · Comparison safeguards · preparation for Thursday
+
+Completed the next bounded package: repaired Wednesday audit findings W1 (baseline identity, method and scope validation) and W2 (subject identity). An explicit verified baseline is now required for generation, and rejected inputs leave existing exports untouched. The original GitHub science snapshot was fetched and compared; the five audited data files remain unchanged. No ontology expansion, policy-date change, unsupported equivalence or Garage ontology import occurred.
+
+Validation: 25 comparison tests, 28 acceptance tests, 7 ingestion tests, main validator, Receipt/projection checks and interface DOM checks passed. Initial DOM checks failed because its historical Lab Log count was eight; adding the ninth entry required updating that expectation. Rerun passed. Builder review only; no new independent or rendered-browser audit. Full evidence and reproducibility: `docs/comparison-safeguards.md`.
+
+Version: ontology `wildcats-0.0.8-wednesday-comparisons`, interface `0.0.8-safeguards`, checkpoint `comparison-safeguards-2026-09-30`. The dedicated GitHub repository is available. Actual GitHub and Site identifiers and publication outcome will be appended after native deployment completes.
+
+Next: bounded Ask Minerva with source Receipts, status-aware answers and abstention. Thursday and the Friday freeze are not complete. Exact applicability, human review, comprehensive coverage and full accessibility remain open.

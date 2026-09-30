@@ -1,9 +1,11 @@
 {
   "release": "wildcats-0.0.8-wednesday-comparisons",
-  "research_commit": "ed34f4e4197a9905e38eaf20b0aabd475ee3425b",
-  "interface_revision": "0.0.8-audited",
+  "research_commit": null,
+  "interface_revision": "0.0.8-safeguards",
   "publication_status": "prepared-for-publication",
-  "review_scope": "Separate AI audit passed with recorded limits for Wednesday packages 1 and 2. Historical claim-level review fields are preserved. Audit-status interface changes have builder verification.",
+  "review_scope": "Wednesday independent audit remains valid for its unchanged data snapshot. Comparison baseline and subject validation repairs have builder regression review only.",
   "audit_status": "pass-with-recorded-limits",
-  "audit_record": "data/reviews/wednesday-independent.json"
+  "audit_record": "data/reviews/wednesday-independent.json",
+  "checkpoint": "comparison-safeguards-2026-09-30",
+  "safeguards_record": "docs/comparison-safeguards.md"
 }
