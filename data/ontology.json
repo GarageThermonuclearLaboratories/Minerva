@@ -1,8 +1,8 @@
 {
-  "release": "wildcats-0.0.7-wednesday-science",
+  "release": "wildcats-0.0.8-wednesday-comparisons",
   "policy_snapshot": "2026-09-28",
   "git_revision": null,
-  "scope": "Two bounded Grade 7 families: mathematics NY-7.RP.2 and ELA 7R1. Source-edition expectations only; snapshot applicability and human review unresolved.",
+  "scope": "Two bounded Grade 7 families (mathematics NY-7.RP.2 and ELA 7R1), plus MS-PS2-2 and MS-PS2-4 at the grades 6–8 science band. Source-edition expectations only; snapshot applicability and human review unresolved. Comparison records are separate from this educational graph.",
   "nodes": [
     {
       "id": "wc:grade:7",

@@ -99,3 +99,16 @@ for claim in review['claims']:
     if claim['status'] == 'SOURCE':
         assert ' '.join(claim['original_text'].split()) in source_text(claim), claim['id']
 print('Valid: each source quotation checked against its own document and page')
+
+from comparison_validation import check_comparisons
+comparisons = json.loads((root/'data/comparisons.json').read_text())
+assert comparisons == json.loads((root/'dist/comparisons.json').read_text()), 'Comparison export mismatch'
+check_comparisons(comparisons, data, sources)
+drafts = json.loads((root/'data/comparison-drafts.json').read_text())
+assert len(drafts['records']) == len(comparisons['records']), 'Comparison draft count mismatch'
+for draft, record in zip(drafts['records'], comparisons['records']):
+    assert all(record.get(k) == v for k, v in draft.items()), 'Comparison draft/export mismatch'
+for record in comparisons['records']:
+    for evidence in record['evidence']:
+        assert ' '.join(evidence['quotation'].split()) in source_text(evidence), record['id']
+print('Valid: comparison evidence snapshots and exports; no graph promotion')

@@ -1,0 +1,13 @@
+{
+  "id": "review:wednesday-comparisons-package-2",
+  "date": "2026-09-30",
+  "release": "wildcats-0.0.8-wednesday-comparisons",
+  "reviewer_type": "builder",
+  "result": "pass-with-recorded-limits",
+  "independent_review": "pending-package-3",
+  "comparisons": {"provisional": 1, "rejected": 2, "accepted_links": 0},
+  "coverage": {"nodes": 26, "edges": 31, "expectations": 9, "findings": 0},
+  "verification": {"comparison_tests": 12, "acceptance_tests": 28, "receipt_and_dom": "passed", "targeted_rendered_desktop_mobile": "passed"},
+  "limits": ["builder semantic judgments await independent audit", "purposive sample, not exhaustive", "source applicability unresolved", "native zoom, physical device and full accessibility unverified"],
+  "documentation": "docs/wednesday-comparisons.md"
+}

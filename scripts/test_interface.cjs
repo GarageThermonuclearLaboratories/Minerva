@@ -11,6 +11,7 @@ async function setup(lateInterface=false, delayed=false){
   let resolveData;const gate=new Promise(r=>resolveData=r);
   w.fetch=async name=>{if(delayed)await gate;return {ok:true,json:async()=>JSON.parse(read('dist/'+name))};};
   vm.runInContext(read('dist/app.js'),dom.getInternalVMContext());
+  vm.runInContext(read('dist/comparison-ui.js'),dom.getInternalVMContext());
   if(lateInterface)await new Promise(r=>setImmediate(r));
   vm.runInContext(read('dist/interface.js'),dom.getInternalVMContext());
   await new Promise(r=>setImmediate(r));
@@ -24,7 +25,7 @@ async function setup(lateInterface=false, delayed=false){
   const {dom,w,d,errors}=await setup();
   const model=JSON.parse(read('data/ontology.json'));
   assert.ok(d.querySelector('#receipt').hidden,'Receipt starts collapsed');
-  assert.equal(d.querySelector('#release-label').textContent,'v0.0.7 · Wednesday science');
+  assert.equal(d.querySelector('#release-label').textContent,'v0.0.8 · Wednesday comparisons');
   assert.ok(d.querySelector('.trace-preview [data-node]'));
   d.querySelector('.trace-parsed [data-node]').click();
   assert.ok(!d.querySelector('#receipt').hidden);
@@ -75,8 +76,22 @@ async function setup(lateInterface=false, delayed=false){
   const toggle=d.querySelector('[data-family]'),detail=d.getElementById(toggle.getAttribute('aria-controls'));
   assert.ok(detail.hidden);toggle.click();assert.ok(!detail.hidden);toggle.click();assert.ok(detail.hidden);
   assert.ok(!d.querySelector('#epistemic-notice').open);
-  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,7);
+  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,8);
   assert.ok(d.querySelector('#view').textContent.includes('PROVISIONAL'));
+  d.querySelector('[data-view="crossroads"]').click();
+  assert.equal(d.querySelectorAll('.comparison-card').length,3);
+  assert.equal(d.querySelectorAll('.comparison-axes section').length,18);
+  assert.ok(d.querySelector('#view').textContent.includes('0 accepted links'));
+  for(const card of d.querySelectorAll('.comparison-card')){
+    card.open=true;
+    const target=card.querySelector('[data-node]');target.focus();target.click();
+    assert.ok(!d.querySelector('#receipt').hidden);
+    assert.ok(d.querySelector('#receipt-body').textContent.includes(target.dataset.node));
+    d.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
+    assert.equal(d.activeElement,target);
+  }
+  d.querySelector('[data-view="findings"]').click();d.querySelector('#open-comparisons').click();
+  assert.equal(d.querySelectorAll('.comparison-card').length,3);
   assert.deepEqual(errors,[]);dom.window.close();
   const late=await setup(true);assert.ok(late.d.querySelector('.trace-preview'));assert.deepEqual(late.errors,[]);late.dom.window.close();
   console.log('DOM checks passed: 8 views, 26 Receipts, graph integrity/expansion, student lens, 13 grades × 2 avatars, matrix controls, Escape/focus controls, and both script/data arrival orders.');

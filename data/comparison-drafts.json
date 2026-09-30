@@ -1,0 +1,72 @@
+{
+  "method": "bounded-pairwise-v1",
+  "scope": "Three purposively selected comparisons, one per subject pair; not an exhaustive search or a learned capability hierarchy.",
+  "records": [
+    {
+      "id": "wc:comparison:evidence-ela-science",
+      "title": "Evidence supports an interpretation or an argument",
+      "subjects": ["English Language Arts", "Science"],
+      "node_ids": ["wc:expectation:cite-evidence-infer", "wc:expectation:argue-gravitational-interactions"],
+      "proposal": "The two expectations may share a narrow justification pattern: evidence is used to support an account or claim.",
+      "status": "PROVISIONAL",
+      "disposition_label": "Candidate analogy · not an equivalence",
+      "commonality": "Both explicitly require evidence to do supporting work. This comparison is more specific than a shared occurrence of the word evidence, but it remains a builder interpretation of the two tasks.",
+      "axes": [
+        {"axis": "Action", "left": "Cite textual evidence, analyze explicit/implicit meaning, and make logical inferences.", "right": "Construct and present arguments using evidence."},
+        {"axis": "Object", "left": "What a literary or informational text says.", "right": "Attraction and dependence on masses and distance in gravitational interactions."},
+        {"axis": "Evidence", "left": "Textual evidence is required.", "right": "Evidence is required; simulation or digital-tool data and charts are examples, not mandatory formats."},
+        {"axis": "Required product", "left": "Supported textual analysis and logical inference; the standard does not prescribe one presentation format.", "right": "A constructed and presented argument about the specified physical claim."},
+        {"axis": "Placement", "left": "Grade 7.", "right": "Grades 6–8 band; no individual-grade assignment."},
+        {"axis": "Boundary", "left": "Literary and informational scope (RI&RL) must be preserved.", "right": "Assessment excludes Newton’s Law of Gravitation and Kepler’s Laws."}
+      ],
+      "decision": "Retain the narrow analogy for independent review. Do not merge the expectations or create a shared-skill, equivalence, prerequisite or transfer edge.",
+      "not_established": "A common cognitive mechanism, transfer between subjects, equivalent assessments, or mastery of one through performance on the other.",
+      "next_evidence": "Review the two source interpretations independently, then define a narrower relation and an explicit comparison rubric before proposing an ontology edge.",
+      "source_context": "Science page 34 explicitly points MS-PS2-4 to 6-8.WHST.1, not to the modeled ELA 7R1. That source connection cannot be substituted for this candidate analogy."
+    },
+    {
+      "id": "wc:comparison:proportion-force-equivalence",
+      "title": "A relationship between quantities is not automatically a proportional model",
+      "subjects": ["Mathematics", "Science"],
+      "node_ids": ["wc:expectation:represent-proportional-equation", "wc:expectation:investigate-forces-motion"],
+      "proposal": "Treat representing a proportional relationship with an equation as equivalent to investigating forces, mass and motion.",
+      "status": "REJECTED",
+      "disposition_label": "Equivalence rejected · applications remain open",
+      "commonality": "Both concern relationships involving quantities. A mathematics application is conceivable, but the source tasks specify different performances.",
+      "axes": [
+        {"axis": "Action", "left": "Represent a proportional relationship.", "right": "Plan and conduct an investigation to provide evidence."},
+        {"axis": "Object", "left": "A proportional relationship between quantities.", "right": "How changes in motion depend on the sum of forces and the object's mass."},
+        {"axis": "Evidence", "left": "The wording does not require collecting experimental evidence.", "right": "An investigation must provide evidence for the specified dependence."},
+        {"axis": "Required product", "left": "An equation.", "right": "An investigation and evidence; an equation is not required by this performance expectation."},
+        {"axis": "Placement", "left": "Grade 7.", "right": "Grades 6–8 band; no individual-grade assignment."},
+        {"axis": "Boundary", "left": "The relationship must be proportional.", "right": "Qualitative comparisons; assessment is one-dimensional, in an inertial frame, changing one variable at a time, without trigonometry."}
+      ],
+      "decision": "Reject the proposed equivalence because neither source task contains the other's required performance. This does not reject the possibility of using mathematics within a science investigation.",
+      "not_established": "A proportional law from the word depends, a mandated equation, or a prerequisite relationship between these standards.",
+      "next_evidence": "For a later application proposal, specify the variables, controlled conditions and mathematical relation, with source support. Review the page-34 math targets separately instead of substituting NY-7.RP.2c.",
+      "source_context": "Science page 34 lists MP.2, NY-6.EE.2, NY-7.EE.3 and NY-7.EE.4 for MS-PS2-2. It does not list NY-7.RP.2c. Absence from this box is not proof that an application is impossible."
+    },
+    {
+      "id": "wc:comparison:graph-text-equivalence",
+      "title": "Explaining a graph point and interpreting a text remain distinct",
+      "subjects": ["Mathematics", "English Language Arts"],
+      "node_ids": ["wc:expectation:explain-proportional-point", "wc:expectation:cite-evidence-infer"],
+      "proposal": "Treat explaining the meaning of a proportional-graph point and analyzing a text as the same interchangeable expectation.",
+      "status": "REJECTED",
+      "disposition_label": "Equivalence rejected · narrow analogy possible",
+      "commonality": "Both require giving an account of meaning in context. That broad resemblance does not erase the specified objects, evidence or constraints.",
+      "axes": [
+        {"axis": "Action", "left": "Explain a graph point in terms of the situation.", "right": "Cite textual evidence, analyze explicit/implicit meaning, and make logical inferences."},
+        {"axis": "Object", "left": "A point (x, y) on the graph of a proportional relationship.", "right": "What a literary or informational text says."},
+        {"axis": "Evidence", "left": "The task is grounded in a graph and its situation; it does not expressly require citing textual evidence.", "right": "Textual evidence must support the analysis."},
+        {"axis": "Required product", "left": "An explanation of the point's contextual meaning, with specified special cases.", "right": "Supported textual analysis and logical inference."},
+        {"axis": "Placement", "left": "Grade 7.", "right": "Grade 7; matching placement does not establish equivalence."},
+        {"axis": "Boundary", "left": "Special attention to (0, 0) and (1, r), where r is the unit rate.", "right": "Preserve both explicit/implicit analysis and literary/informational scope."}
+      ],
+      "decision": "Reject interchangeability. Keep the broader meaning-in-context resemblance as an observation in this record, not as an accepted shared capability.",
+      "not_established": "That the standards assess the same skill, that one demonstrates the other, or that being in the same grade gives them a developmental dependency.",
+      "next_evidence": "A future narrower analogy needs an operational definition and task-level evidence that preserves graph-specific and text-specific requirements.",
+      "source_context": "This is a builder-selected comparison of the modeled math and ELA records, not a NYSED cross-reference between them."
+    }
+  ]
+}

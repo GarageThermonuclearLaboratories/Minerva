@@ -157,3 +157,7 @@ Rendered the unchanged v0.0.6 checkpoint in cloud Chromium. Desktop and narrow r
 Prepared v0.0.7: two middle-school science performance expectations and two compound parses, preserving page 33 clarification and assessment boundaries. Added an explicit grades 6–8 band and separate band-context projection. Graph: 26 nodes, 31 edges, 9 parsed expectations, 0 findings. Builder validation, 28 acceptance tests, 7 ingestion tests, DOM/Receipt checks and targeted desktop/mobile render checks passed. Wednesday's cross-subject comparison and separate audit remain later packages. See `docs/wednesday-science.md`; publication is recorded separately after success.
 
 Wednesday package 1 published successfully as public Site version 11. Research `6b64e00d3fe710ebb256770cdd475c9cfded88c1`; Site source `c8ec5ff7a808e609a736985cec09f92c31ec523a`. Exact native receipt: `data/publications/wednesday-0.0.7.json`. Comparison and independent Wednesday audit remain subsequent packages.
+
+### September 30 · Wednesday package 2 · Comparisons
+
+Prepared v0.0.8 with three bounded cross-subject analysis records: one provisional evidence-support analogy and two rejected equivalence proposals. Crossroads displays paired source Receipts, six comparison axes and limits. No graph edge or finding is promoted; 26 nodes, 31 edges, 9 expectations and both fictional student projections remain unchanged. Integrity tests and targeted desktop/narrow-screen QA passed. See `docs/wednesday-comparisons.md`. Separate Wednesday AI audit remains package 3.

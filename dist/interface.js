@@ -8,6 +8,7 @@ const originalRender=render, originalReceipt=showReceipt;
 titles.atlas=['What is New York asking students to learn?','Wildcats is building a source-traced ontology of New York State K–12 educational expectations. Minerva makes that formal structure human to explore.'];
 titles.journey=['Across grades','Inspect exact-grade placements and the shared middle-school science band. Developmental links still need evidence.'];
 titles.curriculum=['Inside the standards','Inspect the source’s own categories, then follow each standard into its parsed expectations.'];
+titles.crossroads=['Where subjects meet','Compare the requirements, inspect the evidence, and keep an analogy separate from an equivalence.'];
 
 function closeReceipt(restore=true){
   $('#receipt').hidden=true;$('#receipt-toggle').setAttribute('aria-expanded','false');
@@ -68,7 +69,7 @@ function bindEvidence(root){
 render=function(){
   if(!model)return;
   originalRender();
-  $('#release-label').textContent='v'+(model.release.match(/\d+\.\d+\.\d+/)?.[0]||model.release)+' · Wednesday science';
+  $('#release-label').textContent='v'+(model.release.match(/\d+\.\d+\.\d+/)?.[0]||model.release)+' · Wednesday comparisons';
   $('#epistemic-notice').open=['atlas','wildcats'].includes(view);
   document.querySelectorAll('.rail button').forEach(b=>{if(b.dataset.view===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
   // Baseline is the published 0.0.3 record (11 nodes, 14 edges), not a live daily counter.
@@ -77,7 +78,7 @@ render=function(){
   if(view==='curriculum')$('#view').innerHTML=`<div class="section-head"><h2>Source categories</h2><span>NYSED wording</span></div>${model.nodes.filter(n=>['Grade','GradeBand','Subject','Domain'].includes(n.type)).map(n=>row(n.id,n.source_locator)).join('')}<p class="muted">These are source labels; no shared capability hierarchy is asserted.</p><div class="section-head"><h2>Standards and parsed expectations</h2><span>Math and ELA · Grade 7 / Science · grades 6–8</span></div>${model.nodes.filter(n=>n.type==='Standard').map(n=>row(n.id,n.original_text)+model.nodes.filter(x=>x.type==='Expectation'&&x.derived_from===n.id).map(x=>row(x.id,'Parsed from '+n.label)).join('')).join('')}`;
   if(view==='journey')$('#view').innerHTML=`<div class="territories"><div class="panel unmapped">${badge('UNMAPPED')}<h2>Earlier grades</h2><p>No earlier expectations modeled in this trace.</p></div><div class="panel mapped">${badge('SOURCE')}<h2>Grade 7 anchor</h2>${row(standardId,'Inspect the source-backed placement')}</div><div class="panel unmapped">${badge('UNMAPPED')}<h2>Later grades</h2><p>No later expectations modeled in this trace.</p></div></div><p>No connecting line is asserted between these territories. Grade order alone does not establish a developmental or prerequisite relationship.</p><details class="methodology"><summary>Six source Coherence observations · semantics unreviewed</summary>${badge('UNREVIEWED')}<p>These source arrows need target and semantic review before becoming ontology edges.</p><ul>${review.coherence_observations.map(x=>`<li>${esc(x.source_standard)} → ${esc(x.target_standard)}</li>`).join('')}</ul><a href="evidence/math-full/page-90.png" target="_blank" rel="noopener">Inspect the source page</a></details>`;
   if(view==='journey')$('#view').insertAdjacentHTML('beforeend',bandContextHtml(7));
-  if(view==='crossroads')$('#view').innerHTML=`<div class="section-head"><h2>Cross-disciplinary connections</h2><span>0 reviewed · 0 provisional</span></div><div class="panel unmapped">${badge('UNMAPPED')}<h2>Three subjects mapped; no cross-subject link asserted</h2><p>Similar words are not enough to establish equivalence. Each connection will need supporting nodes, a defined relationship, provenance, and review.</p></div>`;
+  if(view==='crossroads')$('#view').innerHTML=comparisonHtml();
   if(view==='wildcats'){
     const panel=$('.journey-panel');if(!transition&&!standardsForGrade(grade).length)panel.classList.add('unmapped');
     const map=`<div class="grade-map" aria-label="Thirteen grades and exact-grade coverage">${Array.from({length:13},(_,g)=>`<button data-grade="${g}" class="${standardsForGrade(g).length?'mapped':'unmapped'} ${!transition&&grade===g?'selected':''}" aria-pressed="${!transition&&grade===g}" aria-label="${gradeLabel(g)}: ${standardsForGrade(g).length?'partially mapped':'unmapped'}"><b>${g===0?'K':g}</b><small>${standardsForGrade(g).length?'PARTIAL':'UNMAPPED'}</small></button>`).join('')}</div>`;
@@ -90,6 +91,9 @@ render=function(){
   if(view==='workbench')$('#view').innerHTML=workbenchHtml();
   if(view==='findings')$('#view').insertAdjacentHTML('beforeend','<details class="methodology"><summary>What will qualify as a finding?</summary><p>A computed or analytically derived result with a claim, supporting nodes, ontology version, Git revision, method, epistemic status, review state, first-detected date, and last-validation date. Its evidence must open in the graph and Receipts. No finding is generated just to populate this page.</p></details>');
   if(view==='log')$('#view').innerHTML=logHtml();
+  if(view==='log')$('#view').insertAdjacentHTML('afterbegin',`<article class="log-entry"><time datetime="2026-09-30">Wednesday, September 30, 2026</time><h2>v0.0.8 · First cross-subject comparison</h2><p>Three bounded comparisons: one provisional evidence-support analogy and two rejected equivalence proposals. Each preserves its source wording, differences, disposition and next evidence needed. These builder-reviewed records await the separate Wednesday audit.</p><p>The educational graph remains 26 nodes, 31 relationships and 9 parsed expectations, with 0 published findings. No comparison is promoted into student expectations or graph edges.</p><a href="${gitPath('docs/wednesday-comparisons.md')}" target="_blank" rel="noopener">Comparison method, evidence and limits</a></article>`);
+  if(view==='findings')$('#view').insertAdjacentHTML('afterbegin','<div class="panel"><h2>Comparisons are not yet findings</h2><p>Crossroads contains one provisional analogy and two rejected equivalence proposals. These analysis records are separate from the empty ontology-hypothesis register and do not change the educational graph.</p><button id="open-comparisons">Inspect the comparisons</button></div>');
+  if($('#open-comparisons'))$('#open-comparisons').onclick=()=>navigate('crossroads');
   bindEvidence($('#view'));$('#activity-log').onclick=()=>navigate('log');
   document.querySelectorAll('[data-family]').forEach(b=>b.onclick=()=>{const expanded=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!expanded));$('#family-'+b.dataset.family).hidden=expanded;b.querySelector('span').textContent=expanded?'+':'−';});
   if($('#graph-expand'))$('#graph-expand').onclick=()=>{graphDepth=2;render();};
