@@ -27,9 +27,9 @@ async function setup(lateInterface=false, delayed=false){
   const {dom,w,d,errors}=await setup();
   const model=JSON.parse(read('data/ontology.json'));
   assert.ok(d.querySelector('#receipt').hidden,'Receipt starts collapsed');
-  assert.ok(d.querySelector('.audit-notice').textContent.includes('audit passed'));
-  assert.ok(d.querySelector('.audit-notice a').href.endsWith('/docs/wednesday-independent-audit.md'));
-  assert.equal(d.querySelector('#release-label').textContent,'v0.0.8 · Ask Minerva');
+  assert.ok(d.querySelector('.audit-notice').textContent.includes('separate review passed'));
+  assert.ok(d.querySelector('.audit-notice a').href.endsWith('/docs/thursday-independent-audit.md'));
+  assert.equal(d.querySelector('#release-label').textContent,'v0.0.8 · Thursday reviewed');
   assert.ok(d.querySelector('.trace-preview [data-node]'));
   d.querySelector('.trace-parsed [data-node]').click();
   assert.ok(!d.querySelector('#receipt').hidden);
@@ -80,8 +80,8 @@ async function setup(lateInterface=false, delayed=false){
   const toggle=d.querySelector('[data-family]'),detail=d.getElementById(toggle.getAttribute('aria-controls'));
   assert.ok(detail.hidden);toggle.click();assert.ok(!detail.hidden);toggle.click();assert.ok(detail.hidden);
   assert.ok(!d.querySelector('#epistemic-notice').open);
-  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,11);
-  assert.ok(d.querySelector('.log-entry').textContent.includes('Ask Minerva'));
+  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,12);
+  assert.ok(d.querySelector('.log-entry').textContent.includes('Separate review'));
   assert.ok(d.querySelector('#view').textContent.includes('PROVISIONAL'));
   d.querySelector('[data-view="crossroads"]').click();
   assert.equal(d.querySelectorAll('.comparison-card').length,3);
@@ -133,6 +133,9 @@ async function setup(lateInterface=false, delayed=false){
   d.querySelectorAll('[data-ask-example]')[3].click();assert.equal(d.querySelectorAll('.ask-item').length,1);assert.ok(d.querySelector('.ask-item .source'));
   d.querySelectorAll('[data-ask-example]')[4].click();assert.equal(d.querySelectorAll('.ask-item').length,0);assert.ok(d.querySelector('#ask-answer').textContent.includes('does not mean'));
   ask('What has Eva mastered?');assert.ok(d.querySelector('#ask-answer').textContent.includes('No mastery evidence'));
+  ask('What exact Grade 7 science expectations are mapped?');assert.equal(d.querySelectorAll('.ask-item').length,0);assert.ok(d.querySelector('#ask-answer').textContent.includes('exact-grade'));
+  ask('What rejected comparisons connect English and science?');assert.equal(d.querySelectorAll('.ask-item').length,0);
+  ask('What have we mapped for Eva in seventh and eighth grade?');assert.ok(d.querySelector('#ask-answer').textContent.includes('Selection is ambiguous'));
   ask('<img src=x onerror="window.attack=true">');assert.ok(!d.querySelector('#ask-answer img'));assert.ok(!w.attack);
   assert.deepEqual(JSON.parse(read('data/ontology.json')),model,'Query interactions do not write educational data');
   assert.deepEqual(errors,[]);dom.window.close();

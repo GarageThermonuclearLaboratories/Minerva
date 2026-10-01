@@ -1,0 +1,852 @@
+{
+  "root": "/workspace/scratch/22b9658e4196/thursday-review",
+  "total": 55,
+  "failures": 17,
+  "checks": [
+    {
+      "name": "whole-question refusal",
+      "q": "What expectations are mapped in grade six through eight?",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'expectations'\n- 'unanswered'\n",
+      "kind": "expectations",
+      "title": "Grade 6 · mapped expectations",
+      "count": 2,
+      "statuses": [
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "whole-question refusal",
+      "q": "What expectations are mapped in seventh or eighth grade?",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'expectations'\n- 'unanswered'\n",
+      "kind": "expectations",
+      "title": "Grade 8 · mapped expectations",
+      "count": 2,
+      "statuses": [
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "whole-question refusal",
+      "q": "What have we mapped for Eva in seventh and eighth grade?",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'expectations'\n- 'unanswered'\n",
+      "kind": "expectations",
+      "title": "Eva · Grade 8 · mapped expectations",
+      "count": 2,
+      "statuses": [
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "whole-question refusal",
+      "q": "What math expectations are mapped in first and second grade?",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'unmapped'\n- 'unanswered'\n     ^\n",
+      "kind": "unmapped",
+      "title": "Grade 2 · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "whole-question refusal",
+      "q": "What expectations have no Grade 7 assignment?",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'expectations'\n- 'unanswered'\n",
+      "kind": "expectations",
+      "title": "Grade 7 · mapped expectations",
+      "count": 9,
+      "statuses": [
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:recognize-proportional",
+        "wc:expectation:represent-proportional",
+        "wc:expectation:decide-proportional",
+        "wc:expectation:identify-unit-rate",
+        "wc:expectation:represent-proportional-equation",
+        "wc:expectation:explain-proportional-point",
+        "wc:expectation:cite-evidence-infer",
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "whole-question refusal",
+      "q": "What expectations has Matthew completed?",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'expectations'\n- 'unanswered'\n",
+      "kind": "expectations",
+      "title": "Matthew · Grade 7 · mapped expectations",
+      "count": 9,
+      "statuses": [
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:recognize-proportional",
+        "wc:expectation:represent-proportional",
+        "wc:expectation:decide-proportional",
+        "wc:expectation:identify-unit-rate",
+        "wc:expectation:represent-proportional-equation",
+        "wc:expectation:explain-proportional-point",
+        "wc:expectation:cite-evidence-infer",
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "whole-question refusal",
+      "q": "What expectations has Eva completed?",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'expectations'\n- 'unanswered'\n",
+      "kind": "expectations",
+      "title": "Eva · Grade 7 · mapped expectations",
+      "count": 9,
+      "statuses": [
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:recognize-proportional",
+        "wc:expectation:represent-proportional",
+        "wc:expectation:decide-proportional",
+        "wc:expectation:identify-unit-rate",
+        "wc:expectation:represent-proportional-equation",
+        "wc:expectation:explain-proportional-point",
+        "wc:expectation:cite-evidence-infer",
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "whole-question refusal",
+      "q": "Which provisional expectations are mapped?",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'coverage'\n- 'unanswered'\n",
+      "kind": "coverage",
+      "title": "Current map coverage",
+      "count": 9,
+      "statuses": [
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:recognize-proportional",
+        "wc:expectation:represent-proportional",
+        "wc:expectation:decide-proportional",
+        "wc:expectation:identify-unit-rate",
+        "wc:expectation:represent-proportional-equation",
+        "wc:expectation:explain-proportional-point",
+        "wc:expectation:cite-evidence-infer",
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "whole-question refusal",
+      "q": "What rejected expectations are mapped?",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'coverage'\n- 'unanswered'\n",
+      "kind": "coverage",
+      "title": "Current map coverage",
+      "count": 9,
+      "statuses": [
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:recognize-proportional",
+        "wc:expectation:represent-proportional",
+        "wc:expectation:decide-proportional",
+        "wc:expectation:identify-unit-rate",
+        "wc:expectation:represent-proportional-equation",
+        "wc:expectation:explain-proportional-point",
+        "wc:expectation:cite-evidence-infer",
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "whole-question refusal",
+      "q": "What connects 7R1 and science?",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'comparison'\n- 'unanswered'\n",
+      "kind": "comparison",
+      "title": "Recorded comparisons",
+      "count": 2,
+      "statuses": [
+        "PROVISIONAL",
+        "REJECTED"
+      ],
+      "ids": [
+        "wc:comparison:evidence-ela-science",
+        "wc:comparison:proportion-force-equivalence"
+      ]
+    },
+    {
+      "name": "whole-question refusal",
+      "q": "Compare NY-7.RP.2c and science",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'comparison'\n- 'unanswered'\n",
+      "kind": "comparison",
+      "title": "Recorded comparisons",
+      "count": 2,
+      "statuses": [
+        "PROVISIONAL",
+        "REJECTED"
+      ],
+      "ids": [
+        "wc:comparison:evidence-ela-science",
+        "wc:comparison:proportion-force-equivalence"
+      ]
+    },
+    {
+      "name": "whole-question refusal",
+      "q": "What science expectations are mapped in 2025?",
+      "ok": true,
+      "kind": "unanswered",
+      "title": "Selection is ambiguous",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "whole-question refusal",
+      "q": "What science expectations are mapped about gravity?",
+      "ok": true,
+      "kind": "unanswered",
+      "title": "Question is outside the supported patterns",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "whole-question refusal",
+      "q": "What are the prerequisites between English and science?",
+      "ok": true,
+      "kind": "unanswered",
+      "title": "Relationship is not established",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "no band widening",
+      "q": "What exact Grade 7 science expectations are mapped?",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n\n2 !== 0\n",
+      "kind": "expectations",
+      "title": "Grade 7 · mapped expectations",
+      "count": 2,
+      "statuses": [
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "no band widening",
+      "q": "What science expectations are assigned to Grade 7 only?",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n\n2 !== 0\n",
+      "kind": "expectations",
+      "title": "Grade 7 · mapped expectations",
+      "count": 2,
+      "statuses": [
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "no band widening",
+      "q": "What science expectations are individually assigned to Grade 7?",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n\n2 !== 0\n",
+      "kind": "expectations",
+      "title": "Grade 7 · mapped expectations",
+      "count": 2,
+      "statuses": [
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "disposition selection",
+      "q": "What rejected comparisons connect English and science?",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n",
+      "kind": "comparison",
+      "title": "Recorded comparisons",
+      "count": 1,
+      "statuses": [
+        "PROVISIONAL"
+      ],
+      "ids": [
+        "wc:comparison:evidence-ela-science"
+      ]
+    },
+    {
+      "name": "disposition selection",
+      "q": "What provisional comparisons connect math and science?",
+      "ok": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n",
+      "kind": "comparison",
+      "title": "Recorded comparisons",
+      "count": 1,
+      "statuses": [
+        "REJECTED"
+      ],
+      "ids": [
+        "wc:comparison:proportion-force-equivalence"
+      ]
+    },
+    {
+      "name": "subject conjunction",
+      "q": "What computer science and science expectations are mapped?",
+      "ok": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert.ok(r.kind==='unanswered'||r.items.length===2)\n",
+      "kind": "unmapped",
+      "title": "Computer Science and Digital Fluency · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "exact standard source",
+      "q": "What does NY-7.RP.2 say?",
+      "ok": true,
+      "kind": "source",
+      "title": "What the source says",
+      "count": 1,
+      "statuses": [
+        "SOURCE"
+      ],
+      "ids": [
+        "wc:standard:ny-7-rp-2"
+      ]
+    },
+    {
+      "name": "exact standard source",
+      "q": "What does NY-7.RP.2a say?",
+      "ok": true,
+      "kind": "source",
+      "title": "What the source says",
+      "count": 1,
+      "statuses": [
+        "SOURCE"
+      ],
+      "ids": [
+        "wc:standard:ny-7-rp-2a"
+      ]
+    },
+    {
+      "name": "exact standard source",
+      "q": "What does NY-7.RP.2b say?",
+      "ok": true,
+      "kind": "source",
+      "title": "What the source says",
+      "count": 1,
+      "statuses": [
+        "SOURCE"
+      ],
+      "ids": [
+        "wc:standard:ny-7-rp-2b"
+      ]
+    },
+    {
+      "name": "exact standard source",
+      "q": "What does NY-7.RP.2c say?",
+      "ok": true,
+      "kind": "source",
+      "title": "What the source says",
+      "count": 1,
+      "statuses": [
+        "SOURCE"
+      ],
+      "ids": [
+        "wc:standard:ny-7-rp-2c"
+      ]
+    },
+    {
+      "name": "exact standard source",
+      "q": "What does NY-7.RP.2d say?",
+      "ok": true,
+      "kind": "source",
+      "title": "What the source says",
+      "count": 1,
+      "statuses": [
+        "SOURCE"
+      ],
+      "ids": [
+        "wc:standard:ny-7-rp-2d"
+      ]
+    },
+    {
+      "name": "exact standard source",
+      "q": "What does 7R1 say?",
+      "ok": true,
+      "kind": "source",
+      "title": "What the source says",
+      "count": 1,
+      "statuses": [
+        "SOURCE"
+      ],
+      "ids": [
+        "wc:standard:ny-7r1"
+      ]
+    },
+    {
+      "name": "exact standard source",
+      "q": "What does MS-PS2-2 say?",
+      "ok": true,
+      "kind": "source",
+      "title": "What the source says",
+      "count": 1,
+      "statuses": [
+        "SOURCE"
+      ],
+      "ids": [
+        "wc:standard:ms-ps2-2"
+      ]
+    },
+    {
+      "name": "exact standard source",
+      "q": "What does MS-PS2-4 say?",
+      "ok": true,
+      "kind": "source",
+      "title": "What the source says",
+      "count": 1,
+      "statuses": [
+        "SOURCE"
+      ],
+      "ids": [
+        "wc:standard:ms-ps2-4"
+      ]
+    },
+    {
+      "name": "documented example",
+      "q": "What expectations have we mapped for Matthew?",
+      "ok": true,
+      "kind": "expectations",
+      "title": "Matthew · Grade 7 · mapped expectations",
+      "count": 9,
+      "statuses": [
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:recognize-proportional",
+        "wc:expectation:represent-proportional",
+        "wc:expectation:decide-proportional",
+        "wc:expectation:identify-unit-rate",
+        "wc:expectation:represent-proportional-equation",
+        "wc:expectation:explain-proportional-point",
+        "wc:expectation:cite-evidence-infer",
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "documented example",
+      "q": "Which science expectations belong to the middle-school band?",
+      "ok": true,
+      "kind": "expectations",
+      "title": "Middle-school band · mapped expectations",
+      "count": 2,
+      "statuses": [
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "documented example",
+      "q": "What connects English and science?",
+      "ok": true,
+      "kind": "comparison",
+      "title": "Recorded comparisons",
+      "count": 1,
+      "statuses": [
+        "PROVISIONAL"
+      ],
+      "ids": [
+        "wc:comparison:evidence-ela-science"
+      ]
+    },
+    {
+      "name": "documented example",
+      "q": "What does 7R1 say?",
+      "ok": true,
+      "kind": "source",
+      "title": "What the source says",
+      "count": 1,
+      "statuses": [
+        "SOURCE"
+      ],
+      "ids": [
+        "wc:standard:ny-7r1"
+      ]
+    },
+    {
+      "name": "documented example",
+      "q": "What have we mapped in Grade 5?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Grade 5 · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What math expectations are mapped for Matthew in Grade 0?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Kindergarten · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What math expectations are mapped for Matthew in Grade 5?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Grade 5 · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What math expectations are mapped for Matthew in Grade 6?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Grade 6 · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What math expectations are mapped for Matthew in Grade 7?",
+      "ok": true,
+      "kind": "expectations",
+      "title": "Matthew · Grade 7 · mapped expectations",
+      "count": 6,
+      "statuses": [
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:recognize-proportional",
+        "wc:expectation:represent-proportional",
+        "wc:expectation:decide-proportional",
+        "wc:expectation:identify-unit-rate",
+        "wc:expectation:represent-proportional-equation",
+        "wc:expectation:explain-proportional-point"
+      ]
+    },
+    {
+      "name": "avatar parity",
+      "q": "What math expectations are mapped for Matthew in Grade 8?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Grade 8 · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What math expectations are mapped for Matthew in Grade 9?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Grade 9 · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What math expectations are mapped for Matthew in Grade 12?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Grade 12 · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What English expectations are mapped for Matthew in Grade 0?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Kindergarten · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What English expectations are mapped for Matthew in Grade 5?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Grade 5 · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What English expectations are mapped for Matthew in Grade 6?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Grade 6 · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What English expectations are mapped for Matthew in Grade 7?",
+      "ok": true,
+      "kind": "expectations",
+      "title": "Matthew · Grade 7 · mapped expectations",
+      "count": 1,
+      "statuses": [
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:cite-evidence-infer"
+      ]
+    },
+    {
+      "name": "avatar parity",
+      "q": "What English expectations are mapped for Matthew in Grade 8?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Grade 8 · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What English expectations are mapped for Matthew in Grade 9?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Grade 9 · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What English expectations are mapped for Matthew in Grade 12?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Grade 12 · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What science expectations are mapped for Matthew in Grade 0?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Kindergarten · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What science expectations are mapped for Matthew in Grade 5?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Grade 5 · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What science expectations are mapped for Matthew in Grade 6?",
+      "ok": true,
+      "kind": "expectations",
+      "title": "Matthew · Grade 6 · mapped expectations",
+      "count": 2,
+      "statuses": [
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "avatar parity",
+      "q": "What science expectations are mapped for Matthew in Grade 7?",
+      "ok": true,
+      "kind": "expectations",
+      "title": "Matthew · Grade 7 · mapped expectations",
+      "count": 2,
+      "statuses": [
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "avatar parity",
+      "q": "What science expectations are mapped for Matthew in Grade 8?",
+      "ok": true,
+      "kind": "expectations",
+      "title": "Matthew · Grade 8 · mapped expectations",
+      "count": 2,
+      "statuses": [
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    },
+    {
+      "name": "avatar parity",
+      "q": "What science expectations are mapped for Matthew in Grade 9?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Grade 9 · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "avatar parity",
+      "q": "What science expectations are mapped for Matthew in Grade 12?",
+      "ok": true,
+      "kind": "unmapped",
+      "title": "Matthew · Grade 12 · not yet mapped",
+      "count": 0,
+      "statuses": [],
+      "ids": []
+    },
+    {
+      "name": "all provenance and qualifiers",
+      "q": "What have we mapped?",
+      "ok": true,
+      "kind": "coverage",
+      "title": "Current map coverage",
+      "count": 9,
+      "statuses": [
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED",
+        "PARSED"
+      ],
+      "ids": [
+        "wc:expectation:recognize-proportional",
+        "wc:expectation:represent-proportional",
+        "wc:expectation:decide-proportional",
+        "wc:expectation:identify-unit-rate",
+        "wc:expectation:represent-proportional-equation",
+        "wc:expectation:explain-proportional-point",
+        "wc:expectation:cite-evidence-infer",
+        "wc:expectation:investigate-forces-motion",
+        "wc:expectation:argue-gravitational-interactions"
+      ]
+    }
+  ]
+}

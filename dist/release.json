@@ -1,12 +1,15 @@
 {
   "release": "wildcats-0.0.8-wednesday-comparisons",
-  "research_commit": "c723e5cce5c1784be06bb4e9189b58d306e44c2e",
-  "interface_revision": "0.0.8-thursday-ask",
+  "research_commit": null,
+  "interface_revision": "0.0.8-thursday-reviewed",
   "publication_status": "prepared-for-publication",
-  "review_scope": "Wednesday independent audit covers its unchanged educational data snapshot. Thursday safeguards, interface controls and Ask Minerva have builder verification only. Fresh rendered QA is unavailable; separate Thursday review remains package 3.",
+  "review_scope": "Thursday's separate AI review passed the exact repaired question-layer and safeguard snapshot with recorded limits. Later review-status UI and documentation have builder checks only. Wednesday's educational-data snapshot is unchanged. Fresh rendered QA and Friday's freeze remain open.",
   "audit_status": "pass-with-recorded-limits",
   "audit_record": "data/reviews/wednesday-independent.json",
-  "checkpoint": "thursday-package-2",
+  "checkpoint": "thursday-package-3-reviewed-code",
+  "thursday_audit_status": "pass-with-recorded-limits",
+  "thursday_audit_record": "data/reviews/thursday-independent.json",
+  "rendered_qa": "open-unavailable-required-preview-capability",
   "safeguards_record": "docs/comparison-safeguards.md",
-  "package_record": "docs/thursday-ask.md"
+  "package_record": "docs/thursday-independent-audit.md"
 }

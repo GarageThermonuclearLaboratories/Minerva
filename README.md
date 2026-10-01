@@ -10,7 +10,7 @@ The v0.1 construction is clean-room: no Garage-internal ontology class, hierarch
 
 ## Current checkpoint
 
-[Thursday package 2](docs/thursday-ask.md) adds Ask Minerva: bounded record questions with source Receipts, grade/band placement, comparison disposition and explicit abstention. It has builder verification; fresh rendered QA is unavailable and the separate Thursday review remains package 3. [Thursday package 1](docs/thursday-foundation.md) preserves safeguard checks, subject/disposition filters and claim-status guidance.
+[Thursday separate review](docs/thursday-independent-audit.md) passed the repaired bounded question layer and safeguards with recorded limits. Six defect groups are resolved; 72 independent probes and 91 Ask checks passed. Fresh rendered desktop/mobile QA and Friday's freeze remain open. [Thursday package 2](docs/thursday-ask.md) and [package 1](docs/thursday-foundation.md) preserve the historical builder-reviewed checkpoints.
 
 [Wednesday independent audit](docs/wednesday-independent-audit.md) passed the bounded science and comparison packages with recorded limits. The two validation follow-ups were subsequently repaired with builder regression review in [comparison safeguards](docs/comparison-safeguards.md); no graph edge or finding was promoted. [Wednesday comparison package](docs/wednesday-comparisons.md) records package 2. [Wednesday science package](docs/wednesday-science.md) records package 1. [Tuesday continuation](docs/tuesday-completion.md) and its subsequent audit and QA remain historical records. Historical documents below describe their named checkpoints.
 

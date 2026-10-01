@@ -1,0 +1,152 @@
+{
+  "id": "review:thursday-independent",
+  "date": "2026-10-01",
+  "result": "pass-with-recorded-limits",
+  "reviewer": "/root/thursday_reviewer",
+  "reviewer_type": "separate-ai-agent",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "context": "bounded brief only; no inherited builder conversation; not human or blind-source audit",
+  "release": "wildcats-0.0.8-wednesday-comparisons",
+  "frozen_site_base": "88c050582145c1522711de2575da2acb2d0c8b37",
+  "reviewed_candidate": "frozen base plus four repairs; file digests define the review boundary",
+  "reviewed_sha256": {
+    "dist/ask-engine.js": "7ad342ecd061d0cb7f75a0563c9deab088e4351f33abc31751c3eeb1c4188663",
+    "dist/ask-ui.js": "9f0eeca37f0d56c6fa192777721ac5af3e2bde4d1913ee9d888e7743c4975f31",
+    "dist/index.html": "cc210cd92f3826ada1f23da94179eff7fee8e64744882ec39919e7aaf5cec665",
+    "dist/interface.js": "a28a57c33442d101f0f5b1a0874f10564bf6a9d5c6047d2aa2a70eba15aee1ea",
+    "dist/interface.css": "6b6c487ad1baccd2a9ceec1bfeed78ede04db22907da8b0e0d1c188fe8c9c32e",
+    "dist/comparison-ui.js": "ad43782b275598a72ecb819ee7ea32aa119985b3c985cd5b46abd00620cc4485",
+    "dist/app.js": "fc75b35cd75124e5bae350c8b74442890f70cf3cc8e88afd7ca4b2dc5b5c4aba",
+    "dist/style.css": "06f73da21e69736fbba2c7992bf6678511c4da6f159c84ce014a964ffb126a3f",
+    "dist/release.json": "67acae9b5b5b612376b87a64614185bb7bbd0c3418481117b28921b7c6ea1c94",
+    "scripts/test_ask.js": "b385e9ba16a35c94dc2b4811aebabb86ecd9e74d64e07639a831928083642310",
+    "scripts/test_interface.cjs": "c16de34770f35b06d256f5e24ea2890e8266c81e6ac486482da3826d7935d8ca",
+    "scripts/comparison_contract.py": "c7913797b270557b65f1db7d1163fcb8c8a797f008b0e4a893e3b4df4ef2e55c",
+    "scripts/comparison_validation.py": "f04435751aadc7cc5caac96d7d7a4148b0d4a1bcd4b8f09c044e1bceb440880d",
+    "scripts/build_comparisons.py": "fa6b781b9eac5e26352df7b0bb312372f5e1295a5d5a0d4c1e943857ca3fb621",
+    "scripts/test_comparisons.py": "b21cbd10cd072fee2411a944a97651df8f243589640341dff7f81a91a226838f",
+    "scripts/validate.py": "f4a22ea53d88bc06f7becd09a88e51c4922ab7e376e3949769465ef4430eab2e",
+    "scripts/acceptance.py": "9bef76716c6472f7d4fd86cca6a0ca6d506bda415954a6f44bfbef4b6855dd47",
+    "scripts/test_acceptance.py": "d99fdf8a238bccaa4b9c0bf946bf0bb2eb64ad3842ad4c7bc2000e086a4c92a6",
+    "scripts/test_receipts.js": "df287a5575f21c6d9e34f55391dbd290b50a4e1cf8e6c39ce04138d3dfad2b61",
+    "scripts/test_ingestion.py": "0f0811fe532bf82dbc109d7c7d3d4562602d10e49f8670c5a0a81cd3d1e596a5",
+    "docs/thursday-foundation.md": "47b160305d801ea89c4396268e6f98da860b78c2c1c8b57d56a839c085250d08",
+    "docs/thursday-ask.md": "a283f4a07f6555e0473ac027326691a2d80e253f853cc773746f261d84f61ab1",
+    "docs/comparison-safeguards.md": "20ba4e592b582a83446b40cd501f1e8435ed6a4c109efe77ccb559908fec73dd",
+    "data/reviews/thursday-ask-builder.json": "5555a1245b4775ed3f0bd2d328368cacf1b1168af4ed29de735520fd75555390",
+    "data/reviews/wednesday-independent.json": "38c81ba9b5d843831995c0859e7be709a20df686de553871264b701aacfd3c39",
+    "data/comparison-baseline.json": "167f17aa490bb3eeaf08c2963fb0b8ec67e9f8d99d2a6c21ecb4ee5589244384",
+    "data/ontology.json": "ee25e8a54652dd8f573c5aed370e51ac1eb298fa873562f734bc7be649546ff0",
+    "data/comparisons.json": "4485972875dacd86080a89983fbda2da4eae3a36aadc3dc31b4b55913b9078d1",
+    "data/comparison-drafts.json": "dc07b34fd492dcd2978e370e2a46ffd7bfc6be082d31492a612d97c6c4caf2fd",
+    "data/sources.json": "93b7f454c4e2dce9794c94c218c0d12ebd5571163ca5ceb9f62021c1c523f1de",
+    "data/journey.json": "3d581adc74098d209c83c2718bde6a732f985f2ba6ba24e0b29b62b28ee60d38",
+    "data/ingestion-manifest.json": "9a71b91d8bd5bbb693866bda42286599199327f8a3d8e880f8950bdf5396ad05",
+    "dist/data.json": "ee25e8a54652dd8f573c5aed370e51ac1eb298fa873562f734bc7be649546ff0",
+    "dist/comparisons.json": "4485972875dacd86080a89983fbda2da4eae3a36aadc3dc31b4b55913b9078d1",
+    "dist/sources.json": "93b7f454c4e2dce9794c94c218c0d12ebd5571163ca5ceb9f62021c1c523f1de",
+    "dist/journey.json": "3d581adc74098d209c83c2718bde6a732f985f2ba6ba24e0b29b62b28ee60d38"
+  },
+  "educational_snapshot": {
+    "data/ontology.json": "ee25e8a54652dd8f573c5aed370e51ac1eb298fa873562f734bc7be649546ff0",
+    "data/comparisons.json": "4485972875dacd86080a89983fbda2da4eae3a36aadc3dc31b4b55913b9078d1",
+    "data/comparison-drafts.json": "dc07b34fd492dcd2978e370e2a46ffd7bfc6be082d31492a612d97c6c4caf2fd",
+    "data/sources.json": "93b7f454c4e2dce9794c94c218c0d12ebd5571163ca5ceb9f62021c1c523f1de",
+    "data/journey.json": "3d581adc74098d209c83c2718bde6a732f985f2ba6ba24e0b29b62b28ee60d38"
+  },
+  "repaired_manifest": "data/reviews/thursday-repaired-manifest.json",
+  "repaired_manifest_sha256": "626ead739963bb18ecf69805ef1d5b009497d85ee8e2ef3d3a5d65b6b3e9b433",
+  "initial_review": "docs/review-assets/thursday-initial-review.md",
+  "final_review": "docs/review-assets/thursday-final-review.md",
+  "blocking_findings": [],
+  "resolved_findings": [
+    {
+      "id": "T1",
+      "severity": "high",
+      "description": "Grade words, ranges and mixed placement silently narrowed",
+      "repair": "Residual grade/range constraints and explicit grade plus band selections refuse"
+    },
+    {
+      "id": "T2",
+      "severity": "high",
+      "description": "Exact assignment queries included shared-band records",
+      "repair": "Exact-grade selection excludes bands; assignment requires explicit placement; only modifiers refuse"
+    },
+    {
+      "id": "T3",
+      "severity": "high",
+      "description": "Claim-disposition and comparison alternative selectors ignored",
+      "repair": "Comparison disposition is bound; unsupported expectation-status and comparison OR selectors refuse"
+    },
+    {
+      "id": "T4",
+      "severity": "high",
+      "description": "Standard selector or second operation ignored",
+      "repair": "Standard-specific comparisons and tested mixed selections/operations refuse"
+    },
+    {
+      "id": "T5",
+      "severity": "high",
+      "description": "Negation, completion, ability and method questions returned expectations",
+      "repair": "Unsupported exclusions, mastery/ability and method intents refuse; explicit expected ability retains no-mastery scope"
+    },
+    {
+      "id": "T6",
+      "severity": "medium",
+      "description": "Standalone Science removed alongside computer-science phrase",
+      "repair": "Mask only the computer-science phrase before detecting standalone Science"
+    }
+  ],
+  "verification": {
+    "independent_probes": 72,
+    "independent_probe_failures": 0,
+    "ask_tests": 91,
+    "comparison_tests": 25,
+    "acceptance_tests": 28,
+    "ingestion_tests": 7,
+    "interface_dom": "passed; not rendered-layout verification",
+    "receipt_projection": "passed",
+    "validator": "passed",
+    "syntax": "passed",
+    "W1_W2": "reviewed code, mutation tests and original baseline Git object verified",
+    "source_archive": {
+      "pdfs": 42,
+      "pages": 1237,
+      "source_records": 47,
+      "hashes": "exact"
+    },
+    "reattached_pdfs": {
+      "count": 40,
+      "all_already_archived": true
+    }
+  },
+  "post_review_builder": {
+    "scope": "Audit-status text, Lab Log, release metadata and documentation are outside the independent candidate verdict. Hashes identify the status snapshot before publication's research_commit pin; later publication metadata are excluded.",
+    "sha256": {
+      "dist/ask-ui.js": "3b129db3029194cd4985a52ef597291e29f4198345f5617f511adad5efac14d4",
+      "dist/interface.js": "d4f46c0ff7c9e2b5a383496dc3c764e452d8853e82c87277e788cbc543eea866",
+      "dist/release.json": "276023db95ef394c90210687c3ef2545574e27728f2ae95cc230660428f5542f",
+      "scripts/test_interface.cjs": "cb4d8f3e52214fe8324fc2ac14160f46c801e29ff6b033842aca5bd3ec055c7e"
+    },
+    "interface_dom": "passed after status changes",
+    "query_tests": 91,
+    "first_status_dom_run": "caught Lab Log insertion order placing package 2 above package 3; reordered before successful rerun"
+  },
+  "not_covered": [
+    "Fresh rendered desktop/mobile QA",
+    "Physical devices, native zoom and full accessibility",
+    "Human semantic approval",
+    "Complete natural-language interpretation",
+    "Current edition/cohort applicability",
+    "Exhaustive curriculum coverage",
+    "Post-review UI/status/documentation/publication changes"
+  ],
+  "closure": {
+    "separate_code_review": "complete with recorded limits",
+    "rendered_desktop_mobile": "open; required control-browser capability absent, alternate paths forbidden",
+    "full_thursday_closure": "awaits rendered QA follow-up",
+    "friday_freeze": "open"
+  },
+  "documentation": "docs/thursday-independent-audit.md"
+}
