@@ -1,0 +1,70 @@
+{
+  "checkpoint": "thursday-package-3-reviewed-code",
+  "package_status": "code-review-published; rendered-follow-up-open",
+  "code_review_and_publication_complete": true,
+  "full_thursday_complete": false,
+  "release": "wildcats-0.0.8-wednesday-comparisons",
+  "interface_revision": "0.0.8-thursday-reviewed",
+  "query_method": "bounded-record-query-v2",
+  "research_commit": "a4945c8809047aea6dd9aad54a9152bbed962eda",
+  "research_tree": "29362703f2498e2ef388c8cba500be6542b19218",
+  "site_version": {
+    "id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_5e668a7f5c5c8191b1d86516cae8875a",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "version_number": 17,
+    "source": {
+      "commit_sha": "85ab266efd82f9bf486480e6afdcfbc39aca475c"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000003de081f6b35e2c9df4afcaaf",
+      "content_hash": "sha256:5d53b9d4da5108ec3c6a4a951276090fffbe7034fcb404ec17b03226baeae034",
+      "size_bytes": 2396160,
+      "file_count": 28
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6abee0d284fc819193bd0e884319e695",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "title": "Wildcats / Minerva",
+    "version_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_5e668a7f5c5c8191b1d86516cae8875a",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://wildcats-minerva.jaredwillis.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6abac050d4cc8191b9d7081e9d8cb8dd",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-01T22:38:16.812460+00:00"
+  },
+  "review": {
+    "verdict": "pass-with-recorded-limits",
+    "record": "data/reviews/thursday-independent.json",
+    "manifest": "data/reviews/thursday-repaired-manifest.json",
+    "manifest_sha256": "626ead739963bb18ecf69805ef1d5b009497d85ee8e2ef3d3a5d65b6b3e9b433",
+    "reviewer": "/root/thursday_reviewer",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "resolved_issue_groups": 6,
+    "independent_probes": 72,
+    "probe_failures": 0,
+    "ask_tests": 91,
+    "comparison_tests": 25,
+    "acceptance_tests": 28,
+    "ingestion_tests": 7,
+    "DOM": "passed; post-review status edits builder-checked",
+    "validator": "passed; educational and archived-source hashes unchanged"
+  },
+  "verification": {
+    "deployment": "native succeeded",
+    "source_tree": "staged research tree matched GitHub before Site publication pin",
+    "source_integrity": "32 unchanged repaired-review files confirmed by exact SHA-256; later UI/status files separately scoped",
+    "rendered_desktop_mobile": "open: unavailable required control-browser/preview path; no alternative path used",
+    "question_source_receipts": "independent semantic and DOM checks passed; no rendered-layout claim",
+    "avatars": "canonical parity independently checked"
+  },
+  "note": "Post-publication receipt/documentation is not included in the deployed bundle. Public audience preserved. Publication does not extend the independent review boundary or close visual QA or Friday's freeze."
+}
