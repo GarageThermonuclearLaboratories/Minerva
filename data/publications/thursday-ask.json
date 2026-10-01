@@ -1,0 +1,60 @@
+{
+  "checkpoint": "thursday-package-2",
+  "completed": true,
+  "release": "wildcats-0.0.8-wednesday-comparisons",
+  "interface_revision": "0.0.8-thursday-ask",
+  "research_commit": "c723e5cce5c1784be06bb4e9189b58d306e44c2e",
+  "research_tree": "02a08f61998615bee0d77f55fec833ceea6e0625",
+  "site_version": {
+    "id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_55775494a49481918b275032e8d8c37f",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "version_number": 16,
+    "source": {
+      "commit_sha": "99ba774f9342177378b149e44f4a3e12df96bc52"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_0000000022d0820c90d0ad6a31ccac8a",
+      "content_hash": "sha256:0f0a3aa2c187651ab3c9bf41767cc0a8f33898e6616ea23c98a3edbace48f0a4",
+      "size_bytes": 2396160,
+      "file_count": 28
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6abea972d6c08191948c76ef9b769299",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "title": "Wildcats / Minerva",
+    "version_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_55775494a49481918b275032e8d8c37f",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://wildcats-minerva.jaredwillis.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6abac050d4cc8191b9d7081e9d8cb8dd",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-01T18:42:00.912827+00:00"
+  },
+  "verification": {
+    "query_tests": 57,
+    "comparison_tests": 25,
+    "acceptance_tests": 28,
+    "ingestion_tests": 7,
+    "main_validator": "passed; exact audited educational-data hashes preserved",
+    "receipt_projection": "passed",
+    "interface_dom": "passed; nine views, Ask form/examples/Receipt and comparison handoff; not rendered QA",
+    "syntax_and_whitespace": "passed",
+    "research_tree_match": "local staged tree matched GitHub exactly before Site release pin",
+    "rendered_qa": "unavailable under required preview workflow; no alternate browser-control path used",
+    "separate_thursday_review": "pending package 3"
+  },
+  "limits": [
+    "Bounded local record queries, not general-purpose AI chat",
+    "No mastery, current legal applicability or accepted prerequisite/equivalence claims",
+    "New code has builder verification only",
+    "Fresh rendered layout and full accessibility remain open"
+  ],
+  "note": "Post-publication receipt and documentation are not part of the deployed source bundle. Audience remains public."
+}

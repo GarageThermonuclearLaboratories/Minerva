@@ -33,3 +33,5 @@ All five audited educational files and public exports remain unchanged. The grap
 ## Publication
 
 Actual publication identifiers and outcome are recorded after successful deployment in `data/publications/thursday-ask.json`. Such a post-publication record is not part of the deployed source bundle. Package 2 does not close Thursday or the Friday freeze.
+
+Package 2 was published successfully as public Site version 16 at 2026-10-01T18:42:00.912827+00:00 (October 1, 2026 at 2:42:00 PM America/New_York). Research commit `c723e5cce5c1784be06bb4e9189b58d306e44c2e`; research tree `02a08f61998615bee0d77f55fec833ceea6e0625`; Site source `99ba774f9342177378b149e44f4a3e12df96bc52`. The local staged research tree matched GitHub exactly before pinning that research commit in the Site release receipt. The native deployment succeeded without a failure message. Fresh rendered QA and Thursday's separate package 3 review remain open; publication supplies no additional review verdict.
