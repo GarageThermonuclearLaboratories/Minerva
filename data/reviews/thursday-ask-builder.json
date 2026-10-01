@@ -1,0 +1,28 @@
+{
+  "checkpoint": "thursday-package-2",
+  "date": "2026-10-01",
+  "review_type": "builder-verification",
+  "independent": false,
+  "educational_release": "wildcats-0.0.8-wednesday-comparisons",
+  "interface_revision": "0.0.8-thursday-ask",
+  "query_method": "bounded-record-query-v1",
+  "query_tests_passed": 57,
+  "comparison_tests_passed": 25,
+  "acceptance_tests_passed": 28,
+  "ingestion_tests_passed": 7,
+  "dom_suite": "passed; not rendered-layout verification",
+  "receipt_projection_suite": "passed",
+  "main_validator": "passed; exact Wednesday audit digests preserved",
+  "syntax_and_whitespace": "passed",
+  "rendered_qa": "unavailable: required control-browser skill absent; no alternate browser path used",
+  "graph_mutated": false,
+  "comparison_promotions": 0,
+  "first_dom_run": "test assertion failed: expected 11 source/annotation quotations, actual preserved count 17; replaced with model-derived count and rerun passed",
+  "next_review": "Thursday package 3: separate AI review; rendered-layout follow-up when available",
+  "limitations": [
+    "Bounded deterministic question patterns, not general-purpose natural language or generative chat",
+    "No mastery, prerequisite, transfer, lesson or current legal applicability answer",
+    "No human review or new independent verdict",
+    "No fresh rendered-browser or complete accessibility claim"
+  ]
+}
