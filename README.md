@@ -10,7 +10,9 @@ The v0.1 construction is clean-room: no Garage-internal ontology class, hierarch
 
 ## Current checkpoint
 
-[Thursday separate review](docs/thursday-independent-audit.md) passed the repaired bounded question layer and safeguards with recorded limits. Six defect groups are resolved; 72 independent probes and 91 Ask checks passed. Fresh rendered desktop/mobile QA and Friday's freeze remain open. [Thursday package 2](docs/thursday-ask.md) and [package 1](docs/thursday-foundation.md) preserve the historical builder-reviewed checkpoints.
+[Friday freeze readiness](docs/friday-freeze-readiness.md) locks public Site version 17 and the separately reviewed research commit. Mechanical checks found no provenance, temporal, unsupported-equivalence, coverage-language or ontology-drift defect in the unchanged educational snapshot. The public status is corrected to **published, unfrozen candidate**. Fresh rendered desktop/mobile QA remains unavailable and blocks v0.1 and an immutable tag.
+
+[Thursday separate review](docs/thursday-independent-audit.md) passed the repaired bounded question layer and safeguards with recorded limits. Six defect groups are resolved; 72 independent probes and 91 Ask checks passed. [Thursday package 2](docs/thursday-ask.md) and [package 1](docs/thursday-foundation.md) preserve the historical builder-reviewed checkpoints.
 
 [Wednesday independent audit](docs/wednesday-independent-audit.md) passed the bounded science and comparison packages with recorded limits. The two validation follow-ups were subsequently repaired with builder regression review in [comparison safeguards](docs/comparison-safeguards.md); no graph edge or finding was promoted. [Wednesday comparison package](docs/wednesday-comparisons.md) records package 2. [Wednesday science package](docs/wednesday-science.md) records package 1. [Tuesday continuation](docs/tuesday-completion.md) and its subsequent audit and QA remain historical records. Historical documents below describe their named checkpoints.
 
@@ -47,3 +49,5 @@ GitHub is the canonical engineering record: [GarageThermonuclearLaboratories/Min
 To rebuild the frozen comparisons, run `python3 scripts/build_comparisons.py --baseline data/comparison-baseline.json`, then `python3 scripts/test_comparisons.py` and the main validator. A changed educational graph requires a new explicitly verified baseline contract and review; do not relabel the old baseline.
 
 Ask Minerva uses a deterministic, local query engine, not a remote language model. Run `node scripts/test_ask.js` for semantic-boundary checks. The DOM suite is `node scripts/test_interface.cjs` and requires jsdom in the invoking environment. It is not rendered-browser verification.
+
+Run `python3 scripts/check_freeze_readiness.py` to rehash the locked educational snapshot and all archived PDFs, recheck claim boundaries, and report whether the remaining release gate authorizes a freeze.

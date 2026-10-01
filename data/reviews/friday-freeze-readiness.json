@@ -1,0 +1,63 @@
+{
+  "id": "review:friday-freeze-readiness",
+  "date": "2026-10-01",
+  "reviewer_type": "builder-mechanical-audit",
+  "result": "candidate-integrity-pass-freeze-blocked",
+  "candidate": {
+    "release": "wildcats-0.0.8-wednesday-comparisons",
+    "research_commit": "a4945c8809047aea6dd9aad54a9152bbed962eda",
+    "site_version": 17,
+    "site_source": "85ab266efd82f9bf486480e6afdcfbc39aca475c",
+    "deployment": "appgdep_6abee0d284fc819193bd0e884319e695",
+    "deployment_status": "succeeded"
+  },
+  "educational_snapshot_sha256": {
+    "data/ontology.json": "ee25e8a54652dd8f573c5aed370e51ac1eb298fa873562f734bc7be649546ff0",
+    "data/comparisons.json": "4485972875dacd86080a89983fbda2da4eae3a36aadc3dc31b4b55913b9078d1",
+    "data/comparison-drafts.json": "dc07b34fd492dcd2978e370e2a46ffd7bfc6be082d31492a612d97c6c4caf2fd",
+    "data/sources.json": "93b7f454c4e2dce9794c94c218c0d12ebd5571163ca5ceb9f62021c1c523f1de",
+    "data/journey.json": "3d581adc74098d209c83c2718bde6a732f985f2ba6ba24e0b29b62b28ee60d38"
+  },
+  "audits": {
+    "provenance": "pass: 42 archived PDF hashes rechecked against 47 source records; public exports agree",
+    "temporal_precision": "pass: policy snapshot remains 2026-09-28 and unknown effective dates remain null",
+    "unsupported_equivalence": "pass: one provisional analogy and two rejected equivalences; no graph promotion",
+    "coverage": "pass-with-limit: 26 nodes, 31 edges, 9 parsed expectations, 0 findings; no statewide-completion claim",
+    "ontology_drift": "pass: exact five-file educational snapshot matches Thursday's reviewed hashes",
+    "avatar_parity": "pass: Matthew and Eva projections are identical"
+  },
+  "foundation_prerequisites": {
+    "declared_scope_and_coverage": "demonstrated",
+    "archived_source_manifest": "demonstrated",
+    "reproducible_build_and_validation": "demonstrated",
+    "reviewed_claims": "demonstrated-with-recorded-limits",
+    "unresolved_contested_rejected_registers": "demonstrated",
+    "completed_audit_and_blocker_repair": "demonstrated-for-locked-candidate",
+    "release_manifest_linking_exact_artifacts": "demonstrated-for-published-version-17-candidate"
+  },
+  "blocking_gates": [
+    "Fresh rendered desktop/mobile QA cannot run because the required control-browser capability is unavailable under the Sites preview rule."
+  ],
+  "material_correction": "dist/release.json previously said prepared-for-publication even though Site version 17 had succeeded; it now says published-unfrozen-candidate.",
+  "builder_validation": {
+    "freeze_readiness_assertions": 65,
+    "ask_checks": 91,
+    "independent_probe_replay": 72,
+    "comparison_tests": 25,
+    "acceptance_tests": 28,
+    "ingestion_tests": 7,
+    "main_validator": "passed",
+    "receipt_projection_checks": "passed",
+    "dom_suite": "passed; nine views and 13 log entries; not rendered-layout verification",
+    "javascript_syntax_and_whitespace": "passed"
+  },
+  "execution_notes": [
+    "The first aggregate command used a nonexistent historical filename for the independent probe harness; the repository's actual test_thursday_independent.cjs was identified and rerun with the repository root argument, producing 72 passes and zero failures.",
+    "The first DOM rerun exposed a stale assertion that assumed the newest Lab Log entry was Thursday's separate review; the assertion now verifies the full log and the new readiness entry, and the suite passes.",
+    "Fresh rendered QA remains unavailable because the required control-browser capability is absent; this is the release blocker, not a transient test failure."
+  ],
+  "freeze_authorized": false,
+  "immutable_tag_authorized": false,
+  "independent_review": "No new independent verdict is claimed; this record mechanically rechecks the already reviewed candidate and scopes later status-only changes as builder-reviewed.",
+  "next": "Run the required fresh rendered desktop/mobile QA. If it passes, rerun all validators, create an exact release manifest, and only then authorize the v0.1 tag."
+}

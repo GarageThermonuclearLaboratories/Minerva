@@ -29,7 +29,7 @@ async function setup(lateInterface=false, delayed=false){
   assert.ok(d.querySelector('#receipt').hidden,'Receipt starts collapsed');
   assert.ok(d.querySelector('.audit-notice').textContent.includes('separate review passed'));
   assert.ok(d.querySelector('.audit-notice a').href.endsWith('/docs/thursday-independent-audit.md'));
-  assert.equal(d.querySelector('#release-label').textContent,'v0.0.8 · Thursday reviewed');
+  assert.equal(d.querySelector('#release-label').textContent,'v0.0.8 · Freeze candidate');
   assert.ok(d.querySelector('.trace-preview [data-node]'));
   d.querySelector('.trace-parsed [data-node]').click();
   assert.ok(!d.querySelector('#receipt').hidden);
@@ -80,8 +80,9 @@ async function setup(lateInterface=false, delayed=false){
   const toggle=d.querySelector('[data-family]'),detail=d.getElementById(toggle.getAttribute('aria-controls'));
   assert.ok(detail.hidden);toggle.click();assert.ok(!detail.hidden);toggle.click();assert.ok(detail.hidden);
   assert.ok(!d.querySelector('#epistemic-notice').open);
-  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,12);
-  assert.ok(d.querySelector('.log-entry').textContent.includes('Separate review'));
+  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,13);
+  assert.ok(d.querySelector('#view').textContent.includes('Separate review'));
+  assert.ok(d.querySelector('.log-entry').textContent.includes('Published candidate locked'));
   assert.ok(d.querySelector('#view').textContent.includes('PROVISIONAL'));
   d.querySelector('[data-view="crossroads"]').click();
   assert.equal(d.querySelectorAll('.comparison-card').length,3);

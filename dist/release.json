@@ -1,15 +1,19 @@
 {
   "release": "wildcats-0.0.8-wednesday-comparisons",
-  "research_commit": "a4945c8809047aea6dd9aad54a9152bbed962eda",
-  "interface_revision": "0.0.8-thursday-reviewed",
-  "publication_status": "prepared-for-publication",
-  "review_scope": "Thursday's separate AI review passed the exact repaired question-layer and safeguard snapshot with recorded limits. Later review-status UI and documentation have builder checks only. Wednesday's educational-data snapshot is unchanged. Fresh rendered QA and Friday's freeze remain open.",
+  "research_commit": null,
+  "interface_revision": "0.0.8-freeze-readiness",
+  "publication_status": "published-unfrozen-candidate",
+  "review_scope": "Thursday's separate AI review passed the exact repaired question-layer and safeguard snapshot with recorded limits. Friday-readiness status, documentation and interface labeling have builder checks only. Wednesday's educational-data snapshot is unchanged. Fresh rendered QA remains open, so v0.1 and an immutable tag are not authorized.",
   "audit_status": "pass-with-recorded-limits",
   "audit_record": "data/reviews/wednesday-independent.json",
-  "checkpoint": "thursday-package-3-reviewed-code",
+  "checkpoint": "friday-freeze-readiness",
   "thursday_audit_status": "pass-with-recorded-limits",
   "thursday_audit_record": "data/reviews/thursday-independent.json",
   "rendered_qa": "open-unavailable-required-preview-capability",
+  "freeze_status": "blocked-rendered-qa",
+  "locked_candidate_research_commit": "a4945c8809047aea6dd9aad54a9152bbed962eda",
+  "locked_candidate_site_version": 17,
   "safeguards_record": "docs/comparison-safeguards.md",
-  "package_record": "docs/thursday-independent-audit.md"
+  "package_record": "docs/friday-freeze-readiness.md",
+  "readiness_record": "data/reviews/friday-freeze-readiness.json"
 }
