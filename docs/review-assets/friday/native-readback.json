@@ -1,0 +1,33 @@
+{
+  "version": {
+    "id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_2de74bdbeadc8191bae0939476fff743",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "version_number": 20,
+    "source": {
+      "commit_sha": "a79f62871a225a8c1ff12507c9c009d5bcecc5a8"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000006b7081f6ae312f73af91e8b2",
+      "content_hash": "sha256:728510a271959f05884b3570441ed359bc40b00f0070dcd43ada99795d4040ca",
+      "size_bytes": 2457600,
+      "file_count": 29
+    },
+    "deployment_id": "appgdep_6abfaf36381881919888fdbe106fba56"
+  },
+  "deployment": {
+    "id": "appgdep_6abfaf36381881919888fdbe106fba56",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "title": "Wildcats / Minerva",
+    "version_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_2de74bdbeadc8191bae0939476fff743",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://wildcats-minerva.jaredwillis.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": "sediment://file_00000000b24881f9865e5c330a368280",
+    "provider_deployment_id": "site---6abac050d4cc8191b9d7081e9d8cb8dd",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-02T13:19:36.471511+00:00"
+  }
+}

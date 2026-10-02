@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "case": "added served asset expands inventory",
+      "expected": "rejected",
+      "observed": "rejected",
+      "pass": true
+    },
+    {
+      "case": "missing asset changes inventory",
+      "expected": "rejected",
+      "observed": "rejected",
+      "pass": true
+    },
+    {
+      "case": "archive byte mutation",
+      "expected": "rejected",
+      "observed": "rejected",
+      "pass": true
+    },
+    {
+      "case": "dependency pin mutation",
+      "expected": "rejected",
+      "observed": "rejected",
+      "pass": true
+    },
+    {
+      "case": "source annotation loss",
+      "expected": "rejected",
+      "observed": "rejected",
+      "pass": true
+    },
+    {
+      "case": "release freeze promotion",
+      "expected": "rejected",
+      "observed": "rejected",
+      "pass": true
+    },
+    {
+      "case": "manifest omitted asset",
+      "expected": "rejected",
+      "observed": "rejected",
+      "pass": true
+    },
+    {
+      "case": "public export mutation",
+      "expected": "rejected",
+      "observed": "rejected",
+      "pass": true
+    },
+    {
+      "case": "missing command evidence",
+      "expected": "rejected",
+      "observed": "rejected",
+      "pass": true
+    },
+    {
+      "case": "nonzero command evidence",
+      "expected": "rejected",
+      "observed": "rejected",
+      "pass": true
+    },
+    {
+      "case": "changed successful evidence bytes",
+      "expected": "rejected",
+      "observed": "rejected",
+      "pass": true
+    },
+    {
+      "case": "research pointer excluded by declared boundary",
+      "expected": "accepted",
+      "observed": "accepted",
+      "pass": true
+    },
+    {
+      "case": "postpublication receipt excluded by declared boundary",
+      "expected": "accepted",
+      "observed": "accepted",
+      "pass": true
+    },
+    {
+      "case": "reissued manifest admits incomplete evidence: robustness follow-up",
+      "expected": "accepted",
+      "observed": "accepted",
+      "pass": true
+    }
+  ],
+  "failed": 0
+}

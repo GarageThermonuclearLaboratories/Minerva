@@ -10,7 +10,9 @@ The v0.1 construction is clean-room: no Garage-internal ontology class, hierarch
 
 ## Current checkpoint
 
-[Friday's release candidate](docs/friday-release-candidate.md) records the full builder validation and exact hash-bound manifest for the unchanged bounded educational snapshot. The separate final release audit remains open; v0.1 and an immutable tag are not authorized. `dist/release-manifest.json` exposes the candidate artifact manifest.
+[Friday's separate release audit](docs/friday-release-audit.md) passed exact version 20 with recorded limits and no blockers. Approval covers the partial foundation baseline. The current closeout binds its later status/verifier changes in a separate reviewed envelope; the original candidate manifest and builder record remain untouched. The immutable GitHub tag is not created because the connected tools have no tag-write operation. A completed tagged v0.1 freeze and post-freeze Garage crosswalk remain open.
+
+[Friday package 2's historical version 20 candidate](docs/friday-release-candidate.md) records the full builder validation and exact hash-bound manifest before the separate audit. `dist/release-manifest.json` preserves that candidate artifact manifest. The later audit above supplies the current verdict; the actual immutable tag remains open.
 
 [Thursday closure](docs/thursday-closure.md) records Willis's combined desktop/mobile acceptance of public Site version 18 on October 2. Thursday is closed for its agreed bounded scope. This is user-reported human acceptance, not an agent browser pass, comprehensive accessibility certification or human semantic review. Later status changes are builder-checked, not retrospectively included in that acceptance.
 
@@ -57,3 +59,5 @@ Ask Minerva uses a deterministic, local query engine, not a remote language mode
 For Friday's complete candidate check, install pinned dependencies with `npm ci` and `python3 -m pip install -r requirements.txt`, restore split sources, then run `python3 scripts/validate_release_candidate.py --write`. Without `--write`, it verifies the existing candidate manifest and public export without regenerating evidence. This is builder validation, not independent release approval.
 
 Run `python3 scripts/check_freeze_readiness.py` to rehash the locked educational snapshot and all archived PDFs, recheck claim boundaries, and report whether the remaining release gate authorizes a freeze.
+
+The package 2 scripts above describe that historical candidate. The current audit closeout was tested on Python 3.12.14 and Node 24.19.0; broader runtime compatibility is unverified. Run `python3 scripts/verify_release_closeout.py` and `python3 scripts/test_release_closeout.py`. The verifier reconstructs exact version 20 from its research commit (in a GitHub clone) or Site source commit (in a Site checkout), restores split sources in isolation, preserves historical evidence, enforces all 17 recorded command identities/counts and verifies the separately reviewed closeout. Running the old candidate verifier against the growing current tree is expected to fail; do not overwrite the historical manifests to hide that difference.

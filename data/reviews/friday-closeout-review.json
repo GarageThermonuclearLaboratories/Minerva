@@ -1,0 +1,141 @@
+{
+  "id": "review:friday-closeout",
+  "date": "2026-10-02",
+  "reviewer": "/root/thursday_reviewer",
+  "review_type": "separate-ai-scoped-closeout-review",
+  "model_family": "GPT-6 per session instructions",
+  "exact_model_variant": null,
+  "reasoning_effort": null,
+  "reviewed_envelope_sha256": "9b4d8fe16498135426e58af0491bf038479db0c6fe86e3c9cab657f0fbb60293",
+  "result": "pass-with-recorded-limits",
+  "blocking_findings": [],
+  "resolved_findings": [
+    {
+      "id": "F3-1",
+      "resolution": "Closeout verification now requires exact ordered 17-command inventory, expected test counts, and original builder-record hash. The historical candidate verifier and evidence remain unchanged."
+    },
+    {
+      "id": "F3-C1",
+      "resolution": "README now identifies the earlier package2 statement as historical and gives the current passed audit/tag-pending verdict consistently. Tested runtime is explicitly scoped to Python 3.12.14 and Node 24.19.0."
+    }
+  ],
+  "scope": {
+    "historical_candidate": {
+      "manifest_sha256": "e0aebcd457dd384f5d742d48d28869a427457666a6825e203d1d4ce509c22851",
+      "research_commit": "049d7c657f0e0535b8403c6fcac65183ef9442f9",
+      "site_source_commit": "a79f62871a225a8c1ff12507c9c009d5bcecc5a8",
+      "site_version": 20,
+      "validation_record_sha256": "861a5d3fae2f257585c3a6fd7e74851dee53232ffd269d47639aa9dea20f1d30"
+    },
+    "closeout_artifacts_sha256": {
+      "README.md": "823b26b74acf4718fff25f1ed8553589f2dd29b0c6ae200b882e8a39976c7b6b",
+      "data/publications/friday-release-candidate.json": "66a9d1c0c2138abda232d29ab5a2bc48dfc60908c53b52870effbddcce1bb849",
+      "data/reviews/friday-independent.json": "b3d8ea85458310c60c9b47d7a4df4508cb59e9b3ecfb76dd849931904900fff4",
+      "dist/interface.js": "4d0dcb84fb8b2169c2ecbe8596ef4c87951392af38d26e2b1be2fac8fcd1f7dc",
+      "docs/friday-release-audit.md": "52040da2818539292674487e822e74f3ad112a9f961e10a3397509cb1a8db54e",
+      "docs/review-assets/friday/audit-fingerprints.json": "4ff6eb732efdf6f611ab7006e95ede9099174836ce6c7c282e52fc6f8bd7dc3e",
+      "docs/review-assets/friday/friday-release-audit.md": "83a230d4eed4876017686fa3e7935cbbdd812090a3960643686ff956636d174b",
+      "docs/review-assets/friday/full-replay.json": "3cc7dd7b5b48888744f381d219a56621d2d89fc2631dd534b1eb6d8a61f84d5b",
+      "docs/review-assets/friday/github-candidate-tree.json": "3f5ec585e9662d95949732351fa20caf17e93e63f4c2b689e32888c77bcc37ac",
+      "docs/review-assets/friday/native-readback.json": "95058939bc4d622079220613e239ba86f56b1eb6e9767b4d818b702a6a74c8a4",
+      "docs/review-assets/friday/negative-probes.py": "3c241b9c0d464d09a041aa3672fa9f9f01d5516a6d023c586246c0d24bb5ab56",
+      "docs/review-assets/friday/negative-results.json": "a69acaab10ab26e71bdf7745e88cb9cc350d951f2df7bee182c7e640596f6ea9",
+      "docs/review-assets/friday/runtime-probes.cjs": "22ed2e9f4846b00b3670547d5a1e1f2ceb4620ce0f313db5e61f0d9aed0bff1c",
+      "docs/review-assets/friday/runtime-results.json": "57daf5b2e1277d71e5dce62c95c9416a98e50c9e22c3427a80bd67b2eb97e3be",
+      "scripts/test_interface.cjs": "bf5cc41433c6db2fa39528f1344f8fbaf3e1bbcd425ba7e03a9e4a3be2bd6103",
+      "scripts/test_release_closeout.py": "e5e21aef735dcba4b4fb2438af4ddc276f9a292a8e1072eaabf85de0ca636678",
+      "scripts/verify_release_closeout.py": "c983fb42a6309835654aa6283dc09a21a81074a7d1e25be4d9309e4364d68d0e"
+    },
+    "release_semantics": {
+      "audit_record": "data/reviews/wednesday-independent.json",
+      "audit_status": "pass-with-recorded-limits",
+      "candidate_manifest": "release-manifest.json",
+      "candidate_validation_record": "data/reviews/friday-candidate-validation.json",
+      "checkpoint": "friday-package-3-reviewed-tag-pending",
+      "closeout_manifest": "release-audit.json",
+      "closeout_review_record": "data/reviews/friday-closeout-review.json",
+      "freeze_status": "audit-approved-immutable-tag-pending",
+      "friday_audit_record": "data/reviews/friday-independent.json",
+      "friday_audit_status": "pass-with-recorded-limits",
+      "interface_revision": "0.0.8-friday-reviewed-tag-pending",
+      "locked_candidate_context": "Version 17 is historical Thursday review; version 20 is Friday's separately reviewed candidate; the closeout has a distinct envelope and native receipt.",
+      "locked_candidate_research_commit": "a4945c8809047aea6dd9aad54a9152bbed962eda",
+      "locked_candidate_site_version": 17,
+      "package_record": "docs/friday-release-audit.md",
+      "publication_status": "published-unfrozen-candidate",
+      "readiness_record": "data/reviews/friday-freeze-readiness.json",
+      "readiness_record_scope": "Historical October 1 candidate decision; current manifest and validation record supersede its open closure gate.",
+      "release": "wildcats-0.0.8-wednesday-comparisons",
+      "rendered_qa": "pass-user-reported-desktop-mobile-with-scope-limits",
+      "rendered_qa_record": "data/reviews/thursday-human-qa.json",
+      "review_scope": "Friday's separate review passed exact version 20 with recorded limits: 14 new manifest probes, 20 new runtime/claim probes and all 17 validation commands. Later closeout status/verifier changes have their own exact-envelope re-review. User-reported desktop/mobile acceptance remains version 18-specific. Approval is for the partial foundation candidate, not statewide K-12 completion. The immutable tag is uncreated; no completed tagged freeze, Garage crosswalk, full accessibility or human semantic pass is claimed.",
+      "safeguards_record": "docs/comparison-safeguards.md",
+      "tag_status": "not-created-tool-capability-unavailable",
+      "tagged_freeze_complete": false,
+      "thursday_audit_record": "data/reviews/thursday-independent.json",
+      "thursday_audit_status": "pass-with-recorded-limits",
+      "thursday_status": "closed-bounded-scope-user-acceptance"
+    },
+    "attestation_boundary": "This attestation covers the exact envelope bytes. It is outside that envelope input set and must be preserved as a separate Git-bound record. Later publication receipts, research-commit pointer and Lab Log appendices remain outside the envelope by its declared design."
+  },
+  "checks_performed": [
+    {
+      "check": "historical_candidate(ROOT)",
+      "result": "passed; isolated exact Site a79f628 snapshot restored and verified 315artifacts; original manifest and builder record byte-identical in current checkout;17 commands/counts required"
+    },
+    {
+      "check": "make_envelope comparison and research/public byte equality",
+      "result": "passed for reviewed envelope SHA256"
+    },
+    {
+      "check": "seven closeout contract unit tests",
+      "result": "passed; missing/duplicate/failed commands, false counts, stale attestation and blocking verdicts rejected, valid evidence accepted"
+    },
+    {
+      "check": "nine-view DOM interaction suite",
+      "result": "passed after final copy revisions; not browser/layout QA"
+    },
+    {
+      "check": "eight independent file-level integration checks",
+      "result": "passed in isolated clone; baseline plus undeclared delivery file, changed original public manifest, changed historical record, changed verifier, changed public envelope, missing interface and false completed-freeze status"
+    },
+    {
+      "check": "actual current delivery inventory",
+      "result": "29 files exactly: version 20 delivery set plus release-audit.json; no extra or missing files observed"
+    },
+    {
+      "check": "source/status/manual review",
+      "result": "new verifier, tests, README, release semantics, interface notices, Lab Log and release-audit documents inspected; original public manifest preserved; no self-referential attestation hash"
+    },
+    {
+      "check": "final envelope change check",
+      "result": "only README.md and docs/friday-release-audit.md changed between initial envelope 235b8905 and final envelope 9b4d8fe1; code/test hashes unchanged"
+    },
+    {
+      "check": "default closeout verification with final attestation",
+      "result": "passed in isolated clone after final envelope/copy revisions; no root checkout changes made"
+    }
+  ],
+  "verification_environment": {
+    "python": "3.12.14",
+    "node": "24.19.0",
+    "jsdom": "27.4.0"
+  },
+  "limits": [
+    "Approval covers this partial foundation closeout, not completion of canonical NYS K-12 ontology.",
+    "Immutable tag has not been created; completed tagged v0.1 freeze and Garage crosswalk remain blocked.",
+    "No new browser/rendered desktop-mobile, native zoom, full accessibility, policy applicability or human semantic review is claimed. User-reported acceptance remains specific to version 18.",
+    "Historical candidate evidence is preserved. Publication and research-pointer binding of this new closeout must be recorded after native success; this attestation does not assert that publication occurred.",
+    "Native stored archive bytes were not independently downloaded; previous native metadata and submitted member checks retain their original limits.",
+    "Verifier is a reviewed local integrity contract, not a cryptographic authentication mechanism or proof against coordinated malicious replacement of code, envelope and reviewer records.",
+    "Broader runtime compatibility and the GitHub research ref reconstruction branch were not newly executed in this Site checkout; exact Site ref reconstruction was exercised."
+  ],
+  "freeze_recommendation": "Approve exact bounded closeout with recorded limits; preserve actual immutable tag as an open completion gate.",
+  "tagged_freeze_complete": false,
+  "immutable_tag_created": false,
+  "statewide_ontology_complete": false,
+  "probe_evidence_sha256": {
+    "closeout-file-probes.py": "bd781e015e51f6ae50d7a66df0b57233f1f231b14a25af3ad334c9364c0772db",
+    "closeout-file-probe-results.json": "38b106089a2a232dbe1de6e9fb52c3fa5e639201a1fda354e46f489cfdf599bf"
+  }
+}

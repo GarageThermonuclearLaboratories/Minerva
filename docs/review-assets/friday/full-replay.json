@@ -1,0 +1,203 @@
+{
+  "id": "review:friday-candidate-validation",
+  "date": "2026-10-02",
+  "completed_at": "2026-10-02T15:18:35.864138+00:00",
+  "reviewer_type": "builder-regression-validation",
+  "model_and_effort": "not asserted by this artifact",
+  "result": "pass-builder-validation-with-recorded-limits",
+  "environment": {
+    "python": "3.12.14",
+    "node": "v24.19.0",
+    "pymupdf": "1.26.6",
+    "jsdom": "27.4.0"
+  },
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/check_freeze_readiness.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "8af5194dbb38bbf06842510e49917ae40be857b318e670bcf267dfd94fa54303",
+      "output_tail_or_summary": "tes\": [\n    \"separate final release audit\"\n  ],\n  \"checks_passed\": 79,\n  \"coverage\": {\n    \"archived_pages\": 1237,\n    \"archived_pdfs\": 42,\n    \"edges\": 31,\n    \"findings\": 0,\n    \"nodes\": 26,\n    \"parsed_expectations\": 9,\n    \"source_records\": 47\n  },\n  \"educational_snapshot_sha256\": {\n    \"data/comparison-drafts.json\": \"dc07b34fd492dcd2978e370e2a46ffd7bfc6be082d31492a612d97c6c4caf2fd\",\n    \"data/comparisons.json\": \"4485972875dacd86080a89983fbda2da4eae3a36aadc3dc31b4b55913b9078d1\",\n    \"data/journey.json\": \"3d581adc74098d209c83c2718bde6a732f985f2ba6ba24e0b29b62b28ee60d38\",\n    \"data/ontology.json\": \"ee25e8a54652dd8f573c5aed370e51ac1eb298fa873562f734bc7be649546ff0\",\n    \"data/sources.json\": \"93b7f454c4e2dce9794c94c218c0d12ebd5571163ca5ceb9f62021c1c523f1de\"\n  },\n  \"formal_foundation_prerequisites\": \"demonstrated for the locked bounded candidate\",\n  \"freeze_authorized\": false,\n  \"immutable_tag_authorized\": false,\n  \"result\": \"candidate-integrity-pass-thursday-closed-friday-gates-open\"\n}\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "1a2fe688b26d21b0c792b5c81d1af2e7514d96b136df7d4cf8a19407cdd51134",
+      "output_tail_or_summary": "Valid: 26 nodes, 31 edges, 47 source records\nValid: source review and corpus inventory match public data; temporal precision preserved\nValid: shared K\u201312 journey, 13 grades and transition scaffold; no mastery data\nValid: each source quotation checked against its own document and page\nValid: comparison evidence snapshots and exports; no graph promotion\nValid: independent audit matches the exact reviewed data snapshot\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/ingest_sources.py",
+        "check"
+      ],
+      "exit_code": 0,
+      "output_sha256": "ca586065d0964d9fbf725cf98b9d4eb8d6b0abe67de316778be03dff7a02049a",
+      "output_tail_or_summary": "check: 42 PDFs; 1237 pages; no ontology promotion\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/test_comparisons.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "a549f6a9ba35340d2d3be4c3d85991a3a9626f6daeb4d1a391b65d29ef918f15",
+      "output_tail_or_summary": "_source_boundary) ... ok\ntest_missing_axis (__main__.ComparisonTests.test_missing_axis) ... ok\ntest_missing_rationale (__main__.ComparisonTests.test_missing_rationale) ... ok\ntest_quote_tamper (__main__.ComparisonTests.test_quote_tamper) ... ok\ntest_rebuild_is_byte_identical (__main__.ComparisonTests.test_rebuild_is_byte_identical) ... ok\ntest_reversed_subjects (__main__.ComparisonTests.test_reversed_subjects) ... ok\ntest_stale_expectation (__main__.ComparisonTests.test_stale_expectation) ... ok\ntest_stale_source (__main__.ComparisonTests.test_stale_source) ... ok\ntest_unpaired_model_change (__main__.ComparisonTests.test_unpaired_model_change) ... ok\ntest_unsupported_disposition (__main__.ComparisonTests.test_unsupported_disposition) ... ok\ntest_wrong_pair (__main__.ComparisonTests.test_wrong_pair) ... ok\ntest_wrong_subject_label (__main__.ComparisonTests.test_wrong_subject_label) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.071s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/test_acceptance.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "05c57ee6963bae4d50c6f9282ee4df9d3bd9eec8d3af9926132f1c0320fd3cd5",
+      "output_tail_or_summary": "e_boundary_deleted) ... ok\ntest_science_false_exact_grade_fails (__main__.AcceptanceTests.test_science_false_exact_grade_fails) ... ok\ntest_science_mismatched_band_fails (__main__.AcceptanceTests.test_science_mismatched_band_fails) ... ok\ntest_science_not_assigned_to_grade7 (__main__.AcceptanceTests.test_science_not_assigned_to_grade7) ... ok\ntest_science_qualifier_lost (__main__.AcceptanceTests.test_science_qualifier_lost) ... ok\ntest_science_rejected_assignment_excluded (__main__.AcceptanceTests.test_science_rejected_assignment_excluded) ... ok\ntest_unknown_node_type (__main__.AcceptanceTests.test_unknown_node_type) ... ok\ntest_unknown_relation (__main__.AcceptanceTests.test_unknown_relation) ... ok\ntest_unresolved_assignment_excluded (__main__.AcceptanceTests.test_unresolved_assignment_excluded) ... ok\ntest_wrong_endpoint_type (__main__.AcceptanceTests.test_wrong_endpoint_type) ... ok\n\n----------------------------------------------------------------------\nRan 28 tests in 0.016s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/test_ingestion.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "09c71d8d6bc66e8ca5fd5374165bbd9a2c3a78d3ed3fe7699299499cd518df82",
+      "output_tail_or_summary": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.371s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/test_release_candidate.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "2d014bb427120fb1a5014d7499096989061fd0fdf40acb471c2e2667de60e71e",
+      "output_tail_or_summary": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.005s\n\nOK\n"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/test_ask.js"
+      ],
+      "exit_code": 0,
+      "output_sha256": "8bc20ce662dcd3a14787b1dc038d989efc729a9464eb54033ddbb10f0dfa8488",
+      "output_tail_or_summary": "91 Ask Minerva query checks passed. No rendered-layout or independent-review claim.\n"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/test_thursday_independent.cjs",
+        "."
+      ],
+      "exit_code": 0,
+      "output_sha256": "cd6780b4c4c7263b7db889b9a707112d34cdb52c64c86a46e350a6efce5e5e74",
+      "output_tail_or_summary": "72 archived independent probes replayed by builder; zero failures; not a new independent review"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/test_receipts.js"
+      ],
+      "exit_code": 0,
+      "output_sha256": "390f12e6a7c48da55ae856a7a12c0df3d72c3b7d3904f7a65433f8967c336604",
+      "output_tail_or_summary": "Verified all expectation receipts, preserved qualifiers/notes, and seven view render functions\nVerified all 13 grades for both avatars, five stage selections, and transition abstention\nAcceptance UI checks passed: structured fields independent of quotes; unsupported nodes, assignments, derivations, and rejected parent subparts excluded.\nScience UI negative checks passed: band, assignment and standard eligibility; exact-grade projection unchanged.\n"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/test_interface.cjs"
+      ],
+      "exit_code": 0,
+      "output_sha256": "4825b4f8ca85cdd97793d12898043c41ed800e61c31608a0fe7fa72739d053f5",
+      "output_tail_or_summary": "DOM checks passed: 9 views, 26 Receipts, graph integrity/expansion, student lens, 13 grades \u00d7 2 avatars, matrix/comparison controls, Ask form/examples/Receipts/comparison handoff/abstention, Escape/focus controls, and both script/data arrival orders. Not rendered-layout verification.\n"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "dist/app.js"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_tail_or_summary": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "dist/ask-engine.js"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_tail_or_summary": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "dist/ask-ui.js"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_tail_or_summary": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "dist/comparison-ui.js"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_tail_or_summary": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "dist/interface.js"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_tail_or_summary": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_tail_or_summary": ""
+    }
+  ],
+  "test_counts": {
+    "integrity_assertions": 79,
+    "comparison_tests": 25,
+    "acceptance_tests": 28,
+    "ingestion_tests": 7,
+    "release_manifest_tests": 5,
+    "ask_checks": 91,
+    "archived_independent_probe_replay": 72,
+    "dom_views": 9
+  },
+  "findings": [
+    {
+      "id": "F2-1",
+      "severity": "reproducibility-gap",
+      "status": "repaired",
+      "description": "DOM checks depended on transient unrecorded jsdom. package.json and package-lock.json now pin jsdom 27.4.0."
+    }
+  ],
+  "limitations": [
+    "Mechanical source fidelity and hashes do not certify all-document semantic review or current URL byte equivalence.",
+    "No new rendered browser, zoom, full-accessibility or independent release review.",
+    "Policy question remains September 28, 2026; no refreshed applicability/cohort determination.",
+    "Clean-room boundary is documented, not mechanically proven."
+  ],
+  "freeze_authorized": false,
+  "immutable_tag_authorized": false
+}

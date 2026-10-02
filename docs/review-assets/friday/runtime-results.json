@@ -1,0 +1,26 @@
+{
+  "checks": [
+    "abstention What is Eva expected to know in science in 2027?",
+    "abstention Can Matthew graduate after Grade 12?",
+    "abstention Which Grade 7 science expectations are legally required?",
+    "abstention What different expectations should Matthew and Eva learn?",
+    "abstention What Grade 7 requirements apply in 2017?",
+    "abstention Show science expectations without band records",
+    "science exact vs band 6",
+    "science exact vs band 7",
+    "science exact vs band 8",
+    "explicit band assignment",
+    "reversed subject pair remains rejected",
+    "science source full annotations",
+    "damaged source provenance missing_locator",
+    "damaged source provenance out_of_range_page",
+    "full avatar parity 0",
+    "full avatar parity 6",
+    "full avatar parity 7",
+    "full avatar parity 8",
+    "full avatar parity 12",
+    "all probes leave model and register unchanged"
+  ],
+  "passed": 20,
+  "failed": 0
+}

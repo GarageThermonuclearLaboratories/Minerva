@@ -1,0 +1,83 @@
+{
+  "archive_boundary": "Native metadata independently read;28submitted delivery member bytes match Site Git plus one packaging hosting file. Native stored archive bytes not downloaded; local tar raw hash differs, no byte equivalence claimed.",
+  "audit_artifacts_sha256": {
+    "friday-release-audit.md": "83a230d4eed4876017686fa3e7935cbbdd812090a3960643686ff956636d174b",
+    "full-replay.json": "3cc7dd7b5b48888744f381d219a56621d2d89fc2631dd534b1eb6d8a61f84d5b",
+    "github-candidate-tree.json": "3f5ec585e9662d95949732351fa20caf17e93e63f4c2b689e32888c77bcc37ac",
+    "native-readback.json": "95058939bc4d622079220613e239ba86f56b1eb6e9767b4d818b702a6a74c8a4",
+    "negative-probes.py": "3c241b9c0d464d09a041aa3672fa9f9f01d5516a6d023c586246c0d24bb5ab56",
+    "negative-results.json": "a69acaab10ab26e71bdf7745e88cb9cc350d951f2df7bee182c7e640596f6ea9",
+    "runtime-probes.cjs": "22ed2e9f4846b00b3670547d5a1e1f2ceb4620ce0f313db5e61f0d9aed0bff1c",
+    "runtime-results.json": "57daf5b2e1277d71e5dce62c95c9416a98e50c9e22c3427a80bd67b2eb97e3be"
+  },
+  "blocking_findings": [],
+  "candidate_research_commit": "049d7c657f0e0535b8403c6fcac65183ef9442f9",
+  "candidate_research_tree": "10882bc9cdf570a77d51137a4378aa67d0d7fc6d",
+  "candidate_site_source": "a79f62871a225a8c1ff12507c9c009d5bcecc5a8",
+  "candidate_site_version": 20,
+  "completion_gate": "Immutable tag absent; no claim of a completed tagged v0.1 freeze. Later closeout source/envelope/status changes require scoped review.",
+  "context": "Reused Thursday reviewer with its prior review context; not blind or human review. Friday work performed from bounded brief and exact current artifacts.",
+  "date": "2026-10-02",
+  "educational_snapshot": {
+    "data/comparison-drafts.json": "dc07b34fd492dcd2978e370e2a46ffd7bfc6be082d31492a612d97c6c4caf2fd",
+    "data/comparisons.json": "4485972875dacd86080a89983fbda2da4eae3a36aadc3dc31b4b55913b9078d1",
+    "data/journey.json": "3d581adc74098d209c83c2718bde6a732f985f2ba6ba24e0b29b62b28ee60d38",
+    "data/ontology.json": "ee25e8a54652dd8f573c5aed370e51ac1eb298fa873562f734bc7be649546ff0",
+    "data/sources.json": "93b7f454c4e2dce9794c94c218c0d12ebd5571163ca5ceb9f62021c1c523f1de"
+  },
+  "exact_model_variant": null,
+  "freeze_authorized": false,
+  "id": "review:friday-independent",
+  "independent_checks": {
+    "negative_manifest_probes": 14,
+    "runtime_claim_probes": 20
+  },
+  "inspected_postpublication_source": "6fad7d334cddc6e84bb139cb9733dced171f0de5",
+  "model_family": "GPT-6 per session instructions",
+  "native_archive_sha256": "728510a271959f05884b3570441ed359bc40b00f0070dcd43ada99795d4040ca",
+  "nonblocking_findings": [
+    {
+      "id": "F3-1",
+      "recommendation": "Require exact ordered command inventory and counts in future/closeout verification; preserve original candidate files",
+      "severity": "low",
+      "status": "robustness follow-up; exact observed candidate includes all17commands and replays successfully",
+      "title": "verify accepts incomplete successful command inventory if manifest is reissued"
+    }
+  ],
+  "postpublication_receipt_sha256": "66a9d1c0c2138abda232d29ab5a2bc48dfc60908c53b52870effbddcce1bb849",
+  "reasoning_effort": null,
+  "result": "pass-with-recorded-limits",
+  "reviewed_sha256": {
+    "data/reviews/friday-candidate-validation.json": "861a5d3fae2f257585c3a6fd7e74851dee53232ffd269d47639aa9dea20f1d30",
+    "data/reviews/friday-release-manifest.json": "e0aebcd457dd384f5d742d48d28869a427457666a6825e203d1d4ce509c22851",
+    "data/reviews/thursday-human-qa.json": "102d6b30a5849a714ac806df24417ce74b31bef5ca7a6df7e76e81c096166592",
+    "dist/ask-engine.js": "7ad342ecd061d0cb7f75a0563c9deab088e4351f33abc31751c3eeb1c4188663",
+    "dist/ask-ui.js": "3b129db3029194cd4985a52ef597291e29f4198345f5617f511adad5efac14d4",
+    "dist/interface.js": "6a57b0ba44d67390d890338ab1f99c4e8f672c3950425ec4a8b617e67575b86f",
+    "dist/release-manifest.json": "e0aebcd457dd384f5d742d48d28869a427457666a6825e203d1d4ce509c22851",
+    "dist/release.json": "a29862424d08270fa12dd2bd7af47aa44b1937bcbc80f520a168e882a530f33a",
+    "docs/foundation-specification.md": "4a2e308b0677fa2a988798de13f22d6b1ac82590d5c865afeb93cd8b889d3f17",
+    "docs/friday-release-candidate.md": "2d2f13bc053b63600ab321e1cc2d7c31c848328e0c1d12a7d96f5dce437f53aa",
+    "package-lock.json": "d19e4f497ea5e2f7328fef1d1326859d319f2f594d217461d42c78c168d9ceb9",
+    "package.json": "7f867abc9e05e1531d7831c4b487a9ef404a548a2e53c93ae24077fa39a644be",
+    "requirements.txt": "35862353935b3121f5702c4e6c292fc8f796c7c169cc0be9a6b7c7bc8acaaf64",
+    "scripts/check_freeze_readiness.py": "b0b4f14a0e847b8e68821e327e36c237ba2ef047696c0328ccb72122ddab8e93",
+    "scripts/test_release_candidate.py": "738414815e6bf7d9fae273bc673ef940fbb0f42dd051e704337191779900b227",
+    "scripts/validate_release_candidate.py": "126cf087a1bcc5cf6d21dabec75267d5a7bc54439b7da73a0101f507e50d56d7"
+  },
+  "reviewer": "/root/thursday_reviewer",
+  "root_followup": "F3-1 hardened in separate closeout verifier; later status/envelope changes require scoped re-review",
+  "scope_report": "docs/review-assets/friday/friday-release-audit.md",
+  "tagged_freeze_complete": false,
+  "type": "separate-ai-release-audit",
+  "verdict": "pass-with-recorded-limits",
+  "verification": {
+    "DOM": "passed, not browser/visual QA",
+    "archived_independent_probe_replay": 72,
+    "ask_checks": 91,
+    "dependency_install": "npm ci --offline succeeded;61packages",
+    "full_recorded_command_replay": 17,
+    "receipt_projection": "passed",
+    "result": "all passed"
+  }
+}
