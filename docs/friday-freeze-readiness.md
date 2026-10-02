@@ -1,5 +1,7 @@
 # Friday freeze readiness
 
+Historical October 1 readiness decision. The desktop/mobile closure gate was subsequently satisfied by user-reported acceptance; see [Thursday closure](thursday-closure.md). Final Friday validation, manifest and separate release audit remain open. The status below describes this earlier checkpoint, not the current closure state.
+
 Status: **candidate integrity passed; freeze blocked**. This package locks the exact published and separately reviewed candidate, verifies the formal foundation prerequisites, and preserves the remaining project gate. It does not create v0.1 or an immutable tag.
 
 ## Locked candidate

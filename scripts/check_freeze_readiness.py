@@ -82,10 +82,21 @@ require(digest("data/reviews/thursday-repaired-manifest.json") == review["repair
 require(publication["site_version"]["version_number"] == 17 and publication["deployment"]["status"] == "succeeded", "locked candidate is published Site version 17")
 require(publication["research_commit"] == "a4945c8809047aea6dd9aad54a9152bbed962eda", "locked candidate research commit is exact")
 require(release["publication_status"] == "published-unfrozen-candidate", "release status says published and unfrozen")
-require(release["freeze_status"] == "blocked-rendered-qa", "release preserves the rendered-QA freeze block")
+qa = load("data/reviews/thursday-human-qa.json")
+qa_publication = load("data/publications/friday-freeze-readiness.json")
+require(qa["result"] == "pass-user-reported-with-scope-limits", "human QA is explicitly user-reported with limits")
+require(qa["tested_site_version"] == qa_publication["site_version"]["version_number"], "human QA version matches version 18 receipt")
+require(qa["tested_site_source"] == qa_publication["site_version"]["source"]["commit_sha"], "human QA source matches the published candidate")
+require(qa["tested_research_commit"] == qa_publication["research_commit"], "human QA research pointer matches the published candidate")
+require(qa["per_check_results"] is None and qa["screenshots_supplied"] is False, "no unprovided per-check or screenshot evidence is invented")
+require(release["rendered_qa"] == "pass-user-reported-desktop-mobile-with-scope-limits", "release reflects human acceptance, not an agent browser pass")
+require(release["thursday_status"] == "closed-bounded-scope-user-acceptance", "Thursday closure is bounded and user-accepted")
+require(release["freeze_status"] == "pending-final-validation-manifest-and-release-audit", "Friday freeze prerequisites remain open")
+for path, expected in qa["unmodified_functional_assets_sha256"].items():
+    require(digest(path) == expected, f"functional asset remains identical to user-tested candidate: {path}")
 
 result = {
-    "result": "candidate-integrity-pass-freeze-blocked",
+    "result": "candidate-integrity-pass-thursday-closed-friday-gates-open",
     "checks_passed": len(checks),
     "educational_snapshot_sha256": educational_hashes,
     "coverage": {
@@ -98,7 +109,7 @@ result = {
         "archived_pages": sum(source.get("page_count", 0) for source in acquired),
     },
     "formal_foundation_prerequisites": "demonstrated for the locked bounded candidate",
-    "blocking_gates": ["fresh rendered desktop/mobile QA under the required Sites preview workflow"],
+    "blocking_gates": ["Friday final candidate validation and release manifest", "separate final release audit"],
     "freeze_authorized": False,
     "immutable_tag_authorized": False,
 }

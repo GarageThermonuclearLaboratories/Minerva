@@ -80,9 +80,10 @@ async function setup(lateInterface=false, delayed=false){
   const toggle=d.querySelector('[data-family]'),detail=d.getElementById(toggle.getAttribute('aria-controls'));
   assert.ok(detail.hidden);toggle.click();assert.ok(!detail.hidden);toggle.click();assert.ok(detail.hidden);
   assert.ok(!d.querySelector('#epistemic-notice').open);
-  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,13);
+  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,14);
   assert.ok(d.querySelector('#view').textContent.includes('Separate review'));
-  assert.ok(d.querySelector('.log-entry').textContent.includes('Published candidate locked'));
+  assert.ok(d.querySelector('.log-entry').textContent.includes('Thursday closed'));
+  assert.ok(d.querySelector('.audit-notice').textContent.includes('user-reported'));
   assert.ok(d.querySelector('#view').textContent.includes('PROVISIONAL'));
   d.querySelector('[data-view="crossroads"]').click();
   assert.equal(d.querySelectorAll('.comparison-card').length,3);

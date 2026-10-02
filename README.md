@@ -10,7 +10,9 @@ The v0.1 construction is clean-room: no Garage-internal ontology class, hierarch
 
 ## Current checkpoint
 
-[Friday freeze readiness](docs/friday-freeze-readiness.md) locks public Site version 17 and the separately reviewed research commit. Mechanical checks found no provenance, temporal, unsupported-equivalence, coverage-language or ontology-drift defect in the unchanged educational snapshot. The public status is corrected to **published, unfrozen candidate**. Fresh rendered desktop/mobile QA remains unavailable and blocks v0.1 and an immutable tag.
+[Thursday closure](docs/thursday-closure.md) records Willis's combined desktop/mobile acceptance of public Site version 18 on October 2. Thursday is closed for its agreed bounded scope. This is user-reported human acceptance, not an agent browser pass, comprehensive accessibility certification or human semantic review. Friday final validation, release manifest and separate release audit remain open; v0.1 and an immutable tag are not yet authorized.
+
+[Friday freeze readiness](docs/friday-freeze-readiness.md) preserves the earlier blocked checkpoint and its exact reviewed hashes. Educational data remain unchanged.
 
 [Thursday separate review](docs/thursday-independent-audit.md) passed the repaired bounded question layer and safeguards with recorded limits. Six defect groups are resolved; 72 independent probes and 91 Ask checks passed. [Thursday package 2](docs/thursday-ask.md) and [package 1](docs/thursday-foundation.md) preserve the historical builder-reviewed checkpoints.
 

@@ -1,0 +1,37 @@
+{
+  "id": "review:thursday-human-qa",
+  "reported_at": "2026-10-02T08:55:48-04:00",
+  "reviewer": "Jared Willis",
+  "review_type": "user-reported hands-on desktop/mobile acceptance",
+  "result": "pass-user-reported-with-scope-limits",
+  "verbatim_confirmation": "boom. everything works",
+  "tested_site_version": 18,
+  "tested_site_source": "acac5d5efe27327a91e72e075c47f0ada8d5e579",
+  "tested_research_commit": "5c7df5641ec6a77deef56ef9a0a9c7bc8de5adca",
+  "version_attribution": "Version 18 is the published candidate identified in the conversation and deployment receipt; the user did not independently supply a version identifier.",
+  "desktop_context": "User explicitly reported Chrome on desktop.",
+  "mobile_context": "User reported working on a phone to check mobile; combined confirmation is recorded as desktop/mobile acceptance.",
+  "requested_checks": [
+    "Ask examples and an unsupported mastery question",
+    "Receipt open/close and comparison navigation",
+    "Narrow-screen text, navigation and controls",
+    "Desktop Tab, Enter and Escape behavior"
+  ],
+  "per_check_results": null,
+  "screenshots_supplied": false,
+  "scope_limit": "The confirmation is a combined user report, not individually instrumented results, agent-observed browser testing, comprehensive accessibility certification, a native zoom test, or human semantic approval of the educational claims.",
+  "unmodified_functional_assets_sha256": {
+    "dist/ask-engine.js": "7ad342ecd061d0cb7f75a0563c9deab088e4351f33abc31751c3eeb1c4188663",
+    "dist/ask-ui.js": "3b129db3029194cd4985a52ef597291e29f4198345f5617f511adad5efac14d4",
+    "dist/index.html": "cc210cd92f3826ada1f23da94179eff7fee8e64744882ec39919e7aaf5cec665",
+    "dist/interface.css": "6b6c487ad1baccd2a9ceec1bfeed78ede04db22907da8b0e0d1c188fe8c9c32e",
+    "dist/app.js": "fc75b35cd75124e5bae350c8b74442890f70cf3cc8e88afd7ca4b2dc5b5c4aba",
+    "dist/comparison-ui.js": "ad43782b275598a72ecb819ee7ea32aa119985b3c985cd5b46abd00620cc4485",
+    "dist/style.css": "06f73da21e69736fbba2c7992bf6678511c4da6f159c84ce014a964ffb126a3f"
+  },
+  "tested_interface_js_sha256": "c24c006004af0ff257f381d52325359503ed94609ab39c2f7807412101ead648",
+  "later_changes": "Package 1 changes only status copy, Lab Log entries, documentation, release metadata and status validation; these are builder-checked and not retrospectively part of the user test.",
+  "thursday_completion": "closed for agreed bounded scope using user-reported acceptance",
+  "freeze_authorized": false,
+  "next": "Friday package 2 final candidate validation and release manifest, then separate release audit."
+}
