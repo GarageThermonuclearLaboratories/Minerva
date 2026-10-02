@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "checkpoint": "friday-package-3-complete-tagged-foundation",
+  "completed_at": "2026-10-02T21:02:19Z",
+  "scope": "bounded-partial-foundation",
+  "tag": "wildcats-foundation-v0.1",
+  "tag_kind": "annotated",
+  "tag_object_sha": "bb4932ade6e048660972b071282634d0b007e4c2",
+  "target_type": "commit",
+  "target_commit_sha": "5d4dbef18880c2e1aad017f4a72037dfda52d140",
+  "tag_message": "Wildcats partial foundation v0.1 — audited checkpoint",
+  "tagger": "github-actions[bot]",
+  "signature_status": "unsigned",
+  "protected_tag_rule_verified": false,
+  "operational_immutability_policy": "never move or reuse this tag",
+  "creation": {
+    "method": "one-time repository-owned GitHub Actions workflow",
+    "workflow_run_id": 37064349537,
+    "workflow_run_conclusion": "success",
+    "workflow_removed_after_success": true
+  },
+  "verification": {
+    "ref_readback": "refs/tags/wildcats-foundation-v0.1",
+    "tag_object_readback": "bb4932ade6e048660972b071282634d0b007e4c2",
+    "resolved_target_readback": "5d4dbef18880c2e1aad017f4a72037dfda52d140",
+    "exact_target_match": true
+  },
+  "review": {
+    "result": "pass-with-recorded-limits",
+    "candidate_manifest_sha256": "e0aebcd457dd384f5d742d48d28869a427457666a6825e203d1d4ce509c22851",
+    "closeout_envelope_sha256": "9b4d8fe16498135426e58af0491bf038479db0c6fe86e3c9cab657f0fbb60293",
+    "closeout_attestation_sha256": "240866242ba9b665212dcc2b25e63f0b8668424225aac0813e40f0d4fc146820"
+  },
+  "tagged_freeze_complete": true,
+  "statewide_ontology_complete": false,
+  "human_semantic_review_complete": false,
+  "full_accessibility_complete": false,
+  "garage_crosswalk_included": false,
+  "clean_room_crosswalk_status": "authorized-only-as-separate-post-freeze-work"
+}

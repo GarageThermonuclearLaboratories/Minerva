@@ -27,9 +27,9 @@ async function setup(lateInterface=false, delayed=false){
   const {dom,w,d,errors}=await setup();
   const model=JSON.parse(read('data/ontology.json'));
   assert.ok(d.querySelector('#receipt').hidden,'Receipt starts collapsed');
-  assert.ok(d.querySelector('.audit-notice').textContent.includes('Friday release audit'));
-  assert.ok(d.querySelector('.audit-notice a').href.endsWith('/docs/friday-release-audit.md'));
-  assert.equal(d.querySelector('#release-label').textContent,'v0.0.8 · Freeze candidate');
+  assert.ok(d.querySelector('.audit-notice').textContent.includes('foundation v0.1'));
+  assert.ok(d.querySelector('.audit-notice a').href.endsWith('/docs/friday-completion.md'));
+  assert.equal(d.querySelector('#release-label').textContent,'Foundation v0.1 · Frozen');
   assert.ok(d.querySelector('.trace-preview [data-node]'));
   d.querySelector('.trace-parsed [data-node]').click();
   assert.ok(!d.querySelector('#receipt').hidden);
@@ -80,10 +80,10 @@ async function setup(lateInterface=false, delayed=false){
   const toggle=d.querySelector('[data-family]'),detail=d.getElementById(toggle.getAttribute('aria-controls'));
   assert.ok(detail.hidden);toggle.click();assert.ok(!detail.hidden);toggle.click();assert.ok(detail.hidden);
   assert.ok(!d.querySelector('#epistemic-notice').open);
-  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,16);
+  d.querySelector('#activity-log').click();assert.equal(d.querySelectorAll('.log-entry time').length,17);
   assert.ok(d.querySelector('#view').textContent.includes('Separate review'));
-  assert.ok(d.querySelector('.log-entry').textContent.includes('Separate release audit'));
-  assert.ok(d.querySelector('.log-entry a[href="release-audit.json"]'));
+  assert.ok([...d.querySelectorAll('.log-entry')].some(entry=>entry.textContent.includes('tagged and frozen')));
+  assert.ok(d.querySelector('#view a[href="friday-freeze.json"]'));
   assert.ok(d.querySelector('.audit-notice').textContent.includes('user-reported'));
   assert.ok(d.querySelector('#view').textContent.includes('PROVISIONAL'));
   d.querySelector('[data-view="crossroads"]').click();

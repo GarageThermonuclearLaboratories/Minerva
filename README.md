@@ -10,9 +10,11 @@ The v0.1 construction is clean-room: no Garage-internal ontology class, hierarch
 
 ## Current checkpoint
 
-[Friday's separate release audit](docs/friday-release-audit.md) passed exact version 20 with recorded limits and no blockers. Approval covers the partial foundation baseline. The current closeout binds its later status/verifier changes in a separate reviewed envelope; the original candidate manifest and builder record remain untouched. The immutable GitHub tag is not created because the connected tools have no tag-write operation. A completed tagged v0.1 freeze and post-freeze Garage crosswalk remain open.
+[Friday's foundation completion](docs/friday-completion.md) records the verified `wildcats-foundation-v0.1` annotated tag on exact audited commit `5d4dbef18880c2e1aad017f4a72037dfda52d140`. The bounded partial foundation is frozen with the separate audit's recorded limits. This is not completion of the canonical statewide K–12 ontology, policy applicability, human semantic review, full accessibility, or the post-freeze Garage crosswalk.
 
-[Friday package 2's historical version 20 candidate](docs/friday-release-candidate.md) records the full builder validation and exact hash-bound manifest before the separate audit. `dist/release-manifest.json` preserves that candidate artifact manifest. The later audit above supplies the current verdict; the actual immutable tag remains open.
+[Friday's separate release audit](docs/friday-release-audit.md) passed exact version 20 with recorded limits and no blockers before the tag was created. Its reviewed envelope, original candidate manifest and builder record remain untouched.
+
+[Friday package 2's historical version 20 candidate](docs/friday-release-candidate.md) records the full builder validation and exact hash-bound manifest before the separate audit. `dist/release-manifest.json` preserves that candidate artifact manifest.
 
 [Thursday closure](docs/thursday-closure.md) records Willis's combined desktop/mobile acceptance of public Site version 18 on October 2. Thursday is closed for its agreed bounded scope. This is user-reported human acceptance, not an agent browser pass, comprehensive accessibility certification or human semantic review. Later status changes are builder-checked, not retrospectively included in that acceptance.
 
