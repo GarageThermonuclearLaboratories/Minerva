@@ -1,6 +1,6 @@
 {
   "release": "wildcats-0.0.8-wednesday-comparisons",
-  "research_commit": null,
+  "research_commit": "982083a5bc7d1ef5038d9a166d6cc211e87af7ec",
   "interface_revision": "0.0.8-thursday-closed",
   "publication_status": "published-unfrozen-candidate",
   "review_scope": "Thursday's exact separate AI verdict is preserved. Willis reported desktop/mobile acceptance of public version 18; no agent-observed browser or comprehensive accessibility pass is claimed. Later closure status and documentation have builder checks only. Educational data are unchanged. Friday final validation, release manifest and separate release audit remain open; v0.1 and an immutable tag are not authorized.",

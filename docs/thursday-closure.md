@@ -21,3 +21,7 @@ Thursday's separate AI review retains its exact original boundary. Package 1's s
 Builder verification: 79 integrity/closure assertions, the main validator, 91 Ask checks, Receipt/projection checks, nine-view DOM interaction checks and JavaScript syntax/whitespace checks passed. All 42 archived PDFs rehashed correctly. These checks do not substitute for rendered-layout QA or extend the prior independent review.
 
 Friday package 2 must validate the final candidate and prepare the exact scope, limitations and release manifest. Package 3 supplies a separate release audit. v0.1 and an immutable tag remain unauthorized until those gates pass. Exact edition/cohort applicability, statewide coverage, human semantic review and full accessibility remain unresolved.
+
+## Publication receipt
+
+Public Site version 19 succeeded at `2026-10-02T13:06:46.658615+00:00`; research `982083a5bc7d1ef5038d9a166d6cc211e87af7ec`, Site source `c10a497bb97db283a5327b50f38d918d9b4864c9`. Exact native receipt: [thursday-closed.json](../data/publications/thursday-closed.json). This note and receipt were recorded after deployment and are not part of the published version 19 bundle. The earlier user acceptance is attributed to version 18, not retroactively to these later status changes.

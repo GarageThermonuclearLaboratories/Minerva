@@ -1,0 +1,56 @@
+{
+  "checkpoint": "friday-package-1-thursday-closure",
+  "research_commit": "982083a5bc7d1ef5038d9a166d6cc211e87af7ec",
+  "research_tree": "fecf4030778af162e26a60c28e92b45c26a9d3a2",
+  "site_version": {
+    "id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_fc81ef500860819183d115a327da454c",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "version_number": 19,
+    "source": {
+      "commit_sha": "c10a497bb97db283a5327b50f38d918d9b4864c9"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000629c81f68697ad27e2400038",
+      "content_hash": "sha256:fe04422ec907a71e8265fb71d8430f6659729a66dbb48955fb5c9c619ba021de",
+      "size_bytes": 2406400,
+      "file_count": 28
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6abfac6006188191a11956055ba610d2",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "title": "Wildcats / Minerva",
+    "version_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_fc81ef500860819183d115a327da454c",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://wildcats-minerva.jaredwillis.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6abac050d4cc8191b9d7081e9d8cb8dd",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-02T13:06:46.658615+00:00"
+  },
+  "qa_record": "data/reviews/thursday-human-qa.json",
+  "qa_result": "pass-user-reported-with-scope-limits",
+  "user_tested_site_version": 18,
+  "builder_checks": {
+    "integrity_assertions": 79,
+    "ask_checks": 91,
+    "main_validator": "pass",
+    "receipts_and_projections": "pass",
+    "nine_view_dom": "pass-not-rendered-layout",
+    "syntax_and_whitespace": "pass",
+    "archived_pdf_hashes": 42
+  },
+  "freeze_authorized": false,
+  "immutable_tag_authorized": false,
+  "next_steps": [
+    "Friday final candidate validation and release manifest",
+    "separate final release audit"
+  ],
+  "record_boundary": "Receipt created after deployment; not included in the version 19 bundle. User acceptance applies to version 18; version 19 status-only changes have builder regression checks, not retrospective human acceptance."
+}
