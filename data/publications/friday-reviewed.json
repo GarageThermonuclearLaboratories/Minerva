@@ -1,0 +1,72 @@
+{
+  "checkpoint": "friday-package-3-reviewed-tag-pending",
+  "research_commit": "5d4dbef18880c2e1aad017f4a72037dfda52d140",
+  "research_tree": "0cebe61265308d0116842b4c3186d9e1a3793f26",
+  "site_version": {
+    "id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_d5a0d70823148191bd6c3dc3bc2454d9",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "version_number": 21,
+    "source": {
+      "commit_sha": "065175487c737951ebc6dd306c1c1769ffb60e43"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000007314820d8f002c70785584b2",
+      "content_hash": "sha256:d65441ee2f38c47fc47dba1a9111cc5fa863ad283afc81a2a538331fb146ec57",
+      "size_bytes": 2467840,
+      "file_count": 30
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6abfcffd6fb48191a1a8a79aa6e8bcd3",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "title": "Wildcats / Minerva",
+    "version_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_d5a0d70823148191bd6c3dc3bc2454d9",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://wildcats-minerva.jaredwillis.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6abac050d4cc8191b9d7081e9d8cb8dd",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-02T15:38:43.377280+00:00"
+  },
+  "historical_reviewed_candidate": {
+    "site_version": 20,
+    "research_commit": "049d7c657f0e0535b8403c6fcac65183ef9442f9",
+    "site_source_commit": "a79f62871a225a8c1ff12507c9c009d5bcecc5a8",
+    "manifest_sha256": "e0aebcd457dd384f5d742d48d28869a427457666a6825e203d1d4ce509c22851"
+  },
+  "closeout_envelope": "data/releases/friday-audit-closeout.json",
+  "closeout_envelope_sha256": "9b4d8fe16498135426e58af0491bf038479db0c6fe86e3c9cab657f0fbb60293",
+  "closeout_attestation": "data/reviews/friday-closeout-review.json",
+  "closeout_attestation_sha256": "240866242ba9b665212dcc2b25e63f0b8668424225aac0813e40f0d4fc146820",
+  "independent_verdict": "pass-with-recorded-limits",
+  "blocking_audit_findings": [],
+  "resolved_findings": [
+    "F3-1 exact evidence inventory/count contract in separate closeout verifier",
+    "F3-C1 historical/current README status and tested-runtime precision"
+  ],
+  "independent_checks": {
+    "manifest_probes": 14,
+    "runtime_claim_probes": 20,
+    "recorded_commands_replayed": 17,
+    "closeout_file_checks": 8,
+    "closeout_contract_tests": 7
+  },
+  "tag_intent": {
+    "repository": "GarageThermonuclearLaboratories/Minerva",
+    "name": "wildcats-foundation-v0.1",
+    "exact_target_commit": "5d4dbef18880c2e1aad017f4a72037dfda52d140",
+    "status": "not-created; current connector lacks tag-write operation",
+    "exact_tag_ref_readback": "GitHub GET git/ref/tags/wildcats-foundation-v0.1 returned404; no tag creation was attempted through an unsupported branch operation"
+  },
+  "tagged_freeze_complete": false,
+  "immutable_tag_created": false,
+  "statewide_ontology_complete": false,
+  "clean_room_crosswalk": "still-prohibited-before-actual-tagged-freeze",
+  "record_boundary": "Native publication confirms version21. This postpublication receipt and appended Lab Log confirmation are outside that bundle, are Git-bound separately, and do not extend the independent review boundary. Future tag creation requires explicit verification and a new completion receipt."
+}

@@ -1,6 +1,6 @@
 {
   "release": "wildcats-0.0.8-wednesday-comparisons",
-  "research_commit": null,
+  "research_commit": "5d4dbef18880c2e1aad017f4a72037dfda52d140",
   "interface_revision": "0.0.8-friday-reviewed-tag-pending",
   "publication_status": "published-unfrozen-candidate",
   "review_scope": "Friday's separate review passed exact version 20 with recorded limits: 14 new manifest probes, 20 new runtime/claim probes and all 17 validation commands. Later closeout status/verifier changes have their own exact-envelope re-review. User-reported desktop/mobile acceptance remains version 18-specific. Approval is for the partial foundation candidate, not statewide K-12 completion. The immutable tag is uncreated; no completed tagged freeze, Garage crosswalk, full accessibility or human semantic pass is claimed.",
