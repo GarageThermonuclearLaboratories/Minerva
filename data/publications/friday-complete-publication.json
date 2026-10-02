@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "checkpoint": "friday-package-3-complete-tagged-foundation-publication",
+  "completed_at": "2026-10-02T21:07:34.927100+00:00",
+  "frozen_research": {
+    "tag": "wildcats-foundation-v0.1",
+    "tag_object_sha": "bb4932ade6e048660972b071282634d0b007e4c2",
+    "target_commit_sha": "5d4dbef18880c2e1aad017f4a72037dfda52d140",
+    "exact_target_verified": true
+  },
+  "github_completion_status": {
+    "commit_sha": "9748a75b92b77f316352d7c42926ac057d5242b7",
+    "tree_sha": "78f313adba08a38d1415f88b102e906b66544ed9",
+    "matches_deployed_site_source_tree": true
+  },
+  "site": {
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "version_number": 22,
+    "source_commit": "7f5d5a69c59748f038e420c92e5ac4ecf8701c5e",
+    "saved_version_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_567722280dd88191bbf82c25b51abbc9",
+    "deployment_id": "appgdep_6ac01d117e9c8191a5ba586fcbcc068f",
+    "deployment_status": "succeeded",
+    "public_url": "https://wildcats-minerva.jaredwillis.chatgpt.site",
+    "archive": {
+      "content_hash": "sha256:274e6abc19084149934d042620236ac9148bccb7f72bdf717e670878c591721e",
+      "size_bytes": 2467840,
+      "file_count_including_hosting_metadata": 31
+    }
+  },
+  "scope": "bounded-partial-foundation",
+  "tagged_freeze_complete": true,
+  "statewide_ontology_complete": false,
+  "human_semantic_review_complete": false,
+  "full_accessibility_complete": false,
+  "record_boundary": "This receipt and its Lab Log note were appended after successful version 22 publication and are not contained in that deployed bundle. They do not alter the frozen educational baseline or the separate review boundary."
+}
