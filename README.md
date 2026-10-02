@@ -10,7 +10,9 @@ The v0.1 construction is clean-room: no Garage-internal ontology class, hierarch
 
 ## Current checkpoint
 
-[Thursday closure](docs/thursday-closure.md) records Willis's combined desktop/mobile acceptance of public Site version 18 on October 2. Thursday is closed for its agreed bounded scope. This is user-reported human acceptance, not an agent browser pass, comprehensive accessibility certification or human semantic review. Friday final validation, release manifest and separate release audit remain open; v0.1 and an immutable tag are not yet authorized.
+[Friday's release candidate](docs/friday-release-candidate.md) records the full builder validation and exact hash-bound manifest for the unchanged bounded educational snapshot. The separate final release audit remains open; v0.1 and an immutable tag are not authorized. `dist/release-manifest.json` exposes the candidate artifact manifest.
+
+[Thursday closure](docs/thursday-closure.md) records Willis's combined desktop/mobile acceptance of public Site version 18 on October 2. Thursday is closed for its agreed bounded scope. This is user-reported human acceptance, not an agent browser pass, comprehensive accessibility certification or human semantic review. Later status changes are builder-checked, not retrospectively included in that acceptance.
 
 [Friday freeze readiness](docs/friday-freeze-readiness.md) preserves the earlier blocked checkpoint and its exact reviewed hashes. Educational data remain unchanged.
 
@@ -51,5 +53,7 @@ GitHub is the canonical engineering record: [GarageThermonuclearLaboratories/Min
 To rebuild the frozen comparisons, run `python3 scripts/build_comparisons.py --baseline data/comparison-baseline.json`, then `python3 scripts/test_comparisons.py` and the main validator. A changed educational graph requires a new explicitly verified baseline contract and review; do not relabel the old baseline.
 
 Ask Minerva uses a deterministic, local query engine, not a remote language model. Run `node scripts/test_ask.js` for semantic-boundary checks. The DOM suite is `node scripts/test_interface.cjs` and requires jsdom in the invoking environment. It is not rendered-browser verification.
+
+For Friday's complete candidate check, install pinned dependencies with `npm ci` and `python3 -m pip install -r requirements.txt`, restore split sources, then run `python3 scripts/validate_release_candidate.py --write`. Without `--write`, it verifies the existing candidate manifest and public export without regenerating evidence. This is builder validation, not independent release approval.
 
 Run `python3 scripts/check_freeze_readiness.py` to rehash the locked educational snapshot and all archived PDFs, recheck claim boundaries, and report whether the remaining release gate authorizes a freeze.

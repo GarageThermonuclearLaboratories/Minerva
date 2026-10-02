@@ -91,7 +91,7 @@ require(qa["tested_research_commit"] == qa_publication["research_commit"], "huma
 require(qa["per_check_results"] is None and qa["screenshots_supplied"] is False, "no unprovided per-check or screenshot evidence is invented")
 require(release["rendered_qa"] == "pass-user-reported-desktop-mobile-with-scope-limits", "release reflects human acceptance, not an agent browser pass")
 require(release["thursday_status"] == "closed-bounded-scope-user-acceptance", "Thursday closure is bounded and user-accepted")
-require(release["freeze_status"] == "pending-final-validation-manifest-and-release-audit", "Friday freeze prerequisites remain open")
+require(release["freeze_status"] in {"pending-final-validation-manifest-and-release-audit", "pending-separate-release-audit"}, "Friday freeze prerequisites remain open")
 for path, expected in qa["unmodified_functional_assets_sha256"].items():
     require(digest(path) == expected, f"functional asset remains identical to user-tested candidate: {path}")
 
@@ -109,7 +109,7 @@ result = {
         "archived_pages": sum(source.get("page_count", 0) for source in acquired),
     },
     "formal_foundation_prerequisites": "demonstrated for the locked bounded candidate",
-    "blocking_gates": ["Friday final candidate validation and release manifest", "separate final release audit"],
+    "blocking_gates": ["separate final release audit"] if release["freeze_status"] == "pending-separate-release-audit" else ["Friday final candidate validation and release manifest", "separate final release audit"],
     "freeze_authorized": False,
     "immutable_tag_authorized": False,
 }
