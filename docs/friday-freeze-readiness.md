@@ -57,3 +57,9 @@ All 65 readiness assertions, 91 Ask checks, 72 independent-probe replays, 25 com
 ## Next
 
 Run the required fresh rendered desktop/mobile QA. If it passes, rerun the complete validator set, create a release manifest binding the final GitHub commit, Site source, saved version and deployment, and only then decide whether to create the immutable v0.1 tag.
+
+## Publication
+
+The readiness checkpoint published successfully as public Site version 18 at `2026-10-02T00:02:40.640959+00:00` (October 1, 2026 in New York). Research commit `5c7df5641ec6a77deef56ef9a0a9c7bc8de5adca`; Site source `acac5d5efe27327a91e72e075c47f0ada8d5e579`; deployment `appgdep_6abef49b4c148191bf0b5a7eccd64bcb`. The public audience was preserved. Exact native record: `data/publications/friday-freeze-readiness.json`.
+
+Publication confirms availability, not a new review verdict and not the missing rendered QA. The receipt is a post-deployment record and is not represented as content of the already deployed version 18 bundle.

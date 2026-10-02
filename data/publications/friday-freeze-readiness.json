@@ -1,0 +1,72 @@
+{
+  "checkpoint": "friday-freeze-readiness",
+  "package_status": "published-unfrozen-candidate; rendered-QA-blocked",
+  "freeze_authorized": false,
+  "immutable_tag_authorized": false,
+  "release": "wildcats-0.0.8-wednesday-comparisons",
+  "interface_revision": "0.0.8-freeze-readiness",
+  "research_commit": "5c7df5641ec6a77deef56ef9a0a9c7bc8de5adca",
+  "research_tree": "3b57ba73a53e65d8ece13f0deea1b554880cd51d",
+  "locked_reviewed_candidate": {
+    "research_commit": "a4945c8809047aea6dd9aad54a9152bbed962eda",
+    "site_version": 17,
+    "site_source": "85ab266efd82f9bf486480e6afdcfbc39aca475c"
+  },
+  "site_version": {
+    "id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_78320794a25481919012ba3f37d874d3",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "version_number": 18,
+    "source": {
+      "commit_sha": "acac5d5efe27327a91e72e075c47f0ada8d5e579"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_0000000094e081f68c288a3dbef46663",
+      "content_hash": "sha256:7de256d34d1403bddd3fc569e04b47b978c31e91e2e57ad3548627faf856e068",
+      "size_bytes": 2396160,
+      "file_count": 28
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6abef49b4c148191bf0b5a7eccd64bcb",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "title": "Wildcats / Minerva",
+    "version_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_78320794a25481919012ba3f37d874d3",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://wildcats-minerva.jaredwillis.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6abac050d4cc8191b9d7081e9d8cb8dd",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-02T00:02:40.640959+00:00"
+  },
+  "verification": {
+    "freeze_readiness_assertions": 65,
+    "ask_checks": 91,
+    "independent_probe_replay": 72,
+    "comparison_tests": 25,
+    "acceptance_tests": 28,
+    "ingestion_tests": 7,
+    "main_validator": "passed",
+    "receipt_projection_checks": "passed",
+    "dom_suite": "passed; not rendered-layout verification",
+    "educational_snapshot": "five files unchanged from Thursday's separate review",
+    "archived_sources": "42 PDFs, 1,237 pages, all manifest hashes matched"
+  },
+  "findings": {
+    "material_defect_repaired": "publication status corrected from prepared-for-publication to published-unfrozen-candidate",
+    "provenance_temporal_equivalence_coverage_ontology_audit": "passed with recorded scope limits",
+    "release_blocker": "fresh rendered desktop/mobile QA unavailable under the required Sites preview workflow"
+  },
+  "execution_failures": [
+    "The first aggregate validation command named the archived independent harness incorrectly; the repository harness was rerun with its required root argument and all 72 probes passed.",
+    "The first DOM rerun exposed a stale newest-log-entry assumption; the assertion was corrected and the entire DOM suite passed.",
+    "The first Site source push attempt found its short-lived credential expired; a replacement credential for the same Site was issued and the standard workflow succeeded."
+  ],
+  "next": "Complete required rendered desktop/mobile QA, rerun the full suite, create the exact final release manifest, and authorize v0.1 and an immutable tag only if the gate passes.",
+  "note": "This publication receipt and its Lab Log confirmation were recorded after deployment and are not content of the already deployed version 18 bundle. Public audience was preserved."
+}
