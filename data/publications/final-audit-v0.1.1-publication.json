@@ -1,0 +1,20 @@
+{
+  "published_at": "2026-10-02T22:01:10.445426+00:00",
+  "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+  "public_url": "https://wildcats-minerva.jaredwillis.chatgpt.site",
+  "site_version": 23,
+  "site_version_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_f3f37c6240888191afa1681e2186fa3b",
+  "deployment_id": "appgdep_6ac029a0ed6c819189d9ab00e80d160a",
+  "deployment_status": "succeeded",
+  "site_source_commit": "3b075ea56b310f5aa1505d94880cf9aa510fec51",
+  "github_audit_commit": "8f70f903dfc007c400a4144e299bc44abad67362",
+  "frozen_tag": "wildcats-foundation-v0.1",
+  "frozen_research_commit": "5d4dbef18880c2e1aad017f4a72037dfda52d140",
+  "archive": {
+    "format": "tar",
+    "content_hash": "sha256:6433d908a7cf1131aacc02ac8224773db8c92a1ab4735d1b3f1d7271656b8fac",
+    "size_bytes": 2467840,
+    "file_count": 31
+  },
+  "scope": "Post-freeze public-interface repair only; the frozen educational baseline and tag are unchanged."
+}
