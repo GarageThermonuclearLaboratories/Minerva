@@ -1,0 +1,59 @@
+{
+  "checkpoint": "friday-package-2-release-candidate",
+  "research_commit": "049d7c657f0e0535b8403c6fcac65183ef9442f9",
+  "research_tree": "10882bc9cdf570a77d51137a4378aa67d0d7fc6d",
+  "site_version": {
+    "id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_2de74bdbeadc8191bae0939476fff743",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "version_number": 20,
+    "source": {
+      "commit_sha": "a79f62871a225a8c1ff12507c9c009d5bcecc5a8"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000006b7081f6ae312f73af91e8b2",
+      "content_hash": "sha256:728510a271959f05884b3570441ed359bc40b00f0070dcd43ada99795d4040ca",
+      "size_bytes": 2457600,
+      "file_count": 29
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6abfaf36381881919888fdbe106fba56",
+    "project_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd",
+    "title": "Wildcats / Minerva",
+    "version_id": "appgprj_6abac050d4cc8191b9d7081e9d8cb8dd~appgver_2de74bdbeadc8191bae0939476fff743",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://wildcats-minerva.jaredwillis.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6abac050d4cc8191b9d7081e9d8cb8dd",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-02T13:18:53.613886+00:00"
+  },
+  "candidate_manifest": "data/reviews/friday-release-manifest.json",
+  "candidate_manifest_sha256": "e0aebcd457dd384f5d742d48d28869a427457666a6825e203d1d4ce509c22851",
+  "public_manifest": "dist/release-manifest.json",
+  "validation_record": "data/reviews/friday-candidate-validation.json",
+  "validation_record_sha256": "861a5d3fae2f257585c3a6fd7e74851dee53232ffd269d47639aa9dea20f1d30",
+  "hashed_artifacts": 315,
+  "validation_result": "pass-builder-validation-with-recorded-limits",
+  "actual_repairs": [
+    "Pinned jsdom 27.4.0 and lockfile for repeatable DOM checks",
+    "Corrected draft science standard identifier to MS-PS2-4 before publication"
+  ],
+  "scope_unchanged": true,
+  "independent_release_review": "pending; archived Thursday probe replay is builder regression only",
+  "user_tested_site_version": 18,
+  "freeze_authorized": false,
+  "immutable_tag_authorized": false,
+  "next_steps": [
+    "Separate final release audit of exact version 20 candidate and native receipt",
+    "Repair blocking findings, if any",
+    "Explicit bounded freeze decision; no tag before approval"
+  ],
+  "record_boundary": "Postpublication receipt and Lab Log note are not included in the version 20 bundle. Exact GitHub research commit and Site source commit identify published inputs; the manifest base_checkpoint names historical version 19, not version 20."
+}
