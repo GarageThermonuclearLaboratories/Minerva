@@ -1,0 +1,33 @@
+name: Create audited Wildcats foundation tag
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/create-wildcats-foundation-tag.yml]
+permissions:
+  contents: write
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Create and verify exact audited tag
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="wildcats-foundation-v0.1"
+          target="5d4dbef18880c2e1aad017f4a72037dfda52d140"
+          if git ls-remote --exit-code --tags origin "refs/tags/$tag" >/dev/null 2>&1; then
+            actual="$(git ls-remote --tags origin "refs/tags/$tag^{}" | awk '{print $1}')"
+            if [ -z "$actual" ]; then
+              actual="$(git ls-remote --tags origin "refs/tags/$tag" | awk '{print $1}')"
+            fi
+            test "$actual" = "$target"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git tag -a "$tag" "$target" -m "Wildcats partial foundation v0.1 — audited checkpoint"
+            git push origin "refs/tags/$tag"
+            test "$(git rev-list -n 1 "$tag")" = "$target"
+          fi
