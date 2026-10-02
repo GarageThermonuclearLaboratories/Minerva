@@ -3,7 +3,7 @@ const repo='https://github.com/GarageThermonuclearLaboratories/Minerva';
 let selectedId=null, graphFocus=standardId, graphDepth=1, receiptOrigin=null;
 const statuses={SOURCE:'Source-backed wording or structure; applicability is separate.',PARSED:'Project interpretation with its source derivation preserved.',NORMALIZED:'Alignment into a shared representation.',INFERRED:'A derived claim requiring an explicit method and evidence.',PROVISIONAL:'Tentative support or unresolved applicability.',CONTESTED:'An unresolved substantive dispute.',REJECTED:'Excluded with a recorded reason.',UNREVIEWED:'Evidence or a question awaiting review.',UNMAPPED:'No modeled expectation here yet; not evidence of absence.'};
 const badge=s=>`<span class="tag ${s.toLowerCase()}" title="${esc(statuses[s]||s)}">${esc(s)}</span>`;
-const gitPath=p=>`${repo}/blob/${release.research_commit||'main'}/${p}`;
+const gitPath=p=>`${repo}/blob/${p==='docs/friday-completion.md'?(release.completion_record_commit||'main'):(release.research_commit||'main')}/${p}`;
 const originalRender=render, originalReceipt=showReceipt;
 titles.atlas=['What is New York asking students to learn?','Wildcats is building a source-traced ontology of New York State K–12 educational expectations. Minerva makes that formal structure human to explore.'];
 titles.journey=['Across grades','Inspect exact-grade placements and the shared middle-school science band. Developmental links still need evidence.'];
@@ -69,7 +69,7 @@ function bindEvidence(root){
 render=function(){
   if(!model)return;
   originalRender();
-  $('#release-label').textContent=release.tagged_freeze_complete?'Foundation v0.1 · Frozen':'v'+(model.release.match(/\d+\.\d+\.\d+/)?.[0]||model.release)+' · Freeze candidate';
+  $('#release-label').textContent=release.final_audit_status==='pass-after-repair'?'Foundation v0.1.1 · Audited':release.tagged_freeze_complete?'Foundation v0.1 · Frozen':'v'+(model.release.match(/\d+\.\d+\.\d+/)?.[0]||model.release)+' · Freeze candidate';
   $('#epistemic-notice').open=['atlas','wildcats'].includes(view);
   document.querySelectorAll('.rail button').forEach(b=>{if(b.dataset.view===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
   // Baseline is the published 0.0.3 record (11 nodes, 14 edges), not a live daily counter.

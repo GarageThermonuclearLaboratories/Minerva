@@ -28,8 +28,13 @@ async function setup(lateInterface=false, delayed=false){
   const model=JSON.parse(read('data/ontology.json'));
   assert.ok(d.querySelector('#receipt').hidden,'Receipt starts collapsed');
   assert.ok(d.querySelector('.audit-notice').textContent.includes('foundation v0.1'));
-  assert.ok(d.querySelector('.audit-notice a').href.endsWith('/docs/friday-completion.md'));
-  assert.equal(d.querySelector('#release-label').textContent,'Foundation v0.1 · Frozen');
+  const release=JSON.parse(read('dist/release.json'));
+  assert.equal(release.completion_record_commit,'3c2bdd4694758248bfbbf5f875e29f0135861f4c');
+  assert.equal(
+    d.querySelector('.audit-notice a').href,
+    `https://github.com/GarageThermonuclearLaboratories/Minerva/blob/${release.completion_record_commit}/docs/friday-completion.md`
+  );
+  assert.equal(d.querySelector('#release-label').textContent,'Foundation v0.1.1 · Audited');
   assert.ok(d.querySelector('.trace-preview [data-node]'));
   d.querySelector('.trace-parsed [data-node]').click();
   assert.ok(!d.querySelector('#receipt').hidden);

@@ -24,3 +24,7 @@ The clean-room construction period ends for this frozen baseline. Any comparison
 - Machine-readable freeze record: `data/publications/friday-freeze.json`
 - Exact audited commit: `5d4dbef18880c2e1aad017f4a72037dfda52d140`
 - Annotated tag object: `bb4932ade6e048660972b071282634d0b007e4c2`
+
+## Post-freeze audit addendum
+
+The final Foundation v0.1 audit on October 2 found one release-documentation defect: the public completion link targeted the frozen audited commit, which necessarily predates this completion record. The v0.1.1 public-interface repair points that link to post-freeze GitHub commit `3c2bdd4694758248bfbbf5f875e29f0135861f4c`, where this file exists. The frozen tag, educational graph, source archive, review boundary and coverage claims are unchanged. See `docs/final-audit-v0.1.1.md`.

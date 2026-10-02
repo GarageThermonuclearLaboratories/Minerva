@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "review:foundation-v0.1-final",
+  "date": "2026-10-02",
+  "review_type": "final-release-integrity-and-product-audit",
+  "result": "pass-after-repair",
+  "frozen_baseline": {
+    "tag": "wildcats-foundation-v0.1",
+    "tag_object_sha": "bb4932ade6e048660972b071282634d0b007e4c2",
+    "target_commit_sha": "5d4dbef18880c2e1aad017f4a72037dfda52d140",
+    "unchanged": true
+  },
+  "counts": {
+    "source_records": 47,
+    "unique_archived_pdfs": 42,
+    "reattached_pdf_hash_matches": 40,
+    "recorded_extracted_pages": 1237,
+    "ontology_nodes": 26,
+    "ontology_edges": 31,
+    "parsed_expectations": 9,
+    "published_findings": 0,
+    "accepted_comparison_links": 0
+  },
+  "page_checks": [
+    {
+      "source_id": "src:nysed:math-full",
+      "pdf_page": 90,
+      "result": "wording-and-scope-confirmed"
+    },
+    {
+      "source_id": "src:nysed:ela-full",
+      "pdf_page": 82,
+      "result": "wording-and-scope-confirmed"
+    },
+    {
+      "source_id": "src:nysed:science-full",
+      "pdf_page": 33,
+      "result": "wording-annotations-boundaries-and-band-confirmed"
+    }
+  ],
+  "material_findings": [
+    {
+      "id": "FA-1",
+      "severity": "material-release-documentation",
+      "status": "repaired",
+      "finding": "Public completion links targeted the frozen audited commit, which does not contain docs/friday-completion.md, and returned GitHub 404.",
+      "repair": "Added a separate completion_record_commit pointer to 3c2bdd4694758248bfbbf5f875e29f0135861f4c and an exact DOM regression assertion."
+    }
+  ],
+  "negative_findings": {
+    "provenance_gap_in_modeled_claims": false,
+    "temporal_overclaim": false,
+    "unsupported_equivalence": false,
+    "coverage_overclaim": false,
+    "ontology_drift": false,
+    "avatar_projection_divergence": false,
+    "clean_room_violation": false
+  },
+  "live_checks": {
+    "desktop_visual_capture": "pass",
+    "ask_minerva_comparison_boundary": "pass",
+    "receipt_keyboard_close_and_focus_restore": "pass",
+    "avatar_parity": "pass",
+    "findings_boundary": "pass",
+    "mobile_rendered_capture": "not-run"
+  },
+  "limits": [
+    "No comprehensive WCAG certification is claimed.",
+    "No fresh rendered mobile screenshot was captured; earlier mobile acceptance is user-reported for version 18.",
+    "Exact edition and cohort applicability remain unresolved.",
+    "Human semantic review remains pending.",
+    "The canonical statewide K-12 ontology remains incomplete.",
+    "The annotated tag is unsigned and no protected-tag rule is claimed."
+  ],
+  "report": "docs/final-audit-v0.1.1.md"
+}

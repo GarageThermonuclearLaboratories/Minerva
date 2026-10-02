@@ -10,6 +10,8 @@ The v0.1 construction is clean-room: no Garage-internal ontology class, hierarch
 
 ## Current checkpoint
 
+[The final Foundation v0.1 audit](docs/final-audit-v0.1.1.md) passed after one public-interface repair. The completion-record link now targets the post-freeze GitHub commit that actually contains the record. The frozen educational baseline and `wildcats-foundation-v0.1` tag are unchanged.
+
 [Friday's foundation completion](docs/friday-completion.md) records the verified `wildcats-foundation-v0.1` annotated tag on exact audited commit `5d4dbef18880c2e1aad017f4a72037dfda52d140`. The bounded partial foundation is frozen with the separate audit's recorded limits. This is not completion of the canonical statewide K–12 ontology, policy applicability, human semantic review, full accessibility, or the post-freeze Garage crosswalk.
 
 [Friday's separate release audit](docs/friday-release-audit.md) passed exact version 20 with recorded limits and no blockers before the tag was created. Its reviewed envelope, original candidate manifest and builder record remain untouched.
